@@ -1,0 +1,10 @@
+# Adapter of Drive CORE — in-session-phasing (version 2026-10-04). Read-only mirror.
+interface:
+  display_name: "In Session Phasing"
+  short_description: "Run substantial work in visible, bounded phases with meaningful progress checkpoints."
+policy:
+  products:
+  - chatgpt
+  - codex
+  - atlas
+  allow_implicit_invocation: true

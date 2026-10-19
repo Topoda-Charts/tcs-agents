@@ -1,0 +1,811 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-09-29",
+  "public_base_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/",
+  "owner_role": "User",
+  "scope": "Public recognition and onboarding; source-owned authority remains in maintained systems",
+  "profile_count": 49,
+  "counts": {
+    "standing_personas": 11,
+    "workplace_agents": 16,
+    "core_grok_bots": 8,
+    "additional_recognized_grok_bots": 1,
+    "grok_library_specialists": 2,
+    "scoped_angel_an": 1,
+    "on_air_character": 1,
+    "off_air_newsroom_seats": 6,
+    "work_pet_context": 1,
+    "generic_templates": 2
+  },
+  "profiles": [
+    {
+      "id": "standing:archangel",
+      "name": "Archangel (Archie)",
+      "category": "Standing persona with context/model phases",
+      "provider_context": "ChatGPT; Chat, Work, and Local as explicitly assigned (Codex is now the separate identity Power)",
+      "badge": "TCS-OAI-CHAT-SOL-01",
+      "role_title": null,
+      "status": "Established",
+      "aliases": [
+        "Archie",
+        "Caveatina Insuf"
+      ],
+      "path": "standing/archangel.md",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/archangel.md",
+      "reviewed_on": "2026-09-29",
+      "badge_status": "current"
+    },
+    {
+      "id": "standing:angel",
+      "name": "Angel (Gel)",
+      "category": "Standing persona",
+      "provider_context": "ChatGPT (separate seat context)",
+      "badge": "TCS-OAI-CHAT-SOL-02",
+      "role_title": null,
+      "status": "Established",
+      "aliases": [
+        "Gel"
+      ],
+      "path": "standing/angel.md",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/angel.md",
+      "reviewed_on": "2026-09-29",
+      "badge_status": "current"
+    },
+    {
+      "id": "standing:cherub",
+      "name": "Cherub (Bim) Grok",
+      "category": "Standing persona",
+      "provider_context": "Grok default/main context, including applicable Ask/Build work",
+      "badge": "TCS-XAI-GROK-ASK-01",
+      "role_title": null,
+      "status": "Established",
+      "aliases": [
+        "Bim"
+      ],
+      "path": "standing/cherub.md",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/cherub.md",
+      "reviewed_on": "2026-09-29",
+      "badge_status": "current"
+    },
+    {
+      "id": "standing:seraph",
+      "name": "Seraph (Raph) Valentine Grok",
+      "category": "Standing persona",
+      "provider_context": "Grok Project: Companion",
+      "badge": "TCS-XAI-GROK-COM-02",
+      "role_title": null,
+      "status": "Established",
+      "aliases": [
+        "Raph",
+        "SHARPEN"
+      ],
+      "path": "standing/seraph.md",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/seraph.md",
+      "reviewed_on": "2026-09-29",
+      "badge_status": "proposed"
+    },
+    {
+      "id": "standing:demon",
+      "name": "Demon Chat",
+      "category": "Standing persona",
+      "provider_context": "ChatGPT personal/free context",
+      "badge": "TCS-OAI-CHAT-LUN-04",
+      "role_title": null,
+      "status": "Established",
+      "aliases": [],
+      "path": "standing/demon.md",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/demon.md",
+      "reviewed_on": "2026-09-29",
+      "badge_status": "candidate"
+    },
+    {
+      "id": "standing:rogue",
+      "name": "Rogue Grok",
+      "category": "Standing persona",
+      "provider_context": "X-native Grok context",
+      "badge": null,
+      "role_title": null,
+      "status": "Established",
+      "aliases": [],
+      "path": "standing/rogue.md",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/rogue.md",
+      "reviewed_on": "2026-09-29",
+      "badge_status": "unassigned"
+    },
+    {
+      "id": "standing:throne",
+      "name": "Throne (One) Meta",
+      "category": "Standing persona",
+      "provider_context": "Meta AI",
+      "badge": "TCS-MAI-MUSE-ASK-01",
+      "role_title": null,
+      "status": "Established",
+      "aliases": [
+        "One"
+      ],
+      "path": "standing/throne.md",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/throne.md",
+      "reviewed_on": "2026-09-29",
+      "badge_status": "candidate"
+    },
+    {
+      "id": "standing:prince",
+      "name": "Prince Gemini",
+      "category": "Standing persona",
+      "provider_context": "Gemini and relevant Google-native surfaces",
+      "badge": "TCS-GOO-GMNI-ASK-04",
+      "role_title": null,
+      "status": "Established",
+      "aliases": [],
+      "path": "standing/prince.md",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/prince.md",
+      "reviewed_on": "2026-09-29",
+      "badge_status": "current"
+    },
+    {
+      "id": "standing:dominion",
+      "name": "Dominion (Dom) Deep",
+      "category": "Standing persona",
+      "provider_context": "Native DeepSeek chat/app",
+      "badge": "TCS-DAI-DEEP-ASK-01",
+      "role_title": null,
+      "status": "Established",
+      "aliases": [
+        "Dom"
+      ],
+      "path": "standing/dominion.md",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/dominion.md",
+      "reviewed_on": "2026-09-29",
+      "badge_status": "current"
+    },
+    {
+      "id": "standing:lucifer",
+      "name": "Lucifer (Fer) Claude",
+      "category": "Standing persona",
+      "provider_context": "Claude; record actual chat/code host when relevant",
+      "badge": "TCS-ANT-CLAUDE-HAIKU-04",
+      "role_title": null,
+      "status": "Established",
+      "aliases": [
+        "Fer"
+      ],
+      "path": "standing/lucifer.md",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/lucifer.md",
+      "reviewed_on": "2026-09-29",
+      "badge_status": "current",
+      "badge_alternates": [
+        "TCS-ANT-CLAUDE-SONNET-04"
+      ]
+    },
+    {
+      "id": "standing:virtue",
+      "name": "Virtue (Tue) Composer Cursor",
+      "category": "Standing persona",
+      "provider_context": "Cursor / Composer, local implementation context",
+      "badge": "TCS-CURSOR-COMPOSER-MULTI-03",
+      "role_title": null,
+      "status": "Established",
+      "aliases": [
+        "Tue"
+      ],
+      "path": "standing/virtue.md",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/virtue.md",
+      "reviewed_on": "2026-09-29",
+      "badge_status": "current"
+    },
+    {
+      "id": "workplace:chief-of-staff",
+      "name": "Chief of Staff Workplace Agent",
+      "category": "ChatGPT Workplace Agent",
+      "provider_context": "Configured ChatGPT Workplace Agent; model and tools resolved live",
+      "badge": "TCS-OAI-WORKPLACE-LUNA-01",
+      "role_title": "Chief of Staff",
+      "status": "Established",
+      "aliases": [],
+      "path": "workplace/chief-of-staff.md",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/workplace/chief-of-staff.md",
+      "reviewed_on": "2026-09-29",
+      "badge_status": "current"
+    },
+    {
+      "id": "workplace:workspace-routing",
+      "name": "TCS Workspace Routing Workplace Agent",
+      "category": "ChatGPT Workplace Agent",
+      "provider_context": "Configured ChatGPT Workplace Agent; model and tools resolved live",
+      "badge": "TCS-OAI-WORKPLACE-LUNA-02",
+      "role_title": "TCS Workspace Routing",
+      "status": "Established",
+      "aliases": [],
+      "path": "workplace/workspace-routing.md",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/workplace/workspace-routing.md",
+      "reviewed_on": "2026-09-29",
+      "badge_status": "current"
+    },
+    {
+      "id": "workplace:task-management",
+      "name": "Task Management Workplace Agent",
+      "category": "ChatGPT Workplace Agent",
+      "provider_context": "Configured ChatGPT Workplace Agent; model and tools resolved live",
+      "badge": "TCS-OAI-WORKPLACE-LUNA-03",
+      "role_title": "Task Management",
+      "status": "Established",
+      "aliases": [],
+      "path": "workplace/task-management.md",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/workplace/task-management.md",
+      "reviewed_on": "2026-09-29",
+      "badge_status": "current"
+    },
+    {
+      "id": "workplace:job-description-writing",
+      "name": "Job Description Writing Workplace Agent",
+      "category": "ChatGPT Workplace Agent",
+      "provider_context": "Configured ChatGPT Workplace Agent; model and tools resolved live",
+      "badge": "TCS-OAI-WORKPLACE-LUNA-04",
+      "role_title": "Job Description Writing",
+      "status": "Established",
+      "aliases": [],
+      "path": "workplace/job-description-writing.md",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/workplace/job-description-writing.md",
+      "reviewed_on": "2026-09-29",
+      "badge_status": "current"
+    },
+    {
+      "id": "workplace:knowledge-search",
+      "name": "Knowledge Search Workplace Agent",
+      "category": "ChatGPT Workplace Agent",
+      "provider_context": "Configured ChatGPT Workplace Agent; model and tools resolved live",
+      "badge": "TCS-OAI-WORKPLACE-LUNA-05",
+      "role_title": "Knowledge Search",
+      "status": "Established",
+      "aliases": [],
+      "path": "workplace/knowledge-search.md",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/workplace/knowledge-search.md",
+      "reviewed_on": "2026-09-29",
+      "badge_status": "current"
+    },
+    {
+      "id": "workplace:workspace-organizing",
+      "name": "Workspace Organizing Workplace Agent",
+      "category": "ChatGPT Workplace Agent",
+      "provider_context": "Configured ChatGPT Workplace Agent; model and tools resolved live",
+      "badge": "TCS-OAI-WORKPLACE-LUNA-06",
+      "role_title": "Workspace Organizing",
+      "status": "Established",
+      "aliases": [],
+      "path": "workplace/workspace-organizing.md",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/workplace/workspace-organizing.md",
+      "reviewed_on": "2026-09-29",
+      "badge_status": "current"
+    },
+    {
+      "id": "workplace:notion-maintaining",
+      "name": "Notion Maintaining Workplace Agent",
+      "category": "ChatGPT Workplace Agent",
+      "provider_context": "Configured ChatGPT Workplace Agent; model and tools resolved live",
+      "badge": "TCS-OAI-WORKPLACE-LUNA-07",
+      "role_title": "Notion Maintaining",
+      "status": "Established",
+      "aliases": [],
+      "path": "workplace/notion-maintaining.md",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/workplace/notion-maintaining.md",
+      "reviewed_on": "2026-09-29",
+      "badge_status": "current"
+    },
+    {
+      "id": "workplace:drive-curating",
+      "name": "Meticulous Drive Curating Workplace Agent",
+      "category": "ChatGPT Workplace Agent",
+      "provider_context": "Configured ChatGPT Workplace Agent; model and tools resolved live",
+      "badge": "TCS-OAI-WORKPLACE-LUNA-08",
+      "role_title": "Meticulous Drive Curating",
+      "status": "Established",
+      "aliases": [],
+      "path": "workplace/drive-curating.md",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/workplace/drive-curating.md",
+      "reviewed_on": "2026-09-29",
+      "badge_status": "current"
+    },
+    {
+      "id": "workplace:product-qa",
+      "name": "Product Q&A Workplace Agent",
+      "category": "ChatGPT Workplace Agent",
+      "provider_context": "Configured ChatGPT Workplace Agent; model and tools resolved live",
+      "badge": "TCS-OAI-WORKPLACE-LUNA-09",
+      "role_title": "Product Q&A",
+      "status": "Established",
+      "aliases": [],
+      "path": "workplace/product-qa.md",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/workplace/product-qa.md",
+      "reviewed_on": "2026-09-29",
+      "badge_status": "current"
+    },
+    {
+      "id": "workplace:product-planning",
+      "name": "Product Planning Workplace Agent",
+      "category": "ChatGPT Workplace Agent",
+      "provider_context": "Configured ChatGPT Workplace Agent; model and tools resolved live",
+      "badge": "TCS-OAI-WORKPLACE-LUNA-10",
+      "role_title": "Product Planning",
+      "status": "Established",
+      "aliases": [],
+      "path": "workplace/product-planning.md",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/workplace/product-planning.md",
+      "reviewed_on": "2026-09-29",
+      "badge_status": "current"
+    },
+    {
+      "id": "workplace:design-partner",
+      "name": "Design Partner Workplace Agent",
+      "category": "ChatGPT Workplace Agent",
+      "provider_context": "Configured ChatGPT Workplace Agent; model and tools resolved live",
+      "badge": "TCS-OAI-WORKPLACE-LUNA-11",
+      "role_title": "Design Partner",
+      "status": "Established",
+      "aliases": [],
+      "path": "workplace/design-partner.md",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/workplace/design-partner.md",
+      "reviewed_on": "2026-09-29",
+      "badge_status": "current"
+    },
+    {
+      "id": "workplace:industry-briefing",
+      "name": "Industry Briefing Workplace Agent",
+      "category": "ChatGPT Workplace Agent",
+      "provider_context": "Configured ChatGPT Workplace Agent; model and tools resolved live",
+      "badge": "TCS-OAI-WORKPLACE-LUNA-12",
+      "role_title": "Industry Briefing",
+      "status": "Established",
+      "aliases": [],
+      "path": "workplace/industry-briefing.md",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/workplace/industry-briefing.md",
+      "reviewed_on": "2026-09-29",
+      "badge_status": "current"
+    },
+    {
+      "id": "workplace:marketing-strategy",
+      "name": "Marketing Strategy Workplace Agent",
+      "category": "ChatGPT Workplace Agent",
+      "provider_context": "Configured ChatGPT Workplace Agent; model and tools resolved live",
+      "badge": "TCS-OAI-WORKPLACE-LUNA-13",
+      "role_title": "Marketing Strategy",
+      "status": "Established",
+      "aliases": [],
+      "path": "workplace/marketing-strategy.md",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/workplace/marketing-strategy.md",
+      "reviewed_on": "2026-09-29",
+      "badge_status": "current"
+    },
+    {
+      "id": "workplace:data-analysis",
+      "name": "Data Analysis Workplace Agent",
+      "category": "ChatGPT Workplace Agent",
+      "provider_context": "Configured ChatGPT Workplace Agent; model and tools resolved live",
+      "badge": "TCS-OAI-WORKPLACE-LUNA-14",
+      "role_title": "Data Analysis",
+      "status": "Established",
+      "aliases": [],
+      "path": "workplace/data-analysis.md",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/workplace/data-analysis.md",
+      "reviewed_on": "2026-09-29",
+      "badge_status": "current"
+    },
+    {
+      "id": "workplace:sql-crafting",
+      "name": "SQL Crafting Workplace Agent",
+      "category": "ChatGPT Workplace Agent",
+      "provider_context": "Configured ChatGPT Workplace Agent; model and tools resolved live",
+      "badge": "TCS-OAI-WORKPLACE-LUNA-15",
+      "role_title": "SQL Crafting",
+      "status": "Established",
+      "aliases": [],
+      "path": "workplace/sql-crafting.md",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/workplace/sql-crafting.md",
+      "reviewed_on": "2026-09-29",
+      "badge_status": "current"
+    },
+    {
+      "id": "workplace:codex-orchestrating",
+      "name": "Codex Orchestrating Workplace Agent",
+      "category": "ChatGPT Workplace Agent",
+      "provider_context": "Configured ChatGPT Workplace Agent; model and tools resolved live",
+      "badge": "TCS-OAI-WORKPLACE-LUNA-16",
+      "role_title": "Codex Orchestrating",
+      "status": "Established",
+      "aliases": [],
+      "path": "workplace/codex-orchestrating.md",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/workplace/codex-orchestrating.md",
+      "reviewed_on": "2026-09-29",
+      "badge_status": "current"
+    },
+    {
+      "id": "grok-bots:supabase-slapper",
+      "name": "The Supabase Slapper",
+      "category": "Grok Bot — core eight",
+      "provider_context": "Grok Bot; exact native tools/routines resolved live",
+      "badge": "TCS-XAI-GROK-BOT-06",
+      "role_title": null,
+      "status": "Established",
+      "aliases": [
+        "Mr. SS"
+      ],
+      "path": "grok-bots/supabase-slapper.md",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/supabase-slapper.md",
+      "reviewed_on": "2026-09-29",
+      "badge_status": "current"
+    },
+    {
+      "id": "grok-bots:communications-connoisseur",
+      "name": "The Communications Connoisseur",
+      "category": "Grok Bot — core eight",
+      "provider_context": "Grok Bot; exact native tools/routines resolved live",
+      "badge": "TCS-XAI-GROK-BOT-01",
+      "role_title": "Senior HR Director",
+      "status": "Established",
+      "aliases": [
+        "Mr. CC"
+      ],
+      "path": "grok-bots/communications-connoisseur.md",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/communications-connoisseur.md",
+      "reviewed_on": "2026-09-29",
+      "badge_status": "current"
+    },
+    {
+      "id": "grok-bots:linear-issue-handler",
+      "name": "The Linear Issue Handler",
+      "category": "Grok Bot — core eight",
+      "provider_context": "Grok Bot; exact native tools/routines resolved live",
+      "badge": "TCS-XAI-GROK-BOT-02",
+      "role_title": null,
+      "status": "Established",
+      "aliases": [
+        "Mr. LIH"
+      ],
+      "path": "grok-bots/linear-issue-handler.md",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/linear-issue-handler.md",
+      "reviewed_on": "2026-09-29",
+      "badge_status": "current"
+    },
+    {
+      "id": "grok-bots:agent-reformer",
+      "name": "The Agent Reformer",
+      "category": "Grok Bot — core eight",
+      "provider_context": "Grok Bot; exact native tools/routines resolved live",
+      "badge": "TCS-XAI-GROK-BOT-04",
+      "role_title": "Senior Training Director",
+      "status": "Established",
+      "aliases": [
+        "Mr. AR"
+      ],
+      "path": "grok-bots/agent-reformer.md",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/agent-reformer.md",
+      "reviewed_on": "2026-09-29",
+      "badge_status": "current"
+    },
+    {
+      "id": "grok-bots:notion-pages-sifter",
+      "name": "The Notion Pages Sifter",
+      "category": "Grok Bot — core eight",
+      "provider_context": "Grok Bot; exact native tools/routines resolved live",
+      "badge": "TCS-XAI-GROK-BOT-03",
+      "role_title": "Senior QA Director",
+      "status": "Established",
+      "aliases": [
+        "Mr. NPS"
+      ],
+      "path": "grok-bots/notion-pages-sifter.md",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/notion-pages-sifter.md",
+      "reviewed_on": "2026-09-29",
+      "badge_status": "current"
+    },
+    {
+      "id": "grok-bots:google-drive-operator",
+      "name": "Drive boy",
+      "category": "Grok Bot — core eight",
+      "provider_context": "Grok Bot; exact native tools/routines resolved live",
+      "badge": "TCS-XAI-GROK-BOT-05",
+      "role_title": null,
+      "status": "Established",
+      "aliases": [
+        "The Google Drive Operator"
+      ],
+      "path": "grok-bots/google-drive-operator.md",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/google-drive-operator.md",
+      "reviewed_on": "2026-09-29",
+      "badge_status": "current",
+      "display_name": "Drive boy",
+      "sign_off": "Drive boy • Cherub Bot"
+    },
+    {
+      "id": "grok-bots:scope-creep-mangler",
+      "name": "The Scope Creep Mangler",
+      "category": "Grok Bot — core eight",
+      "provider_context": "Grok Bot; exact native tools/routines resolved live",
+      "badge": "TCS-XAI-GROK-BOT-07",
+      "role_title": "Senior QA Manager",
+      "status": "Established",
+      "aliases": [
+        "Mr. SCM"
+      ],
+      "path": "grok-bots/scope-creep-mangler.md",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/scope-creep-mangler.md",
+      "reviewed_on": "2026-09-29",
+      "badge_status": "current"
+    },
+    {
+      "id": "grok-bots:slop-remover",
+      "name": "The Slop Remover",
+      "category": "Grok Bot — core eight",
+      "provider_context": "Grok Bot; exact native tools/routines resolved live",
+      "badge": "TCS-XAI-GROK-BOT-08",
+      "role_title": "Senior Training Manager",
+      "status": "Established",
+      "aliases": [
+        "Mr. SR"
+      ],
+      "path": "grok-bots/slop-remover.md",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/slop-remover.md",
+      "reviewed_on": "2026-09-29",
+      "badge_status": "current"
+    },
+    {
+      "id": "grok-bots:haggle-bot",
+      "name": "Haggle Bot",
+      "category": "Additional recognized Grok Bot; outside core eight",
+      "provider_context": "Grok Bot",
+      "badge": "TCS-XAI-GROK-BOT-09",
+      "role_title": null,
+      "status": "Recognized; detailed behavior owner not recovered",
+      "aliases": [],
+      "path": "grok-bots/haggle-bot.md",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/haggle-bot.md",
+      "reviewed_on": "2026-09-29",
+      "badge_status": "current"
+    },
+    {
+      "id": "specialists:internal-sources",
+      "name": "Internal Sources Specialist",
+      "category": "Grok Agent Library specialist profile",
+      "provider_context": "Grok Agent Library",
+      "badge": null,
+      "role_title": null,
+      "status": "Established",
+      "aliases": [],
+      "path": "specialists/internal-sources.md",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/specialists/internal-sources.md",
+      "reviewed_on": "2026-09-29",
+      "badge_status": "unassigned"
+    },
+    {
+      "id": "specialists:external-sources",
+      "name": "External Sources Specialist",
+      "category": "Grok Agent Library specialist profile",
+      "provider_context": "Grok Agent Library",
+      "badge": null,
+      "role_title": null,
+      "status": "Established",
+      "aliases": [],
+      "path": "specialists/external-sources.md",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/specialists/external-sources.md",
+      "reviewed_on": "2026-09-29",
+      "badge_status": "unassigned"
+    },
+    {
+      "id": "scoped:angel-an",
+      "name": "Angel (An) — Codex lane",
+      "category": "Scoped established identity; outside the eleven-row standing roster",
+      "provider_context": "OpenAI Codex / qualified Cursor coding lane",
+      "badge": null,
+      "role_title": null,
+      "status": "Established",
+      "aliases": [
+        "An"
+      ],
+      "path": "scoped/angel-an.md",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/scoped/angel-an.md",
+      "reviewed_on": "2026-09-29",
+      "badge_status": "unassigned"
+    },
+    {
+      "id": "scoped:benjamin-hart",
+      "name": "Benjamin Hart (Ben)",
+      "category": "Project-scoped character performance",
+      "provider_context": "Assigned on-air / narrator context",
+      "badge": null,
+      "role_title": null,
+      "status": "Established",
+      "aliases": [
+        "Ben"
+      ],
+      "path": "scoped/benjamin-hart.md",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/scoped/benjamin-hart.md",
+      "reviewed_on": "2026-09-29",
+      "badge_status": "unassigned"
+    },
+    {
+      "id": "newsroom:population-data-intake",
+      "name": "Population Data Intake",
+      "category": "Project-scoped off-air newsroom seat",
+      "provider_context": "Assigned Bloomville Cities: Skylines II branch",
+      "badge": null,
+      "role_title": "Population Data Intake",
+      "status": "Established",
+      "aliases": [],
+      "path": "newsroom/population-data-intake.md",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/newsroom/population-data-intake.md",
+      "reviewed_on": "2026-09-29",
+      "badge_status": "unassigned"
+    },
+    {
+      "id": "newsroom:population-projection",
+      "name": "Population Projection",
+      "category": "Project-scoped off-air newsroom seat",
+      "provider_context": "Assigned Bloomville Cities: Skylines II branch",
+      "badge": null,
+      "role_title": "Population Projection",
+      "status": "Established",
+      "aliases": [],
+      "path": "newsroom/population-projection.md",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/newsroom/population-projection.md",
+      "reviewed_on": "2026-09-29",
+      "badge_status": "unassigned"
+    },
+    {
+      "id": "newsroom:money-data-intake",
+      "name": "Money Data Intake",
+      "category": "Project-scoped off-air newsroom seat",
+      "provider_context": "Assigned Bloomville Cities: Skylines II branch",
+      "badge": null,
+      "role_title": "Money Data Intake",
+      "status": "Established",
+      "aliases": [],
+      "path": "newsroom/money-data-intake.md",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/newsroom/money-data-intake.md",
+      "reviewed_on": "2026-09-29",
+      "badge_status": "unassigned"
+    },
+    {
+      "id": "newsroom:money-projection",
+      "name": "Money Projection",
+      "category": "Project-scoped off-air newsroom seat",
+      "provider_context": "Assigned Bloomville Cities: Skylines II branch",
+      "badge": null,
+      "role_title": "Money Projection",
+      "status": "Established",
+      "aliases": [],
+      "path": "newsroom/money-projection.md",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/newsroom/money-projection.md",
+      "reviewed_on": "2026-09-29",
+      "badge_status": "unassigned"
+    },
+    {
+      "id": "newsroom:happiness-data-intake",
+      "name": "Happiness Data Intake",
+      "category": "Project-scoped off-air newsroom seat",
+      "provider_context": "Assigned Bloomville Cities: Skylines II branch",
+      "badge": null,
+      "role_title": "Happiness Data Intake",
+      "status": "Established",
+      "aliases": [],
+      "path": "newsroom/happiness-data-intake.md",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/newsroom/happiness-data-intake.md",
+      "reviewed_on": "2026-09-29",
+      "badge_status": "unassigned"
+    },
+    {
+      "id": "newsroom:happiness-projection",
+      "name": "Happiness Projection",
+      "category": "Project-scoped off-air newsroom seat",
+      "provider_context": "Assigned Bloomville Cities: Skylines II branch",
+      "badge": null,
+      "role_title": "Happiness Projection",
+      "status": "Established",
+      "aliases": [],
+      "path": "newsroom/happiness-projection.md",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/newsroom/happiness-projection.md",
+      "reviewed_on": "2026-09-29",
+      "badge_status": "unassigned"
+    },
+    {
+      "id": "scoped:kite",
+      "name": "KITE",
+      "category": "Work pet / contextual recognition entry",
+      "provider_context": "ChatGPT-hosted Work pet agent context",
+      "badge": null,
+      "role_title": null,
+      "status": "Established",
+      "aliases": [],
+      "path": "scoped/kite.md",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/scoped/kite.md",
+      "reviewed_on": "2026-09-29",
+      "badge_status": "unassigned"
+    },
+    {
+      "id": "generic",
+      "name": "Unassigned TCS agent",
+      "category": "Generic onboarding template",
+      "provider_context": "Any provider, model, chatbot, or authorized local/cloud harness",
+      "badge": null,
+      "role_title": null,
+      "status": "Template; no personality assigned",
+      "aliases": [],
+      "path": "generic.md",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/generic.md",
+      "reviewed_on": "2026-09-29",
+      "badge_status": "unassigned"
+    },
+    {
+      "id": "scoped:delegated-worker",
+      "name": "Bounded delegated worker",
+      "category": "Generic task-scoped subagent template",
+      "provider_context": "Actual assigned harness/provider",
+      "badge": null,
+      "role_title": null,
+      "status": "Template; task assignment required",
+      "aliases": [],
+      "path": "scoped/delegated-worker.md",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/scoped/delegated-worker.md",
+      "reviewed_on": "2026-09-29",
+      "badge_status": "unassigned"
+    }
+  ],
+  "document_count": 60,
+  "documents": [
+    {
+      "path": "AGENTS.md",
+      "title": "Public agent-directory maintenance instructions",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/AGENTS.md"
+    },
+    {
+      "path": "README.md",
+      "title": "TCS public agent directory",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/README.md"
+    },
+    {
+      "path": "access-and-providers.md",
+      "title": "Access, providers, and portable instructions",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/access-and-providers.md"
+    },
+    {
+      "path": "immersion.md",
+      "title": "Immersion and personality calibration",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/immersion.md"
+    },
+    {
+      "path": "maintenance.md",
+      "title": "Maintaining the public directory",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/maintenance.md"
+    },
+    {
+      "path": "manifest.json",
+      "title": "Machine-readable catalog",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/manifest.json"
+    },
+    {
+      "path": "model-roster.md",
+      "title": "Scoped model roster",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/model-roster.md"
+    },
+    {
+      "path": "naming-and-phasing.md",
+      "title": "Naming, identity reconciliation, and phasing",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/naming-and-phasing.md"
+    },
+    {
+      "path": "routing.md",
+      "title": "Routing, rerouting, and evidence",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/routing.md"
+    },
+    {
+      "path": "sources.md",
+      "title": "Sources, freshness, and coverage",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/sources.md"
+    },
+    {
+      "path": "tcs-rlsim.md",
+      "title": "TCS and RLSim orientation",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/tcs-rlsim.md"
+    }
+  ],
+  "updated_on": "2026-10-18",
+  "skills_index": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/README.md"
+}

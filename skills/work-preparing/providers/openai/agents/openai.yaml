@@ -1,0 +1,10 @@
+# Adapter of Drive CORE — work-preparing (version 2026-10-04). Read-only mirror.
+interface:
+  display_name: "Work Preparing"
+  short_description: "Prepare meaningful work before execution by grounding outcomes, constraints, dependencies, and handoff."
+policy:
+  products:
+  - chatgpt
+  - codex
+  - atlas
+  allow_implicit_invocation: true

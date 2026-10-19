@@ -1,0 +1,10 @@
+# Adapter of Drive CORE — proposal-drafting (version 2026-10-04). Read-only mirror.
+interface:
+  display_name: "Proposal Drafting"
+  short_description: "Turn developing ideas into grounded, decision-ready proposals without manufacturing settled state."
+policy:
+  products:
+  - chatgpt
+  - codex
+  - atlas
+  allow_implicit_invocation: true

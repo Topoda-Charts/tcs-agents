@@ -1,0 +1,10 @@
+# Adapter of Drive CORE — conversation-continuity-packaging (version 2026-10-13). Read-only mirror.
+interface:
+  display_name: "Conversation Continuity Packaging"
+  short_description: "Package conversation context into concise continuity artifacts for later retrieval and continuation."
+policy:
+  products:
+  - chatgpt
+  - codex
+  - atlas
+  allow_implicit_invocation: true

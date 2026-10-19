@@ -1,0 +1,10 @@
+# Adapter of Drive CORE — connective-tissue-safe-handling (version 2026-10-04). Read-only mirror.
+interface:
+  display_name: "Connective Tissue Safe Handling"
+  short_description: "Preserve provenance, authority, status, and source ownership across mixed context."
+policy:
+  products:
+  - chatgpt
+  - codex
+  - atlas
+  allow_implicit_invocation: true

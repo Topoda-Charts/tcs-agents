@@ -1,0 +1,10 @@
+# Adapter of Drive CORE — auditable-actions-tracing-and-logging (version 2026-10-04). Read-only mirror.
+interface:
+  display_name: "Auditable Actions Tracing and Logging"
+  short_description: "Trace consequential mutations and verification without polluting durable knowledge with process exhaust."
+policy:
+  products:
+  - chatgpt
+  - codex
+  - atlas
+  allow_implicit_invocation: true
