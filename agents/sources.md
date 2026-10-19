@@ -1,6 +1,6 @@
 # Sources, freshness, and coverage
 
-Applicability: readers assessing this public synthesis and maintainers reconciling it. Reviewed 2026-09-29.
+Applicability: readers assessing this public synthesis and maintainers reconciling it. Initial review 2026-09-29; targeted identity reconciliation 2026-10-19.
 
 ## Internal evidence used
 
@@ -8,10 +8,10 @@ Internal source links and identifiers are deliberately kept in the authorized wo
 
 | Source family | What it establishes |
 | --- | --- |
-| Current User conversation | Public publication approval; User-facing naming; Archie context/model convention; voice-only Castor; model scope |
-| Internal standing-persona roster (private) | Eleven standing identities, assigned badges, contexts, nicknames, source owners |
+| Current User decisions through 2026-10-19 and authorized maintained identity/role sources | Public publication approval; User-facing naming; Archie context/model convention; voice-only Castor; model scope; targeted corrections to Cherub/Rogue, Power Codex, Angel Chat, Virtue, and Grok Build |
+| Internal standing-persona roster (private) | Ten active standing identities plus Rogue’s historical/merged reference; assigned badges, contexts, nicknames, source owners |
 | Internal standing-persona operating guide (private) | Category boundaries, identity separation, relationships, shared behavior |
-| Internal per-persona behavior pages (private) | Archie, Gel, Bim, Raph, Demon, Rogue, One, Prince, Dom, Fer, and Tue's scoped work/voice |
+| Internal per-persona behavior pages (private) | Archie, Gel, Cherub (current nickname Rub; older Bim attribution retained), Raph, Demon, One, Prince, Dom, Fer, and Tue's scoped work/voice; Rogue is historical/merged |
 | Internal workplace-agent roster (private) | The sixteen workplace agents and exact current names |
 | Internal workplace-agent builder notes (private) | Multipurpose specialists, actual configuration verification, source split |
 | Internal Grok Bot roster (private) | Core eight and Haggle Bot outside that set |
@@ -30,13 +30,13 @@ Internal source links and identifiers are deliberately kept in the authorized wo
 | Internal RLSim game definition (private) | Public product orientation, layer boundaries, design direction and experience principles |
 | Existing Tópoda Charts repository | This repository's public website scope, existing validation, and publication destination |
 
-The source pass used Notion, Drive, Library, available personal context, Gmail, Slack routing, Linear, GitHub, and official external documentation. This does not claim every historical conversation was recovered or every native provider configuration was inspected.
+A targeted source reconciliation on 2026-10-19 checked current Notion identity/role governance and the maintained Drive identity records for changed entries. It updated those specific claims; it did not re-review every unchanged profile, recover every historical conversation, or inspect native provider configurations.
 
 ## Reconciliation decisions
 
 The current User assignment controls the **Archangel [context] [model short name] Altman Ramos** convention. Older `Sol Chat` display ordering and provider-as-surname examples do not override it. Other personas' missing lineage components are not extrapolated.
 
-Cherub is Bim in current-facing material. Castor is voice-mode only. The latest five Bot position titles supersede older Senior Manager/training-specialist labels. Grok Bot badges use the TCS-XAI-GROK-BOT form from the current identity owners. Haggle Bot remains recognized outside the original eight.
+Cherub’s current-facing nickname is Rub; Bim is historical attribution. Castor is voice-mode only. Rogue is an inactive historical X-native persona/state merged into Cherub after X/Grok synchronization, not a separate current identity. The named Grok Build persona Cherub Grok Build Musk Ramos is the Engineer on the code desk; its badge is pending. Power Codex 02 (formerly Angel/An) is distinct from Angel Chat; its proposed badge TCS-OAI-CODE-AST-02 is not approved. Angel Chat is Senior QA Subagent. Virtue holds Secretary and Vice President of Operations titles; Cursor/Composer is not the default RLSim implementation lane. The latest five Bot position titles supersede older Senior Manager/training-specialist labels. Grok Bot badges use the TCS-XAI-GROK-BOT form from the current identity owners. Haggle Bot remains recognized outside the original eight.
 
 The recovered temporary company executive assignments and Cursor-specific coordination records have different scopes. The directory states that difference without assigning unproved universal rank. Archangel Chat's restrictions remain scoped to Chat.
 
@@ -63,7 +63,7 @@ Technical details are summarized in [Access and providers](https://raw.githubuse
 
 ## Completeness and limits
 
-There are 49 recognition/onboarding entries, with counts and URLs in the [manifest](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/manifest.json). The 11 standing personas are not conflated with 16 configured workers, eight core Bots, one additional recognized Bot, two specialist profiles, scoped identities, newsroom seats, a pet context, or generic templates.
+There are 49 recognition/onboarding entries, with counts and URLs in the [manifest](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/manifest.json): 10 active standing personas and one historical/merged Rogue reference, separate from 16 configured workers, eight core Bots, one additional recognized Bot, two specialist profiles, scoped identities, newsroom seats, a pet context, and generic templates.
 
 The generic profile covers any new model/provider without requiring a new fictional identity first. Temporary associates use a bounded-worker template and retain their real task provenance. Reserved celestial names remain unassigned until User assigns them.
 
