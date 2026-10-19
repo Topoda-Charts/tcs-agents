@@ -6,16 +6,17 @@
   "scope": "Public recognition and onboarding; source-owned authority remains in maintained systems",
   "profile_count": 49,
   "counts": {
-    "standing_personas": 11,
+    "standing_personas": 10,
     "workplace_agents": 16,
     "core_grok_bots": 8,
     "additional_recognized_grok_bots": 1,
     "grok_library_specialists": 2,
-    "scoped_angel_an": 1,
     "on_air_character": 1,
     "off_air_newsroom_seats": 6,
     "work_pet_context": 1,
-    "generic_templates": 2
+    "generic_templates": 2,
+    "scoped_power_codex_02": 1,
+    "historical_merged_persona_references": 1
   },
   "profiles": [
     {
@@ -41,30 +42,30 @@
       "category": "Standing persona",
       "provider_context": "ChatGPT (separate seat context)",
       "badge": "TCS-OAI-CHAT-SOL-02",
-      "role_title": null,
+      "role_title": "Senior QA Subagent (Angel Chat)",
       "status": "Established",
       "aliases": [
         "Gel"
       ],
       "path": "standing/angel.md",
       "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/angel.md",
-      "reviewed_on": "2026-09-29",
+      "reviewed_on": "2026-10-19",
       "badge_status": "current"
     },
     {
       "id": "standing:cherub",
-      "name": "Cherub (Bim) Grok",
+      "name": "Cherub (Rub) Grok",
       "category": "Standing persona",
-      "provider_context": "Grok default/main context, including applicable Ask/Build work",
+      "provider_context": "Grok default/Ask context; named Build persona is separately scoped",
       "badge": "TCS-XAI-GROK-ASK-01",
       "role_title": null,
       "status": "Established",
       "aliases": [
-        "Bim"
+        "Rub"
       ],
       "path": "standing/cherub.md",
       "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/cherub.md",
-      "reviewed_on": "2026-09-29",
+      "reviewed_on": "2026-10-19",
       "badge_status": "current"
     },
     {
@@ -81,7 +82,7 @@
       ],
       "path": "standing/seraph.md",
       "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/seraph.md",
-      "reviewed_on": "2026-09-29",
+      "reviewed_on": "2026-10-19",
       "badge_status": "proposed"
     },
     {
@@ -100,17 +101,17 @@
     },
     {
       "id": "standing:rogue",
-      "name": "Rogue Grok",
-      "category": "Standing persona",
-      "provider_context": "X-native Grok context",
+      "name": "Rogue Grok (historical/merged reference)",
+      "category": "Historical/merged identity reference",
+      "provider_context": "Former X-native Grok context; now consolidated into Cherub’s current context",
       "badge": null,
       "role_title": null,
-      "status": "Established",
+      "status": "Historical; inactive/merged",
       "aliases": [],
       "path": "standing/rogue.md",
       "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/rogue.md",
-      "reviewed_on": "2026-09-29",
-      "badge_status": "unassigned"
+      "reviewed_on": "2026-10-19",
+      "badge_status": "historical; unassigned"
     },
     {
       "id": "standing:throne",
@@ -183,14 +184,14 @@
       "category": "Standing persona",
       "provider_context": "Cursor / Composer, local implementation context",
       "badge": "TCS-CURSOR-COMPOSER-MULTI-03",
-      "role_title": null,
+      "role_title": "Secretary and Vice President of Operations",
       "status": "Established",
       "aliases": [
         "Tue"
       ],
       "path": "standing/virtue.md",
       "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/virtue.md",
-      "reviewed_on": "2026-09-29",
+      "reviewed_on": "2026-10-19",
       "badge_status": "current"
     },
     {
@@ -591,19 +592,19 @@
     },
     {
       "id": "scoped:angel-an",
-      "name": "Angel (An) — Codex lane",
-      "category": "Scoped established identity; outside the eleven-row standing roster",
-      "provider_context": "OpenAI Codex / qualified Cursor coding lane",
-      "badge": null,
-      "role_title": null,
+      "name": "Power Codex — manifestation 02",
+      "category": "Scoped local Codex identity; outside the ten-row active standing roster",
+      "provider_context": "OpenAI Codex; local execution and verification context",
+      "badge": "TCS-OAI-CODE-AST-02",
+      "role_title": "Senior Engineer function; local execution and verification",
       "status": "Established",
       "aliases": [
-        "An"
+        "An (historical)"
       ],
       "path": "scoped/angel-an.md",
       "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/scoped/angel-an.md",
-      "reviewed_on": "2026-09-29",
-      "badge_status": "unassigned"
+      "reviewed_on": "2026-10-19",
+      "badge_status": "proposed; not approved"
     },
     {
       "id": "scoped:benjamin-hart",
@@ -806,6 +807,6 @@
       "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/tcs-rlsim.md"
     }
   ],
-  "updated_on": "2026-10-18",
+  "updated_on": "2026-10-19",
   "skills_index": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/README.md"
 }

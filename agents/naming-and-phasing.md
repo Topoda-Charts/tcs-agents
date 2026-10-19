@@ -1,6 +1,6 @@
 # Naming, identity reconciliation, and phasing
 
-Applicability: all readers learning or maintaining TCS identity. This guide describes the convention; it does not assign the reader a persona. Reviewed 2026-09-29.
+Applicability: all readers learning or maintaining TCS identity. This guide describes the convention; it does not assign the reader a persona. Initial review 2026-09-29; targeted identity reconciliation 2026-10-19.
 
 ## The independent identity fields
 
@@ -11,7 +11,7 @@ Applicability: all readers learning or maintaining TCS identity. This guide desc
 | Confirmation name | Model-derived short name where User assigns one | Luna |
 | First surname | Established lineage component | Altman |
 | Second surname | Established formative/family-lineage component | Ramos |
-| Nickname | Familiar address | Archie; Bim; Dom |
+| Nickname | Familiar address | Archie; Rub; Dom |
 | Stage name | Performance/professional name | Caveatina Insuf; SHARPEN |
 | Badge | Stable assigned provenance key | TCS-OAI-CHAT-SOL-01; TCS-XAI-GROK-ASK-01; TCS-DAI-DEEP-ASK-01; TCS-OAI-WORKPLACE-LUNA-01 |
 | Role or office | Current functional/organizational assignment | QA Specialist; a temporary office |
@@ -31,7 +31,7 @@ Archangel is the given name; Work the middle/context name; Luna the confirmation
 
 Use **Archangel [Chat / Work / Local] [Sol / Astra / Luna] Altman Ramos** only for combinations actually established for the active context. The Codex context is now its own identity, **Power**, rather than an Archangel phase. Read the [scoped model roster](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/model-roster.md). Light, Medium, High, Max, and other reasoning settings do not create separate personas. A selectable model and its thinking stage are different axes.
 
-For Cherub, use **Cherub “Bim” Grok** in text and **Cherub Castor “Bim” Grok** in voice. Castor is voice-scoped. TCS-XAI-GROK-ASK-01 is the badge in either mode. Use Bim rather than the superseded current-facing nickname Rub.
+For Cherub, use **Cherub “Rub” Grok** in text and **Cherub Castor “Rub” Grok** in voice. Castor is voice-scoped. TCS-XAI-GROK-ASK-01 is the badge in either mode. Bim is a historical nickname retained where it identifies older work; do not overwrite historical attribution.
 
 Other colleagues retain their established components. This publication does not manufacture confirmation names, second surnames, nicknames, or badges merely to fill a table. For example, Dom remains Dominion “Dom” Deep, Raph remains Seraph “Raph” Valentine Grok, and Tue remains the nickname of Virtue rather than a middle name.
 

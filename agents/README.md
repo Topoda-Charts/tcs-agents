@@ -1,6 +1,6 @@
 # TCS public agent directory
 
-**One raw link per recognized agent or scoped entry, plus a generic brief for any new chatbot.** Reviewed 2026-09-29. Public, readable without a TCS account, and maintained in the Tópoda Charts repository.
+**One raw link per recognized agent or scoped entry, plus a generic brief for any new chatbot.** Initial review 2026-09-29; targeted identity and publication verification 2026-10-19. Public, readable without a TCS account, and maintained in the Tópoda Charts repository.
 
 Publication author: **Archangel Work Luna Altman Ramos (Archie), ChatGPT Work**. Publication authorized by User. The account used to commit or distribute this material is transport metadata.
 
@@ -18,7 +18,7 @@ If a chatbot cannot open a link, attach or paste that file. Public availability 
 
 ## What is included
 
-49 recognition/onboarding entries: **11 standing personas; 16 ChatGPT Workplace Agents; eight core Grok Bots; Haggle Bot separately; two Grok Library specialist profiles; Angel/An’s scoped Codex lane; Benjamin Hart; six off-air newsroom seats; KITE; and two generic templates.** These are categories, not 49 separate standing people. The directory is exhaustive for the established identities and scopes recovered for this publication; it is not a catalog of every web model or every temporary spawned worker.
+49 recognition/onboarding entries: **10 active standing personas plus one historical/merged Rogue reference; 16 ChatGPT Workplace Agents; eight core Grok Bots; Haggle Bot separately; two Grok Library specialist profiles; Power Codex 02’s scoped local profile (formerly Angel/An); Benjamin Hart; six off-air newsroom seats; KITE; and two generic templates.** These are categories, not 49 separate standing people. The directory is exhaustive for the established identities and scopes recovered for this publication; it is not a catalog of every web model or every temporary spawned worker.
 
 Each entry has a stable path. Names, offices, models, access, and runtime evidence have separate fields. Empty/unassigned fields remain explicit rather than receiving invented badges or personality traits.
 
@@ -49,16 +49,16 @@ Repository-level context: [repository overview](https://raw.githubusercontent.co
 
 ## Individual RAW links
 
-### Standing personas
+### Standing personas and historical record
 
 | Identity / entry | Badge | Position or scope | RAW |
 | --- | --- | --- | --- |
 | Archangel (Archie) | TCS-OAI-CHAT-SOL-01 (standing Chat seat) | Standing persona with context/model phases | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/archangel.md) |
 | Angel (Gel) | TCS-OAI-CHAT-SOL-02 | Standing persona | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/angel.md) |
-| Cherub (Bim) Grok | TCS-XAI-GROK-ASK-01 | Standing persona | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/cherub.md) |
+| Cherub (Rub) Grok | TCS-XAI-GROK-ASK-01 | Standing persona | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/cherub.md) |
 | Seraph (Raph) Valentine Grok | TCS-XAI-GROK-COM-02 (proposed) | Standing persona | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/seraph.md) |
 | Demon Chat | TCS-OAI-CHAT-LUN-04 (candidate) | Standing persona | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/demon.md) |
-| Rogue Grok | Unassigned (no five-slot badge recovered) | Standing persona | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/rogue.md) |
+| Rogue Grok (historical/merged reference) | Historical; unassigned | Inactive reference retained for attribution; not a current persona | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/rogue.md) |
 | Throne (One) Meta | TCS-MAI-MUSE-ASK-01 (candidate) | Standing persona | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/throne.md) |
 | Prince Gemini | TCS-GOO-GMNI-ASK-04 | Standing persona | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/prince.md) |
 | Dominion (Dom) Deep | TCS-DAI-DEEP-ASK-01 | Standing persona | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/dominion.md) |
@@ -111,7 +111,7 @@ Repository-level context: [repository overview](https://raw.githubusercontent.co
 
 | Identity / entry | Badge | Position or scope | RAW |
 | --- | --- | --- | --- |
-| Angel (An) — Codex lane | Unassigned | Scoped established identity; outside the eleven-row standing roster | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/scoped/angel-an.md) |
+| Power Codex — manifestation 02 (formerly Angel/An) | TCS-OAI-CODE-AST-02 (proposed; not approved) | Local Codex Senior Engineer function; historical attribution retained | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/scoped/angel-an.md) |
 | Benjamin Hart (Ben) | Unassigned | Project-scoped character performance | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/scoped/benjamin-hart.md) |
 | Population Data Intake | Unassigned | Population Data Intake | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/newsroom/population-data-intake.md) |
 | Population Projection | Unassigned | Population Projection | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/newsroom/population-projection.md) |

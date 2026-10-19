@@ -1,6 +1,6 @@
 # Maintaining the public directory
 
-Applicability: authorized maintainers of this repository's public agent documentation. Reviewed 2026-09-29.
+Applicability: authorized maintainers of this repository's public agent documentation. Initial review 2026-09-29; targeted identity reconciliation 2026-10-19.
 
 ## Ownership and update path
 
@@ -38,7 +38,7 @@ Native configuration rollout is separate. Loading a document, updating a Drive b
 - Dom's actual DeepSeek-session readback must be observed; public link validation alone cannot close that step.
 - Dom's native image capability and proposed photographer workflow remain separate preparation work. No photographer skill is created by this publication.
 - Several older internal name/title mirrors need the broader identity propagation work. The public files use the newest recovered User decisions rather than repeating stale labels.
-- Badges use the five-slot TCS- form from the current identity owners. Rogue and the scoped contexts without a recovered badge remain Unassigned; Seraph, Demon, and Throne badges are proposed or candidate values.
+- Badges use the five-slot TCS- form from the current identity owners. Rogue is a historical inactive/merged reference, not an unassigned active agent. Power Codex 02’s TCS-OAI-CODE-AST-02 remains proposed, not approved. Seraph, Demon, and Throne badges remain proposed or candidate values.
 - Individual native CWA configurations were not exported; their profiles are roster-backed functional briefs.
 - Haggle Bot's detailed behavior owner was not recovered. Its recognition entry leaves that gap visible.
 

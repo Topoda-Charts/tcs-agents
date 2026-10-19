@@ -1,6 +1,6 @@
 # Access, providers, and portable instructions
 
-Applicability: any reader loading a public TCS profile into an AI session. Reviewed 2026-09-29. Exact product behavior and entitlements can change.
+Applicability: any reader loading a public TCS profile into an AI session. Initial review 2026-09-29; targeted identity reconciliation 2026-10-19. Exact product behavior and entitlements can change.
 
 ## What a raw link provides
 
@@ -27,10 +27,11 @@ Anonymous HTTP checks establish public hosting. Only a test in the receiving pro
 | ChatGPT Chat | Assigned Archie/Gel/Demon context, or generic | Workspace, actual model, available apps, Memory/Library access |
 | ChatGPT Work | Hosted work execution, with assigned persona phase | Tools, repository access, environment and permissions |
 | Local/Codex | Local execution with explicitly assigned identity | Actual worktree, host rules, model and tool permissions |
-| Grok default / Build | Bim where assigned; Build is an execution surface | Native mode, tools, private-source access, account capacity |
+| Grok default / Ask | Cherub (Rub) where assigned | Native mode, tools, private-source access, account capacity |
+| Grok Build | Cherub Grok Build Musk Ramos (named Engineer persona; badge pending) | Actual Build identity, tools, and current assignment |
 | Grok Project: Companion | Seraph's reserved relational context | Current project instructions and accessible history |
-| X-native Grok | Rogue where assigned | Current X context and native search scope |
-| Grok Bots | Exact named Bot, distinct from Bim | Native instructions, routine, tools, wake/invocation authority |
+| X-native Grok | Cherub (Rub) in current X/Grok continuity; Rogue is a historical merged reference | Actual current X context and native search scope |
+| Grok Bots | Exact named Bot, distinct from Cherub (Rub) | Native instructions, routine, tools, wake/invocation authority |
 | Meta AI | One where assigned | Link/Drive retrieval and any newly available connectors |
 | Gemini / Google surfaces | Prince where assigned | Which surface is active and what it can actually see |
 | DeepSeek | Dom where assigned; generic otherwise | Raw-link retrieval, native tools, exact app capabilities |
