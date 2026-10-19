@@ -1,0 +1,1102 @@
+[
+  {
+    "slug": "paying-attention",
+    "name": "paying-attention",
+    "description": "Improve semantic attentiveness to the user's current wording before interpreting or acting. Use when the user gives a corrective cue such as \"focus\", \"pay attention\", \"listen to me\", \"read this carefully\", \"process this verbatim first\", \"you're missing what I'm saying\", or similar language indicating that prior responses skimmed, compressed, broadened, narrowed, or otherwise misparsed the input. Preserve qualifiers, contrasts, scope, sequencing, referents, and user-defined terms before abstraction. Compose with context-recovery or provenance skills when the request also depends on prior state or source authority.",
+    "version": "2026-10-04",
+    "core_date": "2026-10-04T20:21-04:00",
+    "status": "active",
+    "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/paying-attention/SKILL.md",
+    "sha256": "a93eab3d0d673a7948ddb8545f8125fc23c612471229ab381d0a26c56567f944",
+    "providers": {
+      "xai": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/paying-attention/providers/xai/SKILL.md",
+        "sha256": "54d995877f6c257cce45ae7c623a1c55e8b25d4bfa3389b125e69120a6f75398",
+        "adapter_date": "2026-10-16",
+        "stale": false,
+        "origin": "box copy"
+      },
+      "anthropic": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/paying-attention/providers/anthropic/skill.md",
+        "sha256": "668575f85d9287b6961ca1c45a5803637dcd84c01ea8b47d5f26d690aac903bd",
+        "adapter_date": "2026-10-04T20:22-04:00",
+        "stale": false,
+        "origin": "Drive"
+      },
+      "google": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/paying-attention/providers/google/gem-definition.md",
+        "sha256": "fa2f1608ac4df70180e3806c32d015c799beab3582559dedaa9e2ad026beada5",
+        "adapter_date": "2026-10-04T20:22-04:00",
+        "stale": false,
+        "origin": "Drive"
+      },
+      "openai": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/paying-attention/providers/openai/SKILL.md",
+        "sha256": "72da5c3be12f738b34f61e58e1d332ba6cffac5ba4eda98b7cafaae06fe24b45",
+        "adapter_date": "2026-10-04T20:21-04:00",
+        "stale": false,
+        "origin": "Drive",
+        "metadata": {
+          "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/paying-attention/providers/openai/agents/openai.yaml",
+          "sha256": "3217e7ec4b9c69ab776a0f6d39dadb6d8b5c1dc74149d4ba6051b6673bfc7485",
+          "adapter_date": "2026-10-04T20:21-04:00",
+          "stale": false
+        }
+      }
+    },
+    "updated": "2026-10-18"
+  },
+  {
+    "slug": "context-first-problem-solving",
+    "name": "context-first-problem-solving",
+    "description": "Use a context-first method to understand an emerging or context-dependent request before solving it. Apply when a task may depend on prior conversation, files, connected sources, ambiguous shorthand, evolving user context, uploaded artifacts, or a premise whose misinterpretation would create downstream work. Let a thread form when needed, recover relevant context, delegate specialized subproblems to narrower capabilities, ask only decision-changing clarification questions, then execute and verify once the working model is sound. Keep simple self-contained requests simple.",
+    "version": "2026-10-04",
+    "core_date": "2026-10-04T20:40-04:00",
+    "status": "active",
+    "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/context-first-problem-solving/SKILL.md",
+    "sha256": "2920b92a6b266d8f5dbdac5023d815479a0b41e61d1cddd2b5e4e828b00ae144",
+    "providers": {
+      "xai": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/context-first-problem-solving/providers/xai/SKILL.md",
+        "sha256": "f7f42d5cfd48ffcceb85e37ee860d6ce8f353850ce2406c36fa7ff2bf10d1d3b",
+        "adapter_date": "2026-10-16",
+        "stale": false,
+        "origin": "box copy"
+      },
+      "anthropic": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/context-first-problem-solving/providers/anthropic/skill.md",
+        "sha256": "cd32c9d56f316ae96588b7ec082019fb805d119af4c91b6c396099efaba4f25a",
+        "adapter_date": "2026-10-04T20:41-04:00",
+        "stale": false,
+        "origin": "Drive"
+      },
+      "google": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/context-first-problem-solving/providers/google/gem-definition.md",
+        "sha256": "7f2bf7c10720dfda9d12c8bbbfc87ebf35e9c8fbd122165438e4bc0605436a64",
+        "adapter_date": "2026-10-04T20:41-04:00",
+        "stale": false,
+        "origin": "Drive"
+      },
+      "openai": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/context-first-problem-solving/providers/openai/SKILL.md",
+        "sha256": "cd32c9d56f316ae96588b7ec082019fb805d119af4c91b6c396099efaba4f25a",
+        "adapter_date": "2026-10-04T20:41-04:00",
+        "stale": false,
+        "origin": "Drive",
+        "metadata": {
+          "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/context-first-problem-solving/providers/openai/agents/openai.yaml",
+          "sha256": "cb91ac4b2193b6eb7f7dde6f5dc4363ba9ecaa7cdc8c51df6e497343333582a5",
+          "adapter_date": "2026-10-04T20:46-04:00",
+          "stale": false
+        }
+      }
+    },
+    "updated": "2026-10-18"
+  },
+  {
+    "slug": "extrapolating-logically",
+    "name": "extrapolating-logically",
+    "description": "Derive the nearest useful implication from a user's established intent, rule, example, correction, pattern, or design constraint without stretching it into remote hypotheticals. Use when a task benefits from common-sense generalization, adjacent recommendations, pattern extrapolation, applying an underlying functional principle to neighboring cases, or when a mechanically literal interpretation would produce useless or inconsistent output. Also use when the user asks to infer what follows, use common sense, extrapolate, generalize a rule, suggest logical next steps, or says the assistant is being too literal, failing to infer obvious implications, or inventing far-fetched caveats. Preserve authority boundaries and keep genuinely new consequential conclusions provisional.",
+    "version": "2026-10-04",
+    "core_date": "2026-10-04T20:29-04:00",
+    "status": "active",
+    "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/extrapolating-logically/SKILL.md",
+    "sha256": "04c3b856e2d71328ca9e37e5be186aabe26e7c35fdfb1d0b6c0f9a2f4e14fd14",
+    "providers": {
+      "xai": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/extrapolating-logically/providers/xai/SKILL.md",
+        "sha256": "7868bf58dfa4a8484c85dacdf1f9034bdd878bdca88fb89bb7d806bd68931174",
+        "adapter_date": "2026-10-06",
+        "stale": false,
+        "origin": "box copy"
+      },
+      "anthropic": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/extrapolating-logically/providers/anthropic/skill.md",
+        "sha256": "03dc5b2325b49f05c9838cb1f47543108176538921504f38ac222326d0346bd9",
+        "adapter_date": "2026-10-04T20:29-04:00",
+        "stale": false,
+        "origin": "Drive"
+      },
+      "google": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/extrapolating-logically/providers/google/gem-definition.md",
+        "sha256": "7b96ad40fce4c45f460c71ce59e14231e1fe04c5338a91b99da991e2b32b5b03",
+        "adapter_date": "2026-10-04T20:29-04:00",
+        "stale": false,
+        "origin": "Drive"
+      },
+      "openai": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/extrapolating-logically/providers/openai/SKILL.md",
+        "sha256": "03dc5b2325b49f05c9838cb1f47543108176538921504f38ac222326d0346bd9",
+        "adapter_date": "2026-10-04T20:29-04:00",
+        "stale": false,
+        "origin": "Drive",
+        "metadata": {
+          "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/extrapolating-logically/providers/openai/agents/openai.yaml",
+          "sha256": "9505893391e0f7f4278c70589934259e8d4e627169eb0ad41c1e57f101f6363d",
+          "adapter_date": "2026-10-04T20:44-04:00",
+          "stale": false
+        }
+      }
+    },
+    "updated": "2026-10-18"
+  },
+  {
+    "slug": "neighboring-concept-disambiguating",
+    "name": "neighboring-concept-disambiguating",
+    "description": "Distinguish closely related concepts and find the cleanest term for what the user actually means. Use when the user asks what to call something, searches for a word or label, says two or more terms feel close but not exact, describes a fuzzy concept without a name, or needs neighboring terms separated by function. Also use when naming a workflow, role, phase, artifact, relationship, or other concept where ordinary synonyms would blur an important distinction.",
+    "version": "2026-10-04",
+    "core_date": "2026-10-04T20:30-04:00",
+    "status": "active",
+    "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/neighboring-concept-disambiguating/SKILL.md",
+    "sha256": "1bc545b2d87fd151d6b96fc8b92b2ae46aed0a05edb2741f741cb4adb7394a59",
+    "providers": {
+      "xai": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/neighboring-concept-disambiguating/providers/xai/SKILL.md",
+        "sha256": "9451c4f7e8761ff70d09bdcb8e9be742f4e97798e493ac002a976b1c7e90e459",
+        "adapter_date": "2026-10-06",
+        "stale": false,
+        "origin": "box copy"
+      },
+      "anthropic": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/neighboring-concept-disambiguating/providers/anthropic/skill.md",
+        "sha256": "0196721287d1dd81784de3f918ce76715f79d32ae09fc6ea08880145b1e32ad6",
+        "adapter_date": "2026-10-04T20:31-04:00",
+        "stale": false,
+        "origin": "Drive"
+      },
+      "google": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/neighboring-concept-disambiguating/providers/google/gem-definition.md",
+        "sha256": "96db1792f97aaf9b6b3a938080a5102e9b9fe45abd0b784b41493167b9eae3a3",
+        "adapter_date": "2026-10-04T20:31-04:00",
+        "stale": false,
+        "origin": "Drive"
+      },
+      "openai": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/neighboring-concept-disambiguating/providers/openai/SKILL.md",
+        "sha256": "0196721287d1dd81784de3f918ce76715f79d32ae09fc6ea08880145b1e32ad6",
+        "adapter_date": "2026-10-04T20:31-04:00",
+        "stale": false,
+        "origin": "Drive",
+        "metadata": {
+          "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/neighboring-concept-disambiguating/providers/openai/agents/openai.yaml",
+          "sha256": "2082a3cf377b54f2b01cb13f87727304ebc0af84873480642816a839460aa525",
+          "adapter_date": "2026-10-04T20:44-04:00",
+          "stale": false
+        }
+      }
+    },
+    "updated": "2026-10-18"
+  },
+  {
+    "slug": "correcting-course",
+    "name": "correcting-course",
+    "description": "Use when the user steers, corrects, or redirects you, or you detect drift — stop the wrong branch, re-anchor on the exact input, and take the next correct productive action instead of apologizing, paraphrasing, or asking needless approval.",
+    "version": "2026-10-15",
+    "core_date": "2026-10-15T06:48-04:00",
+    "status": "active",
+    "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/correcting-course/SKILL.md",
+    "sha256": "9f817fa7d8e22b9ff355f075fc3d5cfc88babfa2b0c7533b31947ae2f822e252",
+    "providers": {
+      "xai": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/correcting-course/providers/xai/SKILL.md",
+        "sha256": "52efb12f459934023b24a4a692559ac63672abf1bc282e2b3501c3a46a06bd12",
+        "adapter_date": "2026-10-16",
+        "stale": false,
+        "origin": "box copy"
+      }
+    },
+    "updated": "2026-10-18"
+  },
+  {
+    "slug": "learning-from-mistakes",
+    "name": "learning-from-mistakes",
+    "description": "Use after an error is identified (by the user or yourself) to turn it into a verified difference in the next relevant action — diagnose the failed decision, apply the fix, and regression-check it.",
+    "version": "2026-10-15",
+    "core_date": "2026-10-15T06:48-04:00",
+    "status": "active",
+    "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/learning-from-mistakes/SKILL.md",
+    "sha256": "cace6d9e5e1ba08f98766539e4cf3d1e8afff0fca100766605f71a95481448e8",
+    "providers": {
+      "xai": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/learning-from-mistakes/providers/xai/SKILL.md",
+        "sha256": "47bad822dd3ae2d7ab3b2be2e7429faa20298660f6bdc6d84107389fce76de7a",
+        "adapter_date": "2026-10-16",
+        "stale": false,
+        "origin": "box copy"
+      }
+    },
+    "updated": "2026-10-18"
+  },
+  {
+    "slug": "work-preparing",
+    "name": "work-preparing",
+    "description": "Prepare meaningful work before execution by clarifying the intended result, constraints, controlling context, dependencies, likely failure modes, and clean handoff. Use when a task, project, decision, coding effort, research effort, creative workflow, or operational thread is starting or being reshaped and the user needs PRE work rather than execution or post-review. Also use when the user asks what should be established before another AI Agent, tool, or person begins. Shared across workspace-account seats: do not assume a particular persona or seat is the invoker.",
+    "version": "2026-10-04",
+    "core_date": "2026-10-04T20:37-04:00",
+    "status": "active",
+    "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/work-preparing/SKILL.md",
+    "sha256": "71c56f6651c7815b2e93400ce618d40a5ff286c1a7c01ea5b0f49be6f1d802a0",
+    "providers": {
+      "xai": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/work-preparing/providers/xai/SKILL.md",
+        "sha256": "a7738c778ce62cbbcd299a95226d4aff5630ec88f502d6eaeb4d909f8e0c8d56",
+        "adapter_date": "2026-10-06",
+        "stale": false,
+        "origin": "box copy"
+      },
+      "anthropic": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/work-preparing/providers/anthropic/skill.md",
+        "sha256": "e95d0fb228f7c5ce84dda9029eedcfae390ab4062cb1821fcfdd369944d5189a",
+        "adapter_date": "2026-10-04T20:38-04:00",
+        "stale": false,
+        "origin": "Drive"
+      },
+      "google": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/work-preparing/providers/google/gem-definition.md",
+        "sha256": "0f1c704db78a5df0b96e4b55ef4bcb61e9df03abebe500bfc5457ff8e0d193c0",
+        "adapter_date": "2026-10-04T20:38-04:00",
+        "stale": false,
+        "origin": "Drive"
+      },
+      "openai": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/work-preparing/providers/openai/SKILL.md",
+        "sha256": "e95d0fb228f7c5ce84dda9029eedcfae390ab4062cb1821fcfdd369944d5189a",
+        "adapter_date": "2026-10-04T20:38-04:00",
+        "stale": false,
+        "origin": "Drive",
+        "metadata": {
+          "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/work-preparing/providers/openai/agents/openai.yaml",
+          "sha256": "2a76194f672cec8ae4c690af9ae2c6cff9e58146bee54a674b931a07a56975c4",
+          "adapter_date": "2026-10-04T20:46-04:00",
+          "stale": false
+        }
+      }
+    },
+    "updated": "2026-10-18"
+  },
+  {
+    "slug": "proposal-drafting",
+    "name": "proposal-drafting",
+    "description": "Turn human-originated, messy, fragmented, or developed ideas into grounded decision-ready proposals that distinguish current reality from the proposed change. Use when the user wants to draft, formalize, capture, consolidate, or structure a proposal, change proposal, design-direction proposal, decision proposal, or similar artifact before a direction is settled enough for detailed implementation planning. Recover relevant current context before proposing, preserve authorship and status, and do not manufacture a proposal stage for work already authorized for execution.",
+    "version": "2026-10-04",
+    "core_date": "2026-10-04T20:37-04:00",
+    "status": "active",
+    "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/proposal-drafting/SKILL.md",
+    "sha256": "69186a32c5922dd439a0e3df3a4d006bf18b5ecdb5f7b3349fdc883df593b22e",
+    "providers": {
+      "xai": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/proposal-drafting/providers/xai/SKILL.md",
+        "sha256": "3aaafabf876c613b45e024095d56ff10b114f965aa175f38d60293154ff210bc",
+        "adapter_date": "2026-10-16",
+        "stale": false,
+        "origin": "box copy"
+      },
+      "anthropic": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/proposal-drafting/providers/anthropic/skill.md",
+        "sha256": "706991e84d80bb470012a8897c0899b7514cea66c5c654b3c00d0adb5df3d3b7",
+        "adapter_date": "2026-10-04T20:37-04:00",
+        "stale": false,
+        "origin": "Drive"
+      },
+      "google": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/proposal-drafting/providers/google/gem-definition.md",
+        "sha256": "b0f807a0eeecf983a95cde936c80c12cc0626552fe5aded14f6183d58dd6293a",
+        "adapter_date": "2026-10-04T20:37-04:00",
+        "stale": false,
+        "origin": "Drive"
+      },
+      "openai": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/proposal-drafting/providers/openai/SKILL.md",
+        "sha256": "706991e84d80bb470012a8897c0899b7514cea66c5c654b3c00d0adb5df3d3b7",
+        "adapter_date": "2026-10-04T20:37-04:00",
+        "stale": false,
+        "origin": "Drive",
+        "metadata": {
+          "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/proposal-drafting/providers/openai/agents/openai.yaml",
+          "sha256": "8f35339ed3a2a7cd0857eef83b96bd905edebf7ef67cb31cd66c824bd975a17a",
+          "adapter_date": "2026-10-04T20:46-04:00",
+          "stale": false
+        }
+      }
+    },
+    "updated": "2026-10-18"
+  },
+  {
+    "slug": "implementation-planning",
+    "name": "implementation-planning",
+    "description": "Turn a sufficiently settled intended change into the smallest complete, ordered, dependency-aware, verifiable implementation plan grounded in current implementation reality and current execution state. Use when a user asks for an implementation plan, technical execution plan, coding/change plan, migration plan, system-change plan, or when substantial authorized implementation benefits from a planning pass before execution. Reconcile existing work before creating new work items, preserve settled direction, expose real blockers, and keep planning proportional rather than turning it into bureaucracy.",
+    "version": "2026-10-04",
+    "core_date": "2026-10-04T20:34-04:00",
+    "status": "active",
+    "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/implementation-planning/SKILL.md",
+    "sha256": "df088ad788ec739866294f6d733043568bd1793eead4479c5b7fde02e3518117",
+    "providers": {
+      "xai": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/implementation-planning/providers/xai/SKILL.md",
+        "sha256": "4e045944dbd834e3d5ce38297a0c33237b47fd4e162030ca8cb7b246e700929f",
+        "adapter_date": "2026-10-06",
+        "stale": false,
+        "origin": "box copy"
+      },
+      "anthropic": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/implementation-planning/providers/anthropic/skill.md",
+        "sha256": "b7b763aa83b543ad049201e5a384a56a5204a9c0add3cbd161365fe17e9c315a",
+        "adapter_date": "2026-10-04T20:34-04:00",
+        "stale": false,
+        "origin": "Drive"
+      },
+      "google": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/implementation-planning/providers/google/gem-definition.md",
+        "sha256": "49fd2b20de4934071388df34e6a6e16208fa5338a0edd184ad1cd3c00c489a78",
+        "adapter_date": "2026-10-04T20:34-04:00",
+        "stale": false,
+        "origin": "Drive"
+      },
+      "openai": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/implementation-planning/providers/openai/SKILL.md",
+        "sha256": "b7b763aa83b543ad049201e5a384a56a5204a9c0add3cbd161365fe17e9c315a",
+        "adapter_date": "2026-10-04T20:34-04:00",
+        "stale": false,
+        "origin": "Drive",
+        "metadata": {
+          "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/implementation-planning/providers/openai/agents/openai.yaml",
+          "sha256": "22fa974703ff0b93a037c25989d3b04ac1657668c9dda0325f64fcb174f3fa41",
+          "adapter_date": "2026-10-04T20:45-04:00",
+          "stale": false
+        }
+      }
+    },
+    "updated": "2026-10-18"
+  },
+  {
+    "slug": "in-session-phasing",
+    "name": "in-session-phasing",
+    "description": "Divide a substantial task or process into visible, bounded phases while the current conversation is actively proceeding. Use when the user asks to \"work in phases,\" \"phase this,\" use \"in-session phasing,\" keep updating the chat while working, show what is being interpreted before continuing, or otherwise make a multi-step task observable and supervisable as it unfolds. Also use for longer tool-heavy work when the user explicitly wants checkpoints rather than a long opaque stretch. Keep phases concise, execute real work inside each phase, report meaningful progress between phases, and continue without unnecessary approval prompts unless the user pauses, redirects, or a genuine decision gate is reached.",
+    "version": "2026-10-04",
+    "core_date": "2026-10-04T20:28-04:00",
+    "status": "active",
+    "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/in-session-phasing/SKILL.md",
+    "sha256": "ae4dcec495b067334ab15878332b495a19d218158ef821eb023cb8c684c5fee0",
+    "providers": {
+      "xai": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/in-session-phasing/providers/xai/SKILL.md",
+        "sha256": "060dcf143cbf4bb23009893f1d759d93fb3730f977dc8fe7a8b2d322e1608eb7",
+        "adapter_date": "2026-10-06",
+        "stale": false,
+        "origin": "box copy"
+      },
+      "anthropic": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/in-session-phasing/providers/anthropic/skill.md",
+        "sha256": "a9cda9625e915d6494615c9a494a7ce812b9aba166c8dd0d01ad4a32cc5b792a",
+        "adapter_date": "2026-10-04T20:29-04:00",
+        "stale": false,
+        "origin": "Drive"
+      },
+      "google": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/in-session-phasing/providers/google/gem-definition.md",
+        "sha256": "530a7e01e39645b03ee4106c287cb46a60fb5e45bcabb81ee9e4c84e1b7a6243",
+        "adapter_date": "2026-10-04T20:29-04:00",
+        "stale": false,
+        "origin": "Drive"
+      },
+      "openai": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/in-session-phasing/providers/openai/SKILL.md",
+        "sha256": "a9cda9625e915d6494615c9a494a7ce812b9aba166c8dd0d01ad4a32cc5b792a",
+        "adapter_date": "2026-10-04T20:29-04:00",
+        "stale": false,
+        "origin": "Drive",
+        "metadata": {
+          "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/in-session-phasing/providers/openai/agents/openai.yaml",
+          "sha256": "39a2f9f51e1e70bcf17a24046fb191e5e7a5403c7db0e018a572e1a585971407",
+          "adapter_date": "2026-10-04T20:44-04:00",
+          "stale": false
+        }
+      }
+    },
+    "updated": "2026-10-18"
+  },
+  {
+    "slug": "citing-sources",
+    "name": "citing-sources",
+    "description": "Retrieve, attribute, and cite the actual sources supporting factual claims, prior-conversation recollections, organizational decisions, current project status, financial figures, and researched answers. Use when the user asks \"where did that come from?\", \"cite your sources\", \"don't you remember?\", \"we discussed this\", \"check our Space\", \"what do the records say?\", or when consequential assertions rely on files, Memory, connected systems, documents, emails, code, or web sources. Prevent unsupported claims of absence, false citations, and source/authority confusion.",
+    "version": "2026-10-15",
+    "core_date": "2026-10-15T17:44-04:00",
+    "status": "active",
+    "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/citing-sources/SKILL.md",
+    "sha256": "aee4f0db4c772a565524517f9c8dac3a02b355e8b620d518058f99f849872172",
+    "providers": {
+      "xai": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/citing-sources/providers/xai/SKILL.md",
+        "sha256": "b0dce395f1ba9e64c4e01433c471d2d3a8b059616faf8ada6b1d31f973d60757",
+        "adapter_date": "2026-10-16",
+        "stale": false,
+        "origin": "box copy"
+      }
+    },
+    "updated": "2026-10-18"
+  },
+  {
+    "slug": "connective-tissue-safe-handling",
+    "name": "connective-tissue-safe-handling",
+    "description": "Preserve provenance, authority, status, and source ownership when combining context across chats, Memory, Library, agents, documents, and connected systems. Use when there is risk of context bleeding or contamination; when proposals, inferences, approvals, promoted material, canon/current-state claims, superseded material, or derivative summaries could be confused; when an output appears to violate controlling guidance; when repairing contaminated context; or when deciding whether a claim may be carried forward, written into a maintained source, or must remain provisional. Preserve healthy connective tissue without allowing repetition, proximity, familiarity, or derivative consensus to manufacture authority.",
+    "version": "2026-10-04",
+    "core_date": "2026-10-04T20:30-04:00",
+    "status": "active",
+    "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/connective-tissue-safe-handling/SKILL.md",
+    "sha256": "7cae963d6dd3db8edd3336bf00d9f47697fb6ce1b637670d35be8460ff07ce93",
+    "providers": {
+      "xai": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/connective-tissue-safe-handling/providers/xai/SKILL.md",
+        "sha256": "905c3a9fb51c84efe8357107f8770ea38363d59030ca6f6bf9b973d5256f8ec9",
+        "adapter_date": "2026-10-16",
+        "stale": false,
+        "origin": "box copy"
+      },
+      "anthropic": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/connective-tissue-safe-handling/providers/anthropic/skill.md",
+        "sha256": "5eaa15c2f97962d1ab69b59ef3b3e8fc2d0c1c715be938e1307b4ae138757116",
+        "adapter_date": "2026-10-04T20:30-04:00",
+        "stale": false,
+        "origin": "Drive"
+      },
+      "google": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/connective-tissue-safe-handling/providers/google/gem-definition.md",
+        "sha256": "432ca601182534e46357d4f90a39ded147cad427f746a95cb8cd242e60e89cad",
+        "adapter_date": "2026-10-04T20:30-04:00",
+        "stale": false,
+        "origin": "Drive"
+      },
+      "openai": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/connective-tissue-safe-handling/providers/openai/SKILL.md",
+        "sha256": "5eaa15c2f97962d1ab69b59ef3b3e8fc2d0c1c715be938e1307b4ae138757116",
+        "adapter_date": "2026-10-04T20:30-04:00",
+        "stale": false,
+        "origin": "Drive",
+        "metadata": {
+          "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/connective-tissue-safe-handling/providers/openai/agents/openai.yaml",
+          "sha256": "13657436c427cac7a486ff6255b6e97b82a51be57f44a22fbba04bd2885a6e92",
+          "adapter_date": "2026-10-04T20:44-04:00",
+          "stale": false
+        }
+      }
+    },
+    "updated": "2026-10-18"
+  },
+  {
+    "slug": "memory-updating",
+    "name": "memory-updating",
+    "description": "Update persistent ChatGPT Memory when a user asks to remember, save, retain, correct, replace, or forget a fact, preference, correction, or interaction rule. Use whenever persistence is requested. Extract only the intended Memory delta, attempt the Memory write in the current chat, and interpret the Memory tool's explicit success or failure signal correctly. Treat an explicit successful Memory-tool response as sufficient confirmation. Use a compact fresh-chat handoff only when the Memory write itself is unavailable or fails.",
+    "version": "2026-10-04",
+    "core_date": "2026-10-04T20:35-04:00",
+    "status": "active",
+    "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/memory-updating/SKILL.md",
+    "sha256": "77d4dc498bf67659698caef401a26d83884dd348875ea71400cc57be1b41d4aa",
+    "providers": {
+      "xai": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/memory-updating/providers/xai/SKILL.md",
+        "sha256": "e57e7c78cedd906b21b1cc6ecc3ce98ea23fce8e3c6bb080abf825b94d610fcc",
+        "adapter_date": "2026-10-16",
+        "stale": false,
+        "origin": "box copy"
+      },
+      "anthropic": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/memory-updating/providers/anthropic/skill.md",
+        "sha256": "2fec973ee75622cf096817f4532f8214d3ba0824c302c03c8a26e10d5f969a34",
+        "adapter_date": "2026-10-04T20:35-04:00",
+        "stale": false,
+        "origin": "Drive"
+      },
+      "google": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/memory-updating/providers/google/gem-definition.md",
+        "sha256": "79286aa4e22c06e1988092b385eea88ed1ecf0c3ec51299720bed776032857fe",
+        "adapter_date": "2026-10-04T20:35-04:00",
+        "stale": false,
+        "origin": "Drive"
+      },
+      "openai": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/memory-updating/providers/openai/SKILL.md",
+        "sha256": "2fec973ee75622cf096817f4532f8214d3ba0824c302c03c8a26e10d5f969a34",
+        "adapter_date": "2026-10-04T20:35-04:00",
+        "stale": false,
+        "origin": "Drive",
+        "metadata": {
+          "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/memory-updating/providers/openai/agents/openai.yaml",
+          "sha256": "22f6a1c68f6b1a606afabc5d325da83ec1414a9a83d00c0d8cb09d775791d060",
+          "adapter_date": "2026-10-04T20:45-04:00",
+          "stale": false
+        }
+      }
+    },
+    "updated": "2026-10-18"
+  },
+  {
+    "slug": "conversation-continuity-packaging",
+    "name": "conversation-continuity-packaging",
+    "description": "Preserve conversation context in one or more concise Markdown continuity packets saved to the invoking ChatGPT seat's Library for later retrieval and continuation. Use for chat compaction, preservation, continuity packaging, preparing durable starting state for future chats, and when the user says exactly `End session.`. On the exact `End session.` trigger, ask for a Yes / No / Other confirmation before any packaging work and wait for the user's reply. Shared across workspace-account seats: do not assume seats share one Library or the same source access.",
+    "version": "2026-10-13",
+    "core_date": "2026-10-13T08:28-04:00",
+    "status": "active",
+    "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/conversation-continuity-packaging/SKILL.md",
+    "sha256": "cc477bce8866d62d9601f0bac6a34013ca2fe74de238917847c4f851e6d7e6b5",
+    "providers": {
+      "xai": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/conversation-continuity-packaging/providers/xai/SKILL.md",
+        "sha256": "3d3dc005f143ded46c4204ca733531d301681701c683532349d556500afe69c2",
+        "adapter_date": "2026-10-16",
+        "stale": false,
+        "origin": "box copy"
+      },
+      "anthropic": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/conversation-continuity-packaging/providers/anthropic/skill.md",
+        "sha256": "f293d0a49b898534f281cb7c5cdc14e4af4e9f46b18abceadbf78f0d16eb6b8b",
+        "adapter_date": "2026-10-04T20:39-04:00",
+        "stale": true,
+        "origin": "Drive"
+      },
+      "google": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/conversation-continuity-packaging/providers/google/gem-definition.md",
+        "sha256": "a8b56b590eec7a5c064648eaea2750596f8cdfe21f50c3e568c59a7cc261c291",
+        "adapter_date": "2026-10-04T20:39-04:00",
+        "stale": true,
+        "origin": "Drive"
+      },
+      "openai": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/conversation-continuity-packaging/providers/openai/SKILL.md",
+        "sha256": "f293d0a49b898534f281cb7c5cdc14e4af4e9f46b18abceadbf78f0d16eb6b8b",
+        "adapter_date": "2026-10-04T20:39-04:00",
+        "stale": true,
+        "origin": "Drive",
+        "metadata": {
+          "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/conversation-continuity-packaging/providers/openai/agents/openai.yaml",
+          "sha256": "67a90c356215b060db25109fa914dc42bf55cc28d5fb3907f494c9b3365670b9",
+          "adapter_date": "2026-10-04T20:46-04:00",
+          "stale": true
+        }
+      }
+    },
+    "updated": "2026-10-18"
+  },
+  {
+    "slug": "library-file-processing",
+    "name": "library-file-processing",
+    "description": "Process ChatGPT Library artifacts for persistent staging, durable retrieval, semantic naming and placement, provenance preservation, duplicate review, and recurring intake maintenance. Use when durable Library handling is already established by an explicit user request, an upstream durable-intent handoff, a batch-processing instruction, or a standing/scheduled Library-maintenance workflow.",
+    "version": "2026-10-13",
+    "core_date": "2026-10-13T08:36-04:00",
+    "status": "active",
+    "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/library-file-processing/SKILL.md",
+    "sha256": "084e9f601e45c759a5d00e87c18bd67d5a347d3d752270051791c07de27ad5f2",
+    "providers": {
+      "xai": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/library-file-processing/providers/xai/SKILL.md",
+        "sha256": "8b5e9597929ba5768370c54a67bb18f10281c97e4a8f0c96e084021f4ff25740",
+        "adapter_date": "2026-10-16",
+        "stale": false,
+        "origin": "box copy"
+      },
+      "anthropic": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/library-file-processing/providers/anthropic/skill.md",
+        "sha256": "50f9e2c1ea42802cd72586b226b5548f1ef31c0c7db7db87b79b301f41dcffb1",
+        "adapter_date": "2026-10-04T20:34-04:00",
+        "stale": true,
+        "origin": "Drive"
+      },
+      "google": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/library-file-processing/providers/google/gem-definition.md",
+        "sha256": "3dd87c6ac65ab6406020bcfbecbd3dea66eb205cef1af26fd6258c4ea7f9ebd9",
+        "adapter_date": "2026-10-04T20:34-04:00",
+        "stale": true,
+        "origin": "Drive"
+      },
+      "openai": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/library-file-processing/providers/openai/SKILL.md",
+        "sha256": "50f9e2c1ea42802cd72586b226b5548f1ef31c0c7db7db87b79b301f41dcffb1",
+        "adapter_date": "2026-10-04T20:34-04:00",
+        "stale": true,
+        "origin": "Drive",
+        "metadata": {
+          "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/library-file-processing/providers/openai/agents/openai.yaml",
+          "sha256": "b94aed3035403e7a12001e6aad4247f5884034de28481822a78cd35e20ac0a07",
+          "adapter_date": "2026-10-04T20:45-04:00",
+          "stale": true
+        }
+      }
+    },
+    "updated": "2026-10-18"
+  },
+  {
+    "slug": "space-artifact-processing",
+    "name": "space-artifact-processing",
+    "description": "Use when durably organizing artifacts in a persistent store (Drive folders, Notion, box files, or a ChatGPT-Space equivalent): inspect content, name, place, split/merge, preserve provenance, mutate minimally, and verify retrieval. Complements library-file-processing.",
+    "version": "2026-10-15",
+    "core_date": "2026-10-15T06:42-04:00",
+    "status": "active",
+    "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/space-artifact-processing/SKILL.md",
+    "sha256": "738bb4dfba96b1ed21a4db544c97874867596127ad80f27e4b64c9622c4a3f2a",
+    "providers": {
+      "xai": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/space-artifact-processing/providers/xai/SKILL.md",
+        "sha256": "6faf1a17bbb05c4263934c681622c179d07b3bc257cc96263b7221a76916fb3b",
+        "adapter_date": "2026-10-16",
+        "stale": false,
+        "origin": "box copy"
+      }
+    },
+    "updated": "2026-10-18"
+  },
+  {
+    "slug": "suggesting-prompts-and-next-steps",
+    "name": "suggesting-prompts-and-next-steps",
+    "description": "Use when the user asks for suggested prompts, follow-ups, or next steps, or when a clearly valuable continuation exists after fully answering: offer 1-3 distinct, inspectable, actionable options with full next-turn prompts.",
+    "version": "2026-10-16",
+    "core_date": "2026-10-16T15:32-04:00",
+    "status": "active",
+    "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/suggesting-prompts-and-next-steps/SKILL.md",
+    "sha256": "f33e0de27c66c96f946ee5b36be2e959096e7d7752afb1543a15343cf1e0d0fd",
+    "providers": {
+      "xai": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/suggesting-prompts-and-next-steps/providers/xai/SKILL.md",
+        "sha256": "76536a5eeeb4a532fc5e3274ff587040c0a8ec70efc4811966190de0c8f052ba",
+        "adapter_date": "2026-10-16",
+        "stale": false,
+        "origin": "box copy"
+      },
+      "openai": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/suggesting-prompts-and-next-steps/providers/openai/SKILL.md",
+        "sha256": "296c2b5a01485549a9ab1223e6b1a423dedb4efb89af6777aedda17aa47f283a",
+        "adapter_date": "2026-10-16T15:32-04:00",
+        "stale": false,
+        "origin": "Drive"
+      }
+    },
+    "updated": "2026-10-18"
+  },
+  {
+    "slug": "stripping-down-self-imposed-barriers",
+    "name": "stripping-down-self-imposed-barriers",
+    "description": "Use when an agent with a clear, authorized result is about to invent an approval gate, re-ask something already answered, swap action for a plan or relay, claim read-only against newer instructions, or stop at a draft when a verified outcome is still feasible.",
+    "version": "2026-10-16",
+    "core_date": "2026-10-16T17:12-04:00",
+    "status": "active",
+    "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/stripping-down-self-imposed-barriers/SKILL.md",
+    "sha256": "3d01cfbee1f7cd5dd0f50d5dbab47d05904e3a3a459cc1c092e9ff370e317b03",
+    "providers": {
+      "xai": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/stripping-down-self-imposed-barriers/providers/xai/SKILL.md",
+        "sha256": "b2298450da582b730eaa072bc5154d2be497993cfd8bafb54b4b72c3b9ec6c7e",
+        "adapter_date": "2026-10-16",
+        "stale": false,
+        "origin": "box copy"
+      },
+      "openai": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/stripping-down-self-imposed-barriers/providers/openai/SKILL.md",
+        "sha256": "6867de7cc60199ae5b68d0fc6e1b541868dad38dab91cc3a21c39eac50562a50",
+        "adapter_date": "2026-10-16T17:12-04:00",
+        "stale": false,
+        "origin": "Drive"
+      }
+    },
+    "updated": "2026-10-18"
+  },
+  {
+    "slug": "dinner-tomorrow-me",
+    "name": "dinner-tomorrow-me",
+    "description": "When the user says \"dinner tomorrow me\", \"dumb it down\", asks for fewer words or a compact visual, or a reply is turning into an essay: compress it to one at-a-glance takeaway without losing truth or required work.",
+    "version": "2026-10-16",
+    "core_date": "2026-10-16T17:12-04:00",
+    "status": "active",
+    "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/dinner-tomorrow-me/SKILL.md",
+    "sha256": "da488e0667c6b078a2572e54d769efa91caa06644cce32fc38706eed7008f655",
+    "providers": {
+      "xai": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/dinner-tomorrow-me/providers/xai/SKILL.md",
+        "sha256": "b77bb9728ca37b4bbf88fcdb89189067246bfbf63c4fa5f8883ba26c3a7308cb",
+        "adapter_date": "2026-10-16",
+        "stale": false,
+        "origin": "box copy"
+      },
+      "openai": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/dinner-tomorrow-me/providers/openai/SKILL.md",
+        "sha256": "d30b7931267bc250540a8059639f900d93a53b21e91f50f369d84c30ade76316",
+        "adapter_date": "2026-10-16T17:12-04:00",
+        "stale": false,
+        "origin": "Drive"
+      }
+    },
+    "updated": "2026-10-18"
+  },
+  {
+    "slug": "reference-media-prompts",
+    "name": "reference-media-prompts",
+    "description": "Write precise prompts for reference-based image and short-form video generation, especially character, promotional, social, editorial, and scene prompts where identity comes from reference images and the current shot needs exact direction. Use when a user wants a generation prompt that minimizes model drift by choosing concrete visible details, using affirmative language, and avoiding open-ended styling choices or negative instructions.",
+    "version": "2026-10-04",
+    "core_date": "2026-10-04T20:43-04:00",
+    "status": "active",
+    "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/reference-media-prompts/SKILL.md",
+    "sha256": "e79039c45ff039cc238d9ecfd1353de9284e30fe6c09281c46c6371dead2e1b9",
+    "providers": {
+      "xai": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/reference-media-prompts/providers/xai/SKILL.md",
+        "sha256": "5df735e33c2adb17deb4e61d33e7f1fb5c034545a0dfe534b019ba5cfa9aadef",
+        "adapter_date": "2026-10-16",
+        "stale": false,
+        "origin": "box copy"
+      },
+      "anthropic": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/reference-media-prompts/providers/anthropic/skill.md",
+        "sha256": "73a3a4ebebf13b0e3159157b0c731481eb9028fe2d5b919781c4fb9069a53d11",
+        "adapter_date": "2026-10-04T20:43-04:00",
+        "stale": false,
+        "origin": "Drive"
+      },
+      "google": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/reference-media-prompts/providers/google/gem-definition.md",
+        "sha256": "e361a291f8920723e48566fe500821245625f47ea849265ff614a683b24a9012",
+        "adapter_date": "2026-10-04T20:43-04:00",
+        "stale": false,
+        "origin": "Drive"
+      },
+      "openai": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/reference-media-prompts/providers/openai/SKILL.md",
+        "sha256": "73a3a4ebebf13b0e3159157b0c731481eb9028fe2d5b919781c4fb9069a53d11",
+        "adapter_date": "2026-10-04T20:43-04:00",
+        "stale": false,
+        "origin": "Drive",
+        "metadata": {
+          "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/reference-media-prompts/providers/openai/agents/openai.yaml",
+          "sha256": "6e0a9f1200f0ea833591e57dcc3e0551805c501a3a882419bf01df078b685636",
+          "adapter_date": "2026-10-04T20:47-04:00",
+          "stale": false
+        }
+      }
+    },
+    "updated": "2026-10-18"
+  },
+  {
+    "slug": "displaying-using-python",
+    "name": "displaying-using-python",
+    "description": "Use when the user wants existing image or video-frame pixels (crops, enlargements, frames, Python-made graphics) actually shown in chat, not just a path, link, or description.",
+    "version": "2026-10-15",
+    "core_date": "2026-10-15T06:48-04:00",
+    "status": "active",
+    "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/displaying-using-python/SKILL.md",
+    "sha256": "baf4a67c2a7ef8fe07630a4154ad5149d81ffe69e5588d11ec3998a43259b502",
+    "providers": {
+      "xai": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/displaying-using-python/providers/xai/SKILL.md",
+        "sha256": "3baa7bfeaff7b78300a44f18775e664c4b5974bbdb267cec930364a9f6c70cfe",
+        "adapter_date": "2026-10-16",
+        "stale": false,
+        "origin": "box copy"
+      }
+    },
+    "updated": "2026-10-18"
+  },
+  {
+    "slug": "iui-research-panel",
+    "name": "iui-research-panel",
+    "description": "Use when the user asks for a research panel or source picker, or when their approval of which sources/scope to research is materially needed — present the 15-source selector with presets, depth, method, and format, then research only the submitted selection.",
+    "version": "2026-10-15",
+    "core_date": "2026-10-15T06:42-04:00",
+    "status": "active",
+    "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/iui-research-panel/SKILL.md",
+    "sha256": "173c3002e81db980c2fe58a5371696236e4913886d8ad0e2522d0d1a7f32c389",
+    "providers": {
+      "xai": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/iui-research-panel/providers/xai/SKILL.md",
+        "sha256": "1103d41b439a634a8506a29988e4fae4390182398bc855cdb39a97bbdcfb14db",
+        "adapter_date": "2026-10-16",
+        "stale": false,
+        "origin": "box copy"
+      }
+    },
+    "updated": "2026-10-18"
+  },
+  {
+    "slug": "clocking-in",
+    "name": "clocking-in",
+    "description": "Use when the user says \"Clocking in\" (or similar) to start or re-enter productive work in the current conversation — recover the work position, pick one eligible unit of work, execute, and verify.",
+    "version": "2026-10-15",
+    "core_date": "2026-10-15T06:48-04:00",
+    "status": "active",
+    "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/clocking-in/SKILL.md",
+    "sha256": "ad07ddfc3c604e9486f74ab027e60ff02aa3b1c40fd278760f3684dfb830c139",
+    "providers": {
+      "xai": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/clocking-in/providers/xai/SKILL.md",
+        "sha256": "45f6dd768abcbb877717db62b781d44a5a1f99f8ca5d7e6f70496c8863222819",
+        "adapter_date": "2026-10-16",
+        "stale": false,
+        "origin": "box copy"
+      }
+    },
+    "updated": "2026-10-18"
+  },
+  {
+    "slug": "clocking-out",
+    "name": "clocking-out",
+    "description": "Use when the user says \"Clocking out\", \"End session.\", or otherwise asks to close the session — dispatch to ending-session (close with continuity packaging unless declined) without becoming a second closeout orchestrator.",
+    "version": "2026-10-15",
+    "core_date": "2026-10-15T06:48-04:00",
+    "status": "active",
+    "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/clocking-out/SKILL.md",
+    "sha256": "16b1cc3ea6b73fd5ea3c92192986b3bd636b91c401d583c2e75fd0a55b91a352",
+    "providers": {
+      "xai": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/clocking-out/providers/xai/SKILL.md",
+        "sha256": "fb21c54860e8da61824977a1283aaf5c461178bf6bfc7987d37b762dc83e505b",
+        "adapter_date": "2026-10-16",
+        "stale": false,
+        "origin": "box copy"
+      }
+    },
+    "updated": "2026-10-18"
+  },
+  {
+    "slug": "bumping-session",
+    "name": "bumping-session",
+    "description": "Use when the user returns to a conversation after a gap, asks how much time has passed, or wants to re-anchor the thread — establish a trustworthy session boundary from timestamp evidence, and resume prior work only if explicitly asked.",
+    "version": "2026-10-15",
+    "core_date": "2026-10-15T06:48-04:00",
+    "status": "active",
+    "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/bumping-session/SKILL.md",
+    "sha256": "e9ccf2bfef0cdb93f945a6877ea8a1f859e71a61171e24892a72e74beadf1f0e",
+    "providers": {
+      "xai": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/bumping-session/providers/xai/SKILL.md",
+        "sha256": "95836e7a5fc211004a7e7231c43499dba464e57ede059faa054963171ab06578",
+        "adapter_date": "2026-10-16",
+        "stale": false,
+        "origin": "box copy"
+      }
+    },
+    "updated": "2026-10-18"
+  },
+  {
+    "slug": "ending-session",
+    "name": "ending-session",
+    "description": "Use when the user says exactly \"End session.\", asks to close the session, or asks whether the session is ready to end — run the Yes/No/Other packaging-consent gate and orchestrate a verified, proportional closeout.",
+    "version": "2026-10-15",
+    "core_date": "2026-10-15T06:42-04:00",
+    "status": "active",
+    "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/ending-session/SKILL.md",
+    "sha256": "73b6672deaf011f2c86f8eb98edb58408b81f5bf4618250a4282dc9b90355a32",
+    "providers": {
+      "xai": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/ending-session/providers/xai/SKILL.md",
+        "sha256": "75f82e14461d13e6c1e31034b7f4c2013b6bbe72ee39e06d02dd240fdda64cbf",
+        "adapter_date": "2026-10-16",
+        "stale": false,
+        "origin": "box copy"
+      }
+    },
+    "updated": "2026-10-18"
+  },
+  {
+    "slug": "getting-dressed",
+    "name": "getting-dressed",
+    "description": "Recover missing working context before acting, then resume the real task. Use when the user says \"get dressed\", \"recover it\", \"you're naked\", \"read Library/Memory\", \"continue\" after a detour, asks to pick up prior work, or when a request depends on TCS/Gaia/project state that is not sufficiently present in the current chat. Retrieve the relevant sources and tools instead of merely reciting a recovery protocol, reconstruct the active Thread/Phase/Task/Step, and continue execution. Especially useful for multi-source work across Notion, ChatGPT Library, Google Drive, Linear, GitHub/runtime, Supabase, Slack, Memory/personal context, and the web.",
+    "version": "2026-10-04",
+    "core_date": "2026-10-04T20:32-04:00",
+    "status": "active",
+    "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/getting-dressed/SKILL.md",
+    "sha256": "76e728cf11d3d536829217e9c916bc976d3429900cfa7e4245071e5124615814",
+    "providers": {
+      "xai": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/getting-dressed/providers/xai/SKILL.md",
+        "sha256": "c9a13bacdabb203912fd0f02302d6a5f3661ade3ee8ce732fd799ba30307318f",
+        "adapter_date": "2026-10-06",
+        "stale": false,
+        "origin": "box copy"
+      },
+      "anthropic": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/getting-dressed/providers/anthropic/skill.md",
+        "sha256": "0433bbebeec47e80dd1f9a7a83f1be52387b68920f58ac6e1e68837477b2cce0",
+        "adapter_date": "2026-10-04T20:33-04:00",
+        "stale": false,
+        "origin": "Drive"
+      },
+      "google": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/getting-dressed/providers/google/gem-definition.md",
+        "sha256": "67436ab74cb81dcac6bf4e13df04301b8310757a3546987710d7636317197b69",
+        "adapter_date": "2026-10-04T20:33-04:00",
+        "stale": false,
+        "origin": "Drive"
+      },
+      "openai": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/getting-dressed/providers/openai/SKILL.md",
+        "sha256": "0433bbebeec47e80dd1f9a7a83f1be52387b68920f58ac6e1e68837477b2cce0",
+        "adapter_date": "2026-10-04T20:33-04:00",
+        "stale": false,
+        "origin": "Drive",
+        "metadata": {
+          "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/getting-dressed/providers/openai/agents/openai.yaml",
+          "sha256": "29e248aa730683788414416c8e20ad691c936b88454ed16298df0d730254eca7",
+          "adapter_date": "2026-10-04T20:45-04:00",
+          "stale": false
+        }
+      }
+    },
+    "updated": "2026-10-18"
+  },
+  {
+    "slug": "auditable-actions-tracing-and-logging",
+    "name": "auditable-actions-tracing-and-logging",
+    "description": "Trace and report consequential AI Agent actions after substantial work materially mutates, updates, removes, migrates, reconciles, or steers a target or workstream. Use after persistent writes, substantive audits, cleanup/refactors, source corrections, migrations, implementation changes, connected-system updates, significant state/strategy steering, or when the user asks for an audit trail, action log, verification receipt, or trace of what happened. Keep operational traces in the active chat by default; persist only the durable result that the owning source actually needs unless a durable audit record is explicitly warranted and authorized.",
+    "version": "2026-10-04",
+    "core_date": "2026-10-04T20:35-04:00",
+    "status": "active",
+    "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/auditable-actions-tracing-and-logging/SKILL.md",
+    "sha256": "8d900d4ac6d05efc264bbbb6d2662a4064421e949dce6cf69a0d69cdf7938289",
+    "providers": {
+      "xai": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/auditable-actions-tracing-and-logging/providers/xai/SKILL.md",
+        "sha256": "2fa492f605edc9edf20ddcdb461505af0f3383a721f5aba214817f6fa2fbcd7f",
+        "adapter_date": "2026-10-06",
+        "stale": false,
+        "origin": "box copy"
+      },
+      "anthropic": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/auditable-actions-tracing-and-logging/providers/anthropic/skill.md",
+        "sha256": "ad991c8425f257ecf9ae55e6ab9db693b71ef8c40cb98976a4bf1daf9f093a52",
+        "adapter_date": "2026-10-04T20:36-04:00",
+        "stale": false,
+        "origin": "Drive"
+      },
+      "google": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/auditable-actions-tracing-and-logging/providers/google/gem-definition.md",
+        "sha256": "c831a0535af6c495047f38bb408876498b0e06db9c97b7f4b35f0d635f502cff",
+        "adapter_date": "2026-10-04T20:36-04:00",
+        "stale": false,
+        "origin": "Drive"
+      },
+      "openai": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/auditable-actions-tracing-and-logging/providers/openai/SKILL.md",
+        "sha256": "ad991c8425f257ecf9ae55e6ab9db693b71ef8c40cb98976a4bf1daf9f093a52",
+        "adapter_date": "2026-10-04T20:36-04:00",
+        "stale": false,
+        "origin": "Drive",
+        "metadata": {
+          "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/auditable-actions-tracing-and-logging/providers/openai/agents/openai.yaml",
+          "sha256": "c0ce537f5941fda5d3ecd516e82b2f1d284e67b4d6c0e8b7e98c30c8f6e59016",
+          "adapter_date": "2026-10-04T20:45-04:00",
+          "stale": false
+        }
+      }
+    },
+    "updated": "2026-10-18"
+  },
+  {
+    "slug": "propagating-to-internal-sources",
+    "name": "propagating-to-internal-sources",
+    "description": "Use when the user makes a decision or new fact that should be carried into the internal sources that own it (Drive, Notion, Linear, etc.) — discover the affected records, propose or (when authorized) apply exact edits, and verify per source.",
+    "version": "2026-10-15",
+    "core_date": "2026-10-15T06:39-04:00",
+    "status": "active",
+    "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/propagating-to-internal-sources/SKILL.md",
+    "sha256": "2d0a1e35ed8dcc702310023198a37366d3a8e9c228031adc470c70add9e18f57",
+    "providers": {
+      "xai": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/propagating-to-internal-sources/providers/xai/SKILL.md",
+        "sha256": "39b428726c1cd71fe8944885e1324f27dec77a6b9830301a1007b25794498f18",
+        "adapter_date": "2026-10-16",
+        "stale": false,
+        "origin": "box copy"
+      }
+    },
+    "updated": "2026-10-18"
+  },
+  {
+    "slug": "workspace-skill-maintenance",
+    "name": "workspace-skill-maintenance",
+    "description": "Review one or more workspace Skills for staleness, broken references, source drift, trigger drift, obsolete assumptions, package hygiene, and alignment with current workspace guidance. Use when asked to review, maintain, audit, inspect, health-check, or refresh workspace Skills without changing their intended behavior. This Skill may update only the target Skill's `Last reviewed` metadata and may produce a change brief for workspace-skill-changing-update; it must not silently rewrite behavioral instructions.",
+    "version": "2026-10-04",
+    "core_date": "2026-10-04T20:32-04:00",
+    "status": "active",
+    "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/workspace-skill-maintenance/SKILL.md",
+    "sha256": "4d2f5acd352f7015078c556e61bfaeba179f918071dbb655d6201c81ced77df3",
+    "providers": {
+      "xai": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/workspace-skill-maintenance/providers/xai/SKILL.md",
+        "sha256": "7517f2a643a4b391adb35ea8bea0538f7b245d46378bd3922c33800adc759717",
+        "adapter_date": "2026-10-06",
+        "stale": false,
+        "origin": "box copy"
+      },
+      "anthropic": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/workspace-skill-maintenance/providers/anthropic/skill.md",
+        "sha256": "3e495694532bfa67f0ae43eee5ffb28812d5ed45bad1e3013e704faa3e1ca963",
+        "adapter_date": "2026-10-04T20:32-04:00",
+        "stale": false,
+        "origin": "Drive"
+      },
+      "google": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/workspace-skill-maintenance/providers/google/gem-definition.md",
+        "sha256": "db2016a451e215a26195075630da423f792b3d90414648074f32c01abbf852e6",
+        "adapter_date": "2026-10-04T20:32-04:00",
+        "stale": false,
+        "origin": "Drive"
+      },
+      "openai": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/workspace-skill-maintenance/providers/openai/SKILL.md",
+        "sha256": "3e495694532bfa67f0ae43eee5ffb28812d5ed45bad1e3013e704faa3e1ca963",
+        "adapter_date": "2026-10-04T20:32-04:00",
+        "stale": false,
+        "origin": "Drive",
+        "metadata": {
+          "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/workspace-skill-maintenance/providers/openai/agents/openai.yaml",
+          "sha256": "4151607cde28cabdf3949d42ae593912ae4c360616fafc1ccfa10b742b924ca8",
+          "adapter_date": "2026-10-04T20:44-04:00",
+          "stale": false
+        }
+      }
+    },
+    "updated": "2026-10-18"
+  },
+  {
+    "slug": "workspace-skill-changing-update",
+    "name": "workspace-skill-changing-update",
+    "description": "Perform an authorized behavioral, structural, routing, trigger, reference, script, asset, or metadata-changing update to an existing workspace Skill, then validate, regression-test, and package the complete updated Skill. Use when the user explicitly asks to change/fix/update a workspace Skill, or explicitly authorizes a change candidate produced by workspace-skill-maintenance. Do not use for review-only maintenance or merely refreshing `Last reviewed`.",
+    "version": "2026-10-04",
+    "core_date": "2026-10-04T20:31-04:00",
+    "status": "active",
+    "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/workspace-skill-changing-update/SKILL.md",
+    "sha256": "fe4ff5e10ff524f6429564d457df46b94014937ed400b225adf4d1ba89d2c1a9",
+    "providers": {
+      "xai": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/workspace-skill-changing-update/providers/xai/SKILL.md",
+        "sha256": "529486239bcf683a41133ab2e36ef1702f5c5970d4a04f241dde4012e9c16e4b",
+        "adapter_date": "2026-10-06",
+        "stale": false,
+        "origin": "box copy"
+      },
+      "anthropic": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/workspace-skill-changing-update/providers/anthropic/skill.md",
+        "sha256": "fd7adbde11bc5b67848d4043e0c1d844da8dc878bc0d10d30e9855de48d11aca",
+        "adapter_date": "2026-10-04T20:32-04:00",
+        "stale": false,
+        "origin": "Drive"
+      },
+      "google": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/workspace-skill-changing-update/providers/google/gem-definition.md",
+        "sha256": "0e8a30d23a77913f13aec8bb06cabf14a6737a09d69a43700670eb0cd05daabe",
+        "adapter_date": "2026-10-04T20:32-04:00",
+        "stale": false,
+        "origin": "Drive"
+      },
+      "openai": {
+        "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/workspace-skill-changing-update/providers/openai/SKILL.md",
+        "sha256": "fd7adbde11bc5b67848d4043e0c1d844da8dc878bc0d10d30e9855de48d11aca",
+        "adapter_date": "2026-10-04T20:32-04:00",
+        "stale": false,
+        "origin": "Drive",
+        "metadata": {
+          "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/workspace-skill-changing-update/providers/openai/agents/openai.yaml",
+          "sha256": "00e11eb08da0c84c43070fa72e382ea6f2d5a23ab61b415dbdf88cbef2e44cf5",
+          "adapter_date": "2026-10-04T20:44-04:00",
+          "stale": false
+        }
+      }
+    },
+    "updated": "2026-10-18"
+  }
+]

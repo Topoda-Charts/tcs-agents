@@ -1,0 +1,10 @@
+# Adapter of Drive CORE — getting-dressed (version 2026-10-04). Read-only mirror.
+interface:
+  display_name: "Getting Dressed"
+  short_description: "Recover missing working context from the right sources and resume the actual task."
+policy:
+  products:
+  - chatgpt
+  - codex
+  - atlas
+  allow_implicit_invocation: true

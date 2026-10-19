@@ -1,0 +1,10 @@
+# Adapter of Drive CORE — neighboring-concept-disambiguating (version 2026-10-04). Read-only mirror.
+interface:
+  display_name: "Neighboring Concept Disambiguating"
+  short_description: "Separate closely related concepts and choose the term that best matches the user's meaning."
+policy:
+  products:
+  - chatgpt
+  - codex
+  - atlas
+  allow_implicit_invocation: true

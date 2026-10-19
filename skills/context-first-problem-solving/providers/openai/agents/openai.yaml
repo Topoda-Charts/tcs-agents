@@ -1,0 +1,10 @@
+# Adapter of Drive CORE — context-first-problem-solving (version 2026-10-04). Read-only mirror.
+interface:
+  display_name: "Context First Problem Solving"
+  short_description: "Form the right working model before solving context-dependent or evolving requests."
+policy:
+  products:
+  - chatgpt
+  - codex
+  - atlas
+  allow_implicit_invocation: true

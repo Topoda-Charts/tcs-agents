@@ -1,0 +1,10 @@
+# Adapter of Drive CORE — workspace-skill-maintenance (version 2026-10-04). Read-only mirror.
+interface:
+  display_name: "Workspace Skill Maintenance"
+  short_description: "Audit workspace Skills for drift, staleness, broken references, and package hygiene."
+policy:
+  products:
+  - chatgpt
+  - codex
+  - atlas
+  allow_implicit_invocation: true

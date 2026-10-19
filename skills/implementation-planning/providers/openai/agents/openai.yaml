@@ -1,0 +1,10 @@
+# Adapter of Drive CORE — implementation-planning (version 2026-10-04). Read-only mirror.
+interface:
+  display_name: "Implementation Planning"
+  short_description: "Turn a settled change into a small, ordered, dependency-aware, verifiable execution plan."
+policy:
+  products:
+  - chatgpt
+  - codex
+  - atlas
+  allow_implicit_invocation: true

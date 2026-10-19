@@ -1,0 +1,10 @@
+# Adapter of Drive CORE — extrapolating-logically (version 2026-10-04). Read-only mirror.
+interface:
+  display_name: "Extrapolating Logically"
+  short_description: "Apply the nearest useful implication of an established rule or intent without overreaching."
+policy:
+  products:
+  - chatgpt
+  - codex
+  - atlas
+  allow_implicit_invocation: true

@@ -1,0 +1,12 @@
+# Adapter of Drive CORE — paying-attention (version 2026-10-04). Read-only mirror.
+interface:
+  display_name: Paying Attention
+  short_description: Preserve the user's exact meaning before interpreting or acting.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - atlas
+  allow_implicit_invocation: true

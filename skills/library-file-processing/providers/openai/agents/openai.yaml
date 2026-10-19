@@ -1,0 +1,10 @@
+# Adapter of Drive CORE — library-file-processing (version 2026-10-13). Read-only mirror.
+interface:
+  display_name: "Library File Processing"
+  short_description: "Process durable Library artifacts with semantic naming, placement, provenance, and dedupe."
+policy:
+  products:
+  - chatgpt
+  - codex
+  - atlas
+  allow_implicit_invocation: true
