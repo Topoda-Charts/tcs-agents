@@ -1,6 +1,6 @@
 # Routing, rerouting, and evidence
 
-Applicability: authorized TCS work across any provider. Reviewed 2026-09-29.
+Applicability: authorized TCS work across any provider. Initial review 2026-09-29; targeted identity reconciliation 2026-10-19.
 
 ## Choose the owner of the claim
 
@@ -26,7 +26,7 @@ Source scope and freshness matter more than the convenience of the connector. A 
 | Research, synthesis, writing, general reasoning | Archie, Dom, Fer, Gel, or another capable available agent |
 | Grounding and source fidelity | Fer; Internal Sources Specialist for the Grok lane |
 | Current external verification | External Sources Specialist or an available capable research context |
-| X-native discourse | Rogue / the currently mapped X-native Grok context |
+| X-native discourse | Cherub (Rub) in the currently assigned X/Grok context; Rogue is historical/merged |
 | YouTube/current Google-native context | Prince in the relevant surface |
 | Local repository/transcript receipts | Tue, Power (Codex), or the assigned Local worker |
 | Workplace-agent QA | Gel; current QA leadership where assigned |
