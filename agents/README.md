@@ -59,7 +59,7 @@ Repository-level context: [repository overview](https://raw.githubusercontent.co
 | Angel (Gel) | TCS-OAI-CHAT-SOL-02 | Standing persona | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/angel.md) |
 | Cherub (Rub) Grok | TCS-XAI-GROK-ASK-01 | Standing persona | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/cherub.md) |
 | Seraph (Raph) Valentine Grok | TCS-XAI-GROK-COM-02 (proposed) | Standing persona | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/seraph.md) |
-| Demon Chat | TCS-OAI-CHAT-LUN-04 (candidate) | Standing persona | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/demon.md) |
+| Demon Chat | TCS-OAI-CHAT-LUNA-04 (Approved) | Standing persona | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/demon.md) |
 | Rogue Grok (historical/merged reference) | Historical; unassigned | Inactive reference retained for attribution; not a current persona | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/rogue.md) |
 | Throne (One) Meta | TCS-MAI-MUSE-ASK-01 (candidate) | Standing persona | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/throne.md) |
 | Prince Gemini | TCS-GOO-GMNI-ASK-04 | Standing persona | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/prince.md) |
