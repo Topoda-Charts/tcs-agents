@@ -90,14 +90,14 @@
       "name": "Demon Chat",
       "category": "Standing persona",
       "provider_context": "ChatGPT personal/free context",
-      "badge": "TCS-OAI-CHAT-LUN-04",
+      "badge": "TCS-OAI-CHAT-LUNA-04",
       "role_title": null,
       "status": "Established",
       "aliases": [],
       "path": "standing/demon.md",
       "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/demon.md",
       "reviewed_on": "2026-10-20",
-      "badge_status": "candidate"
+      "badge_status": "approved"
     },
     {
       "id": "standing:rogue",
