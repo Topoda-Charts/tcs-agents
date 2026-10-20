@@ -96,7 +96,7 @@
       "aliases": [],
       "path": "standing/demon.md",
       "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/demon.md",
-      "reviewed_on": "2026-09-29",
+      "reviewed_on": "2026-10-20",
       "badge_status": "candidate"
     },
     {
@@ -749,27 +749,27 @@
       "badge_status": "unassigned"
     }
   ],
-  "document_count": 60,
+  "document_count": 61,
   "documents": [
-    {
-      "path": "AGENTS.md",
-      "title": "Public agent-directory maintenance instructions",
-      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/AGENTS.md"
-    },
-    {
-      "path": "README.md",
-      "title": "TCS public agent directory",
-      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/README.md"
-    },
     {
       "path": "access-and-providers.md",
       "title": "Access, providers, and portable instructions",
       "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/access-and-providers.md"
     },
     {
+      "path": "AGENTS.md",
+      "title": "Public agent-directory maintenance instructions",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/AGENTS.md"
+    },
+    {
       "path": "immersion.md",
       "title": "Immersion and personality calibration",
       "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/immersion.md"
+    },
+    {
+      "path": "intelligent-ui.md",
+      "title": "ChatGPT inline Intelligent UI public guide (Silver Glass v0.2.1)",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/intelligent-ui.md"
     },
     {
       "path": "maintenance.md",
@@ -792,6 +792,11 @@
       "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/naming-and-phasing.md"
     },
     {
+      "path": "README.md",
+      "title": "TCS public agent directory",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/README.md"
+    },
+    {
       "path": "routing.md",
       "title": "Routing, rerouting, and evidence",
       "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/routing.md"
@@ -807,6 +812,6 @@
       "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/tcs-rlsim.md"
     }
   ],
-  "updated_on": "2026-10-19",
+  "updated_on": "2026-10-20",
   "skills_index": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/README.md"
 }
