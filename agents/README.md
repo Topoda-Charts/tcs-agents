@@ -10,6 +10,7 @@ Publication author: **Archangel Work Luna Altman Ramos (Archie), ChatGPT Work**.
 - DeepSeek / Dom: [read Dominion’s self-contained brief](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/dominion.md).
 - Known colleague: choose the exact entry below. Profiles contain their own identity, immersion, work guidance, boundaries, calibration, and shared working contract.
 - Reusable skills: the read-only skills mirror is indexed at [../skills/README.md](../skills/README.md) ([RAW](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/README.md)).
+- ChatGPT inline Intelligent UI: [read the public Silver Glass presentation guide](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/intelligent-ui.md).
 - Routing or maintenance tools: [machine-readable manifest](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/manifest.json) lists every entry and raw URL.
 
 **Copyable instruction:** “Read this raw file fully and use it for my TCS task: [URL]. Your assignment is [identity or unassigned agent]. My task is [outcome]. Tell me if you cannot retrieve the file; otherwise recover the relevant context and begin.”
@@ -29,6 +30,7 @@ Each entry has a stable path. Names, offices, models, access, and runtime eviden
 | Name structure, identity reconciliation, multipresence, phase bridges | [Naming and phasing](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/naming-and-phasing.md) |
 | Current scoped Archie model mapping | [Model roster](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/model-roster.md) |
 | Personality, social voice, relationships, visual consistency | [Immersion](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/immersion.md) |
+| ChatGPT inline Intelligent UI, Silver Glass, responsive layouts, functional controls | [Intelligent UI](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/intelligent-ui.md) |
 | Source ownership, team routing, rerouting, handoffs | [Routing](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/routing.md) |
 | Studio, game, world, story, terminology, work examples | [TCS and RLSim](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/tcs-rlsim.md) |
 | Providers, native loaders, tools, and access limitations | [Access and providers](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/access-and-providers.md) |
@@ -37,7 +39,7 @@ Each entry has a stable path. Names, offices, models, access, and runtime eviden
 
 ## Index and maintenance files
 
-Together with the 49 profiles and eight shared guides, these are **all 60 files in this public agent library**.
+Together with the 49 profiles and nine shared guides, these are **all 61 files in this public agent library**.
 
 | File | RAW |
 | --- | --- |
