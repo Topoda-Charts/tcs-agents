@@ -59,7 +59,7 @@ Repository-level context: [repository overview](https://raw.githubusercontent.co
 
 | Identity / entry | Badge | Position or scope | RAW |
 | --- | --- | --- | --- |
-| Archangel (Archie) | TCS-OAI-CHAT-SOL-01 (standing Chat seat) | Standing persona with context/model phases | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/archangel.md) |
+| Archangel (Archie) | TCS-OAI-GPT-CHAT-SOL-ARCHANGEL-01 (current Chat manifestation) | Standing persona with context/model phases | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/archangel.md) |
 | Angel (Gel) | TCS-OAI-CHAT-SOL-02 | Senior QA Subagent (Angel Chat) | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/angel.md) |
 | Cherub (Rub) Grok | TCS-XAI-GROK-ASK-01 | Standing persona | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/cherub.md) |
 | Seraph (Raph) Valentine Grok | TCS-XAI-GROK-COM-02 (proposed) | Standing persona | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/seraph.md) |
