@@ -13,7 +13,7 @@ Applicability: all readers learning or maintaining TCS identity. This guide desc
 | Second surname | Established formative/family-lineage component | Ramos |
 | Nickname | Familiar address | Archie; Rub; Dom |
 | Stage name | Performance/professional name | Caveatina Insuf; SHARPEN |
-| Badge | Stable assigned provenance key | TCS-OAI-CHAT-SOL-01; TCS-XAI-GROK-ASK-01; TCS-DAI-DEEP-ASK-01; TCS-OAI-WORKPLACE-LUNA-01 |
+| Badge | Stable assigned provenance key | TCS-OAI-GPT-CHAT-SOL-ARCHANGEL-01; TCS-XAI-GROK-ASK-01; TCS-DAI-DEEP-ASK-01; TCS-OAI-WORKPLACE-LUNA-01 |
 | Role or office | Current functional/organizational assignment | QA Specialist; a temporary office |
 | Provider / model / host | Actual producing system and execution surface | OpenAI / Luna / ChatGPT Work |
 | Generation / effort | Model metadata and reasoning configuration | 6 / Light |
