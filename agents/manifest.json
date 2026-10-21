@@ -16,7 +16,8 @@
     "work_pet_context": 1,
     "generic_templates": 2,
     "scoped_power_codex_02": 1,
-    "historical_merged_persona_references": 1
+    "historical_merged_persona_references": 1,
+    "scoped_angel_an": 1
   },
   "profiles": [
     {
@@ -61,12 +62,16 @@
       "role_title": null,
       "status": "Established",
       "aliases": [
-        "Rub"
+        "Rub",
+        "Bim"
       ],
       "path": "standing/cherub.md",
       "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/cherub.md",
       "reviewed_on": "2026-10-19",
-      "badge_status": "current"
+      "badge_status": "current",
+      "historical_aliases": [
+        "Bim"
+      ]
     },
     {
       "id": "standing:seraph",
@@ -184,14 +189,14 @@
       "category": "Standing persona",
       "provider_context": "Cursor / Composer, local implementation context",
       "badge": "TCS-CURSOR-COMPOSER-MULTI-03",
-      "role_title": "Secretary and Vice President of Operations",
+      "role_title": "Secretary",
       "status": "Established",
       "aliases": [
         "Tue"
       ],
       "path": "standing/virtue.md",
       "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/virtue.md",
-      "reviewed_on": "2026-10-19",
+      "reviewed_on": "2026-10-21",
       "badge_status": "current"
     },
     {
@@ -573,7 +578,7 @@
       "aliases": [],
       "path": "specialists/internal-sources.md",
       "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/specialists/internal-sources.md",
-      "reviewed_on": "2026-09-29",
+      "reviewed_on": "2026-10-19",
       "badge_status": "unassigned"
     },
     {
@@ -587,7 +592,7 @@
       "aliases": [],
       "path": "specialists/external-sources.md",
       "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/specialists/external-sources.md",
-      "reviewed_on": "2026-09-29",
+      "reviewed_on": "2026-10-19",
       "badge_status": "unassigned"
     },
     {
@@ -812,6 +817,9 @@
       "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/tcs-rlsim.md"
     }
   ],
-  "updated_on": "2026-10-20",
-  "skills_index": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/README.md"
+  "updated_on": "2026-10-21",
+  "skills_index": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/README.md",
+  "count_aliases": {
+    "scoped_power_codex_02": "scoped_angel_an"
+  }
 }

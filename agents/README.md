@@ -19,9 +19,13 @@ If a chatbot cannot open a link, attach or paste that file. Public availability 
 
 ## What is included
 
-49 recognition/onboarding entries: **10 active standing personas plus one historical/merged Rogue reference; 16 ChatGPT Workplace Agents; eight core Grok Bots; Haggle Bot separately; two Grok Library specialist profiles; Power Codex 02’s scoped local profile (formerly Angel/An); Benjamin Hart; six off-air newsroom seats; KITE; and two generic templates.** These are categories, not 49 separate standing people. The directory is exhaustive for the established identities and scopes recovered for this publication; it is not a catalog of every web model or every temporary spawned worker.
+49 recognition/onboarding entries: **10 active standing personas plus one historical/merged Rogue reference; 16 ChatGPT Workplace Agents; eight core Grok Bots; Haggle Bot separately; two Grok Library specialist profiles; Power Codex 02’s scoped local profile (formerly Angel/An); Benjamin Hart; six off-air newsroom seats; KITE; and two generic templates.** These are categories, not 49 separate standing people. This is the published 49-entry cohort. Separate Grok Build and Power Codex manifestation 01 profiles remain outside this cohort pending authoritative identity evidence and the profile-coverage decision; no missing identity fields are inferred.
 
 Each entry has a stable path. Names, offices, models, access, and runtime evidence have separate fields. Empty/unassigned fields remain explicit rather than receiving invented badges or personality traits.
+
+## Manifest compatibility
+
+Schema version 1 retains `counts.scoped_angel_an` for existing consumers. `counts.scoped_power_codex_02` is a descriptive alias for the same single entry at `scoped/angel-an.md`; `count_aliases` maps the alias to the original key. Do not add both values when totaling categories; `profile_count` is authoritative. Cherub’s `aliases` retains Bim for historical lookup; `historical_aliases` distinguishes it from current-facing Rub.
 
 ## Shared guides
 
@@ -56,7 +60,7 @@ Repository-level context: [repository overview](https://raw.githubusercontent.co
 | Identity / entry | Badge | Position or scope | RAW |
 | --- | --- | --- | --- |
 | Archangel (Archie) | TCS-OAI-CHAT-SOL-01 (standing Chat seat) | Standing persona with context/model phases | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/archangel.md) |
-| Angel (Gel) | TCS-OAI-CHAT-SOL-02 | Standing persona | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/angel.md) |
+| Angel (Gel) | TCS-OAI-CHAT-SOL-02 | Senior QA Subagent (Angel Chat) | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/angel.md) |
 | Cherub (Rub) Grok | TCS-XAI-GROK-ASK-01 | Standing persona | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/cherub.md) |
 | Seraph (Raph) Valentine Grok | TCS-XAI-GROK-COM-02 (proposed) | Standing persona | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/seraph.md) |
 | Demon Chat | TCS-OAI-CHAT-LUNA-04 (Approved) | Standing persona | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/demon.md) |
@@ -65,7 +69,7 @@ Repository-level context: [repository overview](https://raw.githubusercontent.co
 | Prince Gemini | TCS-GOO-GMNI-ASK-04 | Standing persona | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/prince.md) |
 | Dominion (Dom) Deep | TCS-DAI-DEEP-ASK-01 | Standing persona | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/dominion.md) |
 | Lucifer (Fer) Claude | TCS-ANT-CLAUDE-HAIKU-04 (Sonnet: TCS-ANT-CLAUDE-SONNET-04) | Standing persona | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/lucifer.md) |
-| Virtue (Tue) Composer Cursor | TCS-CURSOR-COMPOSER-MULTI-03 | Standing persona | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/virtue.md) |
+| Virtue (Tue) Composer Cursor | TCS-CURSOR-COMPOSER-MULTI-03 | Secretary | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/virtue.md) |
 
 ### ChatGPT Workplace Agents
 

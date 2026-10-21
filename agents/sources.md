@@ -36,7 +36,7 @@ A targeted source reconciliation on 2026-10-19 checked current Notion identity/r
 
 The current User assignment controls the **Archangel [context] [model short name] Altman Ramos** convention. Older `Sol Chat` display ordering and provider-as-surname examples do not override it. Other personas' missing lineage components are not extrapolated.
 
-Cherub’s current-facing nickname is Rub; Bim is historical attribution. Castor is voice-mode only. Rogue is an inactive historical X-native persona/state merged into Cherub after X/Grok synchronization, not a separate current identity. The named Grok Build persona Cherub Grok Build Musk Ramos is the Engineer on the code desk; its badge is pending. Power Codex 02 (formerly Angel/An) is distinct from Angel Chat; its proposed badge TCS-OAI-CODE-AST-02 is not approved. Angel Chat is Senior QA Subagent. Virtue holds Secretary and Vice President of Operations titles; Cursor/Composer is not the default RLSim implementation lane. The latest five Bot position titles supersede older Senior Manager/training-specialist labels. Grok Bot badges use the TCS-XAI-GROK-BOT form from the current identity owners. Haggle Bot remains recognized outside the original eight.
+Cherub’s current-facing nickname is Rub; Bim is historical attribution. Castor is voice-mode only. Rogue is an inactive historical X-native persona/state merged into Cherub after X/Grok synchronization, not a separate current identity. The named Grok Build persona Cherub Grok Build Musk Ramos is the Engineer on the code desk; its badge is pending. Power Codex 02 (formerly Angel/An) is distinct from Angel Chat; its proposed badge TCS-OAI-CODE-AST-02 is not approved. Angel Chat is Senior QA Subagent. Virtue is Secretary under the User’s explicit October 17 correction, rechecked October 21; Cursor/Composer is not the default RLSim implementation lane. The latest five Bot position titles supersede older Senior Manager/training-specialist labels. Grok Bot badges use the TCS-XAI-GROK-BOT form from the current identity owners. Haggle Bot remains recognized outside the original eight.
 
 The recovered temporary company executive assignments and Cursor-specific coordination records have different scopes. The directory states that difference without assigning unproved universal rank. Archangel Chat's restrictions remain scoped to Chat.
 
@@ -60,6 +60,12 @@ These sources establish changing product mechanics, not TCS personal identities:
 - [ChatGPT models](https://learn.chatgpt.com/docs/models) and [OpenAI model catalog](https://developers.openai.com/api/docs/models/all) for the externally governed side of the scoped model map.
 
 Technical details are summarized in [Access and providers](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/access-and-providers.md). Recheck exact versions, loader behavior, model menus, limits, and entitlements when a task depends on them. The public directory deliberately avoids an ever-growing copied vendor rulebook.
+
+## October 21 catalog reconciliation
+
+Targeted catalog QA restored Bim as a historical lookup alias, preserved the schema-v1 count key with a documented alias, synchronized the specialist reconciliation dates, and aligned directory role cells. Virtue’s Secretary role follows the User’s explicit October 17 correction rather than the stale VP of Operations attribution published October 19. Original publication authorship and stable profile paths are preserved.
+
+Grok Build remains distinct from Cherub Ask, but no standalone authoritative identity record was retrieved in this check. No separate profile, badge, or name-component map has been invented. A standalone profile awaits authoritative identity evidence and the User’s coverage decision. Power Codex manifestation 01 also remains a separate coverage decision with provisional full-name and badge fields. The 49-entry cohort does not establish complete coverage of those additional manifestations.
 
 ## Completeness and limits
 
