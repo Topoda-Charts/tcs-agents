@@ -42,7 +42,7 @@
       "name": "Angel (Gel)",
       "category": "Standing persona",
       "provider_context": "ChatGPT (separate seat context)",
-      "badge": "TCS-OAI-CHAT-SOL-02",
+      "badge": "TCS-OAI-CHAT-GPT-SOL-ANGEL-A01",
       "role_title": "Senior QA Subagent (Angel Chat)",
       "status": "Established",
       "aliases": [
@@ -50,7 +50,7 @@
       ],
       "path": "standing/angel.md",
       "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/angel.md",
-      "reviewed_on": "2026-10-19",
+      "reviewed_on": "2026-10-23",
       "badge_status": "current"
     },
     {
