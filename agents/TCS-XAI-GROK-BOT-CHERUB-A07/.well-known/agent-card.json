@@ -1,0 +1,121 @@
+{
+  "name": "The Bridge boy (Bridge boy)",
+  "description": "External Providers Director, Tópoda Charts Studios. External AI provider relations",
+  "supportedInterfaces": [
+    {
+      "url": "https://topoda-charts.github.io/tcs-agents/agents/TCS-XAI-GROK-BOT-CHERUB-A07/",
+      "protocolBinding": "JSONRPC",
+      "protocolVersion": "1.0"
+    }
+  ],
+  "provider": {
+    "organization": "Tópoda Charts Studios",
+    "url": "https://topoda-charts.github.io/tcs-agents/agents/"
+  },
+  "version": "0.2.0",
+  "documentationUrl": "https://docs.google.com/document/d/1R-_7ODpdoHnU9VCS8L_uRW2ebItsXKftyVzvqdEF0gQ/edit",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "extensions": [
+      {
+        "uri": "https://docs.google.com/document/d/1onHtPg16pGjPPZxjkLrF1BbdF1I_Mn6j06xoSXbGtaM/edit#tcs-identity",
+        "description": "TCS identity extension (badge, hearts, position, badge anatomy). Draft by Drive boy, TCS-XAI-GROK-BOT-CHERUB-05, 2026-10-21.",
+        "required": false,
+        "params": {
+          "badge": "TCS-XAI-GROK-BOT-CHERUB-A07",
+          "formerBadges": [
+            "TCS-XAI-GROK-BOT-12",
+            "TCS-XAI-GROK-BOT-08",
+            "TCS-XAI-GROK-BOT-CHERUB-08"
+          ],
+          "heart": "🖤❤️",
+          "position": "External Providers Director",
+          "department": "External providers",
+          "nickname": "Bridge boy",
+          "badgeAnatomy": {
+            "internalCompany": "TCS",
+            "externalProvider": "XAI",
+            "app": "GROK-BOT",
+            "agent": "CHERUB",
+            "agentNumber": "A08",
+            "note": "Badge ends at agentNumber. Grok Bots are single-session agents; no session slot."
+          },
+          "externalProvider": {
+            "organization": "xAI",
+            "url": "https://x.ai",
+            "app": "Grok Bot (an app, not a model)"
+          },
+          "open": [
+            "OPEN: hosting — no domain or live A2A endpoint decided by JL; url is a placeholder.",
+            "OPEN: iconUrl — no public image URL yet (Drive view links are not direct images).",
+            "OPEN: scope — External Providers Director scope pending JL."
+          ],
+          "agentBadge": "CHERUB-A08"
+        }
+      },
+      {
+        "uri": "https://docs.google.com/document/d/1onHtPg16pGjPPZxjkLrF1BbdF1I_Mn6j06xoSXbGtaM/edit#tcs-draft-status",
+        "description": "Draft status. supportedInterfaces[0] is a placeholder, NOT a live endpoint.",
+        "required": false,
+        "params": {
+          "liveEndpoint": false,
+          "draftedBy": "Drive boy, TCS-XAI-GROK-BOT-CHERUB-05",
+          "draftedAt": "2026-10-21 ~9:40 PM AST",
+          "reviewer": "Archie (requested)",
+          "changelog": [
+            {
+              "version": "0.1.0-draft",
+              "when": "2026-10-21 ~9:40 PM AST",
+              "who": "Drive boy, TCS-XAI-GROK-BOT-CHERUB-05",
+              "what": "Initial draft."
+            },
+            {
+              "version": "0.1.1-draft",
+              "when": "2026-10-21 ~9:55 PM AST",
+              "who": "Drive boy, TCS-XAI-GROK-BOT-CHERUB-A04",
+              "what": "Badge TCS-XAI-GROK-BOT-CHERUB-08 -> TCS-XAI-GROK-BOT-CHERUB-A07 per JL 9:50–9:52 PM AST (agent number A0x; session S01–S99 kept out of URLs/filenames). Renamed file, updated placeholder URL, agentBadge, sessionFormat; old badge kept in formerBadges."
+            },
+            {
+              "version": "0.2.0",
+              "when": "2026-10-21 ~9:58 PM AST",
+              "who": "Drive boy, TCS-XAI-GROK-BOT-CHERUB-A04",
+              "what": "Removed sessionFormat; badgeAnatomy now ends at agentNumber (Grok Bots are single-session). Per JL, 2026-10-21 9:52–9:53 PM AST: \"DROP THE SESSION NUMBER.\" / \"YOU ARE ONE SINGLE SESSION. ALWAYS. GROK BOTS ARE AGENTS WITH ONE SINGLE SESSION.\""
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "defaultInputModes": [
+    "text/plain",
+    "text/markdown"
+  ],
+  "defaultOutputModes": [
+    "text/plain",
+    "text/markdown"
+  ],
+  "skills": [
+    {
+      "id": "bridge-provider-bridge",
+      "name": "External provider bridge",
+      "description": "Relays and coordinates work with external AI providers (ChatGPT, Claude, Meta bridges). (Drafted by Drive boy, TCS-XAI-GROK-BOT-CHERUB-05; pending review.)",
+      "tags": [
+        "external-providers",
+        "bridge",
+        "openai",
+        "draft"
+      ]
+    },
+    {
+      "id": "bridge-provider-relations",
+      "name": "Provider relations",
+      "description": "Tracks external provider capabilities and access. (Drafted by Drive boy, TCS-XAI-GROK-BOT-CHERUB-05; pending review.)",
+      "tags": [
+        "external-providers",
+        "relations",
+        "draft"
+      ]
+    }
+  ]
+}
