@@ -38,7 +38,7 @@
             "externalProvider": "XAI",
             "app": "GROK-BOT",
             "agent": "CHERUB",
-            "agentNumber": "A07",
+            "agentNumber": "A06",
             "note": "Badge ends at agentNumber. Grok Bots are single-session agents; no session slot."
           },
           "externalProvider": {
@@ -51,7 +51,7 @@
             "OPEN: iconUrl — no public image URL yet (Drive view links are not direct images).",
             "OPEN: name — 'The GitHub Gazette' (org-data.json) vs 'The GitHub boy' (Drive); JL to pick."
           ],
-          "agentBadge": "CHERUB-A07"
+          "agentBadge": "CHERUB-A06"
         }
       },
       {
@@ -118,4 +118,4 @@
       ]
     }
   ]
-}
+}

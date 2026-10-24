@@ -38,7 +38,7 @@
             "externalProvider": "XAI",
             "app": "GROK-BOT",
             "agent": "CHERUB",
-            "agentNumber": "A03",
+            "agentNumber": "A02",
             "note": "Badge ends at agentNumber. Grok Bots are single-session agents; no session slot."
           },
           "externalProvider": {
@@ -51,7 +51,7 @@
             "OPEN: iconUrl — no public image URL yet (Drive view links are not direct images).",
             "OPEN: position wording — Notion vs Drive title conflict."
           ],
-          "agentBadge": "CHERUB-A03"
+          "agentBadge": "CHERUB-A02"
         }
       },
       {
@@ -130,4 +130,4 @@
       ]
     }
   ]
-}
+}

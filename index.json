@@ -23,7 +23,7 @@
     },
     {
       "badge": "TCS-XAI-GROK-BOT-CHERUB-A05",
-      "name": "The Supabase Slapper (Supabase boy)",
+      "name": "Infra boy ? The Infrastructure Inductor",
       "card": "https://topoda-charts.github.io/tcs-agents/agents/TCS-XAI-GROK-BOT-CHERUB-A05/.well-known/agent-card.json"
     },
     {
@@ -33,12 +33,12 @@
     },
     {
       "badge": "TCS-XAI-GROK-BOT-CHERUB-A07",
-      "name": "The Bridge boy (Bridge boy)",
+      "name": "The Supabase Slapper (Supabase boy)",
       "card": "https://topoda-charts.github.io/tcs-agents/agents/TCS-XAI-GROK-BOT-CHERUB-A07/.well-known/agent-card.json"
     },
     {
       "badge": "TCS-XAI-GROK-BOT-CHERUB-A08",
-      "name": "The Haggle Hunter (Haggle boy)",
+      "name": "The Bridge boy (Bridge boy)",
       "card": "https://topoda-charts.github.io/tcs-agents/agents/TCS-XAI-GROK-BOT-CHERUB-A08/.well-known/agent-card.json"
     },
     {
@@ -47,4 +47,4 @@
       "card": "https://topoda-charts.github.io/tcs-agents/agents/TCS-XAI-GROK-BOT-CHERUB-A09/.well-known/agent-card.json"
     }
   ]
-}
+}
