@@ -26,12 +26,14 @@
             {
               "agent": "Archie",
               "badge": "TCS-OAI-CHAT-GPT-SOL-ARCHANGEL",
-              "card": "https://agents.topodacharts.com/tcs-oai/chat-gpt/sol-archangel/agent-card.json"
+              "card": "https://agents.topodacharts.com/tcs-oai/chat-gpt/sol-archangel/agent-card.json",
+              "status": "draft"
             },
             {
               "agent": "Angel",
               "badge": "TCS-OAI-CHAT-GPT-SOL-ANGEL",
-              "card": "https://agents.topodacharts.com/tcs-oai/chat-gpt/sol-angel/agent-card.json"
+              "card": "https://agents.topodacharts.com/tcs-oai/chat-gpt/sol-angel/agent-card.json",
+              "status": "draft"
             }
           ],
           "cardUrl": "https://agents.topodacharts.com/tcs-oai/agent-card.json",

@@ -28,7 +28,8 @@
           "cardUrl": "https://agents.topodacharts.com/tcs-oai/chat-gpt/sol-angel/agent-card.json",
           "nickname": "Angel",
           "externalProvider": "OpenAI",
-          "app": "ChatGPT"
+          "app": "ChatGPT",
+          "status": "draft"
         }
       }
     ]

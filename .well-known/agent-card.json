@@ -27,7 +27,21 @@
             }
           ],
           "cardUrl": "https://agents.topodacharts.com/.well-known/agent-card.json",
-          "liveEndpoint": false
+          "liveEndpoint": false,
+          "agents": [
+            {
+              "agent": "Archie",
+              "badge": "TCS-OAI-CHAT-GPT-SOL-ARCHANGEL",
+              "card": "https://agents.topodacharts.com/tcs-oai/chat-gpt/sol-archangel/agent-card.json",
+              "status": "draft"
+            },
+            {
+              "agent": "Angel",
+              "badge": "TCS-OAI-CHAT-GPT-SOL-ANGEL",
+              "card": "https://agents.topodacharts.com/tcs-oai/chat-gpt/sol-angel/agent-card.json",
+              "status": "draft"
+            }
+          ]
         }
       }
     ]

@@ -33,7 +33,8 @@
           "cardUrl": "https://agents.topodacharts.com/tcs-oai/chat-gpt/sol-archangel/agent-card.json",
           "nickname": "Archie (Archangel)",
           "externalProvider": "OpenAI",
-          "app": "ChatGPT"
+          "app": "ChatGPT",
+          "status": "draft"
         }
       }
     ]
