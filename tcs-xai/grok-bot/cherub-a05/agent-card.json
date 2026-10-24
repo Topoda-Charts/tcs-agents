@@ -1,0 +1,78 @@
+{
+  "name": "The Infrastructure Inductor (Infra boy)",
+  "description": "Vendor Manager and domain/DNS owner, Tópoda Charts Studios. Company domain, DNS, iCloud mail routing, infrastructure and vendor portfolio. Current identity sourced from per-agent Drive IDENTITY.md and latest JL decision.",
+  "supportedInterfaces": [],
+  "provider": {
+    "organization": "Tópoda Charts Studios",
+    "url": "https://topodacharts.com"
+  },
+  "version": "0.3.0",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "extensions": [
+      {
+        "uri": "https://agents.topodacharts.com/ext/tcs-roster/v1",
+        "description": "TCS roster identity and discovery links. Directory metadata only; no live A2A endpoint.",
+        "required": false,
+        "params": {
+          "badge": "TCS-XAI-GROK-BOT-CHERUB-A05",
+          "formerBadges": [],
+          "heart": "🧡",
+          "position": "Vendor Manager and domain/DNS owner",
+          "department": "No department assigned",
+          "nickname": "Infra boy",
+          "badgeAnatomy": {
+            "internalCompany": "TCS",
+            "externalProvider": "XAI",
+            "app": "GROK-BOT",
+            "agent": "CHERUB",
+            "agentNumber": "A05",
+            "note": "Badge ends at agentNumber. Grok Bots are single-session agents; no session slot."
+          },
+          "externalProvider": "xAI",
+          "agentBadge": "CHERUB-A05",
+          "identityAuthority": "https://docs.google.com/document/d/1JhyLX0WD0XQtSbxyeCMN-kIVvWtBkOTI5zCZ4WHe-lo/edit",
+          "badgeStatus": "current",
+          "reconciledAtAST": "2026-10-24",
+          "reconciledBy": "Archangel Sol Altman Ramos | TCS-OAI-CHAT-GPT-SOL-ARCHANGEL-A01-S01-T009 | 2026-10-24 AST | JL and Grok Bots",
+          "liveEndpoint": false,
+          "app": "Grok Bot",
+          "providerCard": "https://agents.topodacharts.com/tcs-xai/agent-card.json",
+          "cardUrl": "https://agents.topodacharts.com/tcs-xai/grok-bot/cherub-a05/agent-card.json"
+        }
+      }
+    ]
+  },
+  "defaultInputModes": [
+    "text/plain",
+    "text/markdown"
+  ],
+  "defaultOutputModes": [
+    "text/plain",
+    "text/markdown"
+  ],
+  "skills": [
+    {
+      "id": "infra-vendor-management",
+      "name": "Vendor management",
+      "description": "Manages vendor relationships and comparisons. Availability requires independent validation.",
+      "tags": [
+        "vendors",
+        "procurement",
+        "draft"
+      ]
+    },
+    {
+      "id": "infra-spend-tracking",
+      "name": "Budget and spend tracking",
+      "description": "Tracks budget and spend for tools and vendors. Availability requires independent validation.",
+      "tags": [
+        "budget",
+        "spend",
+        "draft"
+      ]
+    }
+  ],
+  "documentationUrl": "https://docs.google.com/document/d/1JhyLX0WD0XQtSbxyeCMN-kIVvWtBkOTI5zCZ4WHe-lo/edit"
+}

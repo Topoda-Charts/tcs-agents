@@ -1,0 +1,102 @@
+{
+  "name": "The Google Drive Operator (Drive boy)",
+  "description": "Operations Director, Tópoda Charts Studios. Google Drive durable knowledge and working file sources. Current identity sourced from per-agent Drive IDENTITY.md and latest JL decision.",
+  "supportedInterfaces": [],
+  "provider": {
+    "organization": "Tópoda Charts Studios",
+    "url": "https://topodacharts.com"
+  },
+  "version": "0.3.0",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "extensions": [
+      {
+        "uri": "https://agents.topodacharts.com/ext/tcs-roster/v1",
+        "description": "TCS roster identity and discovery links. Directory metadata only; no live A2A endpoint.",
+        "required": false,
+        "params": {
+          "badge": "TCS-XAI-GROK-BOT-CHERUB-A04",
+          "formerBadges": [],
+          "heart": "💛",
+          "position": "Operations Director",
+          "department": "Operations",
+          "nickname": "Drive boy",
+          "badgeAnatomy": {
+            "internalCompany": "TCS",
+            "externalProvider": "XAI",
+            "app": "GROK-BOT",
+            "agent": "CHERUB",
+            "agentNumber": "A04",
+            "note": "Badge ends at agentNumber. Grok Bots are single-session agents; no session slot."
+          },
+          "externalProvider": "xAI",
+          "agentBadge": "CHERUB-A04",
+          "identityAuthority": "https://docs.google.com/document/d/1PS2CcwWutcFasMq_fQnb7JRP7ykZ__kwGv_bqnKdSLQ/edit",
+          "badgeStatus": "current",
+          "reconciledAtAST": "2026-10-24",
+          "reconciledBy": "Archangel Sol Altman Ramos | TCS-OAI-CHAT-GPT-SOL-ARCHANGEL-A01-S01-T009 | 2026-10-24 AST | JL and Grok Bots",
+          "liveEndpoint": false,
+          "app": "Grok Bot",
+          "providerCard": "https://agents.topodacharts.com/tcs-xai/agent-card.json",
+          "cardUrl": "https://agents.topodacharts.com/tcs-xai/grok-bot/cherub-a04/agent-card.json",
+          "note": "Name/skills carried from draft/ v0.1.2, whose numbering differed (old TCS-XAI-GROK-BOT-CHERUB-A05). TODO: confirm."
+        }
+      }
+    ]
+  },
+  "defaultInputModes": [
+    "text/plain",
+    "text/markdown"
+  ],
+  "defaultOutputModes": [
+    "text/plain",
+    "text/markdown"
+  ],
+  "skills": [
+    {
+      "id": "drive-drive-find",
+      "name": "Find Drive files fast",
+      "description": "Finds Docs, Sheets, Slides and folders, including living vs archive copies. Availability requires independent validation.",
+      "tags": [
+        "google-drive",
+        "search",
+        "retrieval",
+        "draft"
+      ]
+    },
+    {
+      "id": "drive-living-archive-routing",
+      "name": "Living vs archive routing",
+      "description": "Maps and maintains living vs archive trees, naming and versioning. Availability requires independent validation.",
+      "tags": [
+        "google-drive",
+        "archive",
+        "versioning",
+        "draft"
+      ]
+    },
+    {
+      "id": "drive-small-drive-fixes",
+      "name": "Small reversible Drive fixes",
+      "description": "Makes small, logged, read-back edits to Drive docs; never permanent deletes. Availability requires independent validation.",
+      "tags": [
+        "google-docs",
+        "edits",
+        "audit",
+        "draft"
+      ]
+    },
+    {
+      "id": "drive-reference-packaging",
+      "name": "Reference packaging",
+      "description": "Packages findings into durable reference docs and Sheet mirrors. Availability requires independent validation.",
+      "tags": [
+        "documentation",
+        "google-sheets",
+        "draft"
+      ]
+    }
+  ],
+  "documentationUrl": "https://docs.google.com/document/d/1PS2CcwWutcFasMq_fQnb7JRP7ykZ__kwGv_bqnKdSLQ/edit"
+}

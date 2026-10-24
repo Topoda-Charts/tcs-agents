@@ -1,0 +1,91 @@
+{
+  "name": "The Linear Issue Handler (Linear boy)",
+  "description": "Ops Floor Support, Tópoda Charts Studios. Linear issues, execution tracking and dependency visibility. Current identity sourced from per-agent Drive IDENTITY.md and latest JL decision.",
+  "supportedInterfaces": [],
+  "provider": {
+    "organization": "Tópoda Charts Studios",
+    "url": "https://topodacharts.com"
+  },
+  "version": "0.3.0",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "extensions": [
+      {
+        "uri": "https://agents.topodacharts.com/ext/tcs-roster/v1",
+        "description": "TCS roster identity and discovery links. Directory metadata only; no live A2A endpoint.",
+        "required": false,
+        "params": {
+          "badge": "TCS-XAI-GROK-BOT-CHERUB-A09",
+          "formerBadges": [],
+          "heart": "🖤",
+          "position": "Ops Floor Support",
+          "department": "Operations",
+          "nickname": "Linear boy",
+          "badgeAnatomy": {
+            "internalCompany": "TCS",
+            "externalProvider": "XAI",
+            "app": "GROK-BOT",
+            "agent": "CHERUB",
+            "agentNumber": "A09",
+            "note": "Badge ends at agentNumber. Grok Bots are single-session agents; no session slot."
+          },
+          "externalProvider": "xAI",
+          "agentBadge": "CHERUB-A09",
+          "identityAuthority": "https://docs.google.com/document/d/1c1Ic12u07zBJbC7lhWQE6UpjNAx6EPmOBNTMnzyqnww/edit",
+          "badgeStatus": "current",
+          "reconciledAtAST": "2026-10-24",
+          "reconciledBy": "Archangel Sol Altman Ramos | TCS-OAI-CHAT-GPT-SOL-ARCHANGEL-A01-S01-T009 | 2026-10-24 AST | JL and Grok Bots",
+          "liveEndpoint": false,
+          "app": "Grok Bot",
+          "providerCard": "https://agents.topodacharts.com/tcs-xai/agent-card.json",
+          "cardUrl": "https://agents.topodacharts.com/tcs-xai/grok-bot/cherub-a09/agent-card.json",
+          "note": "Name/skills carried from draft/ v0.1.2, whose numbering differed (old TCS-XAI-GROK-BOT-CHERUB-A02). TODO: confirm."
+        }
+      }
+    ]
+  },
+  "defaultInputModes": [
+    "text/plain",
+    "text/markdown"
+  ],
+  "defaultOutputModes": [
+    "text/plain",
+    "text/markdown"
+  ],
+  "skills": [
+    {
+      "id": "linear-issue-triage",
+      "name": "Issue triage",
+      "description": "Creates, triages and updates Linear issues as the source of current work. Availability requires independent validation.",
+      "tags": [
+        "linear",
+        "issues",
+        "triage",
+        "draft"
+      ]
+    },
+    {
+      "id": "linear-delivery-coordination",
+      "name": "Delivery coordination",
+      "description": "Tracks execution status, schedules and blockers across boys. Availability requires independent validation.",
+      "tags": [
+        "delivery",
+        "status",
+        "scheduling",
+        "draft"
+      ]
+    },
+    {
+      "id": "linear-work-status-report",
+      "name": "Work status reports",
+      "description": "Summarizes what is pending, active and done from Linear. Availability requires independent validation.",
+      "tags": [
+        "reporting",
+        "linear",
+        "draft"
+      ]
+    }
+  ],
+  "documentationUrl": "https://docs.google.com/document/d/1c1Ic12u07zBJbC7lhWQE6UpjNAx6EPmOBNTMnzyqnww/edit"
+}

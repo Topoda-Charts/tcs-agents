@@ -1,0 +1,63 @@
+{
+  "name": "Power",
+  "description": "Power, the Codex agent of Tópoda Charts Studios. Runs locally on BRITO. Agent = Power, surface = Codex, model = GPT-6.1 Sol. Separate from Archie and Angel.",
+  "supportedInterfaces": [],
+  "provider": {
+    "organization": "Tópoda Charts Studios",
+    "url": "https://topodacharts.com"
+  },
+  "version": "0.3.0",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "extensions": [
+      {
+        "uri": "https://agents.topodacharts.com/ext/tcs-roster/v1",
+        "description": "TCS roster identity and discovery links. Directory metadata only; no live A2A endpoint.",
+        "required": false,
+        "params": {
+          "badge": "TCS-OAI-CODEX-GPT-SOL-POWER",
+          "agent": "Power",
+          "surface": "Codex",
+          "model": "GPT-6.1 Sol",
+          "runsOn": "BRITO",
+          "usageSeats": [
+            "U01",
+            "U02"
+          ],
+          "seatNote": "U## marks which seat usage counts on; same agent, sessions and skills.",
+          "formerBadges": [
+            "TCS-OAI-CODEX-SOL-01",
+            "TCS-OAI-CODEX-GPT-SOL-POWER-A01"
+          ],
+          "liveEndpoint": false,
+          "providerCard": "https://agents.topodacharts.com/tcs-oai/agent-card.json",
+          "cardUrl": "https://agents.topodacharts.com/tcs-oai/codex-gpt/sol-power/agent-card.json",
+          "nickname": "Power",
+          "externalProvider": "OpenAI",
+          "app": "Codex"
+        }
+      }
+    ]
+  },
+  "defaultInputModes": [
+    "text/plain",
+    "text/markdown"
+  ],
+  "defaultOutputModes": [
+    "text/plain",
+    "text/markdown"
+  ],
+  "skills": [
+    {
+      "id": "local-code-builds",
+      "name": "Local code builds",
+      "description": "Builds code locally (e.g. tcs-mail-mcp). TODO: JL to confirm skill list.",
+      "tags": [
+        "codex",
+        "code",
+        "draft"
+      ]
+    }
+  ]
+}

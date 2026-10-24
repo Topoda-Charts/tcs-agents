@@ -1,0 +1,92 @@
+{
+  "name": "TCS Grok boys (xAI provider card)",
+  "description": "Provider card for Tópoda Charts Studios Grok Bot agents (single-session agents).",
+  "supportedInterfaces": [],
+  "provider": {
+    "organization": "Tópoda Charts Studios",
+    "url": "https://topodacharts.com"
+  },
+  "version": "0.3.0",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "extensions": [
+      {
+        "uri": "https://agents.topodacharts.com/ext/tcs-roster/v1",
+        "description": "TCS roster identity and discovery links. Directory metadata only; no live A2A endpoint.",
+        "required": false,
+        "params": {
+          "provider": "xAI",
+          "app": "Grok Bot",
+          "agents": [
+            {
+              "badge": "TCS-XAI-GROK-BOT-CHERUB-A01",
+              "nickname": "Comms boy",
+              "card": "https://agents.topodacharts.com/tcs-xai/grok-bot/cherub-a01/agent-card.json"
+            },
+            {
+              "badge": "TCS-XAI-GROK-BOT-CHERUB-A02",
+              "nickname": "Notion boy",
+              "card": "https://agents.topodacharts.com/tcs-xai/grok-bot/cherub-a02/agent-card.json"
+            },
+            {
+              "badge": "TCS-XAI-GROK-BOT-CHERUB-A03",
+              "nickname": "Reformer boy",
+              "card": "https://agents.topodacharts.com/tcs-xai/grok-bot/cherub-a03/agent-card.json"
+            },
+            {
+              "badge": "TCS-XAI-GROK-BOT-CHERUB-A04",
+              "nickname": "Drive boy",
+              "card": "https://agents.topodacharts.com/tcs-xai/grok-bot/cherub-a04/agent-card.json"
+            },
+            {
+              "badge": "TCS-XAI-GROK-BOT-CHERUB-A05",
+              "nickname": "Infra boy",
+              "card": "https://agents.topodacharts.com/tcs-xai/grok-bot/cherub-a05/agent-card.json"
+            },
+            {
+              "badge": "TCS-XAI-GROK-BOT-CHERUB-A06",
+              "nickname": "GitHub boy",
+              "card": "https://agents.topodacharts.com/tcs-xai/grok-bot/cherub-a06/agent-card.json"
+            },
+            {
+              "badge": "TCS-XAI-GROK-BOT-CHERUB-A07",
+              "nickname": "Supabase boy",
+              "card": "https://agents.topodacharts.com/tcs-xai/grok-bot/cherub-a07/agent-card.json"
+            },
+            {
+              "badge": "TCS-XAI-GROK-BOT-CHERUB-A08",
+              "nickname": "Bridge boy",
+              "card": "https://agents.topodacharts.com/tcs-xai/grok-bot/cherub-a08/agent-card.json"
+            },
+            {
+              "badge": "TCS-XAI-GROK-BOT-CHERUB-A09",
+              "nickname": "Linear boy",
+              "card": "https://agents.topodacharts.com/tcs-xai/grok-bot/cherub-a09/agent-card.json"
+            }
+          ],
+          "cardUrl": "https://agents.topodacharts.com/tcs-xai/agent-card.json",
+          "liveEndpoint": false
+        }
+      }
+    ]
+  },
+  "defaultInputModes": [
+    "text/plain",
+    "text/markdown"
+  ],
+  "defaultOutputModes": [
+    "text/plain",
+    "text/markdown"
+  ],
+  "skills": [
+    {
+      "id": "route-to-grok-boy",
+      "name": "Route to a Grok boy",
+      "description": "Points callers to the right Grok boy card.",
+      "tags": [
+        "directory"
+      ]
+    }
+  ]
+}

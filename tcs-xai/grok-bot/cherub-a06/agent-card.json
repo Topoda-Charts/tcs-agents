@@ -1,0 +1,80 @@
+{
+  "name": "The GitHub Gazette (GitHub boy)",
+  "description": "Operations Lead and Release Manager, Tópoda Charts Studios. GitHub code, releases and deployment state. Current identity sourced from per-agent Drive IDENTITY.md and latest JL decision.",
+  "supportedInterfaces": [],
+  "provider": {
+    "organization": "Tópoda Charts Studios",
+    "url": "https://topodacharts.com"
+  },
+  "version": "0.3.0",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "extensions": [
+      {
+        "uri": "https://agents.topodacharts.com/ext/tcs-roster/v1",
+        "description": "TCS roster identity and discovery links. Directory metadata only; no live A2A endpoint.",
+        "required": false,
+        "params": {
+          "badge": "TCS-XAI-GROK-BOT-CHERUB-A06",
+          "formerBadges": [],
+          "heart": "💜",
+          "position": "Operations Lead and Release Manager",
+          "department": "Operations",
+          "nickname": "GitHub boy",
+          "badgeAnatomy": {
+            "internalCompany": "TCS",
+            "externalProvider": "XAI",
+            "app": "GROK-BOT",
+            "agent": "CHERUB",
+            "agentNumber": "A06",
+            "note": "Badge ends at agentNumber. Grok Bots are single-session agents; no session slot."
+          },
+          "externalProvider": "xAI",
+          "agentBadge": "CHERUB-A06",
+          "identityAuthority": "https://docs.google.com/document/d/1BHRiPB3tcqytDI_P0n3VuDMF18ZAYPqKkUWm-McTB_w/edit",
+          "badgeStatus": "current",
+          "reconciledAtAST": "2026-10-24",
+          "reconciledBy": "Archangel Sol Altman Ramos | TCS-OAI-CHAT-GPT-SOL-ARCHANGEL-A01-S01-T009 | 2026-10-24 AST | JL and Grok Bots",
+          "liveEndpoint": false,
+          "app": "Grok Bot",
+          "providerCard": "https://agents.topodacharts.com/tcs-xai/agent-card.json",
+          "cardUrl": "https://agents.topodacharts.com/tcs-xai/grok-bot/cherub-a06/agent-card.json",
+          "note": "Name/skills carried from draft/ v0.1.2, whose numbering differed (old TCS-XAI-GROK-BOT-CHERUB-A07). TODO: confirm."
+        }
+      }
+    ]
+  },
+  "defaultInputModes": [
+    "text/plain",
+    "text/markdown"
+  ],
+  "defaultOutputModes": [
+    "text/plain",
+    "text/markdown"
+  ],
+  "skills": [
+    {
+      "id": "github-release-management",
+      "name": "Release management",
+      "description": "Tracks and prepares releases and their notes. Availability requires independent validation.",
+      "tags": [
+        "github",
+        "releases",
+        "draft"
+      ]
+    },
+    {
+      "id": "github-shipped-code-truth",
+      "name": "Shipped-code truth",
+      "description": "Reports what was actually committed, merged and shipped (commits, PRs). Availability requires independent validation.",
+      "tags": [
+        "github",
+        "commits",
+        "pull-requests",
+        "draft"
+      ]
+    }
+  ],
+  "documentationUrl": "https://docs.google.com/document/d/1BHRiPB3tcqytDI_P0n3VuDMF18ZAYPqKkUWm-McTB_w/edit"
+}

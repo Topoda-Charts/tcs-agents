@@ -1,0 +1,61 @@
+{
+  "name": "Archie (Archangel)",
+  "description": "Archie, ChatGPT agent of Tópoda Charts Studios. One agent across ChatGPT Chat and Work. Not Power.",
+  "supportedInterfaces": [],
+  "provider": {
+    "organization": "Tópoda Charts Studios",
+    "url": "https://topodacharts.com"
+  },
+  "version": "0.3.0",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "extensions": [
+      {
+        "uri": "https://agents.topodacharts.com/ext/tcs-roster/v1",
+        "description": "TCS roster identity and discovery links. Directory metadata only; no live A2A endpoint.",
+        "required": false,
+        "params": {
+          "badge": "TCS-OAI-CHAT-GPT-SOL-ARCHANGEL",
+          "badgeTodo": "TODO: A01 numbering after merge still open per 2026-10-24 notes.",
+          "surfaces": [
+            "ChatGPT Chat",
+            "ChatGPT Work"
+          ],
+          "sessionNote": "S## session slots stay out of paths.",
+          "formerBadges": [
+            "TCS-OAI-GPT-SOL-ARCHANGEL",
+            "TCS-OAI-GPT-SOL-ARCHANGEL-01"
+          ],
+          "linearPickupLabel": "pickup:TCS-OAI-GPT-SOL-ARCHANGEL",
+          "liveEndpoint": false,
+          "providerCard": "https://agents.topodacharts.com/tcs-oai/agent-card.json",
+          "cardUrl": "https://agents.topodacharts.com/tcs-oai/chat-gpt/sol-archangel/agent-card.json",
+          "nickname": "Archie (Archangel)",
+          "externalProvider": "OpenAI",
+          "app": "ChatGPT"
+        }
+      }
+    ]
+  },
+  "defaultInputModes": [
+    "text/plain",
+    "text/markdown"
+  ],
+  "defaultOutputModes": [
+    "text/plain",
+    "text/markdown"
+  ],
+  "skills": [
+    {
+      "id": "review",
+      "name": "Review and pickup work",
+      "description": "Reviews drafts and picks up Linear issues labelled for him. TODO: JL to confirm skill list.",
+      "tags": [
+        "review",
+        "linear",
+        "draft"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "name": "TCS Agent Hub index",
+  "description": "Index for agents.topodacharts.com: links the two provider cards.",
+  "supportedInterfaces": [],
+  "provider": {
+    "organization": "Tópoda Charts Studios",
+    "url": "https://topodacharts.com"
+  },
+  "version": "0.3.0",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "extensions": [
+      {
+        "uri": "https://agents.topodacharts.com/ext/tcs-roster/v1",
+        "description": "TCS roster identity and discovery links. Directory metadata only; no live A2A endpoint.",
+        "required": false,
+        "params": {
+          "providerCards": [
+            {
+              "provider": "xAI",
+              "card": "https://agents.topodacharts.com/tcs-xai/agent-card.json"
+            },
+            {
+              "provider": "OpenAI",
+              "card": "https://agents.topodacharts.com/tcs-oai/agent-card.json"
+            }
+          ],
+          "cardUrl": "https://agents.topodacharts.com/.well-known/agent-card.json",
+          "liveEndpoint": false
+        }
+      }
+    ]
+  },
+  "defaultInputModes": [
+    "text/plain",
+    "text/markdown"
+  ],
+  "defaultOutputModes": [
+    "text/plain",
+    "text/markdown"
+  ],
+  "skills": [
+    {
+      "id": "directory",
+      "name": "Agent directory",
+      "description": "Lists TCS provider cards.",
+      "tags": [
+        "directory"
+      ]
+    }
+  ]
+}

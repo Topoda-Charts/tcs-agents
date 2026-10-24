@@ -1,0 +1,55 @@
+{
+  "name": "Angel",
+  "description": "Angel, ChatGPT agent of Tópoda Charts Studios. Separate agent from Archie and Power.",
+  "supportedInterfaces": [],
+  "provider": {
+    "organization": "Tópoda Charts Studios",
+    "url": "https://topodacharts.com"
+  },
+  "version": "0.3.0",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "extensions": [
+      {
+        "uri": "https://agents.topodacharts.com/ext/tcs-roster/v1",
+        "description": "TCS roster identity and discovery links. Directory metadata only; no live A2A endpoint.",
+        "required": false,
+        "params": {
+          "badge": "TCS-OAI-CHAT-GPT-SOL-ANGEL",
+          "badgeTodo": "TODO: path/badge from 2026-10-24 notes ('unchanged from the earlier map, pending JL'); confirm.",
+          "formerBadges": [
+            "TCS-OAI-GPT-SOL-ANGEL",
+            "TCS-OAI-GPT-SOL-ANGEL-01"
+          ],
+          "linearPickupLabel": "pickup:TCS-OAI-GPT-SOL-ANGEL",
+          "liveEndpoint": false,
+          "providerCard": "https://agents.topodacharts.com/tcs-oai/agent-card.json",
+          "cardUrl": "https://agents.topodacharts.com/tcs-oai/chat-gpt/sol-angel/agent-card.json",
+          "nickname": "Angel",
+          "externalProvider": "OpenAI",
+          "app": "ChatGPT"
+        }
+      }
+    ]
+  },
+  "defaultInputModes": [
+    "text/plain",
+    "text/markdown"
+  ],
+  "defaultOutputModes": [
+    "text/plain",
+    "text/markdown"
+  ],
+  "skills": [
+    {
+      "id": "qa",
+      "name": "QA",
+      "description": "Runs QA handed over by the Comms boy (Hub note). TODO: JL to confirm skill list.",
+      "tags": [
+        "qa",
+        "draft"
+      ]
+    }
+  ]
+}

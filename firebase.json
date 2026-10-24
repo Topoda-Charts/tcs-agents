@@ -1,0 +1,29 @@
+{
+  "hosting": {
+    "target": "tcs-agents",
+    "public": ".",
+    "ignore": [
+      ".git/**",
+      "firebase.json",
+      ".firebaserc",
+      "firebase-debug.log",
+      "firebase-debug.*.log",
+      ".firebase/**"
+    ],
+    "headers": [
+      {
+        "source": "**/*.json",
+        "headers": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Access-Control-Allow-Origin",
+            "value": "*"
+          }
+        ]
+      }
+    ]
+  }
+}

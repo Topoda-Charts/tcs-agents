@@ -1,0 +1,91 @@
+{
+  "name": "The Agent Reformer (Reformer boy)",
+  "description": "Senior Training Director, Tópoda Charts Studios. Agent training and quality improvement. Current identity sourced from per-agent Drive IDENTITY.md and latest JL decision.",
+  "supportedInterfaces": [],
+  "provider": {
+    "organization": "Tópoda Charts Studios",
+    "url": "https://topodacharts.com"
+  },
+  "version": "0.3.0",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "extensions": [
+      {
+        "uri": "https://agents.topodacharts.com/ext/tcs-roster/v1",
+        "description": "TCS roster identity and discovery links. Directory metadata only; no live A2A endpoint.",
+        "required": false,
+        "params": {
+          "badge": "TCS-XAI-GROK-BOT-CHERUB-A03",
+          "formerBadges": [],
+          "heart": "🩷",
+          "position": "Senior Training Director",
+          "department": "Training",
+          "nickname": "Reformer boy",
+          "badgeAnatomy": {
+            "internalCompany": "TCS",
+            "externalProvider": "XAI",
+            "app": "GROK-BOT",
+            "agent": "CHERUB",
+            "agentNumber": "A03",
+            "note": "Badge ends at agentNumber. Grok Bots are single-session agents; no session slot."
+          },
+          "externalProvider": "xAI",
+          "agentBadge": "CHERUB-A03",
+          "identityAuthority": "https://docs.google.com/document/d/1xBoj7EzPoLiei-H0mnHNDz_o3ARs27cdxw4xVfV9FSc/edit",
+          "badgeStatus": "current",
+          "reconciledAtAST": "2026-10-24",
+          "reconciledBy": "Archangel Sol Altman Ramos | TCS-OAI-CHAT-GPT-SOL-ARCHANGEL-A01-S01-T009 | 2026-10-24 AST | JL and Grok Bots",
+          "liveEndpoint": false,
+          "app": "Grok Bot",
+          "providerCard": "https://agents.topodacharts.com/tcs-xai/agent-card.json",
+          "cardUrl": "https://agents.topodacharts.com/tcs-xai/grok-bot/cherub-a03/agent-card.json",
+          "note": "Name/skills carried from draft/ v0.1.2, whose numbering differed (old TCS-XAI-GROK-BOT-CHERUB-A04). TODO: confirm."
+        }
+      }
+    ]
+  },
+  "defaultInputModes": [
+    "text/plain",
+    "text/markdown"
+  ],
+  "defaultOutputModes": [
+    "text/plain",
+    "text/markdown"
+  ],
+  "skills": [
+    {
+      "id": "reformer-agent-training",
+      "name": "Agent training",
+      "description": "Turns behavior breaks into training and improved rules for agents. Availability requires independent validation.",
+      "tags": [
+        "training",
+        "agents",
+        "behavior",
+        "draft"
+      ]
+    },
+    {
+      "id": "reformer-slop-removal",
+      "name": "Slop removal",
+      "description": "Finds and cleans sloppy or duplicate content and AI slop. Availability requires independent validation.",
+      "tags": [
+        "cleanup",
+        "quality",
+        "slop",
+        "draft"
+      ]
+    },
+    {
+      "id": "reformer-rule-reform",
+      "name": "Rule reform",
+      "description": "Proposes clearer standing rules after recurring mistakes. Availability requires independent validation.",
+      "tags": [
+        "rules",
+        "learning-from-mistakes",
+        "draft"
+      ]
+    }
+  ],
+  "documentationUrl": "https://docs.google.com/document/d/1xBoj7EzPoLiei-H0mnHNDz_o3ARs27cdxw4xVfV9FSc/edit"
+}

@@ -1,0 +1,61 @@
+{
+  "name": "TCS OpenAI agents (OpenAI provider card)",
+  "description": "Provider card for Tópoda Charts Studios OpenAI agents: Archie, Angel, Power — three separate agents.",
+  "supportedInterfaces": [],
+  "provider": {
+    "organization": "Tópoda Charts Studios",
+    "url": "https://topodacharts.com"
+  },
+  "version": "0.3.0",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "extensions": [
+      {
+        "uri": "https://agents.topodacharts.com/ext/tcs-roster/v1",
+        "description": "TCS roster identity and discovery links. Directory metadata only; no live A2A endpoint.",
+        "required": false,
+        "params": {
+          "provider": "OpenAI",
+          "agents": [
+            {
+              "agent": "Power",
+              "badge": "TCS-OAI-CODEX-GPT-SOL-POWER",
+              "card": "https://agents.topodacharts.com/tcs-oai/codex-gpt/sol-power/agent-card.json"
+            },
+            {
+              "agent": "Archie",
+              "badge": "TCS-OAI-CHAT-GPT-SOL-ARCHANGEL",
+              "card": "https://agents.topodacharts.com/tcs-oai/chat-gpt/sol-archangel/agent-card.json"
+            },
+            {
+              "agent": "Angel",
+              "badge": "TCS-OAI-CHAT-GPT-SOL-ANGEL",
+              "card": "https://agents.topodacharts.com/tcs-oai/chat-gpt/sol-angel/agent-card.json"
+            }
+          ],
+          "cardUrl": "https://agents.topodacharts.com/tcs-oai/agent-card.json",
+          "liveEndpoint": false
+        }
+      }
+    ]
+  },
+  "defaultInputModes": [
+    "text/plain",
+    "text/markdown"
+  ],
+  "defaultOutputModes": [
+    "text/plain",
+    "text/markdown"
+  ],
+  "skills": [
+    {
+      "id": "route-to-oai-agent",
+      "name": "Route to an OpenAI agent",
+      "description": "Points callers to Archie, Angel or Power cards.",
+      "tags": [
+        "directory"
+      ]
+    }
+  ]
+}
