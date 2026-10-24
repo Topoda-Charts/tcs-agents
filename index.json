@@ -23,7 +23,7 @@
     },
     {
       "badge": "TCS-XAI-GROK-BOT-CHERUB-A05",
-      "name": "Infra boy ? The Infrastructure Inductor",
+      "name": "Infra boy \u00b7 The Infrastructure Inductor",
       "card": "https://topoda-charts.github.io/tcs-agents/agents/TCS-XAI-GROK-BOT-CHERUB-A05/.well-known/agent-card.json"
     },
     {
@@ -47,4 +47,4 @@
       "card": "https://topoda-charts.github.io/tcs-agents/agents/TCS-XAI-GROK-BOT-CHERUB-A09/.well-known/agent-card.json"
     }
   ]
-}
+}
