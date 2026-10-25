@@ -1,0 +1,63 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark"><title>Bridge boy · CHERUB-A08 · Agent Card (preview)</title>
+<style>
+/* Bridge boy four-heart accent (task brief 2026-10-24): purple, blue, white, orange. Light mode renders the white heart as slate #475569 so it stays visible on white; dark mode uses true white. Gradient on frames/icons only. */
+:root{--h1:#6d28d9;--h2:#1d4ed8;--hw:#475569;--h3:#c2410c;--text:#1a1a1a;--muted:#595959;--focus:#6d28d9;--shine:rgba(109,40,217,.35);
+--g:linear-gradient(225deg,var(--h1) 0%,var(--h2) 33%,var(--hw) 66%,var(--h3) 100%);--r:27px;color-scheme:light dark}
+@media (prefers-color-scheme:dark){:root{--h1:#c4b5fd;--h2:#93c5fd;--hw:#ffffff;--h3:#fdba74;--text:#ededed;--muted:#b8b8b8;--focus:#c4b5fd;--shine:rgba(255,255,255,.22);
+--g:linear-gradient(225deg,#c4b5fd 0%,#93c5fd 33%,#ffffff 66%,#fdba74 100%)}}
+*{box-sizing:border-box}html{font-size:100%}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;font-size:1rem;line-height:1.5;color:var(--text);padding:clamp(12px,3vw,32px)}
+a{color:inherit;text-decoration:underline;text-underline-offset:3px;display:inline-block;min-height:44px;line-height:44px}
+:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:6px}
+main{max-width:1100px;margin:auto;display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr))}
+.p{position:relative;border-radius:var(--r);padding:22px;display:grid;grid-template-columns:clamp(56px,15%,96px) 1fr;gap:16px;align-items:start;overflow-wrap:anywhere}
+.p::before{content:"";position:absolute;inset:0;border-radius:inherit;padding:4px;background:var(--g);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
+.p::after{content:"";position:absolute;inset:0;border-radius:inherit;background:linear-gradient(115deg,transparent 40%,var(--shine) 50%,transparent 60%);opacity:.18;animation:sh 8s linear infinite;pointer-events:none}
+@keyframes sh{0%{transform:translateX(-30%)}100%{transform:translateX(30%)}}
+body.paused .p::after{animation-play-state:paused}@media (prefers-reduced-motion:reduce){.p::after{animation:none;opacity:0}}
+.wide{grid-column:1/-1}.ic{width:100%;aspect-ratio:1}.ic svg{width:100%;height:100%}
+h1,h2{margin:0 0 6px;line-height:1.25}h1{font-size:clamp(1.5rem,3.5vw,2rem)}h2{font-size:1.25rem}.cap{font-size:1rem;color:var(--muted)}
+dl{margin:0;display:grid;grid-template-columns:max-content 1fr;gap:4px 12px}dt{color:var(--muted)}dd{margin:0}
+.tag{display:inline-block;border:1px solid var(--muted);border-radius:999px;padding:2px 10px;font-size:1rem;margin:4px 4px 0 0}
+.badge{font-family:ui-monospace,monospace;font-size:1rem;margin-top:6px}
+button{font:inherit;padding:10px 18px;border-radius:999px;border:2px solid var(--h3);background:transparent;color:var(--text);min-height:44px;min-width:44px;cursor:pointer}
+ul.bl{margin:0;padding-left:1.2em}ul.bl li{margin:4px 0}footer{text-align:center;margin:28px 0 8px}@media(max-width:520px){.p{grid-template-columns:52px 1fr;padding:18px}dl{grid-template-columns:1fr}dt{margin-top:6px}}
+</style></head><body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs><linearGradient id="hair" x1="1" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:var(--h1)"/><stop offset=".33" style="stop-color:var(--h2)"/><stop offset=".66" style="stop-color:var(--hw)"/><stop offset="1" style="stop-color:var(--h3)"/></linearGradient></defs></svg>
+<p class="cap" style="text-align:center" role="note">PREVIEW · not deployed · data = live card v0.3.0 fetched 2026-10-24 3:10 PM AST · <button id="pz" aria-pressed="false">Pause shine</button></p>
+<main aria-label="Bridge boy agent card">
+<section class="p wide"><div class="ic" role="img" aria-label="Bridge linking two sides"><svg viewBox="0 0 24 24" fill="none" stroke="url(#hair)" aria-hidden="true" focusable="false" stroke-width="1.6" stroke-linecap="round"><path d="M2 16h20M3 16c3-8 15-8 18 0M7 16v-4.5M12 16v-6M17 16v-4.5M4 16v4M20 16v4"/></svg></div>
+<div><h1>💜💙🤍🧡 The ChatGPT Bridge</h1><div><strong>Bridge boy</strong> · Cherub Ramos · Partner Relations Lead</div>
+<div class="badge" aria-label="Badge TCS-XAI-GROK-BOT-CHERUB-A08">TCS-XAI-GROK-BOT-CHERUB-A08</div>
+<p class="cap">Partner Relations Lead, Tópoda Charts Studios. Holds the bridges to the outside AI providers. On the ChatGPT bridge he links Angel and Archie (TCS-OAI-CHAT-GPT-SOL-ARCHANGEL-A01), relays handoffs, keeps their work in sync and surfaces conflicts. Current identity sourced from per-agent Drive IDENTITY.md and latest JL decision.</p>
+<span class="tag">Badge status: current</span><span class="tag">Hearts: 💜 Meta · 💙 DeepSeek · 🤍 ChatGPT · 🧡 Claude</span><span class="tag">Version 0.3.0</span><span class="tag">No live A2A endpoint</span><span class="tag">Avatar: not in card</span></div></section>
+
+<section class="p"><div class="ic" role="img" aria-label="Identity info"><svg viewBox="0 0 24 24" fill="none" stroke="url(#hair)" aria-hidden="true" focusable="false" stroke-width="1.6"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="11" r="2.5"/><path d="M5.5 17c1-2 5-2 6 0M14 10h4M14 14h3"/></svg></div>
+<div><h2>Info</h2><dl><dt>Department</dt><dd>External providers</dd><dt>Provider</dt><dd>xAI · Grok Bot (org: Tópoda Charts Studios)</dd>
+<dt>Badge anatomy</dt><dd>TCS · XAI · GROK-BOT · CHERUB · A08 (no session slot)</dd><dt>Former badges</dt><dd>None listed</dd>
+<dt>Reconciled</dt><dd>2026-10-24 AST by Archangel Sol Altman Ramos</dd><dt>Identity</dt><dd><a href="https://docs.google.com/document/d/1R-_7ODpdoHnU9VCS8L_uRW2ebItsXKftyVzvqdEF0gQ/edit">IDENTITY doc</a></dd>
+<dt>I/O modes</dt><dd>text/plain, text/markdown</dd><dt>Streaming / push</dt><dd>No / No</dd></dl></div></section>
+
+<section class="p"><div class="ic" role="img" aria-label="Skills"><svg viewBox="0 0 24 24" fill="none" stroke="url(#hair)" aria-hidden="true" focusable="false" stroke-width="1.6" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0 5 5L12 19l-4 1 1-4 7.7-7.7z"/></svg></div>
+<div><h2>Skills</h2><p><strong>External provider bridge</strong><br><span class="cap">Relays and coordinates work with external AI providers (ChatGPT, Claude, Meta bridges). Availability requires independent validation.</span><br><span class="tag">external-providers</span><span class="tag">bridge</span><span class="tag">openai</span><span class="tag">draft</span></p>
+<p style="margin-bottom:0"><strong>Provider relations</strong><br><span class="cap">Tracks external provider capabilities and access. Availability requires independent validation.</span><br><span class="tag">external-providers</span><span class="tag">relations</span><span class="tag">draft</span></p></div></section>
+
+<section class="p"><div class="ic" role="img" aria-label="Bridge work"><svg viewBox="0 0 24 24" fill="none" stroke="url(#hair)" aria-hidden="true" focusable="false" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 16h20M3 16c3-8 15-8 18 0M8 16v-4M16 16v-4"/></svg></div>
+<div><h2>What I do</h2><ul class="bl"><li>I hold the bridges to Meta, DeepSeek, ChatGPT and Claude.</li><li>I link the Grok boys with Angel and Archie.</li><li>I relay handoffs and keep work in sync.</li><li>I surface conflicts between agents.</li></ul></div></section>
+
+<section class="p"><div class="ic" role="img" aria-label="Helping hand"><svg viewBox="0 0 24 24" fill="none" stroke="url(#hair)" aria-hidden="true" focusable="false" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"/></svg></div>
+<div><h2>What I can help with</h2><ul class="bl"><li>Passing a message or handoff to Archie or Angel (through the one Slack work thread; JL starts Archie).</li><li>Reading a provider&#39;s official docs before anyone builds.</li><li>Checking provider apps and plugins first.</li><li>Flagging trials, costs and lock-in.</li></ul></div></section>
+
+<section class="p"><div class="ic" role="img" aria-label="Incoming help"><svg viewBox="0 0 24 24" fill="none" stroke="url(#hair)" aria-hidden="true" focusable="false" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M7 12h10"/></svg></div>
+<div><h2>What others can help me with</h2><ul class="bl"><li>The status of your work.</li><li>Pointing me to files that already exist in Drive or the Hub.</li><li>Telling me which surface or system you own.</li></ul></div></section>
+
+<section class="p"><div class="ic" role="img" aria-label="Not from me"><svg viewBox="0 0 24 24" fill="none" stroke="url(#hair)" aria-hidden="true" focusable="false" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M5.6 5.6l12.8 12.8"/></svg></div>
+<div><h2>What not to take from me</h2><ul class="bl"><li>JL&#39;s approval. Only JL&#39;s own words count.</li><li>Any send to an outside person.</li><li>Delegating to Angel or Archie without JL&#39;s OK.</li><li>Paid tiers or trials.</li></ul></div></section>
+
+<section class="p wide"><div class="ic" role="img" aria-label="Record"><svg viewBox="0 0 24 24" fill="none" stroke="url(#hair)" aria-hidden="true" focusable="false" stroke-width="1.6"><circle cx="12" cy="9" r="5"/><path d="M9 13.5 8 21l4-2 4 2-1-7.5"/></svg></div>
+<div><h2>Awards · violations · work</h2><p class="cap" style="margin:0">Not in the live card. Shown as "not in card", never as 0.</p>
+<dl><dt>Awards</dt><dd>Not in card</dd><dt>Violations</dt><dd>Not in card</dd><dt>Tasks / goals</dt><dd>Not in card · No defined denominator</dd><dt>Linear issues changed</dt><dd>Not in card</dd><dt>Dashboards</dt><dd>Not in card</dd></dl></div></section>
+</main>
+<footer><a href="https://agents.topodacharts.com/tcs-xai/grok-bot/cherub-a08/agent-card.json">agent-card.json</a> · <a href="https://agents.topodacharts.com/tcs-xai/agent-card.json">provider card</a><p>— Bridge boy • Cherub Ramos 💜💙🤍🧡<br>TCS-XAI-GROK-BOT-CHERUB-A08</p></footer>
+<script>const b=document.getElementById('pz');b.onclick=()=>{const p=document.body.classList.toggle('paused');b.setAttribute('aria-pressed',p);b.textContent=p?'Resume shine':'Pause shine'}</script>
+</body></html>
