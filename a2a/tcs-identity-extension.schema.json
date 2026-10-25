@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://topodacharts.com/a2a/extensions/tcs-identity/v1/schema.json",
+  "title": "TCS A2A identity extension params (proposal)",
+  "description": "Data-only params for capabilities.extensions[] with URI https://topodacharts.com/a2a/extensions/tcs-identity/v1. The URI is an identifier; it is not verified as deployed.",
+  "type": "object",
+  "required": [
+    "badge",
+    "displayName",
+    "fullName"
+  ],
+  "properties": {
+    "badge": {
+      "type": "string",
+      "pattern": "^TCS-[A-Z0-9]+(?:-[A-Z0-9]+)+$",
+      "description": "Current exact TCS technical badge from the canonical identity record."
+    },
+    "displayName": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Canonical display name, not a nickname or badge alias."
+    },
+    "fullName": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Source-confirmed complete name."
+    },
+    "signatureHeart": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Approved identity accent, optional."
+    },
+    "hairDescription": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Optional public approved visual descriptor; never inferred."
+    },
+    "portraitUrl": {
+      "type": "string",
+      "format": "uri",
+      "description": "Optional approved public portrait URL; never include private Drive links."
+    }
+  },
+  "additionalProperties": false
+}
