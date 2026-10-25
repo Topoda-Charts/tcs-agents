@@ -1,6 +1,6 @@
 {
   "name": "The Google Drive Operator (Drive boy)",
-  "description": "Operations Director, Tópoda Charts Studios. Google Drive durable knowledge and working file sources. Current identity sourced from per-agent Drive IDENTITY.md and latest JL decision.",
+  "description": "Ops Director, Tópoda Charts Studios. Google Drive durable knowledge and working file sources. Current identity sourced from per-agent Drive IDENTITY.md and latest JL decision.",
   "supportedInterfaces": [],
   "provider": {
     "organization": "Tópoda Charts Studios",
@@ -19,7 +19,7 @@
           "badge": "TCS-XAI-GROK-BOT-CHERUB-A04",
           "formerBadges": [],
           "heart": "💛",
-          "position": "Operations Director",
+          "position": "Ops Director",
           "department": "Operations",
           "nickname": "Drive boy",
           "badgeAnatomy": {

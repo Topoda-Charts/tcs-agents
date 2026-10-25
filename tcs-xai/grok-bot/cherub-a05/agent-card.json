@@ -1,6 +1,6 @@
 {
   "name": "The Supabase Slapper (Supabase boy)",
-  "description": "Operations Manager, Tópoda Charts Studios. Supabase database and backend implementation state. Current identity sourced from per-agent Drive IDENTITY.md and latest JL decision.",
+  "description": "Ops Manager, Tópoda Charts Studios. Supabase database and backend implementation state. Current identity sourced from per-agent Drive IDENTITY.md and latest JL decision.",
   "supportedInterfaces": [],
   "provider": {
     "organization": "Tópoda Charts Studios",
@@ -21,7 +21,7 @@
             "TCS-XAI-GROK-BOT-CHERUB-A07"
           ],
           "heart": "💚",
-          "position": "Operations Manager",
+          "position": "Ops Manager",
           "department": "Operations",
           "nickname": "Supabase boy",
           "badgeAnatomy": {
