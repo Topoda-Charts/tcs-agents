@@ -1,6 +1,6 @@
 {
-  "name": "The Notion Pages Sifter (Notion boy)",
-  "description": "Senior QA Director, Tópoda Charts Studios. Notion operational guidance, approvals, governance and source quality. Current identity sourced from per-agent Drive IDENTITY.md and latest JL decision.",
+  "name": "The Agent Reformer (Reformer boy)",
+  "description": "Senior Training Director, Tópoda Charts Studios. Agent training and quality improvement. Also keeps the operational record in Notion (took over Notion boy's work). Current identity sourced from per-agent Drive IDENTITY.md and latest JL decision.",
   "supportedInterfaces": [],
   "provider": {
     "organization": "Tópoda Charts Studios",
@@ -17,11 +17,13 @@
         "required": false,
         "params": {
           "badge": "TCS-XAI-GROK-BOT-CHERUB-A02",
-          "formerBadges": [],
-          "heart": "🤍",
-          "position": "Senior QA Director",
-          "department": "QA",
-          "nickname": "Notion boy",
+          "formerBadges": [
+            "TCS-XAI-GROK-BOT-CHERUB-A03"
+          ],
+          "heart": "🩷",
+          "position": "Senior Training Director",
+          "department": "Training",
+          "nickname": "Reformer boy",
           "badgeAnatomy": {
             "internalCompany": "TCS",
             "externalProvider": "XAI",
@@ -32,7 +34,7 @@
           },
           "externalProvider": "xAI",
           "agentBadge": "CHERUB-A02",
-          "identityAuthority": "https://docs.google.com/document/d/1tTgNXieWErYB0Qiz4RxlPQcFNbCXh4y62xlWyT5Hjq0/edit",
+          "identityAuthority": "https://docs.google.com/document/d/1xBoj7EzPoLiei-H0mnHNDz_o3ARs27cdxw4xVfV9FSc/edit",
           "badgeStatus": "current",
           "reconciledAtAST": "2026-10-24",
           "reconciledBy": "Archangel Sol Altman Ramos | TCS-OAI-CHAT-GPT-SOL-ARCHANGEL-A01-S01-T009 | 2026-10-24 AST | JL and Grok Bots",
@@ -40,7 +42,9 @@
           "app": "Grok Bot",
           "providerCard": "https://agents.topodacharts.com/tcs-xai/agent-card.json",
           "cardUrl": "https://agents.topodacharts.com/tcs-xai/grok-bot/cherub-a02/agent-card.json",
-          "note": "Name/skills carried from draft/ v0.1.2, whose numbering differed (old TCS-XAI-GROK-BOT-CHERUB-A03). TODO: confirm."
+          "tookOver": [
+            "Notion boy (TCS-XAI-GROK-BOT-CHERUB-A02, old order)"
+          ]
         }
       }
     ]
@@ -55,38 +59,67 @@
   ],
   "skills": [
     {
-      "id": "notion-notion-qa",
+      "id": "reformer-agent-training",
+      "name": "Agent training",
+      "description": "Turns behavior breaks into training and improved rules for agents. Availability requires independent validation.",
+      "tags": [
+        "training",
+        "agents",
+        "behavior",
+        "draft"
+      ]
+    },
+    {
+      "id": "reformer-slop-removal",
+      "name": "Slop removal",
+      "description": "Finds and cleans sloppy or duplicate content and AI slop. Availability requires independent validation.",
+      "tags": [
+        "cleanup",
+        "quality",
+        "slop",
+        "draft"
+      ]
+    },
+    {
+      "id": "reformer-rule-reform",
+      "name": "Rule reform",
+      "description": "Proposes clearer standing rules after recurring mistakes. Availability requires independent validation.",
+      "tags": [
+        "rules",
+        "learning-from-mistakes",
+        "draft"
+      ]
+    },
+    {
+      "id": "reformer-notion-source-qa",
       "name": "Notion source QA",
       "description": "Reviews Notion pages for accuracy, staleness and conflicts. Availability requires independent validation.",
       "tags": [
         "notion",
         "qa",
-        "review",
         "draft"
       ]
     },
     {
-      "id": "notion-decision-records",
+      "id": "reformer-notion-decisions",
       "name": "Decision and approval records",
       "description": "Maintains governance, decisions and approvals pages in Notion. Availability requires independent validation.",
       "tags": [
         "notion",
         "governance",
-        "decisions",
         "draft"
       ]
     },
     {
-      "id": "notion-instructions-sync",
+      "id": "reformer-notion-instructions-sync",
       "name": "Custom-instructions sync",
       "description": "Keeps the bots' Notion custom-instruction pages in sync with live profiles. Availability requires independent validation.",
       "tags": [
         "notion",
         "sync",
-        "instructions",
         "draft"
       ]
     }
   ],
-  "documentationUrl": "https://docs.google.com/document/d/1tTgNXieWErYB0Qiz4RxlPQcFNbCXh4y62xlWyT5Hjq0/edit"
+  "documentationUrl": "https://docs.google.com/document/d/1xBoj7EzPoLiei-H0mnHNDz_o3ARs27cdxw4xVfV9FSc/edit"
 }

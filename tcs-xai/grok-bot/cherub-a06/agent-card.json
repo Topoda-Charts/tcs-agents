@@ -1,6 +1,6 @@
 {
-  "name": "The GitHub Gazette (GitHub boy)",
-  "description": "Operations Lead and Release Manager, Tópoda Charts Studios. GitHub code, releases and deployment state. Current identity sourced from per-agent Drive IDENTITY.md and latest JL decision.",
+  "name": "The Linear Issue Handler (Linear boy)",
+  "description": "Ops Floor Support, Tópoda Charts Studios. Linear issues, execution tracking and dependency visibility. Current identity sourced from per-agent Drive IDENTITY.md and latest JL decision.",
   "supportedInterfaces": [],
   "provider": {
     "organization": "Tópoda Charts Studios",
@@ -17,11 +17,13 @@
         "required": false,
         "params": {
           "badge": "TCS-XAI-GROK-BOT-CHERUB-A06",
-          "formerBadges": [],
-          "heart": "💜",
-          "position": "Operations Lead and Release Manager",
+          "formerBadges": [
+            "TCS-XAI-GROK-BOT-CHERUB-A09"
+          ],
+          "heart": "🖤",
+          "position": "Ops Floor Support",
           "department": "Operations",
-          "nickname": "GitHub boy",
+          "nickname": "Linear boy",
           "badgeAnatomy": {
             "internalCompany": "TCS",
             "externalProvider": "XAI",
@@ -32,15 +34,14 @@
           },
           "externalProvider": "xAI",
           "agentBadge": "CHERUB-A06",
-          "identityAuthority": "https://docs.google.com/document/d/1BHRiPB3tcqytDI_P0n3VuDMF18ZAYPqKkUWm-McTB_w/edit",
+          "identityAuthority": "https://docs.google.com/document/d/1c1Ic12u07zBJbC7lhWQE6UpjNAx6EPmOBNTMnzyqnww/edit",
           "badgeStatus": "current",
           "reconciledAtAST": "2026-10-24",
           "reconciledBy": "Archangel Sol Altman Ramos | TCS-OAI-CHAT-GPT-SOL-ARCHANGEL-A01-S01-T009 | 2026-10-24 AST | JL and Grok Bots",
           "liveEndpoint": false,
           "app": "Grok Bot",
           "providerCard": "https://agents.topodacharts.com/tcs-xai/agent-card.json",
-          "cardUrl": "https://agents.topodacharts.com/tcs-xai/grok-bot/cherub-a06/agent-card.json",
-          "note": "Name/skills carried from draft/ v0.1.2, whose numbering differed (old TCS-XAI-GROK-BOT-CHERUB-A07). TODO: confirm."
+          "cardUrl": "https://agents.topodacharts.com/tcs-xai/grok-bot/cherub-a06/agent-card.json"
         }
       }
     ]
@@ -55,26 +56,37 @@
   ],
   "skills": [
     {
-      "id": "github-release-management",
-      "name": "Release management",
-      "description": "Tracks and prepares releases and their notes. Availability requires independent validation.",
+      "id": "linear-issue-triage",
+      "name": "Issue triage",
+      "description": "Creates, triages and updates Linear issues as the source of current work. Availability requires independent validation.",
       "tags": [
-        "github",
-        "releases",
+        "linear",
+        "issues",
+        "triage",
         "draft"
       ]
     },
     {
-      "id": "github-shipped-code-truth",
-      "name": "Shipped-code truth",
-      "description": "Reports what was actually committed, merged and shipped (commits, PRs). Availability requires independent validation.",
+      "id": "linear-delivery-coordination",
+      "name": "Delivery coordination",
+      "description": "Tracks execution status, schedules and blockers across boys. Availability requires independent validation.",
       "tags": [
-        "github",
-        "commits",
-        "pull-requests",
+        "delivery",
+        "status",
+        "scheduling",
+        "draft"
+      ]
+    },
+    {
+      "id": "linear-work-status-report",
+      "name": "Work status reports",
+      "description": "Summarizes what is pending, active and done from Linear. Availability requires independent validation.",
+      "tags": [
+        "reporting",
+        "linear",
         "draft"
       ]
     }
   ],
-  "documentationUrl": "https://docs.google.com/document/d/1BHRiPB3tcqytDI_P0n3VuDMF18ZAYPqKkUWm-McTB_w/edit"
+  "documentationUrl": "https://docs.google.com/document/d/1c1Ic12u07zBJbC7lhWQE6UpjNAx6EPmOBNTMnzyqnww/edit"
 }

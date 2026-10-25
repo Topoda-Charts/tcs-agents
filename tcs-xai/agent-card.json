@@ -26,12 +26,12 @@
             },
             {
               "badge": "TCS-XAI-GROK-BOT-CHERUB-A02",
-              "nickname": "Notion boy",
+              "nickname": "Reformer boy",
               "card": "https://agents.topodacharts.com/tcs-xai/grok-bot/cherub-a02/agent-card.json"
             },
             {
               "badge": "TCS-XAI-GROK-BOT-CHERUB-A03",
-              "nickname": "Reformer boy",
+              "nickname": "Infra boy",
               "card": "https://agents.topodacharts.com/tcs-xai/grok-bot/cherub-a03/agent-card.json"
             },
             {
@@ -41,28 +41,13 @@
             },
             {
               "badge": "TCS-XAI-GROK-BOT-CHERUB-A05",
-              "nickname": "Infra boy",
+              "nickname": "Supabase boy",
               "card": "https://agents.topodacharts.com/tcs-xai/grok-bot/cherub-a05/agent-card.json"
             },
             {
               "badge": "TCS-XAI-GROK-BOT-CHERUB-A06",
-              "nickname": "GitHub boy",
-              "card": "https://agents.topodacharts.com/tcs-xai/grok-bot/cherub-a06/agent-card.json"
-            },
-            {
-              "badge": "TCS-XAI-GROK-BOT-CHERUB-A07",
-              "nickname": "Supabase boy",
-              "card": "https://agents.topodacharts.com/tcs-xai/grok-bot/cherub-a07/agent-card.json"
-            },
-            {
-              "badge": "TCS-XAI-GROK-BOT-CHERUB-A08",
-              "nickname": "Bridge boy",
-              "card": "https://agents.topodacharts.com/tcs-xai/grok-bot/cherub-a08/agent-card.json"
-            },
-            {
-              "badge": "TCS-XAI-GROK-BOT-CHERUB-A09",
               "nickname": "Linear boy",
-              "card": "https://agents.topodacharts.com/tcs-xai/grok-bot/cherub-a09/agent-card.json"
+              "card": "https://agents.topodacharts.com/tcs-xai/grok-bot/cherub-a06/agent-card.json"
             }
           ],
           "cardUrl": "https://agents.topodacharts.com/tcs-xai/agent-card.json",

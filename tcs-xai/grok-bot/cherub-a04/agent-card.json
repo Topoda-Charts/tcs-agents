@@ -39,8 +39,7 @@
           "liveEndpoint": false,
           "app": "Grok Bot",
           "providerCard": "https://agents.topodacharts.com/tcs-xai/agent-card.json",
-          "cardUrl": "https://agents.topodacharts.com/tcs-xai/grok-bot/cherub-a04/agent-card.json",
-          "note": "Name/skills carried from draft/ v0.1.2, whose numbering differed (old TCS-XAI-GROK-BOT-CHERUB-A05). TODO: confirm."
+          "cardUrl": "https://agents.topodacharts.com/tcs-xai/grok-bot/cherub-a04/agent-card.json"
         }
       }
     ]

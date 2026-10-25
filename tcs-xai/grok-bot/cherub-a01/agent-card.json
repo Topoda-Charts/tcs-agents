@@ -1,6 +1,6 @@
 {
   "name": "The Communications Connoisseur (Comms boy)",
-  "description": "Senior HR Director, Tópoda Charts Studios. Communication, human resources and agent handoffs. Current identity sourced from per-agent Drive IDENTITY.md and latest JL decision.",
+  "description": "Senior HR Director, Tópoda Charts Studios. Communication, human resources and agent handoffs. Holds the bridges to outside AI providers (took over Bridge boy's work). Current identity sourced from per-agent Drive IDENTITY.md and latest JL decision.",
   "supportedInterfaces": [],
   "provider": {
     "organization": "Tópoda Charts Studios",
@@ -40,7 +40,9 @@
           "app": "Grok Bot",
           "providerCard": "https://agents.topodacharts.com/tcs-xai/agent-card.json",
           "cardUrl": "https://agents.topodacharts.com/tcs-xai/grok-bot/cherub-a01/agent-card.json",
-          "note": "Name/skills carried from draft/ v0.1.2, whose numbering differed (old TCS-XAI-GROK-BOT-CHERUB-A01). TODO: confirm."
+          "tookOver": [
+            "Bridge boy (TCS-XAI-GROK-BOT-CHERUB-A08)"
+          ]
         }
       }
     ]
@@ -83,6 +85,16 @@
       "tags": [
         "verbatim",
         "audit",
+        "draft"
+      ]
+    },
+    {
+      "id": "comms-external-provider-bridge",
+      "name": "External provider bridge",
+      "description": "Relays and coordinates work with external AI providers (ChatGPT: Angel and Archie; Claude; Meta; DeepSeek). Availability requires independent validation.",
+      "tags": [
+        "external-providers",
+        "bridge",
         "draft"
       ]
     }

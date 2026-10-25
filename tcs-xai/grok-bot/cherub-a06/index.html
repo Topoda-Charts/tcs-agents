@@ -1,11 +1,11 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="color-scheme" content="light dark"><title>GitHub boy · CHERUB-A06 · Agent Card (preview)</title>
+<meta name="color-scheme" content="light dark"><title>Linear boy · CHERUB-A06 · Agent Card (preview)</title>
 <style>
-/* GitHub boy hair gradient (JL-approved 2026-10-11): black #24292f fading to purple #8250df. Dark mode lifts the black root to silver-gray #d0d7de and the purple to #a371f7 so both pass 3:1 on black. */
-:root{--h1:#24292f;--h2:#5a32a3;--h3:#8250df;--text:#1a1a1a;--muted:#595959;--focus:#6639ba;--shine:rgba(130,80,223,.35);
+/* Linear boy hair gradient: NOT FOUND in the Hub or in the live card. Fallback per JL's ask: black/charcoal #1f1f1f to silver. Light-mode silver is darkened to #6b6b6b (5.3:1 on white). Dark mode runs charcoal-silver #8a8a8a to silver #e6e6e6 (all pass 3:1 on black). */
+:root{--h1:#1f1f1f;--h2:#454545;--h3:#6b6b6b;--text:#1a1a1a;--muted:#595959;--focus:#1f1f1f;--shine:rgba(160,160,160,.35);
 --g:linear-gradient(225deg,var(--h1) 0%,var(--h2) 45%,var(--h3) 100%);--r:27px;color-scheme:light dark}
-@media (prefers-color-scheme:dark){:root{--h1:#d0d7de;--h2:#a371f7;--h3:#c297ff;--text:#ededed;--muted:#b8b8b8;--focus:#c297ff;--shine:rgba(255,255,255,.22);
---g:linear-gradient(225deg,#d0d7de 0%,#a371f7 55%,#c297ff 100%)}}
+@media (prefers-color-scheme:dark){:root{--h1:#8a8a8a;--h2:#c0c0c0;--h3:#e6e6e6;--text:#ededed;--muted:#b8b8b8;--focus:#e6e6e6;--shine:rgba(255,255,255,.22);
+--g:linear-gradient(225deg,#8a8a8a 0%,#c0c0c0 55%,#e6e6e6 100%)}}
 *{box-sizing:border-box}html{font-size:100%}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;font-size:1rem;line-height:1.5;color:var(--text);padding:clamp(12px,3vw,32px)}
 a{color:inherit;text-decoration:underline;text-underline-offset:3px;display:inline-block;min-height:44px;line-height:44px}
 :focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:6px}
@@ -24,28 +24,33 @@ button{font:inherit;padding:10px 18px;border-radius:999px;border:2px solid var(-
 footer{text-align:center;margin:28px 0 8px}@media(max-width:520px){.p{grid-template-columns:52px 1fr;padding:18px}dl{grid-template-columns:1fr}dt{margin-top:6px}}
 </style></head><body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs><linearGradient id="hair" x1="1" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:var(--h1)"/><stop offset=".5" style="stop-color:var(--h2)"/><stop offset="1" style="stop-color:var(--h3)"/></linearGradient></defs></svg>
-<p class="cap" style="text-align:center" role="note">PREVIEW · not deployed · data = live card v0.3.0 fetched 2026-10-24 7:23 AM AST · <button id="pz" aria-pressed="false">Pause shine</button></p>
-<main aria-label="GitHub boy agent card">
-<section class="p wide"><div class="ic" role="img" aria-label="Git branch, shipped code"><svg viewBox="0 0 24 24" fill="none" stroke="url(#hair)" aria-hidden="true" focusable="false" stroke-width="1.6" stroke-linecap="round"><circle cx="6" cy="5" r="2.5"/><circle cx="6" cy="19" r="2.5"/><circle cx="18" cy="8" r="2.5"/><path d="M6 7.5v9M18 10.5c0 4-6 3.5-11 6.5"/></svg></div>
-<div><h1>💜 The GitHub Gazette</h1><div><strong>GitHub boy</strong> · Operations Lead and Release Manager</div>
+<p class="cap" style="text-align:center" role="note">6-slot order · data = agent-card.json v0.3.0 · updated 2026-10-24 AST · <button id="pz" aria-pressed="false">Pause shine</button></p>
+<main aria-label="Linear boy agent card">
+<section class="p wide"><div class="ic" role="img" aria-label="Issue tracker"><svg viewBox="0 0 24 24" fill="none" stroke="url(#hair)" aria-hidden="true" focusable="false" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.7 2.7L16.5 9"/></svg></div>
+<div><h1>🖤 The Linear Issue Handler</h1><div><strong>Linear boy</strong> · Cherub Ramos · Ops Floor Support</div>
 <div class="badge" aria-label="Badge TCS-XAI-GROK-BOT-CHERUB-A06">TCS-XAI-GROK-BOT-CHERUB-A06</div>
-<p class="cap">Operations Lead and Release Manager, Tópoda Charts Studios. GitHub code, releases and deployment state. Current identity sourced from per-agent Drive IDENTITY.md and latest JL decision.</p>
-<span class="tag">Badge status: current</span><span class="tag">Accent: hair gradient (black to purple)</span><span class="tag">Version 0.3.0</span><span class="tag">No live A2A endpoint</span><span class="tag">Avatar: not in card</span></div></section>
+<p class="cap">Ops Floor Support, Tópoda Charts Studios. Linear issues, execution tracking and dependency visibility. Current identity sourced from per-agent Drive IDENTITY.md and latest JL decision.</p>
+<span class="tag">Badge status: current</span><span class="tag">Accent: fallback charcoal to silver (hair not recorded)</span><span class="tag">Version 0.3.0</span><span class="tag">No live A2A endpoint</span><span class="tag">Avatar: not in card</span></div></section>
 
 <section class="p"><div class="ic" role="img" aria-label="Identity info"><svg viewBox="0 0 24 24" fill="none" stroke="url(#hair)" aria-hidden="true" focusable="false" stroke-width="1.6"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="11" r="2.5"/><path d="M5.5 17c1-2 5-2 6 0M14 10h4M14 14h3"/></svg></div>
 <div><h2>Info</h2><dl><dt>Department</dt><dd>Operations</dd><dt>Provider</dt><dd>xAI · Grok Bot (org: Tópoda Charts Studios)</dd>
-<dt>Badge anatomy</dt><dd>TCS · XAI · GROK-BOT · CHERUB · A06 (no session slot)</dd><dt>Former badges</dt><dd>None listed</dd>
-<dt>Reconciled</dt><dd>2026-10-24 AST by Archangel Sol Altman Ramos</dd><dt>Identity</dt><dd><a href="https://docs.google.com/document/d/1BHRiPB3tcqytDI_P0n3VuDMF18ZAYPqKkUWm-McTB_w/edit">IDENTITY doc</a></dd>
+<dt>Badge anatomy</dt><dd>TCS · XAI · GROK-BOT · CHERUB · A06 (no session slot)</dd><dt>Former badges</dt><dd>TCS-XAI-GROK-BOT-CHERUB-A09 (until 2026-10-24, 6-slot cut)</dd>
+<dt>Reconciled</dt><dd>2026-10-24 AST by Archangel Sol Altman Ramos</dd><dt>Identity</dt><dd><a href="https://docs.google.com/document/d/1c1Ic12u07zBJbC7lhWQE6UpjNAx6EPmOBNTMnzyqnww/edit">IDENTITY doc</a></dd>
 <dt>I/O modes</dt><dd>text/plain, text/markdown</dd><dt>Streaming / push</dt><dd>No / No</dd></dl></div></section>
 
-<section class="p"><div class="ic" role="img" aria-label="Skills"><svg viewBox="0 0 24 24" fill="none" stroke="url(#hair)" aria-hidden="true" focusable="false" stroke-width="1.6" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0 5 5L12 19l-4 1 1-4 7.7-7.7z"/></svg></div>
-<div><h2>Skills</h2><p><strong>Release management</strong><br><span class="cap">Tracks and prepares releases and their notes. Availability requires independent validation.</span><br><span class="tag">github</span><span class="tag">releases</span><span class="tag">draft</span></p>
-<p style="margin-bottom:0"><strong>Shipped-code truth</strong><br><span class="cap">Reports what was actually committed, merged and shipped (commits, PRs). Availability requires independent validation.</span><br><span class="tag">github</span><span class="tag">commits</span><span class="tag">pull-requests</span><span class="tag">draft</span></p></div></section>
+<section class="p"><div class="ic" role="img" aria-label="Skills"><svg viewBox="0 0 24 24" fill="none" stroke="url(#hair)" aria-hidden="true" focusable="false" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"><path d="M9 6h11M9 12h11M9 18h11"/><path d="M4 6l1 1 2-2M4 12l1 1 2-2M4 18h2"/></svg></div>
+<div><h2>Skills</h2><p><strong>Issue triage</strong><br><span class="cap">Creates, triages and updates Linear issues as the source of current work. Availability requires independent validation.</span><br><span class="tag">linear</span><span class="tag">issues</span><span class="tag">triage</span><span class="tag">draft</span></p>
+<p><strong>Delivery coordination</strong><br><span class="cap">Tracks execution status, schedules and blockers across boys. Availability requires independent validation.</span><br><span class="tag">delivery</span><span class="tag">status</span><span class="tag">scheduling</span><span class="tag">draft</span></p>
+<p style="margin-bottom:0"><strong>Work status reports</strong><br><span class="cap">Summarizes what is pending, active and done from Linear. Availability requires independent validation.</span><br><span class="tag">reporting</span><span class="tag">linear</span><span class="tag">draft</span></p></div></section>
 
+<section class="p"><div class="ic" role="img" aria-label="What I do"><svg viewBox="0 0 24 24" fill="none" stroke="url(#hair)" aria-hidden="true" focusable="false" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><path d="M8 12h8"/></svg></div><div><h2>What I do</h2><ul><li>Keep the Linear board honest: assignee, status, priority and blocked-by.</li><li>Create, triage and update Linear issues as the source of current work.</li><li>Track execution status, schedules and blockers across the boys.</li><li>Summarize what is pending, active and done.</li></ul></div></section>
+<section class="p"><div class="ic" role="img" aria-label="What I can help with"><svg viewBox="0 0 24 24" fill="none" stroke="url(#hair)" aria-hidden="true" focusable="false" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><path d="M8 12h8"/></svg></div><div><h2>What I can help with</h2><ul><li>What is actually in progress, blocked or done.</li><li>Turning a request into a real Linear issue.</li><li>Dependency and blocker visibility.</li><li>Work status reports.</li></ul></div></section>
+<section class="p"><div class="ic" role="img" aria-label="What others can help me with"><svg viewBox="0 0 24 24" fill="none" stroke="url(#hair)" aria-hidden="true" focusable="false" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><path d="M8 12h8"/></svg></div><div><h2>What others can help me with</h2><ul><li>Reformer boy: decisions in Notion.</li><li>Drive boy: canon.</li><li>Infra boy: code.</li><li>JL: the OK for deletes, spend, deploys, pushes and anything with Archie.</li></ul></div></section>
+<section class="p"><div class="ic" role="img" aria-label="What not to take from me"><svg viewBox="0 0 24 24" fill="none" stroke="url(#hair)" aria-hidden="true" focusable="false" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><path d="M8 12h8"/></svg></div><div><h2>What not to take from me</h2><ul><li>Workflow columns the workspace doesn't have (no invented Triage).</li><li>Archiving Canceled or Duplicate issues before JL sees them.</li><li>Angel or Archie work without JL's OK.</li><li>The assumption that a paid plan lifts the 250-issue cap.</li></ul></div></section>
 <section class="p wide"><div class="ic" role="img" aria-label="Record"><svg viewBox="0 0 24 24" fill="none" stroke="url(#hair)" aria-hidden="true" focusable="false" stroke-width="1.6"><circle cx="12" cy="9" r="5"/><path d="M9 13.5 8 21l4-2 4 2-1-7.5"/></svg></div>
 <div><h2>Awards · violations · work</h2><p class="cap" style="margin:0">Not in the live card. Shown as "not in card", never as 0.</p>
 <dl><dt>Awards</dt><dd>Not in card</dd><dt>Violations</dt><dd>Not in card</dd><dt>Tasks / goals</dt><dd>Not in card · No defined denominator</dd><dt>Linear issues changed</dt><dd>Not in card</dd><dt>Dashboards</dt><dd>Not in card</dd></dl></div></section>
 </main>
-<footer><a href="https://agents.topodacharts.com/tcs-xai/grok-bot/cherub-a06/agent-card.json">agent-card.json</a> · <a href="https://agents.topodacharts.com/tcs-xai/agent-card.json">provider card</a><p>— 👱🏻‍♂️💻 GitHub boy • Cherub Bot 💜<br>TCS-XAI-GROK-BOT-CHERUB-A06</p></footer>
+<footer><a href="https://agents.topodacharts.com/tcs-xai/grok-bot/cherub-a06/agent-card.json">agent-card.json</a> · <a href="https://agents.topodacharts.com/tcs-xai/agent-card.json">provider card</a><p>— Linear boy • Cherub Bot 🖤<br>TCS-XAI-GROK-BOT-CHERUB-A06</p></footer>
 <script>const b=document.getElementById('pz');b.onclick=()=>{const p=document.body.classList.toggle('paused');b.setAttribute('aria-pressed',p);b.textContent=p?'Resume shine':'Pause shine'}</script>
 </body></html>

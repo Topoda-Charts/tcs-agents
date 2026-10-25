@@ -43,7 +43,7 @@
       },
       {
         "source": "/agents/TCS-XAI-GROK-BOT-CHERUB-A03/.well-known/agent-card.json",
-        "destination": "/tcs-xai/grok-bot/cherub-a03/agent-card.json",
+        "destination": "/tcs-xai/grok-bot/cherub-a02/agent-card.json",
         "type": 301
       },
       {
@@ -53,27 +53,27 @@
       },
       {
         "source": "/agents/TCS-XAI-GROK-BOT-CHERUB-A05/.well-known/agent-card.json",
-        "destination": "/tcs-xai/grok-bot/cherub-a05/agent-card.json",
+        "destination": "/tcs-xai/grok-bot/cherub-a03/agent-card.json",
         "type": 301
       },
       {
         "source": "/agents/TCS-XAI-GROK-BOT-CHERUB-A06/.well-known/agent-card.json",
-        "destination": "/tcs-xai/grok-bot/cherub-a06/agent-card.json",
+        "destination": "/tcs-xai/grok-bot/cherub-a03/agent-card.json",
         "type": 301
       },
       {
         "source": "/agents/TCS-XAI-GROK-BOT-CHERUB-A07/.well-known/agent-card.json",
-        "destination": "/tcs-xai/grok-bot/cherub-a07/agent-card.json",
+        "destination": "/tcs-xai/grok-bot/cherub-a05/agent-card.json",
         "type": 301
       },
       {
         "source": "/agents/TCS-XAI-GROK-BOT-CHERUB-A08/.well-known/agent-card.json",
-        "destination": "/tcs-xai/grok-bot/cherub-a08/agent-card.json",
+        "destination": "/tcs-xai/grok-bot/cherub-a01/agent-card.json",
         "type": 301
       },
       {
         "source": "/agents/TCS-XAI-GROK-BOT-CHERUB-A09/.well-known/agent-card.json",
-        "destination": "/tcs-xai/grok-bot/cherub-a09/agent-card.json",
+        "destination": "/tcs-xai/grok-bot/cherub-a06/agent-card.json",
         "type": 301
       }
     ]
