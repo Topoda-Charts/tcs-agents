@@ -1,6 +1,6 @@
 {
   "name": "The Agent Reformer (Reformer boy)",
-  "description": "Senior Training Director, Tópoda Charts Studios. Agent training and quality improvement. Also keeps the operational record in Notion (took over Notion boy's work). Current identity sourced from per-agent Drive IDENTITY.md and latest JL decision.",
+  "description": "Training & QA Director, Tópoda Charts Studios. Agent training and quality improvement. Also keeps the operational record in Notion (took over Notion boy's work). Current identity sourced from per-agent Drive IDENTITY.md and latest JL decision.",
   "supportedInterfaces": [],
   "provider": {
     "organization": "Tópoda Charts Studios",
@@ -21,7 +21,7 @@
             "TCS-XAI-GROK-BOT-CHERUB-A03"
           ],
           "heart": "🩷",
-          "position": "Senior Training Director",
+          "position": "Training & QA Director",
           "department": "Training",
           "nickname": "Reformer boy",
           "badgeAnatomy": {
