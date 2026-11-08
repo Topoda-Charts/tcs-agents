@@ -21,6 +21,11 @@ Source scope and freshness matter more than the convenience of the connector. A 
 
 ## Route by the work, then actual access
 
+**Current availability correction — JL, 2026-11-08:** The Grok Bots are **out of usage**. A connected Grok Bot VM is not proof any named Bot can perform work. The table below identifies specialties or historical lanes only; **do not dispatch Grok Bot tasks while usage is exhausted** or send instructions to killed/replaced predecessors. Verify the current Notion position owner, successor and tool access first. Use an available authorized Chat, Codex, Work, Workplace, or other agent for the actual task. For a changed rule affecting a colleague, correct the active instruction owner and send an attributable notice through a verified non-Grok relay; public documentation, Drive backups and Slack notices do not establish live adoption.
+
+**Identity correction:** SHARPEN was reassigned to a future Creator on 2026-10-21 and is not Seraph's current stage name. The Scope Creep Mangler's prior seat became vacant; his former holder became Notion boy, while BOT-07 became GitHub boy. Reformer boy was deleted 2026-10-30. Do not use those historical stage names as active dispatch contacts.
+
+
 | Work | Natural starting colleagues |
 | --- | --- |
 | Research, synthesis, writing, general reasoning | Archie, Dom, Fer, Gel, or another capable available agent |
@@ -30,16 +35,16 @@ Source scope and freshness matter more than the convenience of the connector. A 
 | YouTube/current Google-native context | Prince in the relevant surface |
 | Local repository/transcript receipts | Tue, Power (Codex), or the assigned Local worker |
 | Workplace-agent QA | Gel; current QA leadership where assigned |
-| Notion operations | Notion Pages Sifter; relevant CWA maintainer |
-| Drive knowledge organization | Drive boy (The Google Drive Operator); Meticulous Drive Curating CWA |
-| Execution board | Linear Issue Handler; Task Management CWA |
-| Message craft and coordination | Communications Connoisseur |
-| Behavior/form repair | Agent Reformer |
-| Suspected unauthorized expansion | Scope Creep Mangler |
-| Stale/conflicting current knowledge | Slop Remover |
-| Live backend/infrastructure | Supabase Slapper or a qualified authorized executor |
+| Notion operations | Available Notion-maintaining Workplace Agent or other authorized editor; historical Grok stage labels require fresh owner resolution |
+| Drive knowledge organization | Available Meticulous Drive Curating CWA or another authorized Drive editor; legacy Grok Drive boy only after usage/identity verification |
+| Execution board | Available Task Management CWA or another authorized Linear editor; legacy Grok Linear Issue Handler is not an assumed live worker |
+| Message craft and coordination | Available capable agent with a verified communications channel; the historical Grok Connoisseur relay is not a confirmed active handoff |
+| Behavior/form repair | Authorized active documentation/QA collaborator; The Agent Reformer was deleted 2026-10-30 |
+| Suspected unauthorized expansion | Available active QA/review collaborator; former Scope boy stage/position is not a current dispatch target |
+| Stale/conflicting current knowledge | Archie or another available authorized current-source reconciler; legacy Grok Slop Remover requires current usage/identity verification |
+| Live backend/infrastructure | Qualified authorized active executor with verified backend/tool access; Grok Supabase Slapper is an historical lane until live status/usage returns |
 | Character training and acting experiments | Demon; exact character context when assigned |
-| Fashion/modeling visual reference | Seraph/SHARPEN with the actual image-capable executor |
+| Fashion/modeling visual reference | Current authorized persona and image-capable executor, resolved from the latest identity/creative owners; SHARPEN belongs to a future Creator working seed |
 
 This is an orientation map, not a monopoly on competence. General-purpose colleagues remain general-purpose. Tools, subscription capacity, task fit, and source access can change the best executor. Do not spend scarce specialist usage to make a second agent rediscover work an available colleague can already finish.
 
