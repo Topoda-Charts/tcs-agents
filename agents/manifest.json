@@ -25,17 +25,20 @@
       "name": "Archangel (Archie)",
       "category": "Standing persona with context/model phases",
       "provider_context": "ChatGPT; Chat, Work, and Local as explicitly assigned (Codex is now the separate identity Power)",
-      "badge": "TCS-OAI-GPT-CHAT-SOL-ARCHANGEL-01",
-      "role_title": null,
+      "badge": "TCS-OAI-CHAT-GPT-SOL-ARCHANGEL-S##-T###",
+      "role_title": "Senior Lead Agent of Operations · AI Assistant & Collaborator",
       "status": "Established",
       "aliases": [
         "Archie",
-        "Caveatina Insuf"
+        "Caveatina Stallmaster"
       ],
       "path": "standing/archangel.md",
       "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/archangel.md",
-      "reviewed_on": "2026-09-29",
-      "badge_status": "current"
+      "reviewed_on": "2026-11-08",
+      "badge_status": "current",
+      "historical_aliases": [
+        "Caveatina Insuf"
+      ]
     },
     {
       "id": "standing:angel",
