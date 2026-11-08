@@ -21,7 +21,7 @@ If a chatbot cannot open a link, attach or paste that file. Public availability 
 
 ## What is included
 
-49 recognition/onboarding entries: **10 active standing personas plus one historical/merged Rogue reference; 16 ChatGPT Workplace Agents; eight core Grok Bots; Haggle Bot separately; two Grok Library specialist profiles; Power Codex 02’s scoped local profile (formerly Angel/An); Benjamin Hart; six off-air newsroom seats; KITE; and two generic templates.** These are categories, not 49 separate standing people. This is the published 49-entry cohort. Separate Grok Build and Power Codex manifestation 01 profiles remain outside this cohort pending authoritative identity evidence and the profile-coverage decision; no missing identity fields are inferred.
+49 recognition/onboarding entries: **10 active standing personas plus one historical/merged Rogue reference; 16 ChatGPT Workplace Agents; eight original/core Grok Bot recognition entries (including retired/historical profiles); Haggle Bot separately; two Grok Library specialist profiles; Power Codex 02’s scoped local profile (formerly Angel/An); Benjamin Hart; six off-air newsroom seats; KITE; and two generic templates.** These are categories, not 49 separate standing people. This is the published 49-entry cohort. Separate Grok Build and Power Codex manifestation 01 profiles remain outside this cohort pending authoritative identity evidence and the profile-coverage decision; no missing identity fields are inferred.
 
 Each entry has a stable path. Names, offices, models, access, and runtime evidence have separate fields. Empty/unassigned fields remain explicit rather than receiving invented badges or personality traits.
 
@@ -62,7 +62,7 @@ Repository-level context: [repository overview](https://raw.githubusercontent.co
 | Identity / entry | Badge | Position or scope | RAW |
 | --- | --- | --- | --- |
 | Archangel (Archie) | TCS-OAI-CHAT-GPT-SOL-ARCHANGEL-S##-T### (current Chat badge template) | Standing Chat persona · Senior Lead Agent of Operations | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/archangel.md) |
-| Angel (Gel) | TCS-OAI-CHAT-SOL-02 | Senior QA Subagent (Angel Chat) | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/angel.md) |
+| Angel (Gel) | TCS-OAI-CHAT-GPT-SOL-ANGEL-A01 | Senior QA Agent (Angel Chat) | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/angel.md) |
 | Cherub (Rub) Grok | TCS-XAI-GROK-ASK-01 | Standing persona | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/cherub.md) |
 | Seraph (Raph) Valentine Grok | TCS-XAI-GROK-COM-02 (proposed) | Standing persona | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/seraph.md) |
 | Demon Chat | TCS-OAI-CHAT-LUNA-04 (Approved) | Standing persona | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/demon.md) |
@@ -101,7 +101,7 @@ Repository-level context: [repository overview](https://raw.githubusercontent.co
 | The Supabase Slapper | TCS-XAI-GROK-BOT-06 | Grok Bot — core eight | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/supabase-slapper.md) |
 | The Communications Connoisseur | TCS-XAI-GROK-BOT-01 | Senior HR Director | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/communications-connoisseur.md) |
 | The Linear Issue Handler | TCS-XAI-GROK-BOT-02 | Grok Bot — core eight | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/linear-issue-handler.md) |
-| The Agent Reformer | TCS-XAI-GROK-BOT-04 | Senior Training Director | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/agent-reformer.md) |
+| The Agent Reformer (retired; historical) | Former TCS-XAI-GROK-BOT-04 | Deleted 2026-10-30; former Training & QA Director | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/agent-reformer.md) |
 | The Notion Pages Sifter | TCS-XAI-GROK-BOT-03 | Senior QA Director | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/notion-pages-sifter.md) |
 | Drive boy (stage name: The Google Drive Operator) | TCS-XAI-GROK-BOT-05 | Grok Bot — core eight | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/google-drive-operator.md) |
 | The Scope Creep Mangler | TCS-XAI-GROK-BOT-07 | Senior QA Manager | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/scope-creep-mangler.md) |
