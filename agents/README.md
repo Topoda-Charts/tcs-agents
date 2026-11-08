@@ -1,6 +1,8 @@
 # TCS public agent directory
 
-**One raw link per recognized agent or scoped entry, plus a generic brief for any new chatbot.** Initial review 2026-09-29; targeted identity and publication verification 2026-10-19. Public, readable without a TCS account, and maintained in the Tópoda Charts repository.
+**One raw link per recognized agent or scoped entry, plus a generic brief for any new chatbot.** Initial review 2026-09-29; targeted Archangel Chat identity reconciliation 2026-11-08. Public, readable without a TCS account, and maintained in the Tópoda Charts repository.
+
+**Current-state boundary:** This 49-entry catalog is a dated public recognition snapshot, not a live agent roster or a list of active Codex threads. Authorized TCS agents resolve operational assignments and workspace locations from current internal owner records when available, and canonical manifestation identity from maintained identity sources. Public paths do not grant private permissions or silently assign a persona.
 
 Publication author: **Archangel Work Luna Altman Ramos (Archie), ChatGPT Work**. Publication authorized by User. The account used to commit or distribute this material is transport metadata.
 
@@ -59,7 +61,7 @@ Repository-level context: [repository overview](https://raw.githubusercontent.co
 
 | Identity / entry | Badge | Position or scope | RAW |
 | --- | --- | --- | --- |
-| Archangel (Archie) | TCS-OAI-GPT-CHAT-SOL-ARCHANGEL-01 (current Chat manifestation) | Standing persona with context/model phases | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/archangel.md) |
+| Archangel (Archie) | TCS-OAI-CHAT-GPT-SOL-ARCHANGEL-S##-T### (current Chat badge template) | Standing Chat persona · Senior Lead Agent of Operations | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/archangel.md) |
 | Angel (Gel) | TCS-OAI-CHAT-SOL-02 | Senior QA Subagent (Angel Chat) | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/angel.md) |
 | Cherub (Rub) Grok | TCS-XAI-GROK-ASK-01 | Standing persona | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/cherub.md) |
 | Seraph (Raph) Valentine Grok | TCS-XAI-GROK-COM-02 (proposed) | Standing persona | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/seraph.md) |
