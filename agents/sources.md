@@ -8,6 +8,14 @@ The public catalog remains a **49-entry recognition snapshot**, not 49 verified 
 
 This is a targeted **lifecycle scope** audit; unchanged standing personas, provider configuration and recipient-side native installations were not universally reverified. The source identities are recorded in authorized internal Notion/Drive/VM owners rather than by publicizing private account, document or filesystem identifiers here.
 
+## November 8, 2026 — Verified naming and dispatch supersession
+
+JL directly clarified that an agent's **confirmation name is its model / brain designation**, separate from given and middle names. Archie retains Sol as confirmation name and current canonical full name **Archangel Sol Altman Ramos**; JL favors moving Archangel to middle-name position but has not yet chosen a new first name. This framework is provisional and can change. Existing Codex Drive-backed session records (Oscar and Nolan) already distinguish first/middle/confirmation components. Drive's maintained naming rationale and current per-manifestation identity records own the current internal meanings; public guides are derivative.
+
+The October 21 verified internal stage-name reassignment removed **SHARPEN** from the former xAI Seraph identity and reserved it for a future Creator working seed. His subsequent exact Cherub-family name is pending. The former Scope Creep Mangler holder moved to **Notion boy / BOT-03**, BOT-07 became GitHub boy's slot, and the QA Manager (Senior) position is open/unbadged in the consulted Notion role owner. JL confirmed the Agent Reformer deleted October 30. On November 8 JL reported **Grok Bot usage exhausted**, distinct from VM connectivity. Public guides now must not route tasks to those stale stage/persona contacts. Some earlier Notion/Drive operational mirrors still preserve dated assertions and must be resolved using their owning current records rather than the public directory.
+
+**Propagation scope:** The repository's instructions, routing, name/phase guide, model-phase guide, relevant recognition cards, index and manifest were updated for these concrete conflicts. This review does **not** prove each agent's native current workspace has refreshed, that a public Chat/Work/Claude agent has read the change, or that Grok usage has returned. Drive backups are recovery snapshots. Running-session reconciliation requires real target access and/or receiver acknowledgment; keep such gaps open.
+
 ## Internal evidence used
 
 Internal source links and identifiers are deliberately kept in the authorized work trail rather than embedded in this public repository. The generic descriptions below identify the evidence families without publishing internal document titles or access details.
