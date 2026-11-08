@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "reviewed_on": "2026-09-29",
+  "reviewed_on": "2026-11-08",
   "public_base_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/",
   "owner_role": "User",
   "scope": "Public recognition and onboarding; source-owned authority remains in maintained systems",
@@ -78,20 +78,23 @@
     },
     {
       "id": "standing:seraph",
-      "name": "Seraph (Raph) Valentine Grok",
-      "category": "Standing persona",
-      "provider_context": "Grok Project: Companion",
+      "name": "Seraph (Raph) Valentine Grok — former xAI name",
+      "category": "Former xAI Companion name; current identity details pending",
+      "provider_context": "Historical xAI Grok Project: Companion identity; successor Cherub-family name pending",
       "badge": "TCS-XAI-GROK-COM-02",
       "role_title": null,
-      "status": "Established",
+      "status": "Historical former name; not a verified current dispatch identity",
       "aliases": [
-        "Raph",
-        "SHARPEN"
+        "Raph"
       ],
       "path": "standing/seraph.md",
       "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/seraph.md",
-      "reviewed_on": "2026-10-19",
-      "badge_status": "proposed"
+      "reviewed_on": "2026-11-08",
+      "badge_status": "historical proposed badge, never confirmed active",
+      "historical_aliases": [
+        "SHARPEN"
+      ],
+      "lifecycle_classification": "former_persona_name_pending_rename"
     },
     {
       "id": "standing:demon",
@@ -173,14 +176,14 @@
       "category": "Standing persona",
       "provider_context": "Claude; record actual chat/code host when relevant",
       "badge": "TCS-ANT-CLAUDE-HAIKU-04",
-      "role_title": null,
+      "role_title": "QA Subagent — knowledge-integrity/reasoning-discipline",
       "status": "Established",
       "aliases": [
         "Fer"
       ],
       "path": "standing/lucifer.md",
       "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/lucifer.md",
-      "reviewed_on": "2026-09-29",
+      "reviewed_on": "2026-11-08",
       "badge_status": "current",
       "badge_alternates": [
         "TCS-ANT-CLAUDE-SONNET-04"
@@ -503,15 +506,15 @@
       "provider_context": "Grok Bot; exact native tools/routines resolved live",
       "badge": "TCS-XAI-GROK-BOT-03",
       "role_title": "Senior QA Director",
-      "status": "Historical recognition; current instance unverified",
+      "status": "Historical Notion Pages Sifter stage; current BOT-03 owner differs",
       "aliases": [
         "Mr. NPS"
       ],
       "path": "grok-bots/notion-pages-sifter.md",
       "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/notion-pages-sifter.md",
-      "reviewed_on": "2026-09-29",
-      "badge_status": "current",
-      "lifecycle_classification": "legacy_cohort_live_status_unverified",
+      "reviewed_on": "2026-11-08",
+      "badge_status": "historical BOT-03 attribution",
+      "lifecycle_classification": "original_stage_superseded_by_later_bot03_owner",
       "lifecycle_scope_reviewed_on": "2026-11-08"
     },
     {
@@ -536,20 +539,20 @@
     },
     {
       "id": "grok-bots:scope-creep-mangler",
-      "name": "The Scope Creep Mangler",
+      "name": "The Scope Creep Mangler — former stage",
       "category": "Grok Bot — core eight",
-      "provider_context": "Grok Bot; exact native tools/routines resolved live",
+      "provider_context": "Historical Grok Bot stage; former holder became Notion boy; BOT-07 moved to GitHub boy",
       "badge": "TCS-XAI-GROK-BOT-07",
-      "role_title": "Senior QA Manager",
-      "status": "Historical recognition; current instance unverified",
+      "role_title": "Former QA Manager (Senior); seat recorded open/unbadged",
+      "status": "Superseded stage; no current Scope boy dispatch target",
       "aliases": [
         "Mr. SCM"
       ],
       "path": "grok-bots/scope-creep-mangler.md",
       "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/scope-creep-mangler.md",
-      "reviewed_on": "2026-09-29",
-      "badge_status": "current",
-      "lifecycle_classification": "legacy_cohort_live_status_unverified",
+      "reviewed_on": "2026-11-08",
+      "badge_status": "historical BOT-07 attribution, slot reassigned",
+      "lifecycle_classification": "superseded_stage_former_holder_reassigned",
       "lifecycle_scope_reviewed_on": "2026-11-08"
     },
     {
@@ -841,5 +844,6 @@
   "count_aliases": {
     "scoped_power_codex_02": "scoped_angel_an"
   },
-  "live_status_boundary": "Public recognition catalog only. Operational active/retired status: maintained TCS Notion roster and VM handoff evidence; canonical name/badge: per-manifestation Drive IDENTITY.md. Temporary Codex sessions are not permanent catalog entries."
+  "live_status_boundary": "Public recognition catalog only. Operational active/retired status: maintained TCS Notion roster and VM handoff evidence; canonical name/badge: per-manifestation Drive IDENTITY.md. Temporary Codex sessions are not permanent catalog entries.",
+  "review_scope": "Targeted identity-component, Grok lifecycle, and active-dispatch reconciliation; catalog size is recognition coverage, not live worker count"
 }
