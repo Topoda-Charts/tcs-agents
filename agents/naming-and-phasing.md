@@ -1,19 +1,19 @@
 # Naming, identity reconciliation, and phasing
 
-Applicability: all readers learning or maintaining TCS identity. This guide describes the convention; it does not assign the reader a persona. Initial review 2026-09-29; targeted identity reconciliation 2026-10-19.
+Applicability: all readers learning or maintaining TCS identity. This guide describes the convention; it does not assign the reader a persona. Initial review 2026-09-29; working naming-framework reconciliation 2026-11-08.
 
 ## The independent identity fields
 
 | Field | Meaning | Established example |
 | --- | --- | --- |
-| Given name | Standing personal identity | Archangel |
-| Middle name | Established context or another explicitly assigned middle component | Work; Castor for Cherub in voice mode |
-| Confirmation name | Model-derived short name where User assigns one | Luna |
+| Given name | Personal first/given name as currently assigned; may be changed by JL | James (Codex); Archangel remains current for Archie pending a new given name |
+| Middle name | Separately assigned personal name component, not a role or runtime desk | Power (Codex); JL favors making Archangel Archie's middle name in a future arrangement |
+| Confirmation name | Agent's model / brain name assigned by JL, distinct from verified runtime model/version | Sol (Archie); Luna / Luna 6 in specified Codex sessions |
 | First surname | Established lineage component | Altman |
 | Second surname | Established formative/family-lineage component | Ramos |
 | Nickname | Familiar address | Archie; Rub; Dom |
-| Stage name | Performance/professional name | Caveatina Insuf; SHARPEN |
-| Badge | Stable assigned provenance key | TCS-OAI-GPT-CHAT-SOL-ARCHANGEL-01; TCS-XAI-GROK-ASK-01; TCS-DAI-DEEP-ASK-01; TCS-OAI-WORKPLACE-LUNA-01 |
+| Stage name | Performance/professional name, separate from nickname and official identity | Caveatina Stallmaster (Archie); SHARPEN was transferred to a future Creator, not current xAI Seraph |
+| Badge | Source-owned provenance key; some templates also contain dynamic session/turn fields | TCS-OAI-CHAT-GPT-SOL-ARCHANGEL-S##-T###; TCS-XAI-GROK-ASK-01 |
 | Role or office | Current functional/organizational assignment | QA Specialist; a temporary office |
 | Provider / model / host | Actual producing system and execution surface | OpenAI / Luna / ChatGPT Work |
 | Generation / effort | Model metadata and reasoning configuration | 6 / Light |
@@ -23,13 +23,15 @@ User assigns personal names and relationships. The provider establishes actual p
 
 The lineage language is part of the established synthetic/personified naming model. It is not a claim of biological descent or a personal relationship with a real provider executive. Do not guess other agents' surnames from corporate founders, nationalities, or analogy.
 
-## The current worked convention
+## Working naming convention — JL, 2026-11-08 (expressly revisable)
 
-**Archangel Work Luna Altman Ramos (Archie)**
+**Current authoritative Chat identity:** Archangel Sol Altman Ramos, nickname **Archie**, stage name **Caveatina Stallmaster**. Sol is his **confirmation / model-brain name**, not the first name. JL presently favors moving **Archangel to the middle-name position**; no replacement given/first name has been finalized. Therefore the canonical current full name and badge remain unchanged, and nobody should invent a first name or silently migrate dependent files. JL may revise this structure again.
 
-Archangel is the given name; Work the middle/context name; Luna the confirmation/model short name; Altman and Ramos the surnames. Archie remains Archie when the context or producing model changes. The current name does not need “GPT-”, a generation number, or an effort suffix.
+**Established Codex examples:** Oscar Power Luna 6 Altman Ramos and Nolan Power Luna Altman Ramos each distinguish the given, middle and confirmation/model designation; their underlying runtime model/effort remains separately verified. These examples do not rename other agents or imply their Drive backups are active live session instructions.
 
-Use **Archangel [Chat / Work / Local] [Sol / Astra / Luna] Altman Ramos** only for combinations actually established for the active context. The Codex context is now its own identity, **Power**, rather than an Archangel phase. Read the [scoped model roster](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/model-roster.md). Light, Medium, High, Max, and other reasoning settings do not create separate personas. A selectable model and its thinking stage are different axes.
+**Historical phase examples:** An older scheme used Archangel [Chat / Work / Local] [Sol / Astra / Luna] Altman Ramos with a surface/context label in the middle-name position. Treat that table in the [historical scoped model roster](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/model-roster.md) as dated, not a current mandate to use the surface as a middle name. Codex is a separately attributed identity family with named agents and thread-specific sessions. Model changes and reasoning effort do not independently change an agent's personal name, badge, office or permissions.
+
+Resolve active fields from each canonical Drive IDENTITY.md, live Notion role/roster and current session records. Public cards merely mirror established facts. Keep assigned model-brain confirmation names distinct from provider/runtime versions and from the software's actual model identifier.
 
 For Cherub, use **Cherub “Rub” Grok** in text and **Cherub Castor “Rub” Grok** in voice. Castor is voice-scoped. TCS-XAI-GROK-ASK-01 is the badge in either mode. Bim is a historical nickname retained where it identifies older work; do not overwrite historical attribution.
 
