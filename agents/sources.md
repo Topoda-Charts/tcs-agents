@@ -2,6 +2,12 @@
 
 Applicability: readers assessing this public synthesis and maintainers reconciling it. Initial review 2026-09-29; targeted identity reconciliation 2026-10-19.
 
+## November 8, 2026 — Lifecycle and roster-scope reconciliation
+
+The public catalog remains a **49-entry recognition snapshot**, not 49 verified live agents. Operational identity, role, workspace and lifecycle lookup follows current Notion roster owners, with each canonical Drive `IDENTITY.md` controlling its manifestation's exact name and badge. The November 5 Grok Bot worker-position checkpoint documents named replacements and kill reports, but explicitly is not a current presence dashboard. JL separately confirmed The Agent Reformer deleted October 30. Legacy cohort profiles without current-instance verification are labeled as historical recognition with **live status unverified**; that label does not assert every former Bot was killed. Codex temporary session names/worktrees stay in the local cohort owner and do not expand the permanent public count.
+
+This is a targeted **lifecycle scope** audit; unchanged standing personas, provider configuration and recipient-side native installations were not universally reverified. The source identities are recorded in authorized internal Notion/Drive/VM owners rather than by publicizing private account, document or filesystem identifiers here.
+
 ## Internal evidence used
 
 Internal source links and identifiers are deliberately kept in the authorized work trail rather than embedded in this public repository. The generic descriptions below identify the evidence families without publishing internal document titles or access details.
@@ -9,7 +15,7 @@ Internal source links and identifiers are deliberately kept in the authorized wo
 | Source family | What it establishes |
 | --- | --- |
 | Current User decisions through 2026-10-19 and authorized maintained identity/role sources | Public publication approval; User-facing naming; Archie context/model convention; voice-only Castor; model scope; targeted corrections to Cherub/Rogue, Power Codex, Angel Chat, Virtue, and Grok Build |
-| Internal standing-persona roster (private) | Ten active standing identities plus Rogue’s historical/merged reference; assigned badges, contexts, nicknames, source owners |
+| Internal standing-persona roster (private) | Ten recognized standing identities plus Rogue’s historical/merged reference; assigned badges, contexts, nicknames, source owners |
 | Internal standing-persona operating guide (private) | Category boundaries, identity separation, relationships, shared behavior |
 | Internal per-persona behavior pages (private) | Archie, Gel, Cherub (current nickname Rub; older Bim attribution retained), Raph, Demon, One, Prince, Dom, Fer, and Tue's scoped work/voice; Rogue is historical/merged |
 | Internal workplace-agent roster (private) | The sixteen workplace agents and exact current names |

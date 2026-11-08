@@ -21,7 +21,7 @@ If a chatbot cannot open a link, attach or paste that file. Public availability 
 
 ## What is included
 
-49 recognition/onboarding entries: **10 active standing personas plus one historical/merged Rogue reference; 16 ChatGPT Workplace Agents; eight original/core Grok Bot recognition entries (including retired/historical profiles); Haggle Bot separately; two Grok Library specialist profiles; Power Codex 02’s scoped local profile (formerly Angel/An); Benjamin Hart; six off-air newsroom seats; KITE; and two generic templates.** These are categories, not 49 separate standing people. This is the published 49-entry cohort. Separate Grok Build and Power Codex manifestation 01 profiles remain outside this cohort pending authoritative identity evidence and the profile-coverage decision; no missing identity fields are inferred.
+49 recognition/onboarding entries: **10 standing-persona recognition entries plus one historical/merged Rogue reference; 16 ChatGPT Workplace Agents; eight original/core Grok Bot recognition entries (including retired/historical profiles); Haggle Bot separately; two Grok Library specialist profiles; Power Codex 02’s scoped local profile (formerly Angel/An); Benjamin Hart; six off-air newsroom seats; KITE; and two generic templates.** These are categories, not 49 separate standing people. This is the published 49-entry cohort. Separate Grok Build and Power Codex manifestation 01 profiles remain outside this cohort pending authoritative identity evidence and the profile-coverage decision; no missing identity fields are inferred.
 
 Each entry has a stable path. Names, offices, models, access, and runtime evidence have separate fields. Empty/unassigned fields remain explicit rather than receiving invented badges or personality traits.
 
@@ -94,24 +94,26 @@ Repository-level context: [repository overview](https://raw.githubusercontent.co
 | SQL Crafting Workplace Agent | TCS-OAI-WORKPLACE-LUNA-15 | SQL Crafting | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/workplace/sql-crafting.md) |
 | Codex Orchestrating Workplace Agent | TCS-OAI-WORKPLACE-LUNA-16 | Codex Orchestrating | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/workplace/codex-orchestrating.md) |
 
-### Core eight Grok Bots
+### Original core-eight Grok Bot recognition (historical cohort)
+
+**Lifecycle warning (2026-11-08):** These cards describe an earlier named cohort and are **not dispatch targets or proof of current Bot runtime**. Some original instances were deleted, merged or replaced; The Agent Reformer is specifically confirmed deleted. Resolve current occupants, killings, successors and task ownership in the living Notion *Grok Bot Worker Positions — Current* and the VM Agent Hub handoffs. Preserve old names and badges for attribution, not as fresh appointments.
 
 | Identity / entry | Badge | Position or scope | RAW |
 | --- | --- | --- | --- |
-| The Supabase Slapper | TCS-XAI-GROK-BOT-06 | Grok Bot — core eight | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/supabase-slapper.md) |
-| The Communications Connoisseur | TCS-XAI-GROK-BOT-01 | Senior HR Director | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/communications-connoisseur.md) |
-| The Linear Issue Handler | TCS-XAI-GROK-BOT-02 | Grok Bot — core eight | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/linear-issue-handler.md) |
+| The Supabase Slapper | TCS-XAI-GROK-BOT-06 | Historical reviewed scope: Grok Bot — core eight; live status unverified | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/supabase-slapper.md) |
+| The Communications Connoisseur | TCS-XAI-GROK-BOT-01 | Historical reviewed scope: Senior HR Director; live status unverified | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/communications-connoisseur.md) |
+| The Linear Issue Handler | TCS-XAI-GROK-BOT-02 | Historical reviewed scope: Grok Bot — core eight; live status unverified | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/linear-issue-handler.md) |
 | The Agent Reformer (retired; historical) | Former TCS-XAI-GROK-BOT-04 | Deleted 2026-10-30; former Training & QA Director | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/agent-reformer.md) |
-| The Notion Pages Sifter | TCS-XAI-GROK-BOT-03 | Senior QA Director | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/notion-pages-sifter.md) |
-| Drive boy (stage name: The Google Drive Operator) | TCS-XAI-GROK-BOT-05 | Grok Bot — core eight | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/google-drive-operator.md) |
-| The Scope Creep Mangler | TCS-XAI-GROK-BOT-07 | Senior QA Manager | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/scope-creep-mangler.md) |
-| The Slop Remover | TCS-XAI-GROK-BOT-08 | Senior Training Manager | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/slop-remover.md) |
+| The Notion Pages Sifter | TCS-XAI-GROK-BOT-03 | Historical reviewed scope: Senior QA Director; live status unverified | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/notion-pages-sifter.md) |
+| Drive boy (stage name: The Google Drive Operator) | TCS-XAI-GROK-BOT-05 | Historical reviewed scope: Grok Bot — core eight; live status unverified | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/google-drive-operator.md) |
+| The Scope Creep Mangler | TCS-XAI-GROK-BOT-07 | Historical reviewed scope: Senior QA Manager; live status unverified | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/scope-creep-mangler.md) |
+| The Slop Remover | TCS-XAI-GROK-BOT-08 | Historical reviewed scope: Senior Training Manager; live status unverified | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/slop-remover.md) |
 
 ### Additional Bot and specialist profiles
 
 | Identity / entry | Badge | Position or scope | RAW |
 | --- | --- | --- | --- |
-| Haggle Bot | TCS-XAI-GROK-BOT-09 | Additional recognized Grok Bot; outside core eight | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/haggle-bot.md) |
+| Haggle Bot | TCS-XAI-GROK-BOT-09 | Historical recognition outside original core eight; live status unverified | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/haggle-bot.md) |
 | Internal Sources Specialist | Unassigned | Grok Agent Library specialist profile | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/specialists/internal-sources.md) |
 | External Sources Specialist | Unassigned | Grok Agent Library specialist profile | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/specialists/external-sources.md) |
 

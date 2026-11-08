@@ -8,6 +8,14 @@ This folder is the public distribution layer for established identity and operat
 
 When a name, role, behavior, source route, or access fact changes, reconcile the owning record and the dependent public profile in the same authorized maintenance task. If the owner cannot be updated, record that concrete propagation gap in the active internal issue; do not silently claim global synchronization. Preserve original historical authorship when it remains useful.
 
+## Live lifecycle and ephemeral-session resolution (2026-11-08)
+
+The public directory records **recognized identities and historically reviewed roles**, not an always-on count of running workers. Resolve the live Notion operational roster and Grok Bot kill/successor handoffs before presenting a Bot as active. Preserve a deleted or merged agent as historical attribution; do not silently assign its old title, badge, or duties to a successor. A stale `Established` status must not function as proof of process presence.
+
+For each manifestation, Drive `IDENTITY.md` governs current badge/full-name fields. Notion owns current office, role, lifecycle, and workspace-routing records. The live Codex session cohort is locally managed and may change frequently: **do not hard-code ephemeral session/thread IDs, local worktrees, agent workspaces or temporary cohort membership into this public directory or its plugin.** Public raw links and the manifest are dated, derivative recognition surfaces.
+
+When Notion, Drive, GitHub and a live runtime disagree, check their respective claim ownership before changing any card. Updating the public file does not install instructions in or awaken another agent. Record the exact reviewed scope and keep unresolved native status explicit.
+
 ## Adding or changing a profile
 
 1. Read the current source and newest applicable User assignment. Establish whether this is a standing persona, configured worker, specialist profile, scoped role, execution surface, or generic template.
