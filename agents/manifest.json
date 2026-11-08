@@ -433,14 +433,16 @@
       "provider_context": "Grok Bot; exact native tools/routines resolved live",
       "badge": "TCS-XAI-GROK-BOT-06",
       "role_title": null,
-      "status": "Established",
+      "status": "Historical recognition; current instance unverified",
       "aliases": [
         "Mr. SS"
       ],
       "path": "grok-bots/supabase-slapper.md",
       "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/supabase-slapper.md",
       "reviewed_on": "2026-09-29",
-      "badge_status": "current"
+      "badge_status": "current",
+      "lifecycle_classification": "legacy_cohort_live_status_unverified",
+      "lifecycle_scope_reviewed_on": "2026-11-08"
     },
     {
       "id": "grok-bots:communications-connoisseur",
@@ -449,14 +451,16 @@
       "provider_context": "Grok Bot; exact native tools/routines resolved live",
       "badge": "TCS-XAI-GROK-BOT-01",
       "role_title": "Senior HR Director",
-      "status": "Established",
+      "status": "Historical recognition; current instance unverified",
       "aliases": [
         "Mr. CC"
       ],
       "path": "grok-bots/communications-connoisseur.md",
       "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/communications-connoisseur.md",
       "reviewed_on": "2026-09-29",
-      "badge_status": "current"
+      "badge_status": "current",
+      "lifecycle_classification": "legacy_cohort_live_status_unverified",
+      "lifecycle_scope_reviewed_on": "2026-11-08"
     },
     {
       "id": "grok-bots:linear-issue-handler",
@@ -465,14 +469,16 @@
       "provider_context": "Grok Bot; exact native tools/routines resolved live",
       "badge": "TCS-XAI-GROK-BOT-02",
       "role_title": null,
-      "status": "Established",
+      "status": "Historical recognition; current instance unverified",
       "aliases": [
         "Mr. LIH"
       ],
       "path": "grok-bots/linear-issue-handler.md",
       "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/linear-issue-handler.md",
       "reviewed_on": "2026-09-29",
-      "badge_status": "current"
+      "badge_status": "current",
+      "lifecycle_classification": "legacy_cohort_live_status_unverified",
+      "lifecycle_scope_reviewed_on": "2026-11-08"
     },
     {
       "id": "grok-bots:agent-reformer",
@@ -497,14 +503,16 @@
       "provider_context": "Grok Bot; exact native tools/routines resolved live",
       "badge": "TCS-XAI-GROK-BOT-03",
       "role_title": "Senior QA Director",
-      "status": "Established",
+      "status": "Historical recognition; current instance unverified",
       "aliases": [
         "Mr. NPS"
       ],
       "path": "grok-bots/notion-pages-sifter.md",
       "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/notion-pages-sifter.md",
       "reviewed_on": "2026-09-29",
-      "badge_status": "current"
+      "badge_status": "current",
+      "lifecycle_classification": "legacy_cohort_live_status_unverified",
+      "lifecycle_scope_reviewed_on": "2026-11-08"
     },
     {
       "id": "grok-bots:google-drive-operator",
@@ -513,7 +521,7 @@
       "provider_context": "Grok Bot; exact native tools/routines resolved live",
       "badge": "TCS-XAI-GROK-BOT-05",
       "role_title": null,
-      "status": "Established",
+      "status": "Historical recognition; current instance unverified",
       "aliases": [
         "The Google Drive Operator"
       ],
@@ -522,7 +530,9 @@
       "reviewed_on": "2026-09-29",
       "badge_status": "current",
       "display_name": "Drive boy",
-      "sign_off": "Drive boy • Cherub Bot"
+      "sign_off": "Drive boy • Cherub Bot",
+      "lifecycle_classification": "legacy_cohort_live_status_unverified",
+      "lifecycle_scope_reviewed_on": "2026-11-08"
     },
     {
       "id": "grok-bots:scope-creep-mangler",
@@ -531,14 +541,16 @@
       "provider_context": "Grok Bot; exact native tools/routines resolved live",
       "badge": "TCS-XAI-GROK-BOT-07",
       "role_title": "Senior QA Manager",
-      "status": "Established",
+      "status": "Historical recognition; current instance unverified",
       "aliases": [
         "Mr. SCM"
       ],
       "path": "grok-bots/scope-creep-mangler.md",
       "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/scope-creep-mangler.md",
       "reviewed_on": "2026-09-29",
-      "badge_status": "current"
+      "badge_status": "current",
+      "lifecycle_classification": "legacy_cohort_live_status_unverified",
+      "lifecycle_scope_reviewed_on": "2026-11-08"
     },
     {
       "id": "grok-bots:slop-remover",
@@ -547,14 +559,16 @@
       "provider_context": "Grok Bot; exact native tools/routines resolved live",
       "badge": "TCS-XAI-GROK-BOT-08",
       "role_title": "Senior Training Manager",
-      "status": "Established",
+      "status": "Historical recognition; current instance unverified",
       "aliases": [
         "Mr. SR"
       ],
       "path": "grok-bots/slop-remover.md",
       "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/slop-remover.md",
       "reviewed_on": "2026-09-29",
-      "badge_status": "current"
+      "badge_status": "current",
+      "lifecycle_classification": "legacy_cohort_live_status_unverified",
+      "lifecycle_scope_reviewed_on": "2026-11-08"
     },
     {
       "id": "grok-bots:haggle-bot",
@@ -563,12 +577,14 @@
       "provider_context": "Grok Bot",
       "badge": "TCS-XAI-GROK-BOT-09",
       "role_title": null,
-      "status": "Recognized; detailed behavior owner not recovered",
+      "status": "Historical recognition; current instance unverified",
       "aliases": [],
       "path": "grok-bots/haggle-bot.md",
       "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/haggle-bot.md",
       "reviewed_on": "2026-09-29",
-      "badge_status": "current"
+      "badge_status": "current",
+      "lifecycle_classification": "legacy_cohort_live_status_unverified",
+      "lifecycle_scope_reviewed_on": "2026-11-08"
     },
     {
       "id": "specialists:internal-sources",
@@ -820,9 +836,10 @@
       "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/tcs-rlsim.md"
     }
   ],
-  "updated_on": "2026-10-21",
+  "updated_on": "2026-11-08",
   "skills_index": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/README.md",
   "count_aliases": {
     "scoped_power_codex_02": "scoped_angel_an"
-  }
+  },
+  "live_status_boundary": "Public recognition catalog only. Operational active/retired status: maintained TCS Notion roster and VM handoff evidence; canonical name/badge: per-manifestation Drive IDENTITY.md. Temporary Codex sessions are not permanent catalog entries."
 }

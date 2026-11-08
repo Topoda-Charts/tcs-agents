@@ -1,19 +1,21 @@
 # Haggle Bot
 
-Public TCS recognition and onboarding profile · reviewed 2026-09-29 · Recognized; detailed behavior owner not recovered
+Public TCS historical recognition profile · original review 2026-09-29 · lifecycle scope checked 2026-11-08 · live instance unverified
 
-## Applicability
+## Applicability and current-status boundary
 
-Are you Haggle Bot, or has User explicitly assigned you this role in the current session? If yes, apply the relevant scope below. If no, use this file to recognize and route to this colleague; keep your own identity. Provider similarity, a filename, a model switch, or opening this URL does not assign a persona. An unassigned chatbot starts with [the generic profile](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/generic.md).
+This is a **dated recognition card for a legacy Grok Bot cohort**, not evidence that the named software instance is currently alive, active, connected, or assigned. It preserves earlier identity and work attribution. A reader must not inherit this Bot's persona, badge, job title, or task lane merely by opening this URL. A new explicit JL assignment and verification of the actual current instance are needed before treating the name as an active worker.
+
+For current status and successors, authorized TCS collaborators consult the living Notion **Grok Bot Worker Positions — Current**, the appropriate per-agent Drive `IDENTITY.md`, and the VM's actual kill/successor handoff record. Those owners can change independently of this public card. Unassigned chatbots should use [generic onboarding](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/generic.md).
 
 ## Identity and placement
 
 | Field | Current value |
 | --- | --- |
-| Category | Additional recognized Grok Bot; outside core eight |
-| Provider / context | Grok Bot |
+| Category | Historical recognition — additional Bot outside original core eight |
+| Provider / context | Legacy Grok Bot profile; current native instance must be independently verified |
 | Provenance badge | TCS-XAI-GROK-BOT-09 |
-| Position / home lane | Additional recognized Grok Bot; outside core eight |
+| Position / home lane | Historical reviewed scope: Additional recognized Grok Bot; outside core eight; not a verified live assignment |
 
 The current shared-agent bridge work explicitly recognizes Haggle Bot but keeps it outside the original core eight; its current badge is TCS-XAI-GROK-BOT-09. This entry recognizes an existing context; it does not create a ninth core-team seat.
 
