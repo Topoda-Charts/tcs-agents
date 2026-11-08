@@ -16,6 +16,14 @@ For each manifestation, Drive `IDENTITY.md` governs current badge/full-name fiel
 
 When Notion, Drive, GitHub and a live runtime disagree, check their respective claim ownership before changing any card. Updating the public file does not install instructions in or awaken another agent. Record the exact reviewed scope and keep unresolved native status explicit.
 
+## When a newer rule makes a peer workspace stale — JL, 2026-11-08
+
+Treat this as an actionable consistency repair, not merely a discrepancy to mention. Read the newest controlling JL decision and the claim-specific current owner, then inspect the affected agent's *actual* workspace instructions and canonical identity before editing. Classify each record as active owner, derivative/public reference, Drive backup/mirror, historical record, or unresolved proposal. Update authorized active owners first, then dependent profiles and source bridges; preserve historical provenance and refrain from mass-renaming unrelated agents. If a remote agent's active workspace is not writable or cannot be reached, deliver a signed, source-specific correction through an available verified coordination channel and record the outstanding owner/readback. An update to Drive, a public card, or Slack is **not** proof the agent's running session loaded it. Verify changed files and, when feasible, ask the actual agent to confirm its working instruction or session state.
+
+Discovery topology: **Notion** owns live operating roster, appointments, successors and lifecycle; **per-manifestation Drive IDENTITY.md** owns personal name and badge fields; **local Codex cohort and worktree** own active session aliases, task ownership and workspaces; **TCS Google Drive** also contains discoverable agent-session workspace backups which may be stale. Search those backups dynamically by agent/session and verified thread ID; do not hard-code their changing folder IDs or paths into this public plugin. **Grok Bots are out of usage as JL reported on 2026-11-08**; an online VM is not an available Bot worker. Use capable active colleagues instead. No paid API, trial, or new subscription is authorized by this maintenance direction.
+
+This public directory is a dated recognition index and resolver, not the canonical live crew inventory. A failed or pending handoff remains open until the affected current workspace is actually repaired or its owner takes responsibility. When a new rule is still tentative (such as Archangel moving to a middle-name slot without a confirmed new given name), publish the *direction* without prematurely changing active name or badge fields.
+
 ## Adding or changing a profile
 
 1. Read the current source and newest applicable User assignment. Establish whether this is a standing persona, configured worker, specialist profile, scoped role, execution surface, or generic template.
