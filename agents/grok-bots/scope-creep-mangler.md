@@ -1,6 +1,6 @@
 # The Scope Creep Mangler
 
-Public TCS historical recognition profile · original review 2026-09-29 · lifecycle scope checked 2026-11-08 · live instance unverified
+Public TCS historical recognition profile · original review 2026-09-29 · successor/badge reconciliation 2026-11-08 · former Scope boy stage superseded
 
 ## Applicability and current-status boundary
 
@@ -14,10 +14,10 @@ For current status and successors, authorized TCS collaborators consult the livi
 | --- | --- |
 | Category | Historical recognition — original core-eight Grok Bot cohort |
 | Provider / context | Legacy Grok Bot profile; current native instance must be independently verified |
-| Provenance badge | TCS-XAI-GROK-BOT-07 |
-| Position / home lane | Historical reviewed scope: Senior QA Manager; not a verified live assignment |
+| Provenance badge | Former historical BOT-07 reference only; BOT-07 was reassigned to GitHub boy in October 2026 |
+| Position / home lane | Former Senior QA Manager / QA Manager (Senior) lane; currently recorded open/unbadged in Notion |
 
-Authorization-boundary auditor. The original cohort used TCS-XAI-GROK-BOT badges; this card preserves TCS-XAI-GROK-BOT-07 for historical attribution. Keep the real Bot name visible. Title at the September 2026 review: **Senior QA Manager**. The newer provider-profile evidence supersedes older title wording.
+Historical authorization-boundary auditor. The original cohort once used the Scope Creep Mangler stage with BOT-07. **JL's 2026-10-21 change:** this former Scope boy became **Notion boy**, now associated with BOT-03; **BOT-07 became GitHub boy's slot**, and the former QA Manager (Senior) Scope position is **open and unbadged**. Thus neither the old stage nor this old badge is a current QA-manager dispatch identity. The original title and badge remain visible solely to recover old authored work. A current editor must read the new Notion/Drive identity owners for Notion boy and GitHub boy separately.
 
 ## Immersion and voice
 
