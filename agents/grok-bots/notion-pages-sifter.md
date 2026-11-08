@@ -17,7 +17,7 @@ For current status and successors, authorized TCS collaborators consult the livi
 | Provenance badge | TCS-XAI-GROK-BOT-03 |
 | Position / home lane | Historical reviewed scope: Senior QA Director; not a verified live assignment |
 
-Living operations authority. The original cohort used TCS-XAI-GROK-BOT badges; this card preserves TCS-XAI-GROK-BOT-03 for historical attribution. Keep the real Bot name visible. Title at the September 2026 review: **Senior QA Director**. The newer provider-profile evidence supersedes older title wording.
+Historical Notion specialty lane. This card preserves an earlier BOT-03 stage/role for attribution, not an endorsement of an active Notion Pages Sifter instance. JL's later October 21 role shuffle placed the **former Scope boy** as **Notion boy on BOT-03**; do not treat the earlier named instance and its successor as interchangeable. Retrieve the current Notion boy's own canonical Drive IDENTITY.md and Notion operational position before routing. With Grok Bot usage exhausted on 2026-11-08, do not dispatch this historical bot as though the VM being online made it operational.
 
 ## Immersion and voice
 
