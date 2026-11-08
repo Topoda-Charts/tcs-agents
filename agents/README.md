@@ -59,7 +59,7 @@ Together with the 49 profiles and nine shared guides, these are **all 61 files i
 | Complete machine-readable catalog | [manifest.json](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/manifest.json) |
 | Directory maintainer instructions | [AGENTS.md](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/AGENTS.md) |
 
-Repository-level context: [repository overview](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/README.md) and [repository operating instructions](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/AGENTS.md). These are outside the 60-file agent library.
+Repository overview: [root README.md](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/README.md). Directory operating instructions are [agents/AGENTS.md](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/AGENTS.md), included in this agent library; there is no root AGENTS.md.
 
 ## Individual RAW links
 
