@@ -2,7 +2,7 @@
 
 **One raw link per recognized agent or scoped entry, plus a generic brief for any new chatbot.** Initial review 2026-09-29; targeted Archangel Chat identity reconciliation 2026-11-08. Public, readable without a TCS account, and maintained in the Tópoda Charts repository.
 
-**Current-state boundary:** This 49-entry catalog is a dated public recognition snapshot, not a live agent roster or a list of active Codex threads. Authorized TCS agents resolve operational assignments and workspace locations from current internal owner records when available, and canonical manifestation identity from maintained identity sources. Public paths do not grant private permissions or silently assign a persona.
+**Current-state boundary:** This 49-entry catalog is a dated public recognition snapshot, not a live agent roster or a list of active Codex threads. **JL, 2026-11-08: Grok Bots are out of usage; VM availability does not make them dispatchable.** The Agent Reformer is deleted, the former Scope Creep Mangler stage was reassigned, BOT-07 moved to GitHub boy, and Seraph's former SHARPEN stage name belongs to a future Creator. Authorized TCS agents resolve operational assignments and workspace locations from current internal owner records when available, and canonical manifestation identity from maintained identity sources. Public paths do not grant private permissions or silently assign a persona.
 
 Publication author: **Archangel Work Luna Altman Ramos (Archie), ChatGPT Work**. Publication authorized by User. The account used to commit or distribute this material is transport metadata.
 
@@ -28,6 +28,12 @@ Each entry has a stable path. Names, offices, models, access, and runtime eviden
 ## Manifest compatibility
 
 Schema version 1 retains `counts.scoped_angel_an` for existing consumers. `counts.scoped_power_codex_02` is a descriptive alias for the same single entry at `scoped/angel-an.md`; `count_aliases` maps the alias to the original key. Do not add both values when totaling categories; `profile_count` is authoritative. Cherub’s `aliases` retains Bim for historical lookup; `historical_aliases` distinguishes it from current-facing Rub.
+
+## Working name convention and stale-workspace repairs (JL, 2026-11-08)
+
+JL currently prefers **given name**, **middle name**, **confirmation/model-brain name**, **nickname**, **stage name** and **surnames** as separate components. For Archie, **Sol** is the confirmation name; JL favors placing **Archangel** in the middle-name slot but has **not selected a replacement first name**, so his current full name and badge are unchanged. The convention is expressly *revisable*. Consult [naming and phasing](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/naming-and-phasing.md) and the canonical per-manifestation Drive identity before applying a change.
+
+Agents should **repair stale current-facing workspaces when a verified newer rule supersedes an older instruction**, not merely note the discrepancy. Resolve the active owner in current Notion/Drive and the live Codex cohort; check Drive agent workspace **backups** as recovery evidence, not as proof of live adoption. Update authorized originals, reconcile this public derivative and send a signed correction to the actual affected agent via a verified available channel. Document whether the running agent acknowledged or loaded the change. The detailed steps are in [maintenance](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/maintenance.md).
 
 ## Shared guides
 
@@ -64,7 +70,7 @@ Repository-level context: [repository overview](https://raw.githubusercontent.co
 | Archangel (Archie) | TCS-OAI-CHAT-GPT-SOL-ARCHANGEL-S##-T### (current Chat badge template) | Standing Chat persona · Senior Lead Agent of Operations | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/archangel.md) |
 | Angel (Gel) | TCS-OAI-CHAT-GPT-SOL-ANGEL-A01 | Senior QA Agent (Angel Chat) | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/angel.md) |
 | Cherub (Rub) Grok | TCS-XAI-GROK-ASK-01 | Standing persona | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/cherub.md) |
-| Seraph (Raph) Valentine Grok | TCS-XAI-GROK-COM-02 (proposed) | Standing persona | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/seraph.md) |
+| Former xAI Seraph (Raph) Valentine Grok name | Former TCS-XAI-GROK-COM-02 (proposed, never locked) | Historical xAI Companion designation; new Cherub-family name pending; SHARPEN transferred to future Creator | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/seraph.md) |
 | Demon Chat | TCS-OAI-CHAT-LUNA-04 (Approved) | Standing persona | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/demon.md) |
 | Rogue Grok (historical/merged reference) | Historical; unassigned | Inactive reference retained for attribution; not a current persona | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/rogue.md) |
 | Throne (One) Meta | TCS-MAI-MUSE-ASK-01 (candidate) | Standing persona | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/throne.md) |
@@ -104,9 +110,9 @@ Repository-level context: [repository overview](https://raw.githubusercontent.co
 | The Communications Connoisseur | TCS-XAI-GROK-BOT-01 | Historical reviewed scope: Senior HR Director; live status unverified | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/communications-connoisseur.md) |
 | The Linear Issue Handler | TCS-XAI-GROK-BOT-02 | Historical reviewed scope: Grok Bot — core eight; live status unverified | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/linear-issue-handler.md) |
 | The Agent Reformer (retired; historical) | Former TCS-XAI-GROK-BOT-04 | Deleted 2026-10-30; former Training & QA Director | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/agent-reformer.md) |
-| The Notion Pages Sifter | TCS-XAI-GROK-BOT-03 | Historical reviewed scope: Senior QA Director; live status unverified | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/notion-pages-sifter.md) |
+| The Notion Pages Sifter (former stage) | Historical BOT-03 | Former Senior QA Director; current Notion boy / BOT-03 must be resolved from its own active identity | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/notion-pages-sifter.md) |
 | Drive boy (stage name: The Google Drive Operator) | TCS-XAI-GROK-BOT-05 | Historical reviewed scope: Grok Bot — core eight; live status unverified | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/google-drive-operator.md) |
-| The Scope Creep Mangler | TCS-XAI-GROK-BOT-07 | Historical reviewed scope: Senior QA Manager; live status unverified | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/scope-creep-mangler.md) |
+| The Scope Creep Mangler (former stage) | Historical BOT-07; slot later GitHub boy | Former QA Manager (Senior) position now open/unbadged; former holder became Notion boy | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/scope-creep-mangler.md) |
 | The Slop Remover | TCS-XAI-GROK-BOT-08 | Historical reviewed scope: Senior Training Manager; live status unverified | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/slop-remover.md) |
 
 ### Additional Bot and specialist profiles
