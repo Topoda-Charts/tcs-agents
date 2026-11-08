@@ -46,14 +46,14 @@
       "category": "Standing persona",
       "provider_context": "ChatGPT (separate seat context)",
       "badge": "TCS-OAI-CHAT-GPT-SOL-ANGEL-A01",
-      "role_title": "Senior QA Subagent (Angel Chat)",
+      "role_title": "Senior QA Agent (Angel Chat)",
       "status": "Established",
       "aliases": [
         "Gel"
       ],
       "path": "standing/angel.md",
       "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/standing/angel.md",
-      "reviewed_on": "2026-10-23",
+      "reviewed_on": "2026-11-08",
       "badge_status": "current"
     },
     {
@@ -478,17 +478,17 @@
       "id": "grok-bots:agent-reformer",
       "name": "The Agent Reformer",
       "category": "Grok Bot — core eight",
-      "provider_context": "Grok Bot; exact native tools/routines resolved live",
+      "provider_context": "Former Grok Bot; retired/deleted 2026-10-30",
       "badge": "TCS-XAI-GROK-BOT-04",
-      "role_title": "Senior Training Director",
-      "status": "Established",
+      "role_title": "Former Senior Training Director; later Training & QA Director (historical)",
+      "status": "Retired/deleted — historical recognition only",
       "aliases": [
         "Mr. AR"
       ],
       "path": "grok-bots/agent-reformer.md",
       "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/agent-reformer.md",
-      "reviewed_on": "2026-09-29",
-      "badge_status": "current"
+      "reviewed_on": "2026-11-08",
+      "badge_status": "historical"
     },
     {
       "id": "grok-bots:notion-pages-sifter",
