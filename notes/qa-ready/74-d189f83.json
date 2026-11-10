@@ -1,0 +1,80 @@
+{
+  "schema": "flint-qa-ready-v1",
+  "ready_for_qa": true,
+  "pr": 74,
+  "linear_issue": "TCSW-227",
+  "branch": "archie/tcsw-227-ceo-achievements-handoff-20261107",
+  "head_sha": "d189f83d054c286365088b3fdc3457adb0b9f96b",
+  "pr_head_sha": "d189f83d054c286365088b3fdc3457adb0b9f96b",
+  "dist_build_info_commit": "d189f83d054c286365088b3fdc3457adb0b9f96b",
+  "built_at": "2026-11-10T17:47:04.514Z",
+  "version": "0.0.34-alpha.20261110",
+  "worktree": "/workspace/wt/pr-74",
+  "tests": {
+    "command": "npm test; CI=1 npx playwright test tests/browser/ceo-annual-ui.spec.ts; npm run build",
+    "result": "pass",
+    "summary": "npm test passed 470/470 with encoding precheck. Focused Playwright spec passed 9/9: 375, 390, 1280 and 1920px in dark and light schemes, plus visible Unreleased patch note. The spec asserts uniform Locked badge positioning across all fold rows and balanced empty-state wrapping. npm run build passed; dist/build-info.json commit matches pushed HEAD. Required GitHub verify is currently failing in review-card.spec.ts at 390x844 (scrollHeight 3149 exceeds 2532); separate quarantine check reports 17 failures. PR remains draft for Flint QA."
+  },
+  "patch_notes": {
+    "present": true,
+    "file": "public/patch-notes.html",
+    "line_refs": [
+      "Top of body"
+    ],
+    "notes": "Annual CEO achievements entry is visible at page load, labeled Unreleased, with no ticket ID in player-facing text."
+  },
+  "changelog": {
+    "present": true,
+    "file": "CHANGELOG.md",
+    "line_refs": [
+      "L1-L8"
+    ],
+    "notes": "TCSW-227 entry is under the single top ## Unreleased heading."
+  },
+  "drive_doc": {
+    "id": "1U2fPGAQOdsGQIEl4NdS3vZv-1nT-u7ki96ljIjtiEwc",
+    "url": "https://docs.google.com/document/d/1U2fPGAQOdsGQIEl4NdS3vZv-1nT-u7ki96ljIjtiEwc/edit",
+    "title": "Recognition Systems — Awards, Records, Certifications, Milestones, and Achievements — RLSim",
+    "implementation_status_updated": true,
+    "verified_by": "Nolan (Codex), 2026-11-10",
+    "note": "Implementation status was read back after QA verification and accurately records the pushed implementation/build and current CI failures. Flint re-smoke remains pending."
+  },
+  "changed_ui_surfaces": [
+    "Dashboard CEO Requests cards, fold and route to annual achievements",
+    "Awards annual-achievements cards, fold and earned-results archive"
+  ],
+  "s1_self_check": {
+    "ran": true,
+    "standard_commit": "665b9ce",
+    "standard_path": "notes/standards/UI-STANDARD-2026-11-10.md",
+    "any_1px_borders": false,
+    "any_hash_333_borders": false,
+    "any_fills_used_as_separator": false,
+    "files_scanned": [
+      "src/game/ceoRequests.css",
+      "src/game/ui-standard-cards.css"
+    ],
+    "notes": "Fresh focused browser pass at 375px, 390px, 1280px and 1920px in both dark and light schemes. Every fold row has the same Locked badge position at each viewport; 375px empty-state paragraph uses text-wrap:pretty and its final line has at least two words. At 1920px the Awards fold and earned archive card cap at 448px; earned card uses 2px #C99A2E outline and 🏆 Earned badge. Earned archive row was injected as a smoke fixture, not represented as an earned gameplay outcome."
+  },
+  "mojibake_scan": {
+    "ran": true,
+    "result": "pass",
+    "patterns": [
+      "Ã",
+      "â€",
+      "Â",
+      "�"
+    ],
+    "hits": [],
+    "notes": "npm run build prebuild invoked node tools/check-encoding.cjs and passed."
+  },
+  "agent_name": "Nolan",
+  "session_id": "box-2026-11-10-tcsw-227-fold-alignment-followup",
+  "timestamp_ast": "2026-11-10 2:00 PM AST (America/Santo_Domingo)",
+  "writer": {
+    "by": "Nolan (Codex) on box",
+    "claims_file": "C:\\Users\\jlram\\quaint-runs\\pr-74-nolan-1310-report.md",
+    "blocking_missing": [],
+    "note": "Focused UI spec and build passed on pushed head d189f83; required verify CI failure is recorded explicitly. PR remains open and draft for Flint QA."
+  }
+}
