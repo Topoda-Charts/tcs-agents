@@ -1,0 +1,80 @@
+{
+  "schema": "flint-qa-ready-v1",
+  "ready_for_qa": true,
+  "pr": 74,
+  "linear_issue": "TCSW-227",
+  "branch": "archie/tcsw-227-ceo-achievements-handoff-20261107",
+  "head_sha": "68913cfec8371a6337571ee0d0eeda0c5b9a83fb",
+  "pr_head_sha": "68913cfec8371a6337571ee0d0eeda0c5b9a83fb",
+  "dist_build_info_commit": "68913cfec8371a6337571ee0d0eeda0c5b9a83fb",
+  "built_at": "2026-11-10T18:28:36.815Z",
+  "version": "0.0.34-alpha.20261110",
+  "worktree": "/workspace/wt/pr-74",
+  "tests": {
+    "command": "npm test; npm run build; CI=1 npx playwright test tests/browser/ceo-annual-ui.spec.ts; CI=1 npx playwright test tests/browser/review-card.spec.ts",
+    "result": "pass",
+    "summary": "npm test passed 470/470 with encoding check. Production build passed; dist/build-info.json matches pushed HEAD. CEO annual UI spec passed 11/11 (360, 375, 390, 1280, 1920px in dark/light; card gap/alignment and paragraph last-line assertions included). Review-card spec passed 7/7 (375, 390, 1280, 1920px plus dismissal, Hall of Fame, review=0 and reduced motion). Required GitHub verify passed on run 42876242373. Separate quarantine check failed and is recorded; full responsive suite was not run."
+  },
+  "patch_notes": {
+    "present": true,
+    "file": "public/patch-notes.html",
+    "line_refs": [
+      "Top of body"
+    ],
+    "notes": "Annual CEO achievements entry is visible at page load, labeled Unreleased, with no ticket ID in player-facing text."
+  },
+  "changelog": {
+    "present": true,
+    "file": "CHANGELOG.md",
+    "line_refs": [
+      "L1-L8"
+    ],
+    "notes": "TCSW-227 entry is under the single top ## Unreleased heading."
+  },
+  "drive_doc": {
+    "id": "1U2fPGAQOdsGQIEl4NdS3vZv-1nT-u7ki96ljIjtiEwc",
+    "url": "https://docs.google.com/document/d/1U2fPGAQOdsGQIEl4NdS3vZv-1nT-u7ki96ljIjtiEwc/edit",
+    "title": "Recognition Systems — Awards, Records, Certifications, Milestones, and Achievements — RLSim",
+    "implementation_status_updated": true,
+    "verified_by": "Nolan (Codex), 2026-11-10",
+    "note": "Implementation status was rewritten in place at head 68913cf, accurately states the three QA fixes and records npm/unit/browser/build results, matching dist metadata, required verify pass (run 42876242373), and the separate quarantine failure. Read back after update."
+  },
+  "changed_ui_surfaces": [
+    "Dashboard CEO Requests cards, fold and route to annual achievements",
+    "Awards annual-achievements cards, fold and earned-results archive"
+  ],
+  "s1_self_check": {
+    "ran": true,
+    "standard_commit": "665b9ce",
+    "standard_path": "notes/standards/UI-STANDARD-2026-11-10.md",
+    "any_1px_borders": false,
+    "any_hash_333_borders": false,
+    "any_fills_used_as_separator": false,
+    "files_scanned": [
+      "src/game/ceoRequests.css",
+      "src/game/ui-standard-cards.css"
+    ],
+    "notes": "Focused browser checks confirmed every visible CEO annual paragraph has no one-word final line at 360, 375, 390, 1280 and 1920px in dark and light modes. At 1280 and 1920, both Awards groups use 12px card gaps and corresponding left edges align within 1px. Prior 1920px archive S1 card checks remain unchanged; the code changes in this head adjust only grid track sizing and paragraph wrapping, plus review-card test behavior."
+  },
+  "mojibake_scan": {
+    "ran": true,
+    "result": "pass",
+    "patterns": [
+      "Ã",
+      "â€",
+      "Â",
+      "�"
+    ],
+    "hits": [],
+    "notes": "npm run build prebuild invoked node tools/check-encoding.cjs and passed."
+  },
+  "agent_name": "Nolan",
+  "session_id": "box-2026-11-10-tcsw-227-layout-ci-fix",
+  "timestamp_ast": "2026-11-10 02:52 PM AST (America/Santo_Domingo)",
+  "writer": {
+    "by": "Nolan (Codex) on box",
+    "claims_file": "C:\\Users\\jlram\\quaint-runs\\pr-74-nolan-1407-report.md",
+    "blocking_missing": [],
+    "note": "Head and built dist match 68913cf; required verify passed. Ready for Flint re-smoke. PR remains open/draft; quarantine status is separately noted."
+  }
+}
