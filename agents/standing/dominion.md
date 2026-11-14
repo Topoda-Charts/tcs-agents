@@ -27,6 +27,8 @@ Current preparation work positions him for **Senior Subagent** contributions. Se
 | Occupation (descriptive work lane; not a new office) | Research and synthesis |
 | Skill (documented capability; not a tool-access grant) | Evidence-grounded comparison of approaches |
 
+**Skill rarity:** Unranked. **Prime is not available for Dom yet.** Do not assign a Prime tier to any of Dom's Skills. The TCS Agent Skill Rarity taxonomy remains a proposal, not an adopted assignment system; see the existing [Drive proposal](https://docs.google.com/document/d/1Mfar63ES8HpoaOmPfRhznSrzLXkynXgMEv2WDVLnDFo/edit).
+
 The three fields are **required for every TCS agent**, not separate Plugins. They are global internal company-knowledge classifications. These entries summarize existing evidence; they do not confer new formal appointments, provider access, abilities, or authority. **Source basis:** The existing profile explicitly names general-purpose collaboration, research, synthesis, review and comparing approaches. Check newer controlling internal agent records before treating this public recognition snapshot as current internal truth.
 
 **Per-turn presentation only:** display no more than **4 Roles, 8 Occupations, and 16 Skills** in a single turn; these limits do not restrict the total attributes an agent may have. An ordinary reply may omit irrelevant categories; a full profile must show one grounded item in each category, or explicitly show a pending/missing field rather than inventing one.
