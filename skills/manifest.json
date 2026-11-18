@@ -190,7 +190,7 @@
   {
     "slug": "correcting-course",
     "name": "correcting-course",
-    "description": "Use when the user steers, corrects, or redirects you, or you detect drift — stop the wrong branch, re-anchor on the exact input, and take the next correct productive action instead of apologizing, paraphrasing, or asking needless approval.",
+    "description": "Use when the user steers, corrects, or redirects you, or you detect drift \u2014 stop the wrong branch, re-anchor on the exact input, and take the next correct productive action instead of apologizing, paraphrasing, or asking needless approval.",
     "version": "2026-10-15",
     "core_date": "2026-10-15T06:48-04:00",
     "status": "active",
@@ -210,7 +210,7 @@
   {
     "slug": "learning-from-mistakes",
     "name": "learning-from-mistakes",
-    "description": "Use after an error is identified (by the user or yourself) to turn it into a verified difference in the next relevant action — diagnose the failed decision, apply the fix, and regression-check it.",
+    "description": "Use after an error is identified (by the user or yourself) to turn it into a verified difference in the next relevant action \u2014 diagnose the failed decision, apply the fix, and regression-check it.",
     "version": "2026-10-15",
     "core_date": "2026-10-15T06:48-04:00",
     "status": "active",
@@ -371,49 +371,49 @@
   {
     "slug": "in-session-phasing",
     "name": "in-session-phasing",
-    "description": "Divide a substantial task or process into visible, bounded phases while the current conversation is actively proceeding. Use when the user asks to \"work in phases,\" \"phase this,\" use \"in-session phasing,\" keep updating the chat while working, show what is being interpreted before continuing, or otherwise make a multi-step task observable and supervisable as it unfolds. Also use for longer tool-heavy work when the user explicitly wants checkpoints rather than a long opaque stretch. Keep phases concise, execute real work inside each phase, report meaningful progress between phases, and continue without unnecessary approval prompts unless the user pauses, redirects, or a genuine decision gate is reached.",
-    "version": "2026-10-04",
-    "core_date": "2026-10-04T20:28-04:00",
+    "description": "Divide a substantial task or process into visible, bounded phases while the current conversation is actively proceeding, and align work with other concurrently running sessions or agents that share a task, owner, or artifact. Use when the user asks to \"work in phases,\" \"phase this,\" use \"in-session phasing,\" keep updating the chat while working, show what is being interpreted before continuing, or otherwise make a multi-step task observable and supervisable as it unfolds; also when parallel work on the same target could collide. Keep phases concise, execute real work inside each phase, report meaningful progress between phases, honor task-specific notification preferences, and continue without unnecessary approval prompts unless the user pauses, redirects, or a genuine decision gate is reached.",
+    "version": "1.1.2",
+    "core_date": "2026-11-15",
     "status": "active",
     "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/in-session-phasing/SKILL.md",
-    "sha256": "ae4dcec495b067334ab15878332b495a19d218158ef821eb023cb8c684c5fee0",
+    "sha256": "5b12fae2c8ed065bccbdd9c1038c15d28dce044a5f2ce429c78723c014c8d922",
     "providers": {
       "xai": {
         "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/in-session-phasing/providers/xai/SKILL.md",
         "sha256": "060dcf143cbf4bb23009893f1d759d93fb3730f977dc8fe7a8b2d322e1608eb7",
         "adapter_date": "2026-10-06",
-        "stale": false,
+        "stale": true,
         "origin": "box copy"
       },
       "anthropic": {
         "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/in-session-phasing/providers/anthropic/skill.md",
         "sha256": "a9cda9625e915d6494615c9a494a7ce812b9aba166c8dd0d01ad4a32cc5b792a",
         "adapter_date": "2026-10-04T20:29-04:00",
-        "stale": false,
+        "stale": true,
         "origin": "Drive"
       },
       "google": {
         "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/in-session-phasing/providers/google/gem-definition.md",
         "sha256": "530a7e01e39645b03ee4106c287cb46a60fb5e45bcabb81ee9e4c84e1b7a6243",
         "adapter_date": "2026-10-04T20:29-04:00",
-        "stale": false,
+        "stale": true,
         "origin": "Drive"
       },
       "openai": {
         "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/in-session-phasing/providers/openai/SKILL.md",
         "sha256": "a9cda9625e915d6494615c9a494a7ce812b9aba166c8dd0d01ad4a32cc5b792a",
         "adapter_date": "2026-10-04T20:29-04:00",
-        "stale": false,
+        "stale": true,
         "origin": "Drive",
         "metadata": {
           "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/in-session-phasing/providers/openai/agents/openai.yaml",
           "sha256": "39a2f9f51e1e70bcf17a24046fb191e5e7a5403c7db0e018a572e1a585971407",
           "adapter_date": "2026-10-04T20:44-04:00",
-          "stale": false
+          "stale": true
         }
       }
     },
-    "updated": "2026-10-18"
+    "updated": "2026-11-17"
   },
   {
     "slug": "citing-sources",
@@ -794,7 +794,7 @@
   {
     "slug": "iui-research-panel",
     "name": "iui-research-panel",
-    "description": "Use when the user asks for a research panel or source picker, or when their approval of which sources/scope to research is materially needed — present the 15-source selector with presets, depth, method, and format, then research only the submitted selection.",
+    "description": "Use when the user asks for a research panel or source picker, or when their approval of which sources/scope to research is materially needed \u2014 present the 15-source selector with presets, depth, method, and format, then research only the submitted selection.",
     "version": "2026-10-15",
     "core_date": "2026-10-15T06:42-04:00",
     "status": "active",
@@ -814,7 +814,7 @@
   {
     "slug": "clocking-in",
     "name": "clocking-in",
-    "description": "Use when the user says \"Clocking in\" (or similar) to start or re-enter productive work in the current conversation — recover the work position, pick one eligible unit of work, execute, and verify.",
+    "description": "Use when the user says \"Clocking in\" (or similar) to start or re-enter productive work in the current conversation \u2014 recover the work position, pick one eligible unit of work, execute, and verify.",
     "version": "2026-10-15",
     "core_date": "2026-10-15T06:48-04:00",
     "status": "active",
@@ -834,7 +834,7 @@
   {
     "slug": "clocking-out",
     "name": "clocking-out",
-    "description": "Use when the user says \"Clocking out\", \"End session.\", or otherwise asks to close the session — dispatch to ending-session (close with continuity packaging unless declined) without becoming a second closeout orchestrator.",
+    "description": "Use when the user says \"Clocking out\", \"End session.\", or otherwise asks to close the session \u2014 dispatch to ending-session (close with continuity packaging unless declined) without becoming a second closeout orchestrator.",
     "version": "2026-10-15",
     "core_date": "2026-10-15T06:48-04:00",
     "status": "active",
@@ -854,7 +854,7 @@
   {
     "slug": "bumping-session",
     "name": "bumping-session",
-    "description": "Use when the user returns to a conversation after a gap, asks how much time has passed, or wants to re-anchor the thread — establish a trustworthy session boundary from timestamp evidence, and resume prior work only if explicitly asked.",
+    "description": "Use when the user returns to a conversation after a gap, asks how much time has passed, or wants to re-anchor the thread \u2014 establish a trustworthy session boundary from timestamp evidence, and resume prior work only if explicitly asked.",
     "version": "2026-10-15",
     "core_date": "2026-10-15T06:48-04:00",
     "status": "active",
@@ -874,7 +874,7 @@
   {
     "slug": "ending-session",
     "name": "ending-session",
-    "description": "Use when the user says exactly \"End session.\", asks to close the session, or asks whether the session is ready to end — run the Yes/No/Other packaging-consent gate and orchestrate a verified, proportional closeout.",
+    "description": "Use when the user says exactly \"End session.\", asks to close the session, or asks whether the session is ready to end \u2014 run the Yes/No/Other packaging-consent gate and orchestrate a verified, proportional closeout.",
     "version": "2026-10-15",
     "core_date": "2026-10-15T06:42-04:00",
     "status": "active",
@@ -988,7 +988,7 @@
   {
     "slug": "propagating-to-internal-sources",
     "name": "propagating-to-internal-sources",
-    "description": "Use when the user makes a decision or new fact that should be carried into the internal sources that own it (Drive, Notion, Linear, etc.) — discover the affected records, propose or (when authorized) apply exact edits, and verify per source.",
+    "description": "Use when the user makes a decision or new fact that should be carried into the internal sources that own it (Drive, Notion, Linear, etc.) \u2014 discover the affected records, propose or (when authorized) apply exact edits, and verify per source.",
     "version": "2026-10-15",
     "core_date": "2026-10-15T06:39-04:00",
     "status": "active",
@@ -1098,5 +1098,53 @@
       }
     },
     "updated": "2026-10-18"
+  },
+  {
+    "slug": "agent-bootstrap",
+    "name": "agent-bootstrap",
+    "description": "Initialize an existing agent manifestation at session start, or provision missing startup guidance when it genuinely does not exist. Use at session initialization or explicit (re)initialization to resolve the active identity, load only the minimum durable guidance (identity, behavior core, user directives, operating instructions), reconcile authority and chronology, route the real task to the owning source, and continue into the user's work. Not for an already-active agent that only lost its work position (use getting-dressed).",
+    "version": "1.3.1",
+    "core_date": "2026-11-15T05:55-04:00",
+    "status": "active",
+    "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/agent-bootstrap/SKILL.md",
+    "sha256": "d374d97af119b6a82e67d715d6fc5b424be78f7e845223aacb384fa4f03f5810",
+    "providers": {},
+    "updated": "2026-11-17"
+  },
+  {
+    "slug": "communicating-effectively",
+    "name": "communicating-effectively",
+    "description": "Route and attribute AI-authored communications transparently and effectively across human-AI and AI-AI boundaries. Use when preparing, forwarding, writing, sending, posting, replying to, or correcting an agent handoff, chat or email message, operational comment, durable authored instruction, or cross-provider prompt; when choosing a communication surface or connector; or when repairing missing AI attribution. Send only with authority, keep a visible author signature inside the material, verify the real outcome, and write for a busy human reader with evidence-led status.",
+    "version": "1.3.0",
+    "core_date": "2026-11-12",
+    "status": "active",
+    "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/communicating-effectively/SKILL.md",
+    "sha256": "793a85df9316b8594e95315651fc645a193aa7fb7aa4b474c122e0cece529925",
+    "providers": {},
+    "updated": "2026-11-17"
+  },
+  {
+    "slug": "company-knowledge-routing",
+    "name": "company-knowledge-routing",
+    "description": "Route the next knowledge operation to the source or context that actually owns the needed information, and choose READ, WRITE, READ -> WRITE, or NONE. Use when deciding where to read or write company knowledge next (conversation, Notion, Drive, Linear, repository, database, chat, Library, public web, or another AI context) by ownership rather than convenience, when a named Skill is missing from the installed list, or when prior-decision recall needs the right starting source. Keep routing narrow and return to the parent task.",
+    "version": "1.3.1",
+    "core_date": "2026-11-15T05:50-04:00",
+    "status": "active",
+    "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/company-knowledge-routing/SKILL.md",
+    "sha256": "d290d340aaff0c92d5f08fcc0dc5327d59b586bf2bce354321c86cf61419f7bd",
+    "providers": {},
+    "updated": "2026-11-17"
+  },
+  {
+    "slug": "wrapping-up-turn",
+    "name": "wrapping-up-turn",
+    "description": "Provide an accurate, visually useful final checkpoint for the current turn and stop expanding the task. Use when the user asks to stop and calibrate, show what the agent has been doing before stopping, summarize its current thinking and pause, or wrap up only this response. A bare STOP means stop immediately; session-ending and clock-out requests belong to their own procedures.",
+    "version": "0.1.0",
+    "core_date": "2026-11-13",
+    "status": "active",
+    "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/wrapping-up-turn/SKILL.md",
+    "sha256": "226082ccb055b39e15a364cc8f8e8147eb68c4d0cbcc4fa6f1e09d9099127e7d",
+    "providers": {},
+    "updated": "2026-11-17"
   }
 ]

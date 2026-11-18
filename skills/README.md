@@ -2,7 +2,7 @@
 
 **Do not edit files here.** Every file in `skills/` is generated from the Tópoda Charts Studios Drive CORE skill packages (the source of truth) and is overwritten on the next sync. Propose changes against the Drive CORE instead.
 
-Generated 2026-10-18. Catalog: [manifest.json](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/manifest.json).
+Generated 2026-10-18; five skills refreshed from CORE on 2026-11-17 (`in-session-phasing`, `agent-bootstrap`, `communicating-effectively`, `company-knowledge-routing`, `wrapping-up-turn`). Catalog: [manifest.json](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/manifest.json).
 
 ## Layout
 
@@ -44,7 +44,7 @@ An adapter is **stale** when its own date is older than its CORE's last edit. St
 | `work-preparing` | 2026-10-04 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/work-preparing/SKILL.md) | xai, openai, anthropic, google |
 | `proposal-drafting` | 2026-10-04 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/proposal-drafting/SKILL.md) | xai, openai, anthropic, google |
 | `implementation-planning` | 2026-10-04 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/implementation-planning/SKILL.md) | xai, openai, anthropic, google |
-| `in-session-phasing` | 2026-10-04 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/in-session-phasing/SKILL.md) | xai, openai, anthropic, google |
+| `in-session-phasing` | 1.1.2 (2026-11-15) | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/in-session-phasing/SKILL.md) | xai (stale), openai (stale), anthropic (stale), google (stale) |
 | `citing-sources` | 2026-10-15 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/citing-sources/SKILL.md) | xai |
 | `connective-tissue-safe-handling` | 2026-10-04 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/connective-tissue-safe-handling/SKILL.md) | xai, openai, anthropic, google |
 | `memory-updating` | 2026-10-04 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/memory-updating/SKILL.md) | xai, openai, anthropic, google |
@@ -66,6 +66,10 @@ An adapter is **stale** when its own date is older than its CORE's last edit. St
 | `propagating-to-internal-sources` | 2026-10-15 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/propagating-to-internal-sources/SKILL.md) | xai |
 | `workspace-skill-maintenance` | 2026-10-04 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/workspace-skill-maintenance/SKILL.md) | xai, openai, anthropic, google |
 | `workspace-skill-changing-update` | 2026-10-04 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/workspace-skill-changing-update/SKILL.md) | xai, openai, anthropic, google |
+| `agent-bootstrap` | 1.3.1 (2026-11-15) | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/agent-bootstrap/SKILL.md) | none |
+| `communicating-effectively` | 1.3.0 (2026-11-12) | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/communicating-effectively/SKILL.md) | none |
+| `company-knowledge-routing` | 1.3.1 (2026-11-15) | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/company-knowledge-routing/SKILL.md) | none |
+| `wrapping-up-turn` | 0.1.0 (2026-11-13) | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/wrapping-up-turn/SKILL.md) | none |
 
 ## Scope and privacy
 
