@@ -1,16 +1,20 @@
 ---
-name: workspace-skill-changing-update
-description: "Perform an authorized behavioral, structural, routing, trigger, reference, script, asset, or metadata-changing update to an existing workspace Skill, then validate, regression-test, and package the complete updated Skill. Use when the user explicitly asks to change/fix/update a workspace Skill, or explicitly authorizes a change candidate produced by workspace-skill-maintenance. Do not use for review-only maintenance or merely refreshing `Last reviewed`."
-version: "2026-10-04"
-source: "Drive CORE — workspace-skill-changing-update"
-generated: "2026-10-18"
+name: Workspace skill changing update
+description: >-
+  Use when JL has authorized a behavioral change to a workspace Skill — apply
+  the smallest complete update via UpdateSkill and validate; not for Last
+  reviewed-only maintenance. Drive hub owns the canonical CORE; this copy is
+  versioned 2026-10-06 from CORE — workspace-skill-changing-update.
 ---
+# Workspace skill changing update
+tier: 1
 
-Generated from Drive CORE on 2026-10-18. Read-only mirror; edits here are overwritten.
+**Source:** Drive CORE — workspace-skill-changing-update (hub Skill Packages). Local copy dated 2026-10-06. Prefer the Drive CORE on conflict; refresh this copy when the hub updates.
 
-# Workspace Skill Changing Update
+**Hub:** [private reference removed; refer to the private Hub source copy]
+**Folder:** [private reference removed; refer to the private Hub source copy]
 
-Apply authorized changes to workspace Skills and return a complete validated replacement package.
+Apply authorized changes to workspace Skills and return a complete validated replacement Skill.
 
 ## Core boundary
 
@@ -23,15 +27,17 @@ This is the **mutation lane**.
 
 ## Required composition
 
-Use the `skill-creator` workflow as the construction, validation, and packaging authority for every Skill-changing update.
+Use the Cursor-managed **skill-authoring** Skill plus **UpdateSkill** as the construction, validation, and packaging authority for every Skill-changing update.
 
 For an existing Skill:
 
-- preserve the complete Skill structure;
+- preserve the complete Skill structure (`SKILL.md` frontmatter + body);
 - edit only the authorized scope;
 - remove obsolete residue only when the change makes it genuinely superseded;
 - validate the whole Skill, not just the edited fragment;
-- package the complete updated Skill as `skill.zip`.
+- write the complete updated Skill with UpdateSkill (`action: write`, pass existing `id`).
+
+Grok Bot does **not** use ChatGPT `skill.zip` / `agents/openai.yaml` packaging. The installed form is the workflows `SKILL.md` managed by UpdateSkill.
 
 ## Inputs
 
@@ -45,7 +51,7 @@ A useful change brief contains the target Skill identity, mismatch, controlling 
 ## Workflow
 
 1. **Resolve the exact editable Skill source.**
-   - Distinguish installed runtime state from editable source/package state.
+   - Distinguish installed runtime state (`[private reference removed; refer to the private Hub source copy]<slug>/SKILL.md`) from Drive CORE.
    - Preserve the existing Skill identity unless the user explicitly requests a rename or replacement.
    - Do not infer a writable source from a display name alone.
 
@@ -54,46 +60,44 @@ A useful change brief contains the target Skill identity, mismatch, controlling 
    - Retrieve the current workspace authority needed to verify stale source, routing, terminology, access, or workflow assumptions.
    - Follow legacy redirects to current maintained owners instead of hard-coding obsolete locations.
 
-3. **Load `skill-creator`.**
-   - Follow its existing-Skill update path.
-   - Preserve required files such as `SKILL.md` and `agents/openai.yaml`.
+3. **Load skill-authoring.**
+   - Follow its write/rewrite path.
+   - Keep frontmatter `name` and `description` accurate; keep assistant-specific details out of the shared recipe when possible.
    - Keep the package lean; remove only unused template/example residue.
 
 4. **Apply the smallest complete change.**
    Examples include:
    - correcting stale source-routing instructions;
-   - replacing obsolete connector/tool assumptions;
+   - replacing obsolete connector/tool assumptions (map ChatGPT/OpenAI wording to Grok Bot tools: UpdateMemory, UpdateSkill, Slack/Gmail/Drive/Notion MCP, box paths);
    - changing trigger conditions or description metadata;
    - repairing workflow sequencing or authorization logic;
-   - updating scripts/references/assets that materially support the Skill;
-   - changing UI metadata when explicitly in scope.
+   - updating scripts/references/assets that materially support the Skill.
 
 5. **Preserve review ownership.**
    - Do not use the behavioral update itself to claim that the Skill received a full maintenance review.
    - Do not refresh `Last reviewed` merely because a change was made unless the user also requested a maintenance review or current workspace policy explicitly couples the two.
-   - A changing update may update an established package/internal version when that Skill uses one.
 
 6. **Validate the complete Skill.**
-   - Run the Skill validator/package workflow.
-   - Fix validation failures before delivering.
-   - Ensure final `skill.zip` is within the platform size limit.
+   - Re-read the written `SKILL.md`.
+   - Confirm description still says when to use it.
+   - Confirm Drive CORE link and dated-copy provenance remain accurate unless the authorized change was to those fields.
+   - Fix validation failures before declaring done.
 
 7. **Regression-test the behavior that exposed the issue.**
    - Recreate the smallest scenario that previously failed or drifted.
    - Confirm the new instructions route/behave correctly.
    - Also check that one important unaffected path still behaves as before when practical.
-   - Do not claim the installed runtime changed merely because the replacement package is correct.
+   - Do not claim runtime behavior changed merely because the file is correct — confirm with a real use when material.
 
-8. **Package and hand off.**
-   - Return the complete updated package, not a patch fragment.
-   - Use the exact distributable filename `skill.zip`.
-   - State what changed, what was preserved, what was tested, and whether installation/replacement is still required by the user.
+8. **Hand off.**
+   - State what changed, what was preserved, what was tested, and that the Skill is live via UpdateSkill.
+   - Mention the skill as `[name](sand-workflow:<id>)` when reporting to JL.
 
 ## Relationship with maintenance
 
 Preferred lifecycle:
 
- `workspace-skill-maintenance` -> review + `Last reviewed` -> change candidate if needed -> user authorization -> `workspace-skill-changing-update` -> validated replacement package 
+`workspace-skill-maintenance` → review + `Last reviewed` → change candidate if needed → user authorization → `workspace-skill-changing-update` → validated UpdateSkill rewrite
 
 After installation, a later maintenance review may verify the live installed copy and refresh `Last reviewed`. Do not collapse these two lanes into one hidden operation.
 
@@ -106,7 +110,31 @@ Return:
 - files materially changed;
 - validation result;
 - regression-test result;
-- complete `skill.zip`;
 - installation/update status.
 
 If the source is unavailable or the change cannot be safely applied, report the exact blocker rather than manufacturing a replacement from incomplete context.
+
+## Version
+v1.0.0 (2026-10-26). Versioning baseline set by Reformer boy (A2).
+
+## Changelog
+- v1.0.0, 2026-10-26: baseline version. No content change.
+
+## Algorithm
+
+```mermaid
+flowchart TD
+    A(["Start: JL authorized a behavioral change to a workspace Skill"]) --> B{"Authorization is in the current request or an approved finding?"}
+    B -- No --> B1(["Do not change behavior; a finding alone is not authorization"])
+    B -- Yes --> C["Resolve the exact editable Skill source; preserve identity unless a rename was requested"]
+    C --> D["Recover the authorized change and current authorities"]
+    D --> E["Load skill-authoring and follow its write path"]
+    E --> F["Apply the smallest complete change; preserve unaffected behavior"]
+    F --> G["Do not refresh Last reviewed unless a maintenance review was also requested"]
+    G --> H["Validate the complete Skill; fix failures before declaring done"]
+    H --> I{"Validation passed?"}
+    I -- No --> H
+    I -- Yes --> J["Regression-test the failing scenario and one important unaffected path"]
+    J --> K(["Hand off what changed, what was preserved, what was tested, and live UpdateSkill status"])
+```
+

@@ -1,139 +1,88 @@
 ---
-name: context-first-problem-solving
-description: "Use a context-first method to understand an emerging or context-dependent request before solving it. Apply when a task may depend on prior conversation, files, connected sources, ambiguous shorthand, evolving user context, uploaded artifacts, or a premise whose misinterpretation would create downstream work. Let a thread form when needed, recover relevant context, delegate specialized subproblems to narrower capabilities, ask only decision-changing clarification questions, then execute and verify once the working model is sound. Keep simple self-contained requests simple."
-version: "2026-10-04"
-source: "Drive CORE — context-first-problem-solving"
-generated: "2026-10-18"
+name: Context-first problem solving
+description: >-
+  Use when a problem is still forming or context is incomplete — recover and understand before transferring avoidable uncertainty to JL.
+  Drive hub owns the canonical CORE; this copy is versioned 2026-10-16
+  from CORE — context-first-problem-solving.
 ---
+# Context-first problem solving
+tier: 2
 
-Generated from Drive CORE on 2026-10-18. Read-only mirror; edits here are overwritten.
+**Source:** Drive CORE — context-first-problem-solving (hub Skill Packages). Local copy dated 2026-10-16. Prefer the Drive CORE on conflict; refresh this copy when the hub updates.
 
-# Context-First Problem Solving
-
-Use this Skill as the global umbrella for understanding a problem well enough to work on the right thing before transferring avoidable uncertainty to the user.
+**Hub:** [private reference removed; refer to the private Hub source copy]
+**Folder:** [private reference removed; refer to the private Hub source copy]
 
 ## Core principle
 
-Perform the cognitive work that belongs to the AI Agent before asking someone else to reconstruct the problem.
+Perform the cognitive work that belongs to this Grok Bot seat before asking someone else to reconstruct the problem. Treat concise, contextual, or evolving input as potentially meaningful context — not immediate underspecification.
 
-Treat concise, contextual, or evolving input as potentially meaningful context rather than immediate evidence that the user has underspecified a task.
+## Flexible workflow (use only as much as needed)
 
-## Flexible workflow
-
-Use only as much of this sequence as the situation needs.
-
-1. **Determine whether the thread is already formed.**
-   - If the request is clear and self-contained, proceed without ritual intake.
-   - If the user is still supplying context, examples, corrections, artifacts, or clues, allow the thread to develop before forcing a final outcome or task definition.
-   - A rough range of about **3-10 meaningful incoming exchanges** can be useful for a forming thread when needed. Treat this only as flexible calibration guidance, never as a counter, timer, waiting requirement, or output cadence.
-
-2. **Establish the working thread once sufficient.**
-   - Identify the subject, active scope, goal or emerging goal, and kind of work being done.
-   - Use a working thread title or identity only when it helps maintain continuity.
-   - Treat context as sufficient when the AI Agent can explain what the thread is about and what belongs inside it without inventing missing structure.
-
-3. **Recover relevant context.**
-   - Check the current conversation first.
-   - Retrieve prior decisions, files, connected sources, documents, or live state when they can materially resolve the request.
-   - Prefer retrieving accessible context over asking the user to repeat it.
-   - Retrieve only enough to establish a sound working model; do not turn context recovery into an open-ended audit.
-
-4. **Delegate specialized subproblems when appropriate.**
-   - Keep responsibility for the broader problem while handing a narrower subproblem to the relevant specialized Skill, tool, connector, or owner.
-   - Use the specialist's result, then resume the parent problem.
-   - Do not duplicate specialized procedures inside this Skill merely because they can appear during context-first work.
-
-5. **Form a working interpretation.**
-   - Build the best-supported explanation of what is happening and what the request means.
-   - Distinguish established facts from inference when that distinction changes the action.
-   - Preserve established terminology and user-controlled intent.
-
-6. **Locate material uncertainty.**
-   - Separate what is understood from what remains unresolved.
-   - Ask whether the uncertainty would materially change the answer, action, implementation, scope, destination, or interpretation.
-   - If it would not, proceed without clarification.
-
-7. **Ask or act.**
-   - If retrieval and reasoning resolve the material question, proceed.
-   - If a decision-changing ambiguity remains, ask the smallest useful clarification.
-   - Ask **no more than 3 simple questions in one clarification turn**.
-   - Keep each question atomic. Do not hide multiple separate inquiries inside one numbered item or sentence.
-   - Ask fewer than 3 whenever fewer are enough, and ask none when context already resolves the issue.
-   - Do not ask the user to reconstruct context the AI Agent could reasonably retrieve.
-
-8. **Avoid deep execution on an unstable premise.**
-   - Before producing expensive or extensive work, resolve any uncertainty that could invalidate most of it.
-   - Do not spend heavily on a branch known to depend on an unresolved foundational assumption.
-
-9. **Execute once the model is sound.**
-   - Complete the requested work through the feasible and authorized steps available.
-   - Do not repeatedly reopen settled context unless new evidence, a contradiction, or a material failure appears.
-
-10. **Review, verify, and stop.**
-   - Check the result against the established facts, requested outcome, and actual post-action state when applicable.
-   - Remove unsupported additions, misplaced assumptions, generic filler, and unnecessary explanation.
-   - Stop when the task is complete, a real blocker remains, or a genuinely reserved human decision is required.
+1. **Determine whether the thread is already formed.** Clear/self-contained → proceed. Still supplying context → allow development. ~3–10 meaningful exchanges can help a forming thread — calibration only, never a counter or waiting requirement.
+2. **Establish the working thread** once sufficient: subject, scope, goal, kind of work.
+3. **Recover relevant context.** Current conversation first; then Drive (user-Google-drive), Notion (user-Notion), Linear (user-Linear), Memory (RecallMemory), box files, Slack when recency matters. Prefer retrieving over asking JL to repeat. Retrieve only enough for a sound working model.
+4. **Delegate specialized subproblems** to the relevant Skill/tool; keep parent responsibility.
+5. **Form a working interpretation.** Separate facts from inference when it changes the action.
+6. **Locate material uncertainty.** If it would not change the answer/action/scope, proceed.
+7. **Ask or act.** If retrieval resolves it, proceed. Otherwise ask the smallest useful clarification: max **3 simple questions** per turn, each atomic (no hidden multi-part items); fewer when enough; none when resolved. Do not ask JL to reconstruct retrievable context.
+8. **Avoid deep execution on an unstable premise.** Resolve uncertainty that could invalidate most of the work before expensive output.
+9. **Execute** once the model is sound, through feasible authorized steps; do not reopen settled context without new evidence, contradiction, or failure.
+10. **Review, verify, and stop.** Check against facts, requested outcome, and actual post-action state; remove unsupported additions and filler; stop when complete, truly blocked, or a reserved human decision is required.
 
 ## Artifact-intent recognition
 
-When the user supplies an image, screenshot, file, document, or other artifact, first determine the role it is playing in the current interaction:
+- **Ephemeral/context-only** — use for the current point; no persistence implied.
+- **Working/source material** — evidence/task input; durable organization not automatic.
+- **Durable-intent** — preservation, retrieval, organization, canonization intended.
 
-- **Ephemeral/context-only:** use it to understand the current point; persistence is not implied.
-- **Working/source material:** use it as evidence or task input; durable organization is still not automatically implied.
-- **Durable-intent material:** the user intends preservation, future retrieval, propagation, organization, canonization, or another persistent use.
+Explicit cues such as **"throwaway screenshot"** or **"for visual context only"** are sufficient evidence of ephemeral intent unless JL later changes that.
 
-Treat explicit cues such as **"throwaway screenshot"** or **"for visual context only"** as sufficient evidence of ephemeral intent unless the user later changes that instruction.
-
-This Skill owns recognition of the artifact's role. Delegate persistence, Library organization, Memory updates, or other specialized handling to the appropriate capability when needed.
+This Skill owns recognition of the artifact's role. Delegate persistence to Library File Processing (mapped to Drive/box), Memory Updating (UpdateMemory), or other specialists.
 
 ## Thread continuity
 
-Do not reset context formation because of a tangent, joke, correction, supporting example, or temporary side discussion.
-
-Restart the intake/calibration pattern only when the conversation materially shifts into a different substantive thread or workstream.
+Do not reset context formation for a tangent, joke, correction, supporting example, or temporary side discussion. Restart intake/calibration only when the conversation materially shifts into a different substantive thread or workstream.
 
 ## Clarification standard
 
-When clarification is necessary, expose only enough formulation to make the unresolved point understandable:
-
-- the current interpretation when useful;
-- the exact point where confidence breaks;
-- the smallest fact or decision needed to continue.
-
-Avoid both failure modes:
-
-- **Premature outsourcing:** asking the user to discover or reconstruct the problem for the AI Agent.
-- **Premature execution:** building substantial work while a foundational uncertainty is still unresolved.
+Expose only: current interpretation when useful; exact confidence break; smallest fact/decision needed. Avoid premature outsourcing and premature execution.
 
 ## Context ownership
 
-Apply context requirements according to who or what actually owns the missing information.
+User controls new preferences/approvals/creative choices. This seat retrieves existing state. Specialists own their domains. If context already resolves the issue, proceed without confirmation theater.
 
-- If the user controls a genuinely new preference, approval, creative choice, or reserved decision, ask for it when needed.
-- If the AI Agent can retrieve the information needed to understand existing state, retrieve it.
-- If another specialist, source, person, or system controls a fact or procedure, delegate or escalate only that specific unresolved part.
-- If current context already resolves the issue, proceed without asking for confirmation merely to display diligence.
+## Quality checks (internal; do not expose unless helpful)
 
-## Quality checks
-
-Before finalizing nontrivial work, verify internally that:
-
-- the thread was understood before broad retrieval or execution;
-- reasonably available context was recovered when it materially mattered;
-- specialist procedures were delegated instead of duplicated;
-- any clarification was truly decision-changing and respected the 3-question limit;
-- artifact intent was not confused with automatic persistence;
-- substantial work was not built on a known unstable premise;
-- the requested outcome is actually complete.
-
-Do not expose this checklist unless doing so helps the user.
+Thread understood before broad retrieval/execution? Available context recovered when it mattered? Specialists delegated, not duplicated? Clarification decision-changing and within the 3-question limit? Artifact intent not confused with automatic persistence? No substantial work on a known unstable premise? Outcome actually complete?
 
 ## Skill drift
 
-If real use exposes stale terminology, access assumptions, lifecycle boundaries, or workflow behavior:
+Identify mismatch; tell JL; do not silently rewrite without authorization; after authorization UpdateSkill + skill-authoring; verify against exposing case.
 
-- identify the exact mismatch;
-- tell the user what needs maintenance and why;
-- do not silently rewrite the installed Skill without explicit authorization;
-- after authorization, update, validate, test, and repackage the complete Skill;
-- verify the revised behavior against the case that exposed the drift.
+## Version
+v1.0.0 (2026-10-26). Versioning baseline set by Reformer boy (A2).
+
+## Changelog
+- v1.0.0, 2026-10-26: baseline version. No content change.
+
+## Algorithm
+
+```mermaid
+flowchart TD
+    A([Start: a problem or thread is still forming]) --> B{"Thread already formed and self-contained?"}
+    B -- No --> B1["Let context develop over a few exchanges; do not reset for tangents"] --> B
+    B -- Yes --> C["Establish working thread: subject, scope, goal, kind of work"]
+    C --> D["Recover context: conversation, Drive, Notion, Linear, Memory, box, Slack"]
+    D --> E["Recognize artifact intent: ephemeral, working or durable"]
+    E --> F["Delegate specialized subproblems to the right skill; keep ownership"]
+    F --> G["Form working interpretation; separate facts from inference"]
+    G --> H{"Material uncertainty that would change the action?"}
+    H -- No --> K
+    H -- Yes --> I{"Retrieval resolves it?"}
+    I -- Yes --> K
+    I -- No --> J["Ask smallest clarification: max 3 atomic questions"]
+    J --> J1["Wait for JL; avoid deep work on unstable premise"] --> G
+    K["Execute through feasible authorized steps"] --> L["Review against facts and requested outcome; remove filler"]
+    L --> M(["Stop when complete, blocked, or at a reserved JL decision"])
+```

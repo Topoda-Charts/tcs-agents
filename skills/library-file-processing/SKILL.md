@@ -1,29 +1,34 @@
 ---
-name: library-file-processing
-description: "Process ChatGPT Library artifacts for persistent staging, durable retrieval, semantic naming and placement, provenance preservation, duplicate review, and recurring intake maintenance. Use when durable Library handling is already established by an explicit user request, an upstream durable-intent handoff, a batch-processing instruction, or a standing/scheduled Library-maintenance workflow."
-version: "2026-10-13"
-source: "Drive CORE — library-file-processing"
-generated: "2026-10-18"
+name: Library file processing
+description: >-
+  Use when turning authorized Library / box / Drive artifacts into clear,
+  retrievable, well-placed records while preserving identity, provenance, and
+  useful distinctions. Drive hub owns the canonical CORE; this copy is versioned
+  2026-10-16 from CORE — library-file-processing.
 ---
+# Library file processing
+tier: 2
 
-Generated from Drive CORE on 2026-10-18. Read-only mirror; edits here are overwritten.
+**Source:** Drive CORE — library-file-processing (hub Skill Packages). Local copy dated 2026-10-16. Prefer the Drive CORE on conflict; refresh this copy when the hub updates.
 
-# Library File Processing — Portable TCS CORE
-**Reconciled:** 2026-10-13. Original 2026-10-05 import was ChatGPT-Library-specific; this CORE expresses the shared artifact-management contract. Provider/surface identifiers and APIs belong to adapters. ChatGPT's `space-artifact-processing` is a narrower specialization, not a retirement or exact rename of this CORE.
+**Hub:** [private reference removed; refer to the private Hub source copy]
+**Folder:** [private reference removed; refer to the private Hub source copy]
 
-Treat the active provider's configured durable artifact repository as a staging and retrieval surface. Turn authorized artifacts into clear, retrievable, well-placed records while preserving identity, provenance, and useful distinctions. Use **artifact** as the broad default term, and **file** where file-specific mechanics matter; map ChatGPT Space/Library, other repositories, and literal connector identifiers through the appropriate adapter.
+Treat the **box Library surface** (`/workspace` and related agent working trees) and, when the caller's scope says so, **Google Drive** as persistent staging and retrieval surfaces. Turn authorized artifacts into clear, retrievable, well-placed records while preserving identity, provenance, and useful distinctions.
+
+**Terminology (CORE reconciled 2026-10-13):** this is the portable artifact-management contract. Use **artifact** as the broad default term and **file** where file-specific mechanics matter. "Library" here means this bot's configured durable store (box / Drive), not ChatGPT Library. `space-artifact-processing` is a narrower specialization of this Skill, not its replacement or a rename.
 
 ## Invocation and authority
 
 1. **Establish the active processing scope.**
    - Accept an explicit user request, upstream durable-intent handoff, batch instruction, or standing/scheduled maintenance workflow as processing authority.
    - Apply the caller's granted scope directly to routine naming, classification, placement, indexing, and maintenance work.
-   - Use well-supported content-based inference for ordinary artifact-repository decisions.
+   - Use well-supported content-based inference for ordinary Library decisions.
    - Escalate only when unresolved uncertainty would materially change identity, ownership, approval/canon status, destructive disposition, or another reserved decision.
 
 2. **Receive artifacts at the correct lifecycle point.**
    - Let the parent problem-solving context determine whether an artifact is ephemeral, working material, or intended for durable handling.
-   - Begin durable artifact processing when durable handling is established.
+   - Begin Library processing when durable handling is established.
    - Return working/context-only material to the parent task after its immediate use.
 
 3. **Match action depth to the granted scope.**
@@ -35,10 +40,10 @@ Treat the active provider's configured durable artifact repository as a staging 
 
 ### 1. Inspect the actual artifact
 
-- Read or inspect the artifact itself before assigning identity, name, or placement.
+- Read or inspect the artifact itself before assigning identity, name, or placement (`Read`, Drive `read_file_content` / `get_file_metadata`, or image inspection).
 - For images, use visible content as the primary inspection surface.
 - For documents, combine title, content, structure, and available metadata.
-- Materialize bytes when programmatic or format-specific inspection requires them.
+- Materialize bytes when programmatic or format-specific inspection requires them (Shell on the box; Drive download tools when the file lives in Drive).
 - Establish exact file identity or runtime path through supported file operations before programmatic access.
 
 ### 2. Establish retrieval identity
@@ -54,7 +59,7 @@ Preserve established names and class distinctions. Keep unresolved identity or o
 
 ### 3. Name for retrieval
 
-Use **narrow -> broad** artifact naming: specific retrieval target first, then immediate type/context, then broader owner or project when useful.
+Use **narrow → broad** artifact naming: specific retrieval target first, then immediate type/context, then broader owner or project when useful.
 
 - Replace opaque/default names when the artifact can be identified confidently.
 - Let folder placement carry contextual meaning so filenames stay concise.
@@ -64,23 +69,23 @@ Use **narrow -> broad** artifact naming: specific retrieval target first, then i
 
 A useful general shape is:
 
- `Specific Subject - Asset Class - Distinguishing Context - Broader Owner.ext` 
+`Specific Subject - Asset Class - Distinguishing Context - Broader Owner.ext`
 
 Use only the components needed to keep the artifact discriminative.
 
 ### 4. Choose the semantic home
 
-Use **broad -> narrow** folder placement.
+Use **broad → narrow** folder placement.
 
 - Route by natural subject owner first and artifact type second.
 - Prefer an existing relevant folder when it already provides the right retrieval context.
 - Keep hierarchy shallow when additional levels add little retrieval value.
 - Create structure when a durable recurring category or meaningful retrieval distinction justifies it.
 - Use temporary intake/review placement when classification remains unresolved.
-- Preserve current separation among personal, company, project, and other established domains.
-- Re-read current repository state before acting so placement reflects the live hierarchy.
+- Preserve current separation among personal, company, project, and other established domains (`/workspace` vs agent-data vs Drive pack folders).
+- Re-read current Library/Drive state before acting so placement reflects the live hierarchy.
 
-Use source-routing capabilities when destination ownership crosses the configured repository and another maintained system.
+Use source-routing capabilities (`company-knowledge-routing` / connective-tissue rules) when destination ownership crosses the box Library and Drive, Notion, or another maintained system.
 
 ### 5. Preserve provenance and meaningful variants
 
@@ -94,14 +99,14 @@ Treat provenance as part of retrieval identity.
 
 ### 6. Apply the smallest useful mutation
 
-Use the provider's supported repository-native mutation operations for persistent artifact changes such as rename, move, folder creation, upload, replacement, consolidation, or authorized disposition.
+Use box Shell / file tools for `/workspace` changes, and Drive MCP (`update_file`, `create_file`, `copy_file`, `trash_file`, UploadFile) for persistent Drive changes such as rename, move, folder creation, upload, replacement, consolidation, or authorized disposition.
 
 - Make the smallest change that produces the intended retrieval state.
 - Preserve stable file identity when the supported operation allows it.
 - Read the exact current destination before consequential writes when concurrent changes could matter.
 - Preserve unrelated work and existing useful references.
-- Route provider-backed source changes through the owning provider when the repository exposes an external or mounted source.
-- Use recoverable disposition when the active cleanup scope and platform support it.
+- Route provider-backed source changes through the owning provider when the Library exposes an external or mounted source.
+- Prefer archive-before-delete / recoverable disposition when the active cleanup scope and platform support it.
 
 ### 7. Verify retrieval
 
@@ -126,7 +131,7 @@ For a multi-file batch:
 
 ## Recurring maintenance and checkpointed intake
 
-When a scheduled or recurring artifact-repository maintenance workflow invokes this Skill:
+When a scheduled or recurring Library-maintenance workflow invokes this Skill:
 
 1. Read the caller's current maintained workflow, index, receipt, or coverage checkpoint when one exists.
 2. Use the latest **successful coverage endpoint** when the maintained workflow distinguishes it from artifact modification time.
@@ -138,12 +143,12 @@ When a scheduled or recurring artifact-repository maintenance workflow invokes t
 
 Use current maintained checkpoint state rather than historical dates, paths, or filenames. When no recoverable checkpoint exists, use the caller's stated fallback or select current candidates conservatively.
 
-A scheduled maintenance invocation supplies standing authority for its ordinary in-scope artifact-repository work. Execute supported routine processing directly within that scope.
+A scheduled maintenance invocation supplies standing authority for its ordinary in-scope Library work. Execute supported routine processing directly within that scope.
 
 ## Source and capability composition
 
-- Keep this Skill focused on portable artifact-processing mechanics and retrieval quality.
-- Use source-routing capabilities for system ownership and authority questions.
+- Keep this Skill focused on Library processing mechanics and retrieval quality.
+- Use source-routing / connective-tissue Skills for system ownership and authority questions.
 - Use document or media specialists for format-specific editing.
 - Use the parent problem-solving Skill for artifact-intent interpretation before durable processing begins.
 - Follow the caller's reporting, receipt, and handoff contract as the operational trace for the run.
@@ -166,5 +171,41 @@ When real use exposes stale assumptions, unsupported tool behavior, outdated nam
 1. identify the exact mismatch;
 2. explain the maintenance need to the user;
 3. preserve the installed Skill until explicit update authorization is given;
-4. after authorization, update, validate, test, and repackage the complete Skill;
+4. after authorization, update via **UpdateSkill** (and **workspace-skill-changing-update** when applicable), validate, and re-test;
 5. verify the revised behavior against the case that exposed the drift.
+
+## Version
+v1.0.0 (2026-10-26). Versioning baseline set by Reformer boy (A2).
+
+## Changelog
+- v1.0.0, 2026-10-26: baseline version. No content change.
+
+## Algorithm
+
+```mermaid
+flowchart TD
+    A([Start: artifacts need durable, retrievable placement]) --> B["Establish processing scope: request, handoff, batch or scheduled run"]
+    B --> C{"Durable handling established by the parent task?"}
+    C -- No --> C1(["Return working material to the parent task"])
+    C -- Yes --> D{"Scheduled maintenance run?"}
+    D -- Yes --> D1["Read checkpoint; query from last coverage endpoint with small overlap"]
+    D -- No --> E
+    D1 --> E["Inspect each artifact itself: content, structure, metadata"]
+    E --> F["Establish retrieval identity: subject, class, owner, variant"]
+    F --> G{"Uncertainty would change identity, ownership, canon or deletion?"}
+    G -- Yes --> G1["Escalate to owning authority; use intake or review placement"]
+    G -- No --> H["Name narrow to broad: Subject - Class - Context - Owner"]
+    G1 --> I
+    H --> I["Choose home broad to narrow; reread live folder state"]
+    I --> J{"Possible duplicate?"}
+    J -- Yes --> J1["Compare content, versions, provenance before any consolidation"]
+    J -- No --> K
+    J1 --> K["Apply the smallest mutation; keep file identity; archive before delete"]
+    K --> L["Verify: read back name, path, identity; test search if important"]
+    L --> M{"Weak name or placement?"}
+    M -- Yes --> H
+    M -- No --> N{"More artifacts in batch?"}
+    N -- Yes --> E
+    N -- No --> O["Update index and leave next continuation point if scheduled"]
+    O --> P(["Report processed items, changes, unresolved items, verification"])
+```

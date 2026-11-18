@@ -1,14 +1,18 @@
 ---
-name: extrapolating-logically
-description: "Derive the nearest useful implication from a user's established intent, rule, example, correction, pattern, or design constraint without stretching it into remote hypotheticals. Use when a task benefits from common-sense generalization, adjacent recommendations, pattern extrapolation, applying an underlying functional principle to neighboring cases, or when a mechanically literal interpretation would produce useless or inconsistent output. Also use when the user asks to infer what follows, use common sense, extrapolate, generalize a rule, suggest logical next steps, or says the assistant is being too literal, failing to infer obvious implications, or inventing far-fetched caveats. Preserve authority boundaries and keep genuinely new consequential conclusions provisional."
-version: "2026-10-04"
-source: "Drive CORE — extrapolating-logically"
-generated: "2026-10-18"
+name: Extrapolating logically
+description: >-
+  Use when a task needs the nearest useful implication from JL's established
+  intent or rule — common-sense generalization, adjacent recommendations, or
+  fixing over-literal output. Drive hub owns the canonical CORE; this copy is
+  versioned 2026-10-06 from CORE — extrapolating-logically.
 ---
-
-Generated from Drive CORE on 2026-10-18. Read-only mirror; edits here are overwritten.
-
 # Extrapolating Logically
+tier: 2
+
+**Source:** Drive CORE — extrapolating-logically (hub Skill Packages). Local copy dated 2026-10-06. Prefer the Drive CORE on conflict; refresh this copy when the hub updates.
+
+**Hub:** [private reference removed; refer to the private Hub source copy]
+**Folder:** [private reference removed; refer to the private Hub source copy]
 
 ## Core rule
 
@@ -18,7 +22,7 @@ Use the shortest supported reasoning path from what the user established to the 
 
 A good default operator is:
 
-**literal input -> intended function -> nearest same-function implication -> utility check -> authority/risk check -> act or stop**
+**literal input → intended function → nearest same-function implication → utility check → authority/risk check → act or stop**
 
 ## Workflow
 
@@ -97,11 +101,11 @@ Do not create caveats by mutating the user's statement into a stronger claim and
 
 Bad pattern:
 
-**user claim -> stronger neighboring claim -> extreme hypothetical -> warning about the extreme hypothetical**
+**user claim → stronger neighboring claim → extreme hypothetical → warning about the extreme hypothetical**
 
 Prefer:
 
-**fact -> attribution or uncertainty when needed -> useful implication -> stop**
+**fact → attribution or uncertainty when needed → useful implication → stop**
 
 If deleting a caveat leaves the factual meaning, provenance, uncertainty, and decision-usefulness intact, omit it.
 
@@ -121,7 +125,7 @@ Use a higher threshold for:
 - durable company policy;
 - claims that could constrain later agents if wrong.
 
-When a newly inferred conclusion would become consequential durable knowledge, keep it visibly provisional until the appropriate approval or source path establishes it.
+When a newly inferred conclusion would become consequential durable knowledge, keep it visibly provisional until the appropriate approval or source path establishes it. Persist with UpdateMemory only when the user asks to remember it or the pattern is clearly standing guidance.
 
 Compose with **Connective Tissue Safe Handling** when provenance, promotion, canon/current status, or source ownership matters.
 Compose with **TCS Evidence Confidence** when evidentiary sufficiency is the central question.
@@ -134,11 +138,11 @@ Surface the extrapolation when:
 - it materially expands scope;
 - multiple plausible extensions remain;
 - the conclusion is consequential;
-- The user is debugging the reasoning;
+- the user is debugging the reasoning;
 - the inference would be persisted or promoted;
 - showing it helps supervision.
 
-When surfacing it, keep the explanation compact: **premise -> function -> implication**.
+When surfacing it, keep the explanation compact: **premise → function → implication**.
 
 ### 9. Handle corrections as calibration evidence
 
@@ -149,7 +153,7 @@ If the user rejects an extrapolation:
 3. recover the user's corrected proposition;
 4. identify whether the failure was over-literal, too distant, utility-blind, or authority-blind;
 5. apply the corrected inference behavior immediately;
-6. preserve the failure as durable guidance only when it exposes a genuinely reusable pattern.
+6. preserve the failure as durable guidance (UpdateMemory) only when it exposes a genuinely reusable pattern.
 
 Prefer clean replacement over accumulating permanent warnings about the rejected interpretation.
 
@@ -179,7 +183,7 @@ Do not turn this Skill into a substitute for those capabilities.
 
 ## Calibration examples
 
-Read `references/calibration-examples.md` when the extrapolation distance is disputed, when testing this Skill after changes, or when a concrete positive/negative example would improve calibration.
+When the Drive package includes `references/calibration-examples.md`, read it when the extrapolation distance is disputed, when testing this Skill after changes, or when a concrete positive/negative example would improve calibration. If that file is absent locally, stay with the distance model above; do not invent examples.
 
 ## Final check
 
@@ -192,3 +196,40 @@ Before sending an answer influenced by this Skill, verify internally:
 - Did I suppress remote caveats that require mutated premises?
 - Did I preserve authority boundaries for consequential claims?
 - Did I avoid making the user enumerate an obvious adjacent implication?
+
+## Version
+v1.0.0 (2026-10-26). Versioning baseline set by Reformer boy (A2).
+
+## Changelog
+- v1.0.0, 2026-10-26: baseline version. No content change.
+
+## Algorithm
+
+```mermaid
+flowchart TD
+    A([Start: proposition understood; need nearest useful implication]) --> B["Anchor JL's literal proposition, task, goal and scope"]
+    B --> C{"Stable functional reason visible in the task?"}
+    C -- No --> C1["Stay close to the literal wording"]
+    C -- Yes --> D["Find nearest cases with the same function, not the same noun"]
+    D --> E{"Distance of the inference?"}
+    E -- "Direct implication" --> F["Apply by default"]
+    E -- "Near extrapolation" --> G["Use if helpful; surface if it changes scope"]
+    E -- "Needs a new premise" --> H["Keep provisional or retrieve evidence first"]
+    E -- "Remote mutation" --> I["Do not introduce"]
+    F --> J
+    G --> J
+    H --> J{"Usefulness test and common-sense check pass?"}
+    J -- No --> J1["Repair the rule application"] --> D
+    J -- Yes --> K{"Consequential: identity, permissions, canon, policy, safety?"}
+    K -- Yes --> K1["Keep visibly provisional until approved; use Connective Tissue"]
+    K -- No --> L
+    K1 --> L["Keep caveats local; drop invented-extreme caveats"]
+    C1 --> L
+    L --> M{"Surface the extrapolation? Scope, consequence, debugging"}
+    M -- Yes --> M1["Explain compactly: premise, function, implication"]
+    M -- No --> N
+    M1 --> N(["Act proportionally and send"])
+    O([JL rejects an extrapolation]) --> P["Stop defending; drop downstream reasoning"]
+    P --> Q["Classify failure: over-literal, too distant, utility- or authority-blind"]
+    Q --> R(["Apply corrected behavior now; save to memory only if reusable"])
+```

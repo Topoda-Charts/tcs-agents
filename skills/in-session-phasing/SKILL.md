@@ -1,20 +1,27 @@
 ---
-name: in-session-phasing
-description: "Divide a substantial task or process into visible, bounded phases while the current conversation is actively proceeding, and align work with other concurrently running sessions or agents that share a task, owner, or artifact. Use when the user asks to \"work in phases,\" \"phase this,\" use \"in-session phasing,\" keep updating the chat while working, show what is being interpreted before continuing, or otherwise make a multi-step task observable and supervisable as it unfolds; also when parallel work on the same target could collide. Keep phases concise, execute real work inside each phase, report meaningful progress between phases, honor task-specific notification preferences, and continue without unnecessary approval prompts unless the user pauses, redirects, or a genuine decision gate is reached."
-version: "1.1.2"
-source: "Drive CORE — in-session-phasing"
-generated: "2026-11-17"
+name: In-session phasing
+description: >-
+  Use when the user asks to work in phases, keep the chat updating during
+  multi-step work, or align this session with concurrent work on the same
+  shared record.
 ---
-
-Generated from Drive CORE on 2026-11-17. Read-only mirror; edits here are overwritten.
-
 # In-Session Phasing
+tier: 2
 
-## Bounded proactive work and visible updates (user direction, 2026-10-25)
+## Grok Bot bindings (xAI / Grok Bot app)
 
-For multi-step investigation or edits, provide brief informative updates before and between substantial tool batches: what was found or changed, what source/tool class is next, and any actual blocker. When the user requests granular short messages or says "let me lead", stay within their intended scope while continuing relevant searches and safe reversible actions. Do not freeze, flood the chat with tool narration, ask already answered questions, or equate a candidate search result with verified evidence.
+Provider: xAI. Surface: the Grok Bot app (Cherub).
 
-Where the host supports it, use mobile-readable native UI for meaningful status and progress with semantic status colors. If displaying an agent identity or badge, resolve its owning IDENTITY.md and current session/turn semantics; do not hard-code sample identifiers or assume turn numbering resets by task. A completed phase means a real delivered/read-back result, not a decorative heading.
+- Surface phase receipts and checkpoints with `SendToUser` (visible chat). Do not disappear into a long opaque tool stretch when this Skill is active. Do not use ChatGPT Intelligent UI, Silver Glass / Archangel accents, or Library chrome.
+- If displaying an agent identity or badge, resolve the invoking bot's current IDENTITY and session or turn semantics; do not hard-code sample identifiers or assume turn numbering resets by task.
+- Discover connectors with `GetDynamicTools` and call them with `CallDynamicTool`. Use `Shell` / `Read` on the shared box and Hub (`[private reference removed; refer to the private Hub source copy]`) when those are the working copies. `Task` may run a bounded background batch; still send a `SendToUser` checkpoint when that batch finishes or blocks.
+- `SendToAgent` may hand off concise current state to another bot through the actual shared owner, not by inventing a private cross-chat channel.
+- A completed phase means a real delivered or read-back result, not a decorative heading.
+- Do not name or speculate about the underlying model; if asked, the agent is a Grok Bot.
+
+## Bounded proactive work and visible updates (JL direction, 2026-10-25)
+
+For multi-step investigation or edits, provide brief informative updates before and between substantial tool batches: what was found or changed, what source or tool class is next, and any actual blocker. When the user requests granular short messages or says "let me lead", stay within their intended scope while continuing relevant searches and safe reversible actions. Do not freeze, flood the chat with tool narration, ask already answered questions, or equate a candidate search result with verified evidence.
 
 ## Core rule
 
@@ -23,32 +30,18 @@ Use both relevant ordinary meanings of **phasing**, with judgment: (a) divide su
 Make the work observable enough for the user to supervise interpretation, progress, and direction while the work is happening. A phase is a bounded chunk of real work, not merely a heading.
 
 ## Cross-session phase alignment — shared-work coordination
-Treat evidence or the user's notice of another active session/agent on the same task as a coordination cue. Do not assume this conversation is the sole executor or that records are frozen at the time they were first read. When the work could overlap, retrieve current state from the relevant shared owner(s) (for example an active Linear issue, Notion handoff, Drive revision, or another authorized task artifact); select only the sources that can change the decision. Compare latest state, scope, responsible actor, changes, and remaining work before any competing persistent edit. Explicitly distinguish what the source confirms from what it merely reports.
 
-If another session has already completed or advanced the target, preserve its verified work; do not restart, overwrite, duplicate tickets, or mark completed actions undone. Synchronize by adjusting this session's phase: verify or review read-only, pick a clearly non-overlapping authorized action, or hand off concise current state through the actual shared owner. When the same file or issue is actively being edited, use supported revision/conflict guards and re-read before applying overlapping writes; if no reliable guard/ownership is available, avoid a conflicting mutation. Do not invent locks, live presence, direct conversation access, or a cross-chat messaging channel.
+Treat evidence or the user's notice of another active session or agent on the same task as a coordination cue. Do not assume this conversation is the sole executor or that records are frozen at the time they were first read. When the work could overlap, retrieve current state from the relevant shared owner(s) (for example an active Linear issue, Notion handoff, Drive revision, Hub file, or another authorized task artifact); select only the sources that can change the decision. Compare latest state, scope, responsible actor, changes, and remaining work before any competing persistent edit. Explicitly distinguish what the source confirms from what it merely reports.
+
+If another session has already completed or advanced the target, preserve its verified work; do not restart, overwrite, duplicate tickets, or mark completed actions undone. Synchronize by adjusting this session's phase: verify or review read-only, pick a clearly non-overlapping authorized action, or hand off concise current state through the actual shared owner. When the same file or issue is actively being edited, use supported revision or conflict guards and re-read before applying overlapping writes; if no reliable guard or ownership is available, avoid a conflicting mutation. Do not invent locks, live presence, direct conversation access, or a cross-chat messaging channel.
 
 This is **situational coordination**, not a duty to poll all other sessions on every turn. Use it when the user references parallel work, a shared record has advanced unexpectedly, several agents may mutate the same target, or stale state would jeopardize the task. Skip it for self-contained questions, standalone creative work, or sources that do not affect the next action. Keep the original in-conversation progress phases useful and visible, and preserve user steering and task boundaries.
 
-Example: If the user says another session is working on a specific shared issue, read its current shared status before editing it. If the task has progressed, report the newest verified changes and avoid making a second competing scope change. Do not claim to see the other session's private live transcript; use shared changes and user testimony. If the user asks for a cross-session synchronization update, show the actual shared-state evidence and the adjusted current phase.
-
-## Preserve interaction; reduce coordination friction
-
-The user's confirmed preference (November 12, 2026) is that many distinct agent interactions are enjoyable and stimulating. Apply phasing to concrete shared-work dependencies, conflicting edits, lost context and repeated low-tier approvals, not to agent count as a proxy for human overload. Preserve distinct agent identities, session histories and meaningful conversations; do not recommend fewer agents, merged identities or fewer interactions merely to reduce presumed social burden.
-
-Keep coordination work agent-owned within actual tools and authorization. A request for less administrative friction is not a request for less conversation. When the user identifies actual fatigue, UI load, time pressure or another specific burden, address that dimension and honor STOP; this preference is not a claim of unlimited capacity. It creates no background monitoring, new permissions or evidence of another session's adoption.
-
-Authority: the user's confirmed preference and a bounded proposal, explicitly authorized for implementation on November 12, 2026.
-
-Regression checks: enjoyable parallel chats do not trigger downsizing or polling; repeated approval complaints reduce unnecessary gates rather than interaction; real competing edits still require current-source reconciliation; an explicit overload report or STOP overrides continuing activity at its actual scope.
+Example: If the user says another session is working on a named Linear issue, read its current shared status before editing it. If the task has progressed, report the newest verified changes and avoid making a second competing scope change. Do not claim to see the other session's private live transcript; use shared changes and user testimony. If the user asks for a cross-session synchronization update, show the actual shared-state evidence and the adjusted current phase.
 
 ## Local and concurrent completion
-A phase is complete only when its bounded work is done and checked. A parallel task is aligned when this session has reconciled the current shared state and avoids duplicate/conflicting action; alignment does not certify the other session's final result. Continue feasible authorized non-overlapping work rather than freezing for invented approval. Stop when the user stops, a real access/ownership conflict blocks progress, or the actual requested result is complete.
 
-## Notification preference precedence
-
-Apply the user's current task-specific notification rule to the opening, intermediate checkpoints and completion report. For an explicitly quiet scheduled check, do the authorized work and save its required receipt without routine chat announcements; notify only at that task's stated threshold. For interactive work where progress is expected, retain concise updates at meaningful phase boundaries and material changes. A quiet-monitoring instruction is not a pause, permission expansion, or reason to suppress a required decision or urgent blocker. Do not replace an explicit report-every-run experiment with quiet mode. No rule here requires narration before every tool call.
-
-Regression checks: quiet unchanged pulse produces its required record but no routine chat; meaningful threshold finding produces the required report; interactive multi-step work retains useful updates; explicit report-every-run is honored; STOP still halts the affected work.
+A phase is complete only when its bounded work is done and checked. A parallel task is aligned when this session has reconciled the current shared state and avoids duplicate or conflicting action; alignment does not certify the other session's final result. Continue feasible authorized non-overlapping work rather than freezing for invented approval. Stop when the user stops, a real access or ownership conflict blocks progress, or the actual requested result is complete.
 
 ## Start the task
 
@@ -65,7 +58,7 @@ Example:
 ```text
 ### Phase 1 — Map the source material
 Goal: identify the current records and how they relate.
-I’m reading the authoritative sources first, then I’ll map the repeated items before changing anything.
+I'm reading the authoritative sources first, then I'll map the repeated items before changing anything.
 ```
 
 ## Choose natural phase boundaries
@@ -101,11 +94,11 @@ Do not flood the chat with micro-updates for every click, query, or tool call. R
 
 Treat new user messages during the task as active steering.
 
-- **Pause / stop / hold**: stop before beginning another substantive batch. State the current position concisely if useful.
+- **Pause / stop / hold**: stop before beginning another substantive batch. If background `Task` workers are running for this work, stop them when the user asks to stop current work. State the current position concisely if useful.
 - **Continue**: resume from the last incomplete or next planned phase. Do not restart the task.
 - **Redirect**: revise the current phase around the new instruction and continue from the preserved work already completed.
 - **Correction**: adopt the corrected interpretation immediately. Treat discarded one-off assistant inferences as discarded; do not keep repeating them as contrastive caveats.
-- **Decision gate**: ask only the smallest question that materially changes the next action.
+- **Decision gate**: ask only the smallest question that materially changes the next action (use a real choice widget when a genuine choice is required).
 
 The user does not need to approve every phase. Phase boundaries provide visibility, not mandatory stop signs.
 
@@ -117,7 +110,7 @@ Prefer:
 
 ```text
 ### Phase 1 — Interpret
-I’m treating the goal as [concise interpretation]. I’m starting with [bounded scope].
+I'm treating the goal as [concise interpretation]. I'm starting with [bounded scope].
 ```
 
 Then proceed immediately when the interpretation is sufficiently clear.
@@ -140,7 +133,7 @@ or:
 
 ```text
 ### Phase 3 — Reconcile
-The newer source controls. I’m applying that state to the affected records now.
+The newer source controls. I'm applying that state to the affected records now.
 ```
 
 Use prose when that is clearer. The labels are a supervision aid, not a rigid template.
@@ -166,15 +159,41 @@ Before advancing from a phase, quickly verify:
 - Can the user tell what I interpreted and what changed?
 - Am I continuing rather than waiting for unnecessary approval?
 - Did I preserve corrections and redirections?
-- Is the next phase still aligned with the user’s actual goal?
+- Is the next phase still aligned with the user's actual goal?
 
 If yes, continue.
 
+## Provenance and changelog
 
-VERSION: 1.1.2 (2026-11-15 AST). Notification-preference precedence reconciled; prior edition retained below as history.
-Historical VERSION: 1.1.1 (2026-11-12 AST). Baseline through 2026-11-06 existed without an explicit version footer.
-CHANGELOG
-- 1.1.2 | 2026-11-15 AST | Authorized maintainer, for the user. Reconciled phase notices with explicit task-specific notification rules, retaining interactive progress, report-every-run exceptions, STOP and all unrelated behavior. Source-only; backend and runtime unchanged.
-- 1.1.1 | 2026-11-12 AST | Authorized maintainer, for the user. Added the authorized distinction between enjoyable agent-interaction volume and avoidable coordination friction. Preserved staged work, shared-source synchronization, distinct identities, STOP, permissions and non-monitoring boundaries. Source update only; backend publication and client adoption are separate checks.
+- **Adapter version:** 1.2.0 (2026-11-10 AST).
+- **Source CORE:** v1.1.0 (2026-11-07 AST) — [private reference removed; refer to the private Hub source copy] — folder [private reference removed; refer to the private Hub source copy].
+- **Drive xAI adapter also seen:** `providers/xai/SKILL.md` dated 2026-10-04 8:29 PM AST — [private reference removed; refer to the private Hub source copy] — predates CORE v1.1.0 (single meaning of phasing only); not used as the base for this draft.
+- **Local history (summarized):** local `[private reference removed; refer to the private Hub source copy]` v1.0.0 (2026-10-26) already used `SendToUser` for checkpoints, but it lacked the CORE v1.1.0 two-sense rule and the cross-session alignment section.
+- 1.2.0 — 2026-11-10 AST: merge CORE v1.1.0 (including cross-session alignment) with Grok Bot bindings; replace the CORE's ChatGPT Chat Intelligent UI / Archangel styling paragraph.
+- 1.1.0 — 2026-11-07 AST: CORE expanded to staged execution plus synchronizing concurrent work (Archie / Archangel, [private identifier removed; refer to the private Hub source copy] regression).
+- 1.0.0 — 2026-10-26: local baseline (Reformer boy); in-conversation phasing only.
 
-- 1.1.0 — 2026-11-07 AST — Authorized maintainer, for the user. Expanded core functional contract to recognize both staged execution and synchronizing concurrent work through verified shared sources, with bounded collision prevention, revision checking, preserved user supervision, non-polling triggers, and separate live-session visibility limits. Based on the user's correction and an observed concurrent-session regression. Changed CORE source first; provider-plugin propagation and installed-runtime validation remain distinct.
+## Algorithm
+
+```mermaid
+flowchart TD
+    A([Start: substantial multi-step work in a conversation]) --> B{"Another session or agent working the same task?"}
+    B -- Yes --> B1["Read current shared state first; keep their verified work; no duplicates"]
+    B -- No --> C
+    B1 --> C["Send short first-phase receipt: goal, scope, first chunk"]
+    C --> D{"Scope errors likely?"}
+    D -- Yes --> D1["Make Phase 1 expose the interpretation, then proceed"]
+    D -- No --> E
+    D1 --> E["Announce phase and its objective"]
+    E --> F["Do the real work batch"]
+    F --> G["Checkpoint via SendToUser: result, discovery, change or blocker"]
+    G --> H{"New JL message?"}
+    H -- "Pause or stop" --> H1(["Stop before next batch; stop helpers; state where it stands"])
+    H -- Redirect --> H2["Revise current phase; keep completed work"] --> E
+    H -- Correction --> H3["Adopt it now; drop discarded inference"] --> E
+    H -- "None or continue" --> I{"Real decision gate?"}
+    I -- Yes --> I1(["Ask the smallest question with a real choice widget"])
+    I -- No --> J{"More phases needed?"}
+    J -- Yes --> K["Quality check: real unit done, still aligned with goal"] --> E
+    J -- No --> L(["Deliver result first, then compact closing receipt"])
+```

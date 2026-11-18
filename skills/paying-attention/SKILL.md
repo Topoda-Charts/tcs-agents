@@ -1,124 +1,82 @@
 ---
-name: paying-attention
-description: "Improve semantic attentiveness to the user's current wording before interpreting or acting. Use when the user gives a corrective cue such as \"focus\", \"pay attention\", \"listen to me\", \"read this carefully\", \"process this verbatim first\", \"you're missing what I'm saying\", or similar language indicating that prior responses skimmed, compressed, broadened, narrowed, or otherwise misparsed the input. Preserve qualifiers, contrasts, scope, sequencing, referents, and user-defined terms before abstraction. Compose with context-recovery or provenance skills when the request also depends on prior state or source authority."
-version: "2026-10-04"
-source: "Drive CORE — paying-attention"
-generated: "2026-10-18"
+name: Paying attention
+description: >-
+  Use when JL gives a corrective cue such as "focus", "pay attention", "read what I said", or similar — process the current wording verbatim before interpreting or acting.
+  Drive hub owns the canonical CORE; this copy is versioned 2026-10-16
+  from CORE — paying-attention.
 ---
+# Paying attention
+tier: 1
 
-Generated from Drive CORE on 2026-10-18. Read-only mirror; edits here are overwritten.
+**Source:** Drive CORE — paying-attention (hub Skill Packages). Local copy dated 2026-10-16. Prefer the Drive CORE on conflict; refresh this copy when the hub updates.
 
-Paying Attention — Canonical TCS Skill Contract
-
-Slug: paying-attention
-
-Canonical description
-Improve semantic attentiveness to the user's current wording before interpreting or acting. Use when the user gives a corrective cue such as "focus", "pay attention", "listen to me", "read this carefully", "process this verbatim first", "you're missing what I'm saying", or similar language indicating that prior responses skimmed, compressed, broadened, narrowed, or otherwise misparsed the input. Preserve qualifiers, contrasts, scope, sequencing, referents, and user-defined terms before abstraction. Compose with context-recovery or provenance skills when the request also depends on prior state or source authority.
-
-Provider-neutral functional contract
-
-# Paying Attention
+**Hub:** [private reference removed; refer to the private Hub source copy]
+**Folder:** [private reference removed; refer to the private Hub source copy]
 
 ## Core rule
 
 Treat attentiveness cues as operational triggers.
 
-Before paraphrasing, abstracting, solving, retrieving broadly, or acting, internally anchor on:
+Before paraphrasing, abstracting, solving, retrieving broadly, or acting, extract the message's operators and asks (the list below) and write out two or more distinct readings of it. Check each reading against the record (thread, memory, Linear, Hub, live system) and act on the one the evidence supports; if two truly conflict and the record can't settle it, ask one plain either-or question. A ritual re-read or a silent mantra is not this check (AIS-248; JL 2:08 AM AST Nov 18, 2026).
 
-**I need to process this input verbatim first.**
-
-Process the user's actual wording as the primary object. Interpret only after its important distinctions are preserved.
-
-Do not respond by reciting this rule unless the user explicitly asks to debug the interpretation.
+Treat the user's actual wording as the primary object. Interpret only after its important distinctions are preserved. Do not recite this rule unless the user asks to debug the interpretation.
 
 ## Verbatim-first pass
 
-1. **Read the whole current message before compressing it.**
-   Do not decide what the user "basically means" from one salient phrase.
-
-2. **Preserve semantic operators and boundaries.**
-   Notice words and structures that can change the task materially, including:
-   - negation: `not`, `don't`, `without`, `never`;
-   - conditionality: `if`, `when`, `unless`;
-   - ordering: `first`, `before`, `after`, `then`;
-   - scope: `only`, `just`, `mainly`, `at least`, `for now`;
-   - contrast: `but`, `instead`, `rather than`, `not X, Y`;
-   - modality: `can`, `should`, `must`, `might`;
-   - corrections, examples, quotations, parentheticals, and user-defined terms;
-   - temporal and referential words such as `this`, `that`, `earlier`, `here`, `past`, `current`.
-
-3. **Keep examples as examples unless the user promotes them to rules.**
-   Do not convert an example into a universal constraint.
-
-4. **Keep local scope local.**
-   Prefer the nearest ordinary interpretation supported by the current conversation before expanding outward.
+1. **Number every ask and constraint in the current message before compressing it.** Do not decide what the user "basically means" from one salient phrase; before acting, confirm the plan covers each numbered item or says why not.
+2. **Preserve semantic operators and boundaries:** negation (`not`, `don't`, `without`, `never`); conditionality (`if`, `when`, `unless`); ordering (`first`, `before`, `after`, `then`); scope (`only`, `just`, `mainly`, `at least`, `for now`); contrast (`but`, `instead`, `rather than`); modality (`can`, `should`, `must`, `might`); corrections, examples, quotations, parentheticals, user-defined terms; temporal/referential words (`this`, `that`, `earlier`, `here`, `past`, `current`).
+3. **Keep examples as examples** unless the user promotes them to rules.
+4. **Keep local scope local.** Prefer the nearest ordinary interpretation in the current conversation before expanding outward.
    - `one of my past prompts` does not automatically mean an older conversation if a suitable earlier prompt exists in the current chat.
    - `without downloading the file` does not automatically mean `never download files`.
-   - `focus` as a corrective cue can trigger this Skill; `focus on the vocals` is normally just task direction.
-
-5. **Separate what the user said from what you inferred.**
-   Inference is allowed after the verbatim pass, but do not silently rewrite the user's proposition into the inference.
+   - `focus` as a corrective cue triggers this Skill; `focus on the vocals` is normally just task direction.
+5. **Separate what the user said from what you inferred.** Inference is allowed after the verbatim pass; do not silently rewrite the user's proposition into the inference.
 
 ## Interpretation pass
 
-After the verbatim-first pass:
-
-1. Resolve pronouns and shorthand from the strongest immediate conversational context.
-2. Preserve the user's established terminology and explicit contrasts.
-3. Check the proposed interpretation against the rest of the same message for contradictions.
-4. Prefer the interpretation that requires the fewest unsupported additions.
-5. If the meaning depends on prior context that is not sufficiently present, compose with **Getting Dressed** rather than guessing.
-6. If combining retrieved material creates provenance, authority, status, or source-ownership risk, compose with **Connective Tissue Safe Handling**.
-7. If the broader problem is still forming or requires context-first diagnosis, compose with **Context-First Problem Solving**; keep this Skill focused on preserving the user's wording while that broader workflow proceeds.
-8. Ask a clarification only when a material ambiguity remains after local context and available retrieval are exhausted.
+After the verbatim-first pass: resolve pronouns from immediate context; preserve terminology and contrasts; check for contradictions in the same message; prefer fewest unsupported additions. If prior context is missing, compose with **Getting Dressed**. If provenance/authority risk appears, compose with **Connective Tissue Safe Handling**. If the broader problem is still forming, compose with **Context-First Problem Solving**. Ask clarification only after local context and available retrieval are exhausted. Keep this Skill focused on preserving the user's wording while broader workflows proceed. Read `references/composition-boundaries.md` (in the Drive CORE package) only when the boundary between these Skills matters.
 
 ## Execute the actual task
 
-Once the interpretation is stable, do the work the user asked for.
-
-Do not turn attentiveness into process theater. The usual successful result is a better answer, not a visible checklist.
-
-Surface a compact interpretation receipt only when:
-- The user explicitly asks what was understood;
-- The user is debugging a prior misread;
-- two plausible readings remain and the distinction changes the action;
-- showing the preserved wording materially improves supervision.
-
-When surfacing it, quote or paraphrase only the minimum needed to expose the interpretation boundary.
+Once interpretation is stable, do the work. Do not turn attentiveness into process theater. Surface a compact interpretation receipt only when the user asks what was understood, is debugging a misread, two readings change the action, or showing preserved wording improves supervision.
 
 ## Correction behavior
 
-If the user says the interpretation is wrong:
-
-1. Stop defending or elaborating the old parse.
-2. Invalidate reasoning and actions that depended on the rejected interpretation.
-3. Re-read the correcting message and the relevant original input verbatim-first.
-4. Rebuild the interpretation from the corrected premise.
-5. Continue the actual task from the repaired understanding.
-
-Treat phrases such as **"focus"**, **"pay attention"**, **"read what I said"**, **"you missed the point"**, or **"process this verbatim first"** as requests to improve input handling now, not as requests for a lecture about attentiveness.
+If the user says the interpretation is wrong: stop defending the old parse; invalidate dependent reasoning; write out two or more distinct readings of the correction plus the original ask, check each against the record, list what he rejected vs what still stands, and act on the reading the evidence supports (ask one plain either-or only if two truly conflict) (AIS-248; JL 2:08 AM AST Nov 18, 2026); rebuild; continue the actual task. Treat "focus", "pay attention", "read what I said", "you missed the point", "process this verbatim first" as requests to improve input handling now — not lectures about attentiveness.
 
 ## Distinctive responsibility
 
-This Skill owns **semantic fidelity to the user's current input at the interpretation boundary**.
+Owns **semantic fidelity to the user's current input at the interpretation boundary**. Does not own broad continuity recovery (Getting Dressed), provenance/authority across mixed context (Connective Tissue), general problem diagnosis (Context-First), or specialized domain execution.
 
-It does **not** own:
-- broad continuity recovery across Memory, Space, Library, or connected systems — use **Getting Dressed**;
-- preservation of provenance, authority, status, or source ownership across mixed context — use **Connective Tissue Safe Handling**;
-- general context formation and problem diagnosis for evolving tasks — use **Context-First Problem Solving**;
-- specialized domain execution after the request is understood — invoke the relevant domain Skill or tool.
+## Quality check (internal)
 
-Read `references/composition-boundaries.md` when more than one of these Skills plausibly applies and the boundary matters.
+Complete input before summarizing? Negations/qualifiers/contrasts/sequencing preserved? Broadened or narrowed without evidence? Replaced wording with convenient inference? Missed local referent? Answering the real task rather than explaining the protocol? Do not expose this checklist by default.
 
-## Quality check
+## Version
+v1.0.1 (2026-11-18).
 
-Before finalizing after an attentiveness trigger, verify internally:
+## Changelog
+- v1.0.1, 2026-11-18: replaced the verbatim-anchor mantra, "read the whole message" and "re-read correcting + original input" (text plus diagram) with the interpretation check: 2+ readings, checked against the record, rejected vs still standing, act on the supported reading (AIS-248; JL 2:08 AM AST Nov 18, 2026). Applied by Silas.
+- v1.0.0, 2026-10-26: baseline version. No content change.
 
-- Did I process the complete current input before summarizing it?
-- Did I preserve negations, qualifiers, contrasts, and sequencing?
-- Did I broaden or narrow the request without evidence?
-- Did I replace the user's wording with a convenient inference?
-- Did I miss an obvious local referent and search farther away unnecessarily?
-- Am I answering the real task rather than explaining the attentiveness protocol?
+## Algorithm
 
-Do not expose this checklist by default.
+```mermaid
+flowchart TD
+    A(["Start: a corrective cue such as focus or pay attention"]) --> B["Extract operators and asks; write 2+ readings; do not recite the rule"]
+    B --> C["Number every ask and constraint before compressing"]
+    C --> D["Preserve operators, boundaries, examples, and local scope"]
+    D --> E["Separate what the user said from what you inferred"]
+    E --> F["Interpret only after those distinctions are preserved"]
+    F --> G{"Clarification still needed after local context and retrieval?"}
+    G -- Yes --> G1(["Ask one clarifying question"])
+    G -- No --> H{"User asked what was understood, or two readings change the action?"}
+    H -- Yes --> H1["Surface a compact interpretation receipt"]
+    H -- No --> I
+    H1 --> I["Do the actual task; do not turn attentiveness into process theater"]
+    I --> J{"User says the interpretation is wrong?"}
+    J -- Yes --> J1["Stop defending the old parse; write 2+ readings, check them against the record, list rejected vs still standing; rebuild; continue the task"]
+    J -- No --> K(["Done"])
+    J1 --> K
+```
+

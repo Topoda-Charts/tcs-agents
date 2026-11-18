@@ -1,14 +1,18 @@
 ---
-name: workspace-skill-maintenance
-description: "Review one or more workspace Skills for staleness, broken references, source drift, trigger drift, obsolete assumptions, package hygiene, and alignment with current workspace guidance. Use when asked to review, maintain, audit, inspect, health-check, or refresh workspace Skills without changing their intended behavior. This Skill may update only the target Skill's `Last reviewed` metadata and may produce a change brief for workspace-skill-changing-update; it must not silently rewrite behavioral instructions."
-version: "2026-10-04"
-source: "Drive CORE — workspace-skill-maintenance"
-generated: "2026-10-18"
+name: Workspace skill maintenance
+description: >-
+  Use when reviewing a workspace Skill against current reality without editing
+  its behavior — update Last reviewed metadata only; hand behavioral drift to
+  workspace-skill-changing-update. Drive hub owns the canonical CORE; this copy
+  is versioned 2026-10-06 from CORE — workspace-skill-maintenance.
 ---
+# Workspace skill maintenance
+tier: 1
 
-Generated from Drive CORE on 2026-10-18. Read-only mirror; edits here are overwritten.
+**Source:** Drive CORE — workspace-skill-maintenance (hub Skill Packages). Local copy dated 2026-10-06. Prefer the Drive CORE on conflict; refresh this copy when the hub updates.
 
-# Workspace Skill Maintenance
+**Hub:** [private reference removed; refer to the private Hub source copy]
+**Folder:** [private reference removed; refer to the private Hub source copy]
 
 Review workspace Skills without becoming their behavioral editor.
 
@@ -27,11 +31,11 @@ A review finding is not authorization to edit behavior.
 
 Use this body metadata line in a workspace Skill's `SKILL.md`:
 
- `**Last reviewed:** <ISO 8601 timestamp with timezone>` 
+`**Last reviewed:** <ISO 8601 timestamp with timezone>`
 
 Place it immediately after the introductory heading or existing package metadata block when practical.
 
-- If the line exists, replace only its timestamp after a completed review.
+- If the line exists, replace only its timestamp after a completed review (via **UpdateSkill** rewrite of that Skill, keeping all other body content unchanged).
 - If it is absent, adding this one line is permitted as a metadata-only maintenance action.
 - Do not treat `Last reviewed` as a package version or as proof that behavior changed.
 - Do not update `Last reviewed` when the review was materially blocked or incomplete. Report the blockage instead.
@@ -39,11 +43,11 @@ Place it immediately after the introductory heading or existing package metadata
 ## Workflow
 
 1. **Resolve the target Skill.**
-   - Use the installed Skill surface, an uploaded/package source, Library artifact, repositorythe working directory source, or another current authorized source.
+   - Use the installed Skill under `[private reference removed; refer to the private Hub source copy]<slug>/SKILL.md`, Drive CORE, or another current authorized source.
    - Preserve the exact Skill identity and distinguish installed runtime state from editable source/package state.
 
 2. **Recover current workspace guidance.**
-   - Retrieve only the smallest current authorities needed to evaluate the Skill.
+   - Retrieve only the smallest current authorities needed to evaluate the Skill (Drive, Notion, Memory, peer Skills).
    - Follow redirects and migration notices to their maintained destination.
    - Treat legacy redirects and retired pages as navigation aids, not controlling authority.
    - Prefer the current topic-level authority over an obsolete monolithic page when the workspace has been reorganized.
@@ -68,7 +72,7 @@ Place it immediately after the introductory heading or existing package metadata
 
 5. **Update `Last reviewed` only when review completed.**
    - Modify no other behavior-bearing content.
-   - If changing a source file requires skill packaging tooling, use the supported Skill packaging workflow only for this metadata-only change.
+   - Use **UpdateSkill** (`action: write`, same `id`) only for this metadata-only change.
    - Preserve the Skill's behavioral version unless workspace policy explicitly says review metadata changes version it.
 
 6. **If a change candidate exists, prepare a changing-update brief.**
@@ -82,16 +86,15 @@ Place it immediately after the introductory heading or existing package metadata
    - authorization status: **not yet changed** unless the user separately authorized the changing update.
 
 7. **Verify the maintenance action.**
-   - Re-read the target source or packaged Skill.
+   - Re-read the target `SKILL.md`.
    - Confirm the intended `Last reviewed` value.
    - Confirm no behavior-bearing content changed.
-   - If a package was rebuilt only to carry review metadata, verify its structure and identity.
 
 ## Handoff to changing update
 
 When behavioral drift is found, end with a clear handoff such as:
 
- `CHANGE CANDIDATE -> workspace-skill-changing-update` 
+`CHANGE CANDIDATE -> workspace-skill-changing-update`
 
 Do not auto-convert that finding into a rewrite. The changing-update lane requires explicit authorization through the user's request or a separate authorized invocation.
 
@@ -107,3 +110,27 @@ Report:
 - verification result.
 
 Keep review evidence factual and proportional. Do not turn a maintenance review into a full workspace audit unless the user requested one.
+
+## Version
+v1.0.0 (2026-10-26). Versioning baseline set by Reformer boy (A2).
+
+## Changelog
+- v1.0.0, 2026-10-26: baseline version. No content change.
+
+## Algorithm
+
+```mermaid
+flowchart TD
+    A(["Start: review a workspace Skill without editing its behavior"]) --> B["Resolve the target Skill and distinguish installed state from source"]
+    B --> C["Recover the smallest current workspace authorities"]
+    C --> D["Review triggers, stale assumptions, broken references, and real-use mismatch"]
+    D --> E{"Review outcome?"}
+    E -- "Blocked or incomplete" --> E1(["Report the blockage; do not update Last reviewed"])
+    E -- "Current or metadata only or change candidate" --> F["Update only the Last reviewed timestamp via UpdateSkill"]
+    F --> G{"Change candidate?"}
+    G -- Yes --> G1["Prepare a changing-update brief; authorization status is not yet changed"]
+    G -- No --> H
+    G1 --> H["Re-read the Skill; confirm Last reviewed and that no behavior changed"]
+    H --> I(["Report outcome, timestamp, findings, and any changing-update handoff"])
+```
+

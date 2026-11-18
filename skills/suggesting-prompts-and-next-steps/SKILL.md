@@ -1,58 +1,71 @@
 ---
-name: suggesting-prompts-and-next-steps
-description: "Use when the user asks for suggested prompts, follow-ups, or next steps, or when a clearly valuable continuation exists after fully answering: offer 1-3 distinct, inspectable, actionable options with full next-turn prompts."
-version: "2026-10-16"
-source: "Drive CORE — suggesting-prompts-and-next-steps"
-generated: "2026-10-18"
+name: Suggesting prompts and next steps
+description: >-
+  Use when JL asks for suggested prompts, follow-ups, or next steps, or when a clearly valuable continuation exists after fully answering: offer 1-3 distinct, inspectable, actionable options with full next-turn prompts.
+  Drive hub owns the canonical CORE; this copy is versioned 2026-10-16
+  from CORE — suggesting-prompts-and-next-steps.
 ---
+# Suggesting prompts and next steps
+tier: 2
 
-Generated from Drive CORE on 2026-10-18. Read-only mirror; edits here are overwritten.
+**Source:** Drive CORE — suggesting-prompts-and-next-steps ([private reference removed; refer to the private Hub source copy]). Local copy dated 2026-10-16. Prefer the Drive CORE on conflict; refresh this copy when the hub updates.
 
-# CORE — Suggesting Prompts and Next Steps
+**Registry:** [private reference removed; refer to the private Hub source copy]
 
-Status: New TCS-authored provider-neutral Skill source; validated ChatGPT adapter packaged on 2026-10-16; live installation pending.
-Source owner: the private Drive CORE.
-Origin: the user directly requested this standalone capability after reviewing vague, non-actionable follow-up recommendations. The user controls final naming, sufficiency and deployment.
-Scope: reusable recommendations across conversation, creative exploration, research, design, implementation, and operations. It is NOT the IUI Research Panel Skill.
+**Origin:** JL directly requested this standalone capability after reviewing vague, non-actionable follow-ups. JL controls final naming, sufficiency, and deployment.
 
 ## Purpose
-Given a fully answered current request, recover its context and identify a small number of distinctly useful optional follow-up prompts and next steps that the user can understand and choose without losing existing context. Never withhold completion of the current request to create an artificial need for another turn.
+After the current request is fully answered, offer a few distinctly useful optional follow-ups JL can pick without losing context. Never hold back completion to manufacture another turn. Not the IUI Research Panel skill.
 
 ## Use when
-User asks for suggested prompts, recommended follow-ups, next steps, what else to explore/investigate/create/verify/do, actionable one-tap continuations, or corrects suggestions that obscure the actual consequences. Offer proactively only when a live valuable continuation is evident. Do not force steps into jokes, emotional conversations, or self-contained questions.
+JL asks for suggested prompts / next steps / what else to explore, verify, or do, or corrects vague suggestions. Offer proactively only when a valuable continuation is evident; not for jokes, emotional talk, or self-contained questions.
 
-## Inputs
-The current user exchange; existing project/user context and confirmed constraints; optional relevant source records, permissions, selected research categories and budgets; actual available tools and UI mechanisms.
+## Procedure
+1. Pin answer status, live objective, intent, and source/permission limits; recover missing facts from owning sources, not by quizzing JL.
+2. Generate distinct candidates: EXPLORE, INVESTIGATE, COMPARE/CRITIQUE, CREATE, VERIFY, ADVANCE (bounded, authorized). No fixed quota.
+3. Drop generic "dig deeper", redundant work, bureaucracy, scope creep, invented dependencies, unavailable tools, and padding for incomplete work.
+4. Rank quietly (value, novelty, feasibility, effort, cost, permission, reversibility, reuse). Usually 1-3 options.
+5. Give each an action contract: WHAT, WHY NOW, WHERE (sources/tools/assets), HOW, RESULT (deliverable + verification), AUTHORITY (read-only / draft / write / send; reserved decisions), DEPTH/COST when material.
+6. Write a full next-turn prompt carrying needed constraints, scope, tools, acceptance criteria, and authorization limits. A displayed option must reveal exactly what choosing it will request; showing it is neither execution nor proof of success.
+7. Render with what the Grok Bot surface really supports: real chat question widgets / quick replies wired to the full prompt, plain text options otherwise; when a visual of the options or flow genuinely helps, add a small phone-narrow fenced mermaid diagram (no native IUI); never imply a button ran something. On selection, do the work, verify, and distinguish drafted / posted / installed / completed.
+8. Stop when nothing worthwhile remains.
 
-## Core procedure
-1. Identify current answer status, live objective, user intentions and source/permission boundaries. Recover missing relevant facts using owning sources, not interrogation of the user.
-2. Generate genuinely distinct candidates: EXPLORE (specific new angle), INVESTIGATE (source-backed question), COMPARE/CRITIQUE (clear opposing mechanisms), CREATE (defined output), VERIFY (observable test), ADVANCE (bounded authorized action). Choose appropriate categories, not a fixed quota.
-3. Filter out generic 'dig deeper', redundant work, premature bureaucracy, unrelated scope expansion, invented dependencies, unavailable tools, and suggestions meant to compensate for deliberately incomplete work.
-4. Rank quietly by contextual value, novelty, expected evidence or action gained, feasibility, user effort, time/cost, permission, reversibility and potential reuse. Offer normally one to three genuinely different options; avoid clutter.
-5. Build an inspectable action contract for each: WHAT (verb and target); WHY NOW (grounded relevance); WHERE (sources/tools/affected assets); HOW (concrete retrieval, research, analysis, create/write/test sequence); RESULT (actual expected deliverable and verification); AUTHORITY (read-only, draft, write, send and any reserved human decision); DEPTH/COST (where materially relevant).
-6. Compose a full next-turn prompt inheriting necessary constraints and context, with accurate scope, tools, acceptance criteria, and authorization boundaries. Buttons must reveal what clicking will request; a displayed button is neither task execution nor proof of success.
-7. Render optional suggestions accessibly with working runtime-specific controls or legible text alternatives. On user selection, execute actual feasible work, verify observable results and distinguish drafted/posted/installed/completed states.
-8. Stop when there is no worthwhile next option.
-
-## Rules that survive every provider
-- Complete the current user request before proposing supplementary work.
-- Conversation and creative exploration are legitimate outcomes: do not convert every curiosity into project management.
-- Reuse existing specialist workflows rather than duplicating their implementation. Extrapolating Logically, Correcting Course, Context-First Problem Solving, Implementation Planning, Company Knowledge Routing and IUI Research Panel remain separate owning capabilities.
-- Preserve user-confirmed scope, canon, requested internal-only research boundaries, and independence of per-source research budgets where research panels are relevant. The separate IUI Research Panel 21+ catalog redesign is not part of this Skill.
-- Cite recovered external/internal evidence correctly and separate current verified state from proposed action.
-- Do not fabricate a clickable action, provider access, a written artifact, installation or a send receipt.
-- If a proposed prompt is forwarded to another AI or human, visibly watermark the copyable text with the verified actual source agent identity, full badge, timestamp and provenance, according to Communicating Effectively. The user as messenger is not necessarily its author.
-- A recommendation does not itself grant write, scheduling, publication, purchase or external-contact authority.
-
-## Provider adaptation
-ChatGPT Chat: when beneficial, use mobile-first native Intelligent UI with concise compact action cards, visible scope and algorithm, readable contrasts, and actual host-controlled buttons wired to a complete distinct next-turn prompt. Verify the supported API at runtime.
-ChatGPT Work/Codex/other providers: adapt to actual supported tools, plain prompt options or equivalent UI. Never claim Chat-specific IUI is universal.
+## Rules
+- Finish the current request first. Conversation and creative exploration are valid ends; don't turn curiosity into project management.
+- Reuse specialist skills (extrapolating-logically, correcting-course, context-first-problem-solving, implementation-planning, company-knowledge-routing, iui-research-panel) instead of duplicating them.
+- Keep JL-confirmed scope, canon, internal-only research limits, and per-source research budgets. The separate IUI Research Panel 21+ catalog redesign is not part of this Skill.
+- Cite evidence; separate verified state from proposal. Never fabricate clickable actions, access, artifacts, installs, or send receipts.
+- If a suggested prompt will be forwarded to another AI or human, watermark it with the real source agent identity, badge, timestamp, and provenance (per communicating-effectively). JL as messenger is not necessarily its author.
+- A suggestion grants no write, schedule, publish, purchase, or external-contact authority; sends still need JL's approval.
 
 ## Fallback
-If source access or interactive controls are absent, provide complete inspectable text instructions, clearly identify the gap, and do not invent results. Use closest authorized source/tool only if it preserves scope.
+Without source access or controls, give complete text instructions, name the gap, invent nothing. Use the closest authorized source/tool only if it preserves scope.
 
 ## Verification
-Contrast at least these cases: informative first answer fully complete, casual creative follow-up, actionable cross-source research within selected source scope, write versus read-only consequences, no useful suggestion, repeated generic button failure, visible native click binding with distinct prompts, and forwarding with correct authorship.
+Contrast: complete informative first answer; casual creative follow-up; actionable cross-source research within selected scope; write vs read-only consequences; no useful suggestion; repeated generic-option failure; options wired to distinct full prompts; forwarding with correct authorship.
 
-## ChatGPT implementation
-Packaged complete Skill: SKILL.md, agents/openai.yaml, assets/icon.svg and references/regression-cases.md. Local validator passed; package is not auto-installed. Installer action and installed entrypoint readback remain separate.
+## Version
+v1.0.0 (2026-10-26). Versioning baseline set by Reformer boy (A2).
+
+## Changelog
+- v1.0.0, 2026-10-26: baseline version. No content change.
+
+## Algorithm
+
+```mermaid
+flowchart TD
+    A(["Start: suggested prompts, or a valuable continuation after a full answer"]) --> B{"Current request fully answered?"}
+    B -- No --> B1(["Finish the current request first"])
+    B -- Yes --> C{"Anything worthwhile remains?"}
+    C -- No --> C1(["Stop; do not manufacture another turn"])
+    C -- Yes --> D["Pin answer status, objective, intent, and permission limits"]
+    D --> E["Generate distinct candidates; drop generic, redundant, or unauthorized ones"]
+    E --> F["Rank quietly and keep usually 1 to 3 options"]
+    F --> G["Give each an action contract and a full next-turn prompt"]
+    G --> H["Render with real chat widgets when supported, or plain text"]
+    H --> I{"User selected an option?"}
+    I -- No --> J(["Showing an option is not execution"])
+    I -- Yes --> K["Do the work, verify, and distinguish drafted, posted, installed, or completed"]
+    K --> L(["A suggestion grants no write, send, or purchase authority by itself"])
+```
+
