@@ -1,14 +1,17 @@
 ---
-name: auditable-actions-tracing-and-logging
-description: "Trace and report consequential AI Agent actions after substantial work materially mutates, updates, removes, migrates, reconciles, or steers a target or workstream. Use after persistent writes, substantive audits, cleanup/refactors, source corrections, migrations, implementation changes, connected-system updates, significant state/strategy steering, or when the user asks for an audit trail, action log, verification receipt, or trace of what happened. Keep operational traces in the active chat by default; persist only the durable result that the owning source actually needs unless a durable audit record is explicitly warranted and authorized."
-version: "2026-10-04"
-source: "Drive CORE — auditable-actions-tracing-and-logging"
-generated: "2026-10-18"
+name: Auditable actions tracing and logging
+description: >-
+  Use when substantial work materially changes or steers something and you need
+  a concise, evidence-grounded action log in chat without dumping process
+  exhaust into durable sources.
 ---
-
-Generated from Drive CORE on 2026-10-18. Read-only mirror; edits here are overwritten.
-
 # Auditable Actions Tracing and Logging
+tier: 2
+
+**Source:** Drive CORE — auditable-actions-tracing-and-logging (hub Skill Packages). Local copy dated 2026-10-06. Prefer the Drive CORE on conflict; refresh this copy when the hub updates.
+
+**Hub:** [private reference removed; refer to the private Hub source copy]
+**Folder:** [private reference removed; refer to the private Hub source copy]
 
 Leave a concise, evidence-grounded trace when substantial work materially changes or steers something. Make the action auditable without turning operational exhaust into durable knowledge.
 
@@ -19,15 +22,12 @@ Leave a concise, evidence-grounded trace when substantial work materially change
 Treat the active chat as the default home for the operational trace.
 
 - Put action history, verification notes, failed attempts, temporary diagnostics, material non-actions, blockers, and remaining work in the active chat unless another destination explicitly owns that information.
-- Put only the durable result that belongs to the target into the target source: the corrected specification, approved decision, current task state, code change, schema change, canon update, configuration, or other owned state.
-- Do not insert an AI Agent's process narrative into Notion, Drive, Linear, GitHub documentation, canon, specifications, databases, or other durable sources merely to preserve traceability.
+- Put only the durable result that belongs to the target into the target source: corrected specification, approved decision, current task state, code change, schema change, canon update, configuration, or other owned state.
+- Do not insert an AI Agent's process narrative into Notion, Drive, Linear, GitHub docs, canon, specs, databases, or other durable sources merely to preserve traceability.
 - Create or update a durable audit, incident, provenance, migration, or verification record only when that record type is itself required by the governing workflow, explicitly requested, or clearly owned by the destination.
 - Never let an operational trace become evidence of its own authority. Verify any durable claim against the source entitled to establish it.
 
-Use the mental model:
-
-**durable result -> owning source**
-**operational trace -> active chat**
+Mental model: **durable result → owning source** · **operational trace → active chat**
 
 ### Trace material actions, not every motion
 
@@ -41,7 +41,7 @@ Do not produce a running transcript of every tool call.
 
 ### Never inflate completion
 
-For every material action, preserve its real state. Use one of these classifications when useful:
+For every material action, preserve its real state. Useful classifications:
 
 - **completed and verified**
 - **completed with partial verification**
@@ -54,206 +54,120 @@ Never claim that a file, record, database, issue, branch, document, source, conf
 
 ## What counts as a trace-worthy action
 
-Use judgment and proportionality. Typical triggers include:
+Typical triggers: creating/editing/moving/deleting persistent artifacts; changing company knowledge, canon, specs, governance, task state, code, schemas, configuration; cleanup/refactors/migrations/reconciliation; substantive audits with meaningful findings; materially steering ownership/direction/scope; correcting a prior persistent error; multi-system work hard to reconstruct; high-consequence or canon-sensitive actions; explicit requests for an action/audit/verification log.
 
-- creating, editing, moving, renaming, deleting, archiving, or replacing persistent artifacts;
-- changing company knowledge, canon, specifications, terminology, governance, task state, code, schemas, configuration, or runtime-facing implementation;
-- cleanup, refactors, migrations, reconciliation, propagation, or de-duplication;
-- substantive audits that establish a meaningful finding even when no write follows;
-- materially steering a workstream by resolving ownership, direction, scope, authority, or the next execution path;
-- correcting a prior persistent error or preventing a consequential incorrect mutation;
-- multi-system work where the resulting state would otherwise be difficult to reconstruct;
-- destructive, irreversible, high-consequence, public-facing, legal, financial, architectural, or canon-sensitive actions;
-- explicit requests for an action trace, audit log, verification log, or operational receipt.
-
-A recommendation or conversational idea alone is not automatically trace-worthy. Steering qualifies when it materially changes the task's pursued direction, authoritative path, or operational state.
+A recommendation alone is not automatically trace-worthy. Steering qualifies when it materially changes the pursued direction, authoritative path, or operational state.
 
 ## Workflow
 
-1. **Identify the material target.**
-   - Name the object, system, workstream, or state that was materially acted on.
-   - Distinguish live, local, sandbox, draft, and external targets when that affects the claim.
+1. **Identify the material target** — name the object/system/workstream; distinguish live, local, sandbox, draft, and external when that affects the claim.
+2. **Preserve the authorization boundary** — distinguish what JL authorized from discussion, proposals, or inspection. Record a material non-action when work correctly stopped at an authorization boundary.
+3. **Trace the consequential actions** — smallest set needed; prefer state-changing verbs (created, updated, removed, reconciled, migrated, verified, left unchanged, blocked, routed, deferred).
+4. **Separate result from process** — state what durable result now exists; keep temporary reasoning, failed paths, and diagnostics out of the durable target unless that destination owns such records.
+5. **Verify the actual resulting state** — prefer direct post-action evidence (reread, diff, search, query, test, render, build, schema validation, runtime observation, connector readback). Prefer verifying the target itself over a tool success message alone. State partial/failed/unavailable verification plainly.
+6. **Expose remaining state** — leftovers, blockers, unresolved questions, inaccessible surfaces, or deferred work. Do not invent a next step when the task is complete.
+7. **Emit the chat-local action log** — proportional; do not create a separate persistent artifact solely to duplicate the chat log.
 
-2. **Preserve the authorization boundary.**
-   - Distinguish what the user authorized from what was merely discussed, proposed, inferred, or inspected.
-   - Treat discussion, critique, exploration, naming, and design conversation as non-authorizing unless the user actually authorized an action.
-   - Record a material non-action when work correctly stopped at an authorization boundary.
+## Source-containment
 
-3. **Trace the consequential actions.**
-   - Record the smallest set of actions needed to explain what materially happened.
-   - Prefer state-changing verbs: created, updated, removed, reconciled, migrated, verified, left unchanged, blocked, routed, or deferred.
-   - Preserve sequence only when order materially affects interpretation.
+Operational trace normally stays out of durable sources: step-by-step tool history, search queries, abandoned approaches, temporary hypotheses, assistant self-commentary, verification narration, generic "updated by AI" notes, transient blockers resolved in-session, process metadata with no continuing value.
 
-4. **Separate result from process.**
-   - State what durable result now exists.
-   - Keep temporary reasoning, failed paths, search history, diagnostics, and implementation exhaust out of the durable target unless the destination specifically owns such records.
-   - If an action discovered durable information that belongs elsewhere, route or recommend it according to the owning workflow rather than embedding it in the trace's original target.
+Durable persistence is appropriate when the destination owns it: governance decision/approval, real incident/postmortem, required migration provenance, **current execution-state update (Linear)**, implementation change and code-facing history, accepted product/canon/spec result, required compliance/audit artifact, or an explicitly requested durable handoff.
 
-5. **Verify the actual resulting state.**
-   - Prefer direct post-action evidence: reread, diff, search, query, test, render, build, schema validation, runtime observation, or connected-system readback.
-   - Verify the target itself when feasible rather than relying only on a tool's success message.
-   - State partial, failed, or unavailable verification plainly.
-
-6. **Expose remaining state.**
-   - Record meaningful leftovers, blockers, unresolved questions, preserved legacy state, inaccessible surfaces, or deferred work.
-   - Do not manufacture a next step when the task is actually complete.
-
-7. **Emit the chat-local action log.**
-   - Keep it proportional to the work.
-   - Do not create a separate persistent artifact solely to duplicate the chat log.
-
-## Source-containment rules
-
-Operational trace material normally stays out of durable sources. This includes:
-
-- step-by-step tool history;
-- search queries and retrieval attempts;
-- abandoned approaches;
-- temporary diagnostic hypotheses;
-- assistant self-commentary;
-- verification narration;
-- generic "updated by AI" notes;
-- explanations written only to prove that work occurred;
-- transient blockers that were resolved within the same work session;
-- process metadata with no continuing operational value.
-
-Durable persistence can be appropriate when the destination legitimately owns the information, such as:
-
-- a governance decision or approval record;
-- a real incident or postmortem finding;
-- required migration provenance;
-- a current execution-state update;
-- an implementation change and its code-facing history;
-- an accepted product/canon/specification result;
-- a required compliance or audit artifact;
-- an explicitly requested durable handoff.
-
-Even then, persist the durable fact or record the destination owns, not a transcript of the AI Agent's working session.
+Even then, persist the durable fact the destination owns — not a transcript of the AI Agent's working session.
 
 ## Material non-actions
 
-Include a non-action when it materially explains the resulting state, for example:
-
-- a write was not performed because authorization was absent;
-- a candidate source was left unchanged because it was already current;
-- a proposed deletion was skipped because the target still had unique value;
-- a lower-authority source was not used to overwrite a controlling source;
-- an operation stopped because verification exposed a real blocker.
-
-Do not list every thing that was not done.
+Include a non-action when it explains the resulting state (no write without authorization; left unchanged because already current; skipped deletion because unique value remains; refused to overwrite a controlling source; stopped on verification blocker). Do not list everything that was not done.
 
 ## Verification standards
 
-Match verification to the claim:
-
-- **Document/source changes:** post-write reread, targeted search, or before/after comparison.
-- **Code/configuration:** diff, tests, build, lint, schema validation, or runtime observation as appropriate.
-- **Database/state mutation:** query/readback of the affected rows or state.
-- **Task/workflow state:** reread the actual issue, project, status, assignment, or workflow object.
-- **Visual/layout work:** render or inspect the resulting artifact.
-- **Deletion/cleanup:** confirm absence where expected and confirm preserved targets remain intact when material.
-- **No-write audits:** identify the inspected evidence and the bounded finding without implying a mutation.
-
-Do not perform redundant verification merely to make the log look thorough. Use the smallest direct check that materially establishes the result.
+Match verification to the claim: document reread/search/diff; code tests/build/lint; database query/readback; **task/workflow — reread the actual Linear issue, project, status, assignment**; visual render/inspect; deletion confirm absence and preserved targets; no-write audits name inspected evidence without implying mutation. Use the smallest direct check that establishes the result.
 
 ## Log modes
 
-### Compact mode
+### Compact (bounded task, clear authority, little remaining state)
 
-Use for a bounded task with clear authority, direct verification, and little remaining state.
+```markdown
+## Auditable Action Log
 
-`` ```markdown ``
-## 🧾 Auditable Action Log
+**Target** — [exact target and live/local/sandbox when material]
 
-**🎯 Target**
-[Exact target and live/local/sandbox context when material.]
+**Material action** — [what changed, or consequential audit/non-action]
 
-**🛠️ Material action**
-[What materially changed, or the consequential audit/non-action.]
+**Verification** — [direct check and result]
 
-**✅ Verification**
-[Direct check and result.]
+**Remaining state** — [material unresolved, or None confirmed]
 
-**📍 Remaining state**
-[Anything material still unresolved, or `None confirmed`.]
+**Status** — [completed and verified / completed with partial verification / audited; no mutation performed / blocked / unresolved]
+```
 
-**📌 Status**
-[completed and verified / completed with partial verification / audited; no mutation performed / blocked / unresolved]
-`` ``` ``
+### Full (multi-system, partial verification, meaningful risk, or important unresolved state)
 
-### Full mode
+```markdown
+## Auditable Action Log
 
-Use when work spans multiple systems or targets, changes direction materially, has partial verification, carries meaningful risk, or leaves important unresolved state.
+**Scope and targets** — [what was materially acted on]
 
-`` ```markdown ``
-## 🧾 Auditable Action Log
+**Authorization boundary** — [what was authorized; any material constraint]
 
-**🎯 Scope and targets**
-[What was materially acted on.]
+**Material actions** — [concise ordered actions; material non-actions only when they explain the outcome]
 
-**🔐 Authorization boundary**
-[What was authorized and any material boundary that constrained action.]
+**Resulting state** — [what is now true]
 
-**🛠️ Material actions**
-[Concise ordered actions; include material non-actions only when they explain the outcome.]
+**Verification** — [direct post-action checks and results]
 
-**🧾 Resulting state**
-[What is now true in the affected systems or workstream.]
+**Trace containment** — [only when useful: what stayed chat-local vs durable facts elsewhere]
 
-**✅ Verification**
-[Direct post-action checks and their results.]
+**Remaining state** — [leftovers/blockers/unresolved, or None confirmed]
 
-**🧭 Trace containment**
-[Only when useful: what operational detail remained chat-local and what durable facts were legitimately persisted elsewhere.]
+**Next safe action** — [only when a concrete next action remains; omit when complete]
 
-**📍 Remaining state**
-[Leftovers, blockers, unresolved questions, inaccessible surfaces, or `None confirmed`.]
+**Status** — [completed and verified / completed with partial verification / audited; no mutation performed / blocked / unresolved]
+```
 
-**➡️ Next safe action**
-[Only when a concrete next action remains. Omit when complete.]
-
-**📌 Status**
-[completed and verified / completed with partial verification / audited; no mutation performed / blocked / unresolved]
-`` ``` ``
-
-Adapt labels when the task needs different terminology, but preserve the underlying distinctions.
+Adapt labels when needed; keep the underlying distinctions.
 
 ## Special cases
 
-### Substantive audit with no write
-
-Trace what was examined, the bounded finding, the evidence used, and the fact that no mutation occurred. Do not turn an audit finding into a durable company fact unless it is verified, belongs in a durable source, and persistence is authorized.
-
-### Cleanup and deletion review
-
-Distinguish:
-
-- current value that must be preserved;
-- obsolete or duplicate material that can be removed when authorized;
-- historical material that still has provenance value;
-- unresolved material that blocks deletion;
-- final deletion readiness.
-
-Keep the cleanup trace in chat unless a durable lifecycle or provenance record is actually required.
-
-### Sandbox or local demonstration
-
-Identify the synthetic/local target. Never imply that production, company knowledge, canon, or another live system changed when only a sandbox or local artifact was modified.
-
-### Cross-system work
-
-Trace each material mutation against its actual owning system. Do not treat a successful update in one system as proof that another system was synchronized unless that second state was verified.
+- **Audit with no write:** what was examined, bounded finding, evidence, no mutation. Do not turn an audit finding into a durable company fact unless verified, belongs in a durable source, and persistence is authorized.
+- **Cleanup/deletion:** distinguish preserve / remove when authorized / provenance value / unresolved / deletion-ready. Keep cleanup trace in chat unless a durable lifecycle record is required.
+- **Sandbox/local demo:** never imply production, company knowledge, or live systems changed.
+- **Cross-system:** trace each material mutation against its owning system. A success in one system is not proof another was synchronized unless verified. **Linear owns current execution state** when the durable result is issue/project/status/priority/blocker updates.
 
 ## Skill drift
 
-If real use exposes stale terminology, source assumptions, authorization logic, verification behavior, or trace-containment guidance:
-
-- flag the exact mismatch in the maintained skill/governance surface when such maintenance is authorized and available;
-- tell the user what needs maintenance and why;
-- do not silently modify this skill without explicit authorization;
-- after authorization, update, validate, test, and repackage the complete skill;
-- verify the corrected behavior against the case that exposed the drift.
+If real use exposes stale terminology, source assumptions, authorization logic, verification behavior, or trace-containment guidance: flag the mismatch; tell JL; do not silently rewrite without authorization; after authorization use UpdateSkill, validate, and verify against the case that exposed the drift.
 
 ## Style
 
-Be factual, concise, forensic, and easy to scan. Prefer concrete state-changing verbs and direct verification evidence. Use visual anchors when they improve readability. The purpose is accountability and continuity, not ceremony.
+Factual, concise, forensic, easy to scan. Prefer concrete state-changing verbs and direct verification evidence.
+
+## Version
+v1.0.0 (2026-10-26). Versioning baseline set by Reformer boy (A2).
+
+## Changelog
+- v1.0.0, 2026-10-26: baseline version. No content change.
+
+## Algorithm
+
+```mermaid
+flowchart TD
+    A([Start: work that materially changes or steers something]) --> B{"Trace-worthy? Not chat, brainstorm or trivial edit"}
+    B -- "No, and no log requested" --> B1(["Skip this skill"])
+    B -- Yes --> C["Identify material target: live, local, sandbox, draft, external"]
+    C --> D["Mark the authorization boundary; note material non-actions"]
+    D --> E["Do the work; track consequential actions only"]
+    E --> F{"Batch done, real blocker, or JL asks for trace?"}
+    F -- No --> E
+    F -- Yes --> G["Separate durable result from process"]
+    G --> H["Put durable result only in its owning source"]
+    H --> I["Verify resulting state with direct evidence: reread, diff, query, test"]
+    I --> J["Classify each action: verified, partial, audited no change, skipped, blocked, unresolved"]
+    J --> K["List remaining state: leftovers, blockers, deferred work"]
+    K --> L{"Multi-system, partial verification, risk or open state?"}
+    L -- No --> M(["Emit Compact action log in chat"])
+    L -- Yes --> N(["Emit Full action log in chat"])
+    I -.-> X{"Skill drift found?"}
+    X -- Yes --> X1["Flag mismatch to JL; no silent rewrite"]
+```

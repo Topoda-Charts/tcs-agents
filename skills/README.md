@@ -1,8 +1,12 @@
-# TCS skills — read-only mirror of Drive CORE
+# TCS skills — scrubbed, read-only public mirror
 
 **Do not edit files here.** Every file in `skills/` is generated from the Tópoda Charts Studios Drive CORE skill packages (the source of truth) and is overwritten on the next sync. Propose changes against the Drive CORE instead.
 
-Generated 2026-10-18; five skills refreshed from CORE on 2026-11-17 (`in-session-phasing`, `agent-bootstrap`, `communicating-effectively`, `company-knowledge-routing`, `wrapping-up-turn`). Catalog: [manifest.json](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/manifest.json).
+This catalog indexes scrubbed public copies sourced from the Hub `skills/` tree. The Hub `skills/STATUS.md` and reviewed `skills/public-sync.json` determine eligibility. Private source links and identifiers are not published.
+
+- Source of truth: the private Hub `skills/` tree and its reviewable eligibility marker.
+- Refresh: skill updates are proposed through pull requests; the public `main` branch is never written directly by the sync workflow.
+- Catalog: [manifest.json](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/manifest.json).
 
 ## Layout
 
@@ -35,41 +39,42 @@ An adapter is **stale** when its own date is older than its CORE's last edit. St
 
 | Skill | CORE version | CORE | Adapters |
 | --- | --- | --- | --- |
-| `paying-attention` | 2026-10-04 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/paying-attention/SKILL.md) | xai, openai, anthropic, google |
-| `context-first-problem-solving` | 2026-10-04 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/context-first-problem-solving/SKILL.md) | xai, openai, anthropic, google |
-| `extrapolating-logically` | 2026-10-04 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/extrapolating-logically/SKILL.md) | xai, openai, anthropic, google |
-| `neighboring-concept-disambiguating` | 2026-10-04 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/neighboring-concept-disambiguating/SKILL.md) | xai, openai, anthropic, google |
-| `correcting-course` | 2026-10-15 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/correcting-course/SKILL.md) | xai |
-| `learning-from-mistakes` | 2026-10-15 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/learning-from-mistakes/SKILL.md) | xai |
-| `work-preparing` | 2026-10-04 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/work-preparing/SKILL.md) | xai, openai, anthropic, google |
-| `proposal-drafting` | 2026-10-04 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/proposal-drafting/SKILL.md) | xai, openai, anthropic, google |
-| `implementation-planning` | 2026-10-04 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/implementation-planning/SKILL.md) | xai, openai, anthropic, google |
-| `in-session-phasing` | 1.1.2 (2026-11-15) | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/in-session-phasing/SKILL.md) | xai (stale), openai (stale), anthropic (stale), google (stale) |
-| `citing-sources` | 2026-10-15 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/citing-sources/SKILL.md) | xai |
-| `connective-tissue-safe-handling` | 2026-10-04 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/connective-tissue-safe-handling/SKILL.md) | xai, openai, anthropic, google |
-| `memory-updating` | 2026-10-04 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/memory-updating/SKILL.md) | xai, openai, anthropic, google |
-| `conversation-continuity-packaging` | 2026-10-13 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/conversation-continuity-packaging/SKILL.md) | xai, openai (stale), anthropic (stale), google (stale) |
-| `library-file-processing` | 2026-10-13 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/library-file-processing/SKILL.md) | xai, openai (stale), anthropic (stale), google (stale) |
-| `space-artifact-processing` | 2026-10-15 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/space-artifact-processing/SKILL.md) | xai |
-| `suggesting-prompts-and-next-steps` | 2026-10-16 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/suggesting-prompts-and-next-steps/SKILL.md) | xai, openai |
-| `stripping-down-self-imposed-barriers` | 2026-10-16 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/stripping-down-self-imposed-barriers/SKILL.md) | xai, openai |
-| `dinner-tomorrow-me` | 2026-10-16 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/dinner-tomorrow-me/SKILL.md) | xai, openai |
-| `reference-media-prompts` | 2026-10-04 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/reference-media-prompts/SKILL.md) | xai, openai, anthropic, google |
-| `displaying-using-python` | 2026-10-15 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/displaying-using-python/SKILL.md) | xai |
-| `iui-research-panel` | 2026-10-15 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/iui-research-panel/SKILL.md) | xai |
-| `clocking-in` | 2026-10-15 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/clocking-in/SKILL.md) | xai |
-| `clocking-out` | 2026-10-15 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/clocking-out/SKILL.md) | xai |
-| `bumping-session` | 2026-10-15 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/bumping-session/SKILL.md) | xai |
-| `ending-session` | 2026-10-15 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/ending-session/SKILL.md) | xai |
-| `getting-dressed` | 2026-10-04 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/getting-dressed/SKILL.md) | xai, openai, anthropic, google |
-| `auditable-actions-tracing-and-logging` | 2026-10-04 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/auditable-actions-tracing-and-logging/SKILL.md) | xai, openai, anthropic, google |
-| `propagating-to-internal-sources` | 2026-10-15 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/propagating-to-internal-sources/SKILL.md) | xai |
-| `workspace-skill-maintenance` | 2026-10-04 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/workspace-skill-maintenance/SKILL.md) | xai, openai, anthropic, google |
-| `workspace-skill-changing-update` | 2026-10-04 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/workspace-skill-changing-update/SKILL.md) | xai, openai, anthropic, google |
-| `agent-bootstrap` | 1.3.1 (2026-11-15) | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/agent-bootstrap/SKILL.md) | none |
-| `communicating-effectively` | 1.3.0 (2026-11-12) | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/communicating-effectively/SKILL.md) | none |
-| `company-knowledge-routing` | 1.3.1 (2026-11-15) | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/company-knowledge-routing/SKILL.md) | none |
-| `wrapping-up-turn` | 0.1.0 (2026-11-13) | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/wrapping-up-turn/SKILL.md) | none |
+| `paying-attention` | 1.0.1 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/paying-attention/SKILL.md) | xai, openai, anthropic, google |
+| `context-first-problem-solving` | 1.0.0 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/context-first-problem-solving/SKILL.md) | xai, openai, anthropic, google |
+| `extrapolating-logically` | 1.0.0 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/extrapolating-logically/SKILL.md) | xai, openai, anthropic, google |
+| `neighboring-concept-disambiguating` | 1.0.1 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/neighboring-concept-disambiguating/SKILL.md) | xai, openai, anthropic, google |
+| `correcting-course` | 1.6.1 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/correcting-course/SKILL.md) | xai |
+| `learning-from-mistakes` | 1.6.0 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/learning-from-mistakes/SKILL.md) | xai |
+| `work-preparing` | 1.0.0 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/work-preparing/SKILL.md) | xai, openai, anthropic, google |
+| `proposal-drafting` | 1.0.0 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/proposal-drafting/SKILL.md) | xai, openai, anthropic, google |
+| `implementation-planning` | 1.0.0 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/implementation-planning/SKILL.md) | xai, openai, anthropic, google |
+| `in-session-phasing` | 1.2.0 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/in-session-phasing/SKILL.md) | xai (stale), openai (stale), anthropic (stale), google (stale) |
+| `citing-sources` | 1.0.0 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/citing-sources/SKILL.md) | xai |
+| `connective-tissue-safe-handling` | 1.0.0 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/connective-tissue-safe-handling/SKILL.md) | xai, openai, anthropic, google |
+| `memory-updating` | 1.6.0 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/memory-updating/SKILL.md) | xai, openai, anthropic, google |
+| `conversation-continuity-packaging` | 1.0.0 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/conversation-continuity-packaging/SKILL.md) | xai, openai (stale), anthropic (stale), google (stale) |
+| `library-file-processing` | 1.0.0 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/library-file-processing/SKILL.md) | xai, openai (stale), anthropic (stale), google (stale) |
+| `space-artifact-processing` | 1.0.0 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/space-artifact-processing/SKILL.md) | xai |
+| `suggesting-prompts-and-next-steps` | 1.0.0 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/suggesting-prompts-and-next-steps/SKILL.md) | xai, openai |
+| `stripping-down-self-imposed-barriers` | 1.0.0 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/stripping-down-self-imposed-barriers/SKILL.md) | xai, openai |
+| `dinner-tomorrow-me` | 1.0.0 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/dinner-tomorrow-me/SKILL.md) | xai, openai |
+| `reference-media-prompts` | 1.0.0 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/reference-media-prompts/SKILL.md) | xai, openai, anthropic, google |
+| `displaying-using-python` | 1.0.0 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/displaying-using-python/SKILL.md) | xai |
+| `iui-research-panel` | 1.0.0 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/iui-research-panel/SKILL.md) | xai |
+| `clocking-in` | 1.0.0 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/clocking-in/SKILL.md) | xai |
+| `clocking-out` | 1.0.0 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/clocking-out/SKILL.md) | xai |
+| `bumping-session` | 1.0.0 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/bumping-session/SKILL.md) | xai |
+| `ending-session` | 1.0.0 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/ending-session/SKILL.md) | xai |
+| `getting-dressed` | 1.0.0 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/getting-dressed/SKILL.md) | xai, openai, anthropic, google |
+| `auditable-actions-tracing-and-logging` | 1.0.0 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/auditable-actions-tracing-and-logging/SKILL.md) | xai, openai, anthropic, google |
+| `propagating-to-internal-sources` | 1.3.0 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/propagating-to-internal-sources/SKILL.md) | xai |
+| `workspace-skill-maintenance` | 1.0.0 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/workspace-skill-maintenance/SKILL.md) | xai, openai, anthropic, google |
+| `workspace-skill-changing-update` | 1.0.0 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/workspace-skill-changing-update/SKILL.md) | xai, openai, anthropic, google |
+| `agent-bootstrap` | 1.3.1 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/agent-bootstrap/SKILL.md) | none |
+| `communicating-effectively` | 1.3.0 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/communicating-effectively/SKILL.md) | none |
+| `company-knowledge-routing` | 1.3.1 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/company-knowledge-routing/SKILL.md) | none |
+| `wrapping-up-turn` | 0.1.0 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/wrapping-up-turn/SKILL.md) | none |
+| `card-preflight` | 1.1.0 | [CORE](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/card-preflight/SKILL.md) | none |
 
 ## Scope and privacy
 

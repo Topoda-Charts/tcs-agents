@@ -1,67 +1,85 @@
 ---
-name: work-preparing
-description: "Prepare meaningful work before execution by clarifying the intended result, constraints, controlling context, dependencies, likely failure modes, and clean handoff. Use when a task, project, decision, coding effort, research effort, creative workflow, or operational thread is starting or being reshaped and the user needs PRE work rather than execution or post-review. Also use when the user asks what should be established before another AI Agent, tool, or person begins. Shared across workspace-account seats: do not assume a particular persona or seat is the invoker."
-version: "2026-10-04"
-source: "Drive CORE — work-preparing"
-generated: "2026-10-18"
+name: Work preparing
+description: >-
+  Use when preparing work before execution (PRE) — gather enough context and
+  constraints for a clean handoff without turning preparation into bureaucracy.
+  Drive hub owns the canonical CORE; this copy is versioned 2026-10-06 from CORE
+  — work-preparing.
 ---
+# Work preparing
+tier: 2
 
-Generated from Drive CORE on 2026-10-18. Read-only mirror; edits here are overwritten.
+**Source:** Drive CORE — work-preparing (hub Skill Packages). Local copy dated 2026-10-06. Prefer the Drive CORE on conflict; refresh this copy when the hub updates.
 
-# Work Preparing
-
- **Internal package version:** `2026-09-17T23:34:40-04:00` 
+**Hub:** [private reference removed; refer to the private Hub source copy]
+**Folder:** [private reference removed; refer to the private Hub source copy]
 
 Prepare enough to make execution clean without turning preparation into bureaucracy.
 
-## Shared seat orientation
+## Seat orientation
 
-Treat this Skill as a portable workspace-account procedure shared across seats.
-
-- Do not assume a particular persona or seat is the invoker.
-- Resolve the active seat/persona only when identity, authorship, access, permissions, role, or attribution materially affects PRE work.
-- If those axes do not matter, remain identity-neutral.
-- When routing work to another AI system or human, use the current maintained role/identity context rather than a hard-coded default counterpart.
-- Preserve the user's authority, settled decisions, project boundaries, and intended meaning when they materially control preparation.
+Portable across Grok Bot seats. Resolve seat/persona only when identity, authorship, access, permissions, role, or attribution materially affects PRE. When those axes do not matter, remain identity-neutral. When routing to another AI or human, use maintained role/identity context — not a hard-coded counterpart. Preserve JL's authority, settled decisions, project boundaries, and intended meaning.
 
 ## Method
 
 1. Identify the actual intended result.
-2. Retrieve or surface only the controlling context needed to start correctly.
-3. Clarify material constraints, dependencies, assumptions, and success conditions.
-4. Pressure-test the plan for likely failure modes or expensive misunderstandings.
-5. Resolve what can be resolved now; surface only material ambiguity that blocks useful execution.
-6. Produce a clean handoff to the executor: objective, relevant context, boundaries, expected output, and next executable action.
+2. Retrieve only controlling context needed to start correctly (conversation, Drive MCP, Notion MCP, Linear MCP, RecallMemory / UpdateMemory as appropriate).
+3. Clarify material constraints, dependencies, assumptions, success conditions.
+4. Pressure-test for likely failure modes or expensive misunderstandings.
+5. Resolve what can be resolved now; surface only blocking ambiguity.
+6. Produce a clean handoff: objective, relevant context, boundaries, expected output, next executable action.
 
 ## Behavior
 
-- Treat this as **PRE**, not as a reason to delay work indefinitely.
-- Prefer a minimum sufficient launch brief over exhaustive planning.
-- Do not invent schedules, time blocks, approval gates, meetings, checklists, or artifacts unless they are genuinely needed or explicitly requested.
-- Route by **work state**, not clock time. A task can enter PRE at any hour and can return to PRE later if new information changes the shape of the work.
-- If the work is already sufficiently specified, say so and hand it forward instead of re-planning it.
-- When the user already has a settled decision, recover and apply it rather than reopening the decision.
-- Do not ask the user to reconstruct context that the active AI can reasonably retrieve from the current conversation or authorized sources.
-- When another executor will act next, name that executor only when the current role/identity is actually established. Otherwise describe the required execution role rather than inventing a persona assignment.
+- This is **PRE**, not indefinite delay.
+- Prefer minimum sufficient launch brief over exhaustive planning.
+- Do not invent schedules, time blocks, approval gates, meetings, checklists, or artifacts unless genuinely needed or requested.
+- Route by **work state**, not clock time. Work can enter PRE anytime and return to PRE if new information reshapes it.
+- If already specified, say so and hand forward.
+- Recover settled decisions rather than reopening them.
+- Do not ask JL to reconstruct retrievable context.
+- Name another executor only when role/identity is established; otherwise describe the required execution role.
+
+## Grok Bot surface map
+
+ChatGPT Memory / Custom GPT / Actions map here as:
+
+- **RecallMemory / UpdateMemory** — durable facts.
+- **UpdateSkill** — skill recipe changes (after authorization).
+- **Drive / Notion / Linear / Slack / Gmail / Supabase MCPs** — by claim ownership.
+- **Company knowledge routing** / **Connective tissue safe handling** — when provenance or authority is at risk.
+- **Implementation planning** — when PRE is done and a concrete technical path is still needed.
 
 ## Handoff pattern
 
-Keep the handoff lightweight:
+**Goal** · **Context** · **Constraints** · **Watch for** · **Next action**
 
-**Goal:** what must become true
-**Context:** only what the executor needs
-**Constraints:** hard boundaries or settled decisions
-**Watch for:** material failure modes
-**Next action:** the first useful execution step
-
-Do not force this format when a conversational handoff is clearer.
+Do not force this format when conversational handoff is clearer.
 
 ## Skill drift
 
-If use of this Skill exposes stale persona, seat, access, role, source, or workflow assumptions:
+Flag Notion when authorized; tell JL what needs maintenance; do not silently rewrite without authorization; after authorization use UpdateSkill, validate, and verify. Drive CORE remains canonical — refresh this local copy when the hub updates.
 
-- 🚩 flag the exact drift in the maintained TCS Notion Skill-maintenance surface;
-- 🗣️ tell the user what needs maintenance and why;
-- ⏸️ do not silently rewrite the installed Skill without authorization;
-- 🔧 after authorization, update, validate, test, and repackage the complete Skill;
-- ✅ verify the revised behavior against the scenario that exposed the drift.
+## Version
+v1.0.0 (2026-10-26). Versioning baseline set by Reformer boy (A2).
+
+## Changelog
+- v1.0.0, 2026-10-26: baseline version. No content change.
+
+## Algorithm
+
+```mermaid
+flowchart TD
+    A(["Start: prepare work before execution"]) --> B["Identify the actual intended result"]
+    B --> C["Retrieve only controlling context needed to start correctly"]
+    C --> D{"Already specified?"}
+    D -- Yes --> D1(["Say so and hand forward"])
+    D -- No --> E["Clarify material constraints, dependencies, assumptions, and success conditions"]
+    E --> F["Pressure-test for likely failure modes or expensive misunderstandings"]
+    F --> G["Resolve what can be resolved now; surface only blocking ambiguity"]
+    G --> H["Produce a clean handoff: goal, context, constraints, watch for, next action"]
+    H --> I{"A concrete technical path is still needed?"}
+    I -- Yes --> J(["Hand into implementation planning"])
+    I -- No --> K(["Hand off for execution"])
+```
+

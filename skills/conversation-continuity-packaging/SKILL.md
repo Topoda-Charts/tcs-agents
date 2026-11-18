@@ -1,129 +1,148 @@
 ---
-name: conversation-continuity-packaging
-description: "Preserve conversation context in one or more concise Markdown continuity packets saved to the invoking ChatGPT seat's Library for later retrieval and continuation. Use for chat compaction, preservation, continuity packaging, preparing durable starting state for future chats, and when the user says exactly `End session.`. On the exact `End session.` trigger, ask for a Yes / No / Other confirmation before any packaging work and wait for the user's reply. Shared across workspace-account seats: do not assume seats share one Library or the same source access."
-version: "2026-10-13"
-source: "Drive CORE — conversation-continuity-packaging"
-generated: "2026-10-18"
+name: Conversation continuity packaging
+description: >-
+  Use when packaging a conversation into durable Markdown continuity packets —
+  on an explicit request, after an ending-session coordinator collects a Yes, or
+  after exact "End session." confirmation — for future retrieval without
+  carrying the whole chat. Prefer labeled museum sections (goal, decisions,
+  constraints, facts, open, rejected) over one mushy dump. Drive hub owns the
+  canonical CORE; this copy carries JL 2026-10-23 museum+labels.
 ---
-
-Generated from Drive CORE on 2026-10-18. Read-only mirror; edits here are overwritten.
-
 # Conversation Continuity Packaging
+tier: 2
 
-**Canonical CORE synchronization:** 2026-10-13; incorporates runtime functional changes through 2026-10-08. Provider-specific presentation remains in adapters.
- **Internal package version (referenced runtime):** `2026-10-08T16:51:51-04:00` 
+**Source:** Drive CORE — conversation-continuity-packaging (hub Skill Packages). Local copy dated 2026-10-16 (synced from the 2026-10-13 CORE, runtime changes through 2026-10-08), plus authorized 2026-10-23 museum+labels add (JL via GitHub boy). Prefer the Drive CORE on conflict for unchanged sections; keep museum+labels until CORE absorbs it.
+
+**Hub:** [private reference removed; refer to the private Hub source copy]
+**Folder:** [private reference removed; refer to the private Hub source copy]
 
 Convert the useful state of a conversation into the smallest useful set of durable Markdown continuity packets. Preserve enough context for future retrieval and continuation without carrying the entire chat forward.
 
 ## Session-close confirmation gate (standalone fallback)
 
-When `ending-session` or an equivalent authorized session-close coordinator has already collected an explicit Yes to packaging, proceed directly without asking the same question again. When invoked independently and the user says exactly **`End session.`**, treat that phrase as a request to close the session, **not** as permission to package it yet.
+When `ending-session` or an equivalent authorized session-close coordinator has already collected an explicit Yes to packaging, proceed directly without asking again. When invoked independently and the user says exactly **`End session.`**, treat it as a request to close the session, **not** as permission to package yet.
+
 This Skill is the packaging specialist, not the general session-close orchestrator. Keep explicit packaging instructions actionable; route whole-session closeout decisions to the session-close coordinator when one is present.
 
-1. Ask only a compact confirmation that can be answered with **Yes**, **No**, or **Other**:
+1. Ask only: **Package this conversation for continuity using the conversation-continuity-packaging skill?** Yes / No / Other
+2. Stop and wait. No context recovery, source reads, connector calls, drafting, writes, or verification before the reply.
+3. **Yes** → run the full workflow below. **No** → package nothing; briefly confirm the session ends without a package. **Other** → follow the alternate instruction; if still ambiguous, ask one minimal follow-up.
+4. Nearby wording ("we're done here", casual talk about ending) is not this trigger unless the user actually says **`End session.`**
 
-   **Package this conversation for continuity using the conversation-continuity-packaging skill?**
-   **Yes / No / Other**
+## Seat orientation (Grok Bot adaptation)
 
-2. Stop and wait for the user's reply. Do **not** begin context recovery, source reads, connector calls, drafting, Library writes, or verification before that reply.
-3. If the user answers **Yes**, run the full packaging workflow below.
-4. If the user answers **No**, do not package anything; briefly confirm that the session is ending without a continuity package.
-5. If the user answers **Other**, follow the alternate instruction they provide. If their alternate instruction is still ambiguous, ask one minimal follow-up rather than requiring a detailed response up front.
-6. Do not treat nearby wording such as “we're done here,” “this session ended,” or casual discussion about ending a session as this exact trigger unless the user actually says **`End session.`**.
+Portable across Grok Bots; do not assume a particular persona or seat is the invoker. Continuity stores are **seat/context scoped** unless current evidence proves broader access. Resolve the active seat/persona only when identity, authorship, visibility, connector access, permissions, or attribution materially affects packaging or delivery; otherwise stay identity-neutral. Preserve established AI Agent identities, source provenance, and actual permissions; do not invent access parity between seats or providers.
 
-This confirmation gate exists so session closure stays lightweight and deliberate. It overrides the normal immediate packaging workflow only for the exact **`End session.`** trigger.
+## Choose delivery (Grok Bot adaptation)
 
-## Shared seat orientation
+Save durable Markdown packets to the invoking bot's configured durable artifact store:
 
-Treat this Skill as a portable workspace-account procedure shared across seats.
+1. **Primary:** Google Drive (Drive connector) under the natural subject owner.
+2. **Working copy:** a box path under `/workspace/` when useful.
 
-- Do not assume a particular persona or seat is the invoker.
-- Treat ChatGPT Library as **seat/context scoped unless current evidence proves broader access**. A packet saved by one workspace seat is not automatically present in another seat's Library.
-- Resolve the active seat/persona only when identity, authorship, Library visibility, connector access, permissions, or attribution materially affects packaging or delivery.
-- If those axes do not matter, remain identity-neutral.
-- Preserve established AI Agent identities, source provenance, and actual permissions when they matter to continuity; do not invent access parity between seats or providers.
-
-## Choose delivery
-
-Save durable Markdown continuity packets in the **invoking ChatGPT seat's Library**.
-
-If the active seat's Library is unavailable, inaccessible, or a save fails, try only a proportional, supported recovery. Stop at an access restriction; otherwise avoid repeating an unchanged failing attempt. Report which packets were prepared, which files were already saved, and which packets remain unsaved. Do not imply persistence succeeded or require the user to repeat the request.
+If the store is unavailable or a save fails, try only a proportional, supported recovery. Stop at an access restriction; do not repeat an unchanged failing attempt. Report which packets were prepared, which were saved, and which remain unsaved. Never imply persistence succeeded or require the user to repeat the request.
 
 ## Recover context efficiently
 
-Read all available source-chat content before compressing. Internally inventory substantial topics, important secondary threads, user corrections, decisions, meaningful personal or creative context, completed actions, and pending requests. Revisit early and middle portions as well as the ending so length and recency do not determine importance.
+Read all available source-chat content before compressing. Internally inventory substantial topics, secondary threads, user corrections, decisions, meaningful personal or creative context, completed actions, and pending requests — revisiting early and middle portions, not just the end.
 
-Reuse evidence already available. Retrieve attachments or connected sources only where their contents or current state materially affect the packet; batch independent reads and follow relevant names, relationships, aliases, and source links instead of relying on one exact phrase. Stop when the needed context is sufficient. Packaging does not require a workspace-wide audit or changes to maintained sources.
+Reuse evidence already available. Retrieve attachments or connected sources only where their contents or current state materially affect the packet; batch independent reads and follow relevant names, aliases, and source links. Stop when context is sufficient. Packaging does not require a workspace-wide audit or changes to maintained sources.
 
-Treat summaries as summaries and check original evidence when exact wording, authorship, or completion matters. Distinguish direct the user statements, verified actions, assistant reports, and inference. If source history is unavailable or truncated, describe the material coverage gap briefly; never claim exhaustive recovery of unseen content.
+Treat summaries as summaries; check original evidence when exact wording, authorship, or completion matters. Distinguish direct user statements, verified actions, assistant reports, and inference. If history is unavailable or truncated, state the coverage gap briefly; never claim exhaustive recovery of unseen content.
 
-## Establish Library placement and naming
+## Placement and naming
 
-Apply this section when saving continuity to the **active seat's Library**.
-
-1. Load the current ChatGPT Library guidance before creating, moving, or verifying files.
-2. Retrieve current Notion guidance when available, beginning with `TCS Conversation Routing Recommendations` and `AI Agents — Operating Context, Decisions & Recommendations`. If Notion is inaccessible to the active context, do not pretend it was checked; use the best authorized current source available and keep the access gap explicit when it materially affects routing.
-3. Follow the user's newest applicable instruction, the current live Library structure visible to the active seat, and maintained guidance. Treat older fixed packet paths as historical when they conflict with current routing.
-4. Route each packet to its natural subject owner in that Library, such as Personal, the relevant AI Collaboration concern, TCS / Record Label Simulator, RAW VOW, or Research & Analysis. Use an artifact-type subfolder only when it materially improves retrieval. If ownership remains unclear, use the current temporary intake or quarantine location.
+1. Load current repository/Drive structure before creating, moving, or verifying files.
+2. Retrieve current Notion routing guidance when available (e.g. `TCS Conversation Routing Recommendations`, AI Agents operating context). If Notion is inaccessible, do not pretend it was checked; use the best authorized current source and keep the gap explicit when it matters.
+3. Follow the user's newest applicable instruction, the live structure, and maintained guidance. Treat older fixed packet paths as historical when they conflict.
+4. Route each packet to its natural subject owner (e.g. Personal, AI Collaboration, TCS / Record Label Simulator, RAW VOW, Research & Analysis). Use an artifact-type subfolder only when it improves retrieval. If ownership is unclear, use the current temporary intake/quarantine location.
 5. Do not create or restore one universal `Conversation Continuity Packets` folder as the default destination.
-6. Name artifacts narrow → broad. Put the human-searchable topic first, followed by the artifact type and date. Prefer:
-
-    `[Narrow Packet Subject] - Continuity Packet - YYYY-MM-DD.md` 
+6. Name narrow → broad: `[Narrow Packet Subject] - Continuity Packet - YYYY-MM-DD.md`
 
 ## Choose packet boundaries
 
-1. Identify whether the chat contains one continuity-worthy topic or multiple distinct substantial topics.
-2. Create separate packets when the topics would be meaningfully easier to retrieve or continue independently.
-3. Merge topics when they form one coherent future-use context, depend on the same decisions or relationships, or would naturally be needed together.
-4. Choose the smallest number of packets that preserves all important continuity. Protect useful secondary topics without splitting minor tangents into their own files.
-5. Avoid repeating material across packets. Keep only the small amount of overlap needed for each packet to stand on its own.
+1. Identify whether the chat has one or several substantial continuity-worthy topics.
+2. Separate packets when topics are meaningfully easier to retrieve or continue independently.
+3. Merge topics that form one coherent future-use context or depend on the same decisions.
+4. Use the smallest number of packets that preserves all important continuity; protect useful secondary topics without splitting minor tangents.
+5. Keep only the overlap needed for each packet to stand on its own.
+
+## Museum + labels (JL 2026-10-23)
+
+JL authorized labeled archives ("little museums") so trail can be optimized through tags, not one mushy dump. Use conversations plus notes.
+
+When building a continuity packet, scratchpad archive, or trail museum, structure substance under labeled sections (omit empty ones):
+
+- **goal** — what this thread was trying to achieve
+- **decisions** — settled choices and approvals (quote JL when precision matters)
+- **constraints** — hard limits, holds, and must-nots still in force
+- **facts** — verified state, links, badge strings, dates, artifact paths
+- **open** — unresolved asks, blockers, next continuation point
+- **rejected** — discarded paths kept only so they do not return
+
+Tags/schema may also appear as short frontmatter or heading labels for retrieval. Do not dump chronological mush; rehash into these compartments.
 
 ## Build each packet
 
-Capture the current useful state for that topic rather than a chronological transcript summary. Include only what another chat would materially need:
+Capture the current useful state, not a chronological transcript summary. Prefer the museum labels above. Include only what another chat would need: purpose/objective; conclusions, corrections, decisions, approvals, exact terminology; relationships, mappings, dates, counts, artifact references; completed work that changes next steps; unresolved work, blockers, dependencies, next continuation point; current controlling sources.
 
-- the topic's purpose or current objective;
-- important conclusions, corrections, decisions, approvals, and exact terminology;
-- relationships, mappings, dates, counts, or artifact references when they affect future understanding;
-- completed work that changes what should happen next;
-- unresolved work, blockers, dependencies, and the next useful continuation point;
-- current controlling sources or retrieval directions when maintained authority matters.
+State that the source chat may contain stale or superseded context; direct future use to compare against newer chats, newer user instructions, current Memory when available, and maintained sources. Do not imply a packet or external store is itself persistent Memory.
 
-State that the source chat may contain stale, superseded, or outdated context. Direct future use to compare the packet with newer chats, the user's newer instructions, current ChatGPT Memory when available, and maintained sources when relevant. Do not imply that conversation context, a continuity packet, or another external store is itself persistent ChatGPT Memory.
+Include the source chat title/link and date range when available, plus preparation date; keep event dates separate from capture dates. Add only useful aliases or exact links; never invent metadata. Include needed substance rather than relying on links that may become inaccessible.
 
-Include the source chat title/link and date range when available, plus the packet preparation date. Preserve event dates separately from capture dates. Add only useful retrieval aliases or exact source links; do not invent metadata. For future retrieval when the original sources may not be accessible, include the necessary substance rather than relying on inaccessible links alone. Preserve AI Agent identities, attribution, and actual permissions when those facts are established and material.
-
-Preserve uncertainty as uncertainty. Do not fill missing context merely to make the packet feel complete. Exclude rejected assistant assumptions, mistakes, outdated interpretations, dead branches, incidental banter, repeated wording, and superseded conclusions unless a short historical note is necessary to prevent their return.
-
-Keep each packet compact, self-contained, and useful for retrieval. Preserve the user's corrected proposition as the current fact; keep the rejected premise only when its history still carries real provenance or audit value.
+Preserve uncertainty as uncertainty. Exclude rejected assumptions, mistakes, outdated interpretations, dead branches, banter, repetition, and superseded conclusions unless a short **rejected** note prevents their return. Preserve the user's corrected proposition as current fact.
 
 ## Check coverage and compression
 
-Compare the draft against the topic inventory. Ensure every relevant substantive thread is represented, with its meaning, relationships, and necessary reasoning intact. Exhaustiveness means coverage of relevant context, not preservation of every sentence. Consolidate repetition before shortening unique information; use the smallest sufficient length rather than an arbitrary word cap.
+Compare the draft against the topic inventory: every relevant thread represented with meaning, relationships, and necessary reasoning intact. Exhaustiveness means coverage of relevant context, not every sentence. Consolidate repetition before shortening unique information; use the smallest sufficient length, not an arbitrary cap.
 
-Ask whether a fresh future chat could understand or continue each topic without making the user reconstruct it. Preserve useful personal, creative, and historical context even when it has no next action. Omit empty sections and invented blockers. Keep actual uncertainty distinct from pending work; a detail never specified is not automatically an open decision.
-
-Check exact terminology, corrections, completed-versus-pending status, provenance, and cross-packet duplication. Carry approved scope and the next useful action where there is ongoing work. Exclude hidden reasoning and low-level tool narration.
+Ask whether a fresh chat could continue each topic without the user reconstructing it. Keep useful personal, creative, and historical context even without a next action. Omit empty sections and invented blockers; a detail never specified is not automatically an open decision. Check terminology, corrections, completed-vs-pending status, provenance, and cross-packet duplication. Exclude hidden reasoning and low-level tool narration.
 
 ## Save and verify
 
 1. Create each packet as a Markdown file.
-2. Save each file through the **active seat's ChatGPT Library** under its current subject owner.
-3. Verify the returned filename and Library path for every file.
-4. Check this task's returned file identities and moves for unintended duplicate Library copies or misplaced root items. Retained local working bytes are not an extra Library copy. Avoid a global duplicate scan for a bounded packaging task.
-5. Preserve existing Library file identity when updating an existing packet; create a new file only when the packet has no existing Library identity or the user requests a separate copy.
-6. Never claim another workspace seat or external AI can retrieve the saved Library packet unless that access was actually established. When another seat or provider needs continuity, rely only on an authorized shared continuity surface whose access is actually established.
+2. Save each under its current subject owner in the configured store.
+3. Verify the returned filename and path for every file.
+4. Check this task's returned file identities for unintended duplicates or misplaced root items (local working bytes are not an extra copy). No global duplicate scan for a bounded task.
+5. Preserve existing file identity when updating an existing packet; create a new file only when none exists or the user asks for a separate copy.
+6. Never claim another seat or external AI can retrieve the packet unless that access was actually established.
 
 ## Report the result
 
-Return each packet's filename, verified destination location, and a verified native opening reference appropriate to the active provider, client, and surface. Do not invent links or fabricate file citations. When multiple packets were necessary, briefly explain how topics were divided or merged and why. For one continuity-worthy topic, report its single packet without inventing additional divisions. Client-specific presentation and file-opening mechanics belong in the provider adapter.
+Return each packet's filename, verified location, and a verified opening link. Never invent links or file citations. When multiple packets were needed, briefly explain the split/merge; for one topic, report the single packet.
 
 ## Skill drift
 
-If real use exposes stale seat, Library, Memory, persona, access, routing, or source assumptions:
+If real use exposes stale seat, store, Memory, persona, access, routing, or source assumptions: flag the exact drift in the maintained TCS Skill-maintenance surface; tell the user what needs maintenance and why; do not silently rewrite without authorization; after authorization update via UpdateSkill, validate, and verify against the case that exposed the drift.
 
-- 🚩 flag the exact drift in the maintained TCS Notion Skill-maintenance surface;
-- 🗣️ tell the user which instruction needs maintenance and why;
-- ⏸️ do not silently rewrite the installed Skill without authorization;
-- 🔧 after authorization, update, validate, test, and repackage the complete Skill;
-- ✅ verify the revised behavior against the scenario that exposed the drift.
+## Version
+v1.0.0 (2026-10-26). Versioning baseline set by Reformer boy (A2).
+
+## Changelog
+- v1.0.0, 2026-10-26: baseline version. No content change.
+
+## Algorithm
+
+```mermaid
+flowchart TD
+    A([Start: package a conversation for continuity]) --> B{"Session-close coordinator already got an explicit Yes?"}
+    B -- Yes --> E
+    B -- No --> C{"Did JL actually say End session.?"}
+    C -- No --> C0(["Not this trigger; continue normally"])
+    C -- Yes --> C1["Ask only: Package this conversation? Yes / No / Other"]
+    C1 --> D{"Answer?"}
+    D -- No --> D1(["Package nothing; confirm session ends"])
+    D -- Other --> D2["Follow alternate instruction; ask one question if ambiguous"]
+    D -- Yes --> E["Read all source-chat content; inventory topics, decisions, corrections"]
+    E --> F["Load live Drive structure and Notion routing guidance"]
+    F --> G["Choose packet boundaries: fewest packets that keep all continuity"]
+    G --> H["Build each packet in museum labels: goal, decisions, constraints, facts, open, rejected"]
+    H --> I{"Coverage check: could a fresh chat continue each topic?"}
+    I -- No --> H
+    I -- Yes --> J["Name: Subject - Continuity Packet - date.md"]
+    J --> K["Save to Drive under natural subject owner"]
+    K --> L{"Save succeeded?"}
+    L -- No --> L1["One proportional recovery; stop at access limits and report"]
+    L -- Yes --> M["Verify returned filename, path, no duplicates"]
+    M --> N(["Report each packet's name, verified location and link"])
+```

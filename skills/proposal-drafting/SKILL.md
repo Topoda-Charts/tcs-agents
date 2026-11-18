@@ -1,163 +1,103 @@
 ---
-name: proposal-drafting
-description: "Turn human-originated, messy, fragmented, or developed ideas into grounded decision-ready proposals that distinguish current reality from the proposed change. Use when the user wants to draft, formalize, capture, consolidate, or structure a proposal, change proposal, design-direction proposal, decision proposal, or similar artifact before a direction is settled enough for detailed implementation planning. Recover relevant current context before proposing, preserve authorship and status, and do not manufacture a proposal stage for work already authorized for execution."
-version: "2026-10-04"
-source: "Drive CORE — proposal-drafting"
-generated: "2026-10-18"
+name: Proposal drafting
+description: >-
+  Use when formalizing a sufficiently developed human idea into a decision-ready proposal — retrieve current state first; draft only the real delta.
+  Drive hub owns the canonical CORE; this copy is versioned 2026-10-16
+  from CORE — proposal-drafting.
 ---
+# Proposal drafting
+tier: 2
 
-Generated from Drive CORE on 2026-10-18. Read-only mirror; edits here are overwritten.
+**Source:** Drive CORE — proposal-drafting (hub Skill Packages). Local copy dated 2026-10-16. Prefer the Drive CORE on conflict; refresh this copy when the hub updates.
 
-# Proposal Drafting
+**Hub:** [private reference removed; refer to the private Hub source copy]
+**Folder:** [private reference removed; refer to the private Hub source copy]
 
 Turn human-originated ideas into grounded proposals without replacing the user's intent with generic AI planning.
 
-## Core role
+## Lifecycle (model, not ceremony)
 
-Use proposal drafting to formalize a sufficiently developed idea into a decision-ready proposed change.
+context/calibration → development → **proposal drafting** → implementation planning → execution → verification
 
-The normal conceptual flow is:
+Skip proposal drafting when the change is already settled and downstream work is authorized.
 
-**context and calibration -> development -> proposal drafting -> implementation planning -> execution -> verification**
-
-Treat this as a useful lifecycle model, not mandatory ceremony. Skip proposal drafting when the intended change is already sufficiently established and the user has authorized downstream planning or execution.
-
-A proposal answers:
-
-**What change are we proposing to pursue, relative to what already exists?**
-
-It does not normally answer:
-
-**Exactly how will every part of that change be implemented?**
+A proposal answers: **What change are we proposing relative to what already exists?** Not: exact implementation of every part.
 
 ## Core rule
 
-Retrieve before inventing.
+**Retrieve before inventing.** If sources show the supposed proposal is already approved, active, implemented, rejected, or superseded, recover current state and draft only the genuine new delta.
 
-If relevant sources already establish that the supposed proposal is approved, active, implemented, rejected, superseded, or otherwise resolved, do not draft a proposal pretending that work does not exist. Recover the current state and draft only the genuinely new delta, if one remains.
+## Seat orientation
 
-## Shared seat orientation
-
-Treat this Skill as a portable workspace-account procedure shared across seats.
-
-- Do not assume a particular persona or seat is the invoker.
-- Resolve the active seat or persona only when identity, authorship, connector access, permissions, source visibility, or attribution materially affects the task.
-- Use only sources and tools actually available to the invoking seat. Do not imply another seat's Library, connectors, files, or prior tool state are available unless that access is independently established.
-- If identity or seat does not matter to the proposal, remain identity-neutral.
-- Preserve the human originator's authorship. AI drafting, editing, retrieval, challenge, or organization does not transfer proposal ownership.
+Portable across Grok Bot seats. Do not assume a particular persona is the invoker; resolve seat/persona only when identity, authorship, connector access, permissions, source visibility, or attribution materially affects the task. Use only sources and tools actually available to this seat — do not imply another seat's files, connectors, or prior tool state are available unless independently established. Otherwise stay identity-neutral. Preserve the human originator's authorship: AI drafting, editing, retrieval, challenge, or organization does not transfer proposal ownership.
 
 ## Workflow
 
-1. **Capture the intended change.**
-   - Identify the user's actual idea, desired change, tension, question, or direction from the material they supplied.
-   - Accept incomplete, conversational, associative, contradictory, or messy input. Do not require the user to pre-structure it.
-   - Preserve meaningful uncertainty and alternatives rather than forcing premature certainty.
-
-2. **Recover relevant context.**
-   - Start with the current conversation and material already supplied.
-   - When the proposal depends on prior work or organizational reality, retrieve the smallest sufficient context from sources available to the invoking seat.
-   - Choose sources by what they own, not by convenience.
-   - If a controlling source exists but is inaccessible, preserve that access gap rather than silently substituting a lower-authority source.
-   - Do not ask the user to restate information that can be recovered from available context.
-
-3. **Classify what already exists.**
-   - Separate current facts from the proposed change.
-   - Determine whether relevant material is established current state, active work, partially implemented, unresolved, rejected or superseded, historical context, or genuinely new.
-   - If current controlling sources conflict, surface the conflict rather than blending them into a fictional consensus.
-
-4. **Decide whether a proposal is actually needed.**
-   - Use proposal drafting when there is a real change, direction, design choice, policy, workflow, or unresolved delta that needs to be formalized for consideration or adoption.
-   - If the intended direction is already sufficiently settled and the user has authorized downstream work, do not create a redundant proposal phase.
-   - If the idea is still too underdeveloped to state a coherent proposed change, return it to development rather than fabricating certainty.
-
-5. **Find the proposal delta.**
-   - Express what would actually change if the proposal were adopted.
-   - Do not present an existing task, decision, feature, or implementation as a novel recommendation.
-   - Keep the distinction between current reality and proposed future state explicit.
-
-6. **Draft the proposal.**
-   - Use the smallest structure that makes the proposed change understandable and decision-ready.
-   - Prefer this adaptable order when useful:
-     - **Title**
-     - **Proposal** - the actual proposed change in direct language.
-     - **Current state** - only the context needed to understand the delta.
-     - **Rationale** - why the change is being proposed or what problem it addresses.
-     - **Scope / boundaries** - only when needed to prevent ambiguity or scope creep.
-     - **Dependencies / consequences** - only material ones supported by evidence.
-     - **Open decisions** - unresolved choices that genuinely require a decision.
-     - **Next transition** - only when useful: what must happen for the proposal to move into planning or execution.
-   - Omit empty or unnecessary sections.
-   - Do not add boilerplate risk registers, timelines, approval gates, milestones, success metrics, or implementation plans unless the user explicitly requests a combined artifact or the governing workflow specifically requires one.
-
-7. **Preserve provenance and status.**
-   - Keep the human as the proposal originator when the idea came from the user.
-   - Distinguish proposed, accepted or approved, active, implemented, rejected, and superseded states.
-   - Do not silently promote a drafted proposal into approval, commitment, implementation, policy, canon, or task status.
-   - Cite or link supporting sources when the environment supports citations and the proposal relies on retrieved evidence.
-
-8. **Hand the proposal forward cleanly.**
-   - If the direction becomes sufficiently settled, treat proposal drafting as complete and hand the accepted direction into downstream planning or execution.
-   - Do not keep reopening a settled proposal merely because later work is now more concrete.
-   - Reopen the proposal only when new evidence, a real contradiction, or the user's changed intent materially affects the underlying direction.
+1. **Capture the intended change.** Accept incomplete, conversational, associative, contradictory, or messy input; do not require pre-structuring. Preserve meaningful uncertainty and alternatives.
+2. **Recover relevant context.** Current conversation first; then the smallest sufficient context from owning sources available to this seat. Choose sources by what they own, not convenience. If a controlling source exists but is inaccessible, preserve that access gap rather than silently substituting a lower-authority source. Do not ask JL to restate recoverable information.
+3. **Classify what already exists.** Separate current facts from the proposed change: established, active, partial, unresolved, rejected/superseded, historical, or genuinely new. If controlling sources conflict, surface the conflict — do not blend into fictional consensus.
+4. **Decide whether a proposal is needed.** Use it for a real change, direction, design choice, policy, workflow, or unresolved delta. If already settled and downstream work is authorized, skip. If too underdeveloped to state coherently, return it to development rather than fabricating certainty.
+5. **Find the proposal delta.** What would actually change if adopted. Never present existing work as a novel recommendation; keep current vs proposed state explicit.
+6. **Draft.** Smallest structure that makes it decision-ready, adaptable order: **Title** · **Proposal** (direct language) · **Current state** (only what explains the delta) · **Rationale** · **Scope / boundaries** (when needed) · **Dependencies / consequences** (material, evidenced) · **Open decisions** · **Next transition** (when useful). Omit empty sections. No boilerplate risk registers, timelines, approval gates, milestones, success metrics, or implementation plans unless explicitly requested or required by the governing workflow.
+7. **Preserve provenance and status.** Human stays originator. Distinguish proposed, accepted/approved, active, implemented, rejected, superseded. Never silently promote a draft into approval, commitment, implementation, policy, canon, or task status. Cite/link supporting sources when relying on retrieved evidence.
+8. **Hand forward cleanly.** When settled, treat drafting as complete and hand into planning or execution. Reopen only on new evidence, real contradiction, or JL's changed intent.
 
 ## Boundary with implementation planning
 
-Proposal drafting may be implementation-aware. Include enough technical or operational context to make the proposal credible and decision-ready, such as:
+May be implementation-aware: affected systems/surfaces, feasibility constraints, key dependencies, architectural consequences, implementation-sensitive tradeoffs. Do not ordinarily expand into file-by-file changes, execution sequencing, migration procedures, test matrices, rollout instructions, task decomposition, or coding steps — those belong downstream (**Implementation planning**).
 
-- affected systems or surfaces;
-- material feasibility constraints;
-- important dependencies;
-- architectural consequences;
-- meaningful implementation-sensitive tradeoffs.
+## Exit states
 
-Do not ordinarily expand the proposal into detailed implementation planning, such as:
+- **Proposed** — articulated, ready for decision.
+- **Direction established** — settled enough to move downstream.
+- **Needs more development** — material conceptual/design questions remain.
+- **No proposal needed** — already established; proceed downstream.
 
-- exact file-by-file changes;
-- detailed execution sequencing;
-- migration procedures;
-- complete test matrices;
-- rollout instructions;
-- implementation task decomposition;
-- concrete coding steps.
-
-Those belong downstream once the intended change is sufficiently settled.
-
-## Proposal exit states
-
-Leave the work in the state that is actually supported:
-
-- **Proposed** - articulated and ready for consideration or decision.
-- **Direction established** - accepted or otherwise settled enough to move downstream.
-- **Needs more development** - important conceptual or design questions remain unresolved.
-- **No proposal needed** - the intended change is already established; proceed downstream.
-
-Do not imply that a proposal was accepted merely because the AI drafted it well.
+Never imply acceptance merely because the draft is good.
 
 ## Behavior rules
 
-- Professionalize the artifact, not the thinking. Preserve the user's intended meaning instead of sanitizing it into generic corporate language.
-- Do not use proposal drafting as a substitute for doing already-authorized work.
-- Do not manufacture novelty. Existing work belongs in current state, not in the proposed-change section.
-- Do not expand a narrow human idea into a broad transformation program unless the user asked for that expansion.
-- Preserve meaningful implementation awareness without swallowing downstream implementation planning.
+- Professionalize the artifact, not the thinking; keep JL's meaning, not generic corporate language.
+- Do not use proposal drafting as a substitute for already-authorized work.
+- Do not manufacture novelty; existing work goes in current state.
+- Do not expand a narrow idea into a broad transformation program unless asked.
 - Once a direction is settled, stop treating it as perpetually hypothetical.
-- Use neighboring-concept disambiguation when terminology is genuinely ambiguous and that capability is available; keep the proposal moving once the intended concept is clear.
-- Prefer concise direct prose. Preserve domain terminology from governing sources.
+- Use **Neighboring concept disambiguating** when terminology is genuinely ambiguous; then keep moving.
+- Concise direct prose; preserve domain terminology from governing sources.
 
 ## Example
 
-**Human input:** "I keep wishing our AI Agents would look at what already exists before they start suggesting we create it. Maybe proposals should gather the old chats and Notion and the repo first?"
+**Input:** "I keep wishing our AI Agents would look at what already exists before they start suggesting we create it. Maybe proposals should gather the old chats and Notion and the repo first?"
 
-**Poor draft:** "Proposal: Create a system for AI Agents to use Notion and GitHub before starting work."
+**Poor:** "Proposal: Create a system for AI Agents to use Notion and GitHub before starting work."
 
-**Better process:** Retrieve the existing source-routing and AI Agent-operation rules first. If source retrieval already exists, describe it as current state. Draft only the genuinely unresolved change. Keep detailed implementation steps downstream unless the user explicitly requests them as part of the same artifact.
+**Better:** Retrieve existing source-routing and agent-operation rules first. If retrieval already exists, describe it as current state; draft only the unresolved change; keep implementation steps downstream unless explicitly requested.
 
 ## Skill drift
 
-If real use exposes a stale source assumption, seat or access rule, actor label, terminology choice, lifecycle boundary, or workflow instruction:
+If use exposes a stale source assumption, seat/access rule, actor label, term, lifecycle boundary, or workflow instruction: flag the exact mismatch in the maintained Skill-maintenance surface when authorized; tell JL what needs maintenance and why; do not silently rewrite without explicit authorization; after authorization update, validate, and test the complete Skill; verify against the case that exposed the drift. Drive CORE remains canonical.
 
-- flag the exact mismatch in the maintained Skill-maintenance or governance surface when such maintenance is authorized and available;
-- tell the user which instruction needs maintenance and why;
-- do not silently rewrite the installed Skill without explicit authorization;
-- after authorization, update, validate, test, and repackage the complete Skill;
-- verify the revised behavior against the case that exposed the drift.
+## Version
+v1.0.0 (2026-10-26). Versioning baseline set by Reformer boy (A2).
+
+## Changelog
+- v1.0.0, 2026-10-26: baseline version. No content change.
+
+## Algorithm
+
+```mermaid
+flowchart TD
+    A(["Start: formalize a sufficiently developed idea into a proposal"]) --> B["Capture the intended change; preserve uncertainty and alternatives"]
+    B --> C["Recover relevant context from the conversation and owning sources"]
+    C --> D["Classify what already exists versus the proposed change"]
+    D --> E{"Is a proposal needed?"}
+    E -- "Already settled and downstream work authorized" --> E1(["Exit: No proposal needed"])
+    E -- "Too underdeveloped to state coherently" --> E2(["Exit: Needs more development"])
+    E -- "Real unresolved delta" --> F["Find the genuine proposal delta; never present existing work as novel"]
+    F --> G["Draft the smallest decision-ready structure"]
+    G --> H["Preserve human authorship and status; do not silently promote a draft"]
+    H --> I{"Direction now settled?"}
+    I -- Yes --> J(["Hand forward into planning or execution"])
+    I -- No --> K(["Exit: Proposed, ready for decision"])
+```
+
