@@ -2,7 +2,7 @@
 
 **One raw link per recognized agent or scoped entry, plus a generic brief for any new chatbot.** Initial review 2026-09-29; targeted Archangel Chat identity reconciliation 2026-11-08. Public, readable without a TCS account, and maintained in the Tópoda Charts repository.
 
-**Current-state boundary:** This 49-entry catalog is a dated public recognition snapshot, not a live agent roster or a list of active Codex threads. **JL, 2026-11-08: Grok Bots are out of usage; VM availability does not make them dispatchable.** The Agent Reformer is deleted, the former Scope Creep Mangler stage was reassigned, BOT-07 moved to GitHub boy, and Seraph's former SHARPEN stage name belongs to a future Creator. Authorized TCS agents resolve operational assignments and workspace locations from current internal owner records when available, and canonical manifestation identity from maintained identity sources. Public paths do not grant private permissions or silently assign a persona.
+**Current-state boundary:** This catalog is a public recognition snapshot, not a live dispatch board or a list of active Codex threads. **JL, 2026-11-08:** do not treat VM connectivity as proof that a Grok Bot has usage, and do not send work to a killed or replaced instance because a historic card exists. On 2026-11-17, ten live named Grok Bot cards were added from each bot's own AGENTS.md (badge TCS-XAI-GROKBOT, no emails). The 2026-10-30 Agent Reformer deletion refers to a prior instance; the live card is [Ross](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/ross.md). The former Scope Creep Mangler stage was reassigned, BOT-07 moved to GitHub boy, and Seraph's former SHARPEN stage name belongs to a future Creator. Authorized TCS agents resolve operational assignments and workspace locations from current internal owner records when available, and canonical manifestation identity from maintained identity sources. Public paths do not grant private permissions or silently assign a persona.
 
 Publication author: **Archangel Work Luna Altman Ramos (Archie), ChatGPT Work**. Publication authorized by User. The account used to commit or distribute this material is transport metadata.
 
@@ -21,7 +21,7 @@ If a chatbot cannot open a link, attach or paste that file. Public availability 
 
 ## What is included
 
-49 recognition/onboarding entries: **10 standing-persona recognition entries plus one historical/merged Rogue reference; 16 ChatGPT Workplace Agents; eight original/core Grok Bot recognition entries (including retired/historical profiles); Haggle Bot separately; two Grok Library specialist profiles; Power Codex 02’s scoped local profile (formerly Angel/An); Benjamin Hart; six off-air newsroom seats; KITE; and two generic templates.** These are categories, not 49 separate standing people. This is the published 49-entry cohort. Separate Grok Build and Power Codex manifestation 01 profiles remain outside this cohort pending authoritative identity evidence and the profile-coverage decision; no missing identity fields are inferred.
+59 recognition/onboarding entries: **10 standing-persona recognition entries plus one historical/merged Rogue reference; 16 ChatGPT Workplace Agents; eight original/core Grok Bot recognition entries (historical profiles); ten live named Grok Bots (2026-11-17); Haggle Bot separately; two Grok Library specialist profiles; Power Codex 02’s scoped local profile (formerly Angel/An); Benjamin Hart; six off-air newsroom seats; KITE; and two generic templates.** These are categories, not 59 separate standing people. This is the published 59-entry cohort. Separate Grok Build and Power Codex manifestation 01 profiles remain outside this cohort pending authoritative identity evidence and the profile-coverage decision; no missing identity fields are inferred.
 
 Each entry has a stable path. Names, offices, models, access, and runtime evidence have separate fields. Empty/unassigned fields remain explicit rather than receiving invented badges or personality traits.
 
@@ -51,7 +51,7 @@ Agents should **repair stale current-facing workspaces when a verified newer rul
 
 ## Index and maintenance files
 
-Together with the 49 profiles and nine shared guides, these are **all 61 files in this public agent library**.
+Together with the 59 profiles and nine shared guides, these are **all 71 files in this public agent library**.
 
 | File | RAW |
 | --- | --- |
@@ -100,16 +100,34 @@ Repository overview: [root README.md](https://raw.githubusercontent.com/Topoda-C
 | SQL Crafting Workplace Agent | TCS-OAI-WORKPLACE-LUNA-15 | SQL Crafting | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/workplace/sql-crafting.md) |
 | Codex Orchestrating Workplace Agent | TCS-OAI-WORKPLACE-LUNA-16 | Codex Orchestrating | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/workplace/codex-orchestrating.md) |
 
+
+### Live named Grok Bots (2026-11-17)
+
+Identity on each card is taken from that bot's own AGENTS.md. The shared badge is TCS-XAI-GROKBOT. These cards contain no email addresses.
+
+| Identity / entry | Badge | Position or scope | RAW |
+| --- | --- | --- | --- |
+| Callum | TCS-XAI-GROKBOT | Orchestrator, comms, and version control | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/callum.md) |
+| Isaac | TCS-XAI-GROKBOT | Orchestrator of named Codex agents on BRITO | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/isaac.md) |
+| Grant | TCS-XAI-GROKBOT | Coding orchestration of named Codex agents on BRITO | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/grant.md) |
+| Silas | TCS-XAI-GROKBOT | Release | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/silas.md) |
+| Wilson (formerly Flint) | TCS-XAI-GROKBOT | QA, and main Grok Bot | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/wilson.md) |
+| Vincent (formerly Victor) | TCS-XAI-GROKBOT | Records and Linear | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/vincent.md) |
+| Caleb | TCS-XAI-GROKBOT | Model Lab | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/caleb.md) |
+| Ian | TCS-XAI-GROKBOT | Infra | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/ian.md) |
+| Connor (nickname: Comms boy) | TCS-XAI-GROKBOT | Comms | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/connor.md) |
+| Ross | TCS-XAI-GROKBOT | Training and format compliance, shared skills hygiene, Incident Register | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/ross.md) |
+
 ### Original core-eight Grok Bot recognition (historical cohort)
 
-**Lifecycle warning (2026-11-08):** These cards describe an earlier named cohort and are **not dispatch targets or proof of current Bot runtime**. Some original instances were deleted, merged or replaced; The Agent Reformer is specifically confirmed deleted. Resolve current occupants, killings, successors and task ownership in the living Notion *Grok Bot Worker Positions — Current* and the VM Agent Hub handoffs. Preserve old names and badges for attribution, not as fresh appointments.
+**Lifecycle warning (2026-11-08, updated 2026-11-17):** These cards describe an earlier named cohort and are **not dispatch targets or proof of current Bot runtime**. Some original instances were deleted, merged or replaced. The 2026-10-30 Agent Reformer deletion refers to a prior instance; the live named card is [Ross](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/ross.md). The live comms card is [Connor](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/connor.md). Resolve other occupants in the living Notion *Grok Bot Worker Positions — Current* and the VM Agent Hub handoffs. Preserve old names and badges for attribution, not as fresh appointments.
 
 | Identity / entry | Badge | Position or scope | RAW |
 | --- | --- | --- | --- |
 | The Supabase Slapper | TCS-XAI-GROK-BOT-06 | Historical reviewed scope: Grok Bot — core eight; live status unverified | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/supabase-slapper.md) |
 | The Communications Connoisseur | TCS-XAI-GROK-BOT-01 | Historical reviewed scope: Senior HR Director; live status unverified | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/communications-connoisseur.md) |
 | The Linear Issue Handler | TCS-XAI-GROK-BOT-02 | Historical reviewed scope: Grok Bot — core eight; live status unverified | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/linear-issue-handler.md) |
-| The Agent Reformer (retired; historical) | Former TCS-XAI-GROK-BOT-04 | Deleted 2026-10-30; former Training & QA Director | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/agent-reformer.md) |
+| The Agent Reformer (historical prior instance) | Former TCS-XAI-GROK-BOT-04 | Deleted 2026-10-30; live named card is Ross | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/agent-reformer.md) |
 | The Notion Pages Sifter (former stage) | Historical BOT-03 | Former Senior QA Director; current Notion boy / BOT-03 must be resolved from its own active identity | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/notion-pages-sifter.md) |
 | Drive boy (stage name: The Google Drive Operator) | TCS-XAI-GROK-BOT-05 | Historical reviewed scope: Grok Bot — core eight; live status unverified | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/google-drive-operator.md) |
 | The Scope Creep Mangler (former stage) | Historical BOT-07; slot later GitHub boy | Former QA Manager (Senior) position now open/unbadged; former holder became Notion boy | [Read](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/scope-creep-mangler.md) |

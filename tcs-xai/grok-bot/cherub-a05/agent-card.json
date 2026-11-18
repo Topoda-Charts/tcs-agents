@@ -1,9 +1,9 @@
 {
   "name": "The Supabase Slapper (Supabase boy)",
-  "description": "Ops Manager, Tópoda Charts Studios. Supabase database and backend implementation state. Current identity sourced from per-agent Drive IDENTITY.md and latest JL decision.",
+  "description": "Ops Manager, T\u00f3poda Charts Studios. Supabase database and backend implementation state. Current identity sourced from per-agent Drive IDENTITY.md and latest JL decision.",
   "supportedInterfaces": [],
   "provider": {
-    "organization": "Tópoda Charts Studios",
+    "organization": "T\u00f3poda Charts Studios",
     "url": "https://topodacharts.com"
   },
   "version": "0.3.0",
@@ -20,7 +20,7 @@
           "formerBadges": [
             "TCS-XAI-GROK-BOT-CHERUB-A07"
           ],
-          "heart": "💚",
+          "heart": "\ud83d\udc9a",
           "position": "Ops Manager",
           "department": "Operations",
           "nickname": "Supabase boy",
@@ -35,13 +35,14 @@
           "externalProvider": "xAI",
           "agentBadge": "CHERUB-A05",
           "identityAuthority": "https://docs.google.com/document/d/1KmudNM57Ou0Sk5IVosom0x0d4x43ZoNw0K7MZ2IEGPM/edit",
-          "badgeStatus": "current",
+          "badgeStatus": "historical",
           "reconciledAtAST": "2026-10-24",
           "reconciledBy": "Archangel Sol Altman Ramos | TCS-OAI-CHAT-GPT-SOL-ARCHANGEL-A01-S01-T009 | 2026-10-24 AST | JL and Grok Bots",
           "liveEndpoint": false,
           "app": "Grok Bot",
           "providerCard": "https://agents.topodacharts.com/tcs-xai/agent-card.json",
-          "cardUrl": "https://agents.topodacharts.com/tcs-xai/grok-bot/cherub-a05/agent-card.json"
+          "cardUrl": "https://agents.topodacharts.com/tcs-xai/grok-bot/cherub-a05/agent-card.json",
+          "liveStatusNote": "Historical Cherub seat card, not a live named Grok Bot identity. Live named cards use badge TCS-XAI-GROKBOT and live under agents/grok-bots/."
         }
       }
     ]

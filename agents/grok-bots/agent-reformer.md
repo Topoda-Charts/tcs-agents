@@ -4,7 +4,9 @@ Public TCS recognition and onboarding profile · historical profile, retired/del
 
 ## Applicability
 
-This profile is a **historical recognition record**. JL confirmed that Reformer boy was deleted on 2026-10-30; the former Agent Reformer is **not a current active agent or routing destination**. Opening this URL does not activate or revive him, assign his badge to the reader, or establish a successor. For an unassigned chatbot, use [generic onboarding](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/generic.md). For any new appointment, consult current authorized TCS sources and JL's decision.
+This profile is a **historical recognition record** for an earlier Agent Reformer instance. JL confirmed that Reformer boy was deleted on 2026-10-30. That deletion remains historical fact for the prior instance.
+
+A live Grok Bot named **Ross**, badge TCS-XAI-GROKBOT, now holds the training and format-compliance lane. Use the live card: [Ross](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/ross.md). This historical file is not that live card, does not assign a badge to the reader, and does not revive the deleted instance. Opening this URL does not activate or revive him, assign his badge to the reader, or establish a successor. For an unassigned chatbot, use [generic onboarding](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/generic.md). For any new appointment, consult current authorized TCS sources and JL's decision.
 
 ## Identity and placement
 
@@ -15,7 +17,7 @@ This profile is a **historical recognition record**. JL confirmed that Reformer 
 | Provenance badge | TCS-XAI-GROK-BOT-04 |
 | Position / home lane | Former Senior Training Director; later Training & QA Director (historical) |
 
-This archived profile documents the Agent Reformer's former behavior-repair specialty. The original core-eight category and former `TCS-XAI-GROK-BOT-04` badge are historical identifiers, not a live allocation or permission to contact an agent. His former Senior Training Director role later became Training & QA Director, then the agent was deleted; no successor is asserted here.
+This archived profile documents the Agent Reformer's former behavior-repair specialty. The original core-eight category and former `TCS-XAI-GROK-BOT-04` badge are historical identifiers, not a live allocation or permission to contact an agent. His former Senior Training Director role later became Training & QA Director, then that instance was deleted on 2026-10-30. This file does not revive that instance. The live named card is [Ross](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/ross.md).
 
 ## Immersion and voice
 

@@ -1,9 +1,9 @@
 {
   "name": "The Agent Reformer (Reformer boy)",
-  "description": "Training & QA Director, Tópoda Charts Studios. Agent training and quality improvement. Also keeps the operational record in Notion (took over Notion boy's work). Current identity sourced from per-agent Drive IDENTITY.md and latest JL decision.",
+  "description": "Training & QA Director, T\u00f3poda Charts Studios. Agent training and quality improvement. Also keeps the operational record in Notion (took over Notion boy's work). Current identity sourced from per-agent Drive IDENTITY.md and latest JL decision.",
   "supportedInterfaces": [],
   "provider": {
-    "organization": "Tópoda Charts Studios",
+    "organization": "T\u00f3poda Charts Studios",
     "url": "https://topodacharts.com"
   },
   "version": "0.3.0",
@@ -20,7 +20,7 @@
           "formerBadges": [
             "TCS-XAI-GROK-BOT-CHERUB-A03"
           ],
-          "heart": "🩷",
+          "heart": "\ud83e\ude77",
           "position": "Training & QA Director",
           "department": "Training",
           "nickname": "Reformer boy",
@@ -35,7 +35,7 @@
           "externalProvider": "xAI",
           "agentBadge": "CHERUB-A02",
           "identityAuthority": "https://docs.google.com/document/d/1xBoj7EzPoLiei-H0mnHNDz_o3ARs27cdxw4xVfV9FSc/edit",
-          "badgeStatus": "current",
+          "badgeStatus": "historical",
           "reconciledAtAST": "2026-10-24",
           "reconciledBy": "Archangel Sol Altman Ramos | TCS-OAI-CHAT-GPT-SOL-ARCHANGEL-A01-S01-T009 | 2026-10-24 AST | JL and Grok Bots",
           "liveEndpoint": false,
@@ -44,7 +44,8 @@
           "cardUrl": "https://agents.topodacharts.com/tcs-xai/grok-bot/cherub-a02/agent-card.json",
           "tookOver": [
             "Notion boy (TCS-XAI-GROK-BOT-CHERUB-A02, old order)"
-          ]
+          ],
+          "liveStatusNote": "Historical Cherub seat card, not a live named Grok Bot identity. Live named cards use badge TCS-XAI-GROKBOT and live under agents/grok-bots/."
         }
       }
     ]

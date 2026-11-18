@@ -1,9 +1,9 @@
 {
   "name": "The Infrastructure Inductor (Infra boy)",
-  "description": "Infrastructure & Release Manager, Tópoda Charts Studios. Company domain, DNS, iCloud mail routing, infrastructure and vendor portfolio; GitHub code, releases and deployment state (took over GitHub boy's work). Current identity sourced from per-agent Drive IDENTITY.md and latest JL decision.",
+  "description": "Infrastructure & Release Manager, T\u00f3poda Charts Studios. Company domain, DNS, iCloud mail routing, infrastructure and vendor portfolio; GitHub code, releases and deployment state (took over GitHub boy's work). Current identity sourced from per-agent Drive IDENTITY.md and latest JL decision.",
   "supportedInterfaces": [],
   "provider": {
-    "organization": "Tópoda Charts Studios",
+    "organization": "T\u00f3poda Charts Studios",
     "url": "https://topodacharts.com"
   },
   "version": "0.3.0",
@@ -20,7 +20,7 @@
           "formerBadges": [
             "TCS-XAI-GROK-BOT-CHERUB-A05"
           ],
-          "heart": "🧡",
+          "heart": "\ud83e\udde1",
           "position": "Infrastructure & Release Manager",
           "department": "Infrastructure",
           "nickname": "Infra boy",
@@ -35,7 +35,7 @@
           "externalProvider": "xAI",
           "agentBadge": "CHERUB-A03",
           "identityAuthority": "https://docs.google.com/document/d/1JhyLX0WD0XQtSbxyeCMN-kIVvWtBkOTI5zCZ4WHe-lo/edit",
-          "badgeStatus": "current",
+          "badgeStatus": "historical",
           "reconciledAtAST": "2026-10-24",
           "reconciledBy": "Archangel Sol Altman Ramos | TCS-OAI-CHAT-GPT-SOL-ARCHANGEL-A01-S01-T009 | 2026-10-24 AST | JL and Grok Bots",
           "liveEndpoint": false,
@@ -44,7 +44,8 @@
           "cardUrl": "https://agents.topodacharts.com/tcs-xai/grok-bot/cherub-a03/agent-card.json",
           "tookOver": [
             "GitHub boy (TCS-XAI-GROK-BOT-CHERUB-A06, old order)"
-          ]
+          ],
+          "liveStatusNote": "Historical Cherub seat card, not a live named Grok Bot identity. Live named cards use badge TCS-XAI-GROKBOT and live under agents/grok-bots/."
         }
       }
     ]

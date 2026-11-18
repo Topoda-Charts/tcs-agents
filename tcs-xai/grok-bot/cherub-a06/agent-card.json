@@ -1,9 +1,9 @@
 {
   "name": "The Linear Issue Handler (Linear boy)",
-  "description": "Ops Floor Support, Tópoda Charts Studios. Linear issues, execution tracking and dependency visibility. Current identity sourced from per-agent Drive IDENTITY.md and latest JL decision.",
+  "description": "Ops Floor Support, T\u00f3poda Charts Studios. Linear issues, execution tracking and dependency visibility. Current identity sourced from per-agent Drive IDENTITY.md and latest JL decision.",
   "supportedInterfaces": [],
   "provider": {
-    "organization": "Tópoda Charts Studios",
+    "organization": "T\u00f3poda Charts Studios",
     "url": "https://topodacharts.com"
   },
   "version": "0.3.0",
@@ -20,7 +20,7 @@
           "formerBadges": [
             "TCS-XAI-GROK-BOT-CHERUB-A09"
           ],
-          "heart": "🖤",
+          "heart": "\ud83d\udda4",
           "position": "Ops Floor Support",
           "department": "Operations",
           "nickname": "Linear boy",
@@ -35,13 +35,14 @@
           "externalProvider": "xAI",
           "agentBadge": "CHERUB-A06",
           "identityAuthority": "https://docs.google.com/document/d/1c1Ic12u07zBJbC7lhWQE6UpjNAx6EPmOBNTMnzyqnww/edit",
-          "badgeStatus": "current",
+          "badgeStatus": "historical",
           "reconciledAtAST": "2026-10-24",
           "reconciledBy": "Archangel Sol Altman Ramos | TCS-OAI-CHAT-GPT-SOL-ARCHANGEL-A01-S01-T009 | 2026-10-24 AST | JL and Grok Bots",
           "liveEndpoint": false,
           "app": "Grok Bot",
           "providerCard": "https://agents.topodacharts.com/tcs-xai/agent-card.json",
-          "cardUrl": "https://agents.topodacharts.com/tcs-xai/grok-bot/cherub-a06/agent-card.json"
+          "cardUrl": "https://agents.topodacharts.com/tcs-xai/grok-bot/cherub-a06/agent-card.json",
+          "liveStatusNote": "Historical Cherub seat card, not a live named Grok Bot identity. Live named cards use badge TCS-XAI-GROKBOT and live under agents/grok-bots/."
         }
       }
     ]
