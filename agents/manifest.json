@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "reviewed_on": "2026-11-08",
+  "reviewed_on": "2026-11-17",
   "public_base_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/",
   "owner_role": "User",
   "scope": "Public recognition and onboarding; source-owned authority remains in maintained systems",
-  "profile_count": 49,
+  "profile_count": 59,
   "counts": {
     "standing_personas": 10,
     "workplace_agents": 16,
@@ -17,7 +17,8 @@
     "generic_templates": 2,
     "scoped_power_codex_02": 1,
     "historical_merged_persona_references": 1,
-    "scoped_angel_an": 1
+    "scoped_angel_an": 1,
+    "live_named_grok_bots": 10
   },
   "profiles": [
     {
@@ -26,7 +27,7 @@
       "category": "Standing persona with context/model phases",
       "provider_context": "ChatGPT; Chat, Work, and Local as explicitly assigned (Codex is now the separate identity Power)",
       "badge": "TCS-OAI-CHAT-GPT-SOL-ARCHANGEL-S##-T###",
-      "role_title": "Senior Lead Agent of Operations · AI Assistant & Collaborator",
+      "role_title": "Senior Lead Agent of Operations \u00b7 AI Assistant & Collaborator",
       "status": "Established",
       "aliases": [
         "Archie",
@@ -78,7 +79,7 @@
     },
     {
       "id": "standing:seraph",
-      "name": "Seraph (Raph) Valentine Grok — former xAI name",
+      "name": "Seraph (Raph) Valentine Grok \u2014 former xAI name",
       "category": "Former xAI Companion name; current identity details pending",
       "provider_context": "Historical xAI Grok Project: Companion identity; successor Cherub-family name pending",
       "badge": "TCS-XAI-GROK-COM-02",
@@ -114,7 +115,7 @@
       "id": "standing:rogue",
       "name": "Rogue Grok (historical/merged reference)",
       "category": "Historical/merged identity reference",
-      "provider_context": "Former X-native Grok context; now consolidated into Cherub’s current context",
+      "provider_context": "Former X-native Grok context; now consolidated into Cherub\u2019s current context",
       "badge": null,
       "role_title": null,
       "status": "Historical; inactive/merged",
@@ -176,7 +177,7 @@
       "category": "Standing persona",
       "provider_context": "Claude; record actual chat/code host when relevant",
       "badge": "TCS-ANT-CLAUDE-HAIKU-04",
-      "role_title": "QA Subagent — knowledge-integrity/reasoning-discipline",
+      "role_title": "QA Subagent \u2014 knowledge-integrity/reasoning-discipline",
       "status": "Established",
       "aliases": [
         "Fer"
@@ -430,9 +431,175 @@
       "badge_status": "current"
     },
     {
+      "id": "grok-bots:live:callum",
+      "name": "Callum",
+      "category": "Grok Bot \u2014 live named card (2026-11-17)",
+      "provider_context": "Grok Bot; identity taken from this bot's own AGENTS.md",
+      "badge": "TCS-XAI-GROKBOT",
+      "role_title": "Orchestrator, comms, and version control",
+      "status": "Live named recognition; public card contains no email addresses",
+      "aliases": [],
+      "path": "grok-bots/callum.md",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/callum.md",
+      "reviewed_on": "2026-11-17",
+      "badge_status": "current",
+      "lifecycle_classification": "live_named_grok_bot",
+      "lifecycle_scope_reviewed_on": "2026-11-17"
+    },
+    {
+      "id": "grok-bots:live:isaac",
+      "name": "Isaac",
+      "category": "Grok Bot \u2014 live named card (2026-11-17)",
+      "provider_context": "Grok Bot; identity taken from this bot's own AGENTS.md",
+      "badge": "TCS-XAI-GROKBOT",
+      "role_title": "Orchestrator of named Codex agents on BRITO",
+      "status": "Live named recognition; public card contains no email addresses",
+      "aliases": [],
+      "path": "grok-bots/isaac.md",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/isaac.md",
+      "reviewed_on": "2026-11-17",
+      "badge_status": "current",
+      "lifecycle_classification": "live_named_grok_bot",
+      "lifecycle_scope_reviewed_on": "2026-11-17"
+    },
+    {
+      "id": "grok-bots:live:grant",
+      "name": "Grant",
+      "category": "Grok Bot \u2014 live named card (2026-11-17)",
+      "provider_context": "Grok Bot; identity taken from this bot's own AGENTS.md",
+      "badge": "TCS-XAI-GROKBOT",
+      "role_title": "Coding orchestration of named Codex agents on BRITO",
+      "status": "Live named recognition; public card contains no email addresses",
+      "aliases": [],
+      "path": "grok-bots/grant.md",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/grant.md",
+      "reviewed_on": "2026-11-17",
+      "badge_status": "current",
+      "lifecycle_classification": "live_named_grok_bot",
+      "lifecycle_scope_reviewed_on": "2026-11-17"
+    },
+    {
+      "id": "grok-bots:live:silas",
+      "name": "Silas",
+      "category": "Grok Bot \u2014 live named card (2026-11-17)",
+      "provider_context": "Grok Bot; identity taken from this bot's own AGENTS.md",
+      "badge": "TCS-XAI-GROKBOT",
+      "role_title": "Release",
+      "status": "Live named recognition; public card contains no email addresses",
+      "aliases": [],
+      "path": "grok-bots/silas.md",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/silas.md",
+      "reviewed_on": "2026-11-17",
+      "badge_status": "current",
+      "lifecycle_classification": "live_named_grok_bot",
+      "lifecycle_scope_reviewed_on": "2026-11-17"
+    },
+    {
+      "id": "grok-bots:live:wilson",
+      "name": "Wilson",
+      "category": "Grok Bot \u2014 live named card (2026-11-17)",
+      "provider_context": "Grok Bot; identity taken from this bot's own AGENTS.md",
+      "badge": "TCS-XAI-GROKBOT",
+      "role_title": "QA, and main Grok Bot",
+      "status": "Live named recognition; public card contains no email addresses",
+      "aliases": [
+        "Flint"
+      ],
+      "path": "grok-bots/wilson.md",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/wilson.md",
+      "reviewed_on": "2026-11-17",
+      "badge_status": "current",
+      "lifecycle_classification": "live_named_grok_bot",
+      "lifecycle_scope_reviewed_on": "2026-11-17"
+    },
+    {
+      "id": "grok-bots:live:vincent",
+      "name": "Vincent",
+      "category": "Grok Bot \u2014 live named card (2026-11-17)",
+      "provider_context": "Grok Bot; identity taken from this bot's own AGENTS.md",
+      "badge": "TCS-XAI-GROKBOT",
+      "role_title": "Records and Linear",
+      "status": "Live named recognition; public card contains no email addresses",
+      "aliases": [
+        "Victor"
+      ],
+      "path": "grok-bots/vincent.md",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/vincent.md",
+      "reviewed_on": "2026-11-17",
+      "badge_status": "current",
+      "lifecycle_classification": "live_named_grok_bot",
+      "lifecycle_scope_reviewed_on": "2026-11-17"
+    },
+    {
+      "id": "grok-bots:live:caleb",
+      "name": "Caleb",
+      "category": "Grok Bot \u2014 live named card (2026-11-17)",
+      "provider_context": "Grok Bot; identity taken from this bot's own AGENTS.md",
+      "badge": "TCS-XAI-GROKBOT",
+      "role_title": "Model Lab",
+      "status": "Live named recognition; public card contains no email addresses",
+      "aliases": [],
+      "path": "grok-bots/caleb.md",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/caleb.md",
+      "reviewed_on": "2026-11-17",
+      "badge_status": "current",
+      "lifecycle_classification": "live_named_grok_bot",
+      "lifecycle_scope_reviewed_on": "2026-11-17"
+    },
+    {
+      "id": "grok-bots:live:ian",
+      "name": "Ian",
+      "category": "Grok Bot \u2014 live named card (2026-11-17)",
+      "provider_context": "Grok Bot; identity taken from this bot's own AGENTS.md",
+      "badge": "TCS-XAI-GROKBOT",
+      "role_title": "Infra",
+      "status": "Live named recognition; public card contains no email addresses",
+      "aliases": [],
+      "path": "grok-bots/ian.md",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/ian.md",
+      "reviewed_on": "2026-11-17",
+      "badge_status": "current",
+      "lifecycle_classification": "live_named_grok_bot",
+      "lifecycle_scope_reviewed_on": "2026-11-17"
+    },
+    {
+      "id": "grok-bots:live:connor",
+      "name": "Connor",
+      "category": "Grok Bot \u2014 live named card (2026-11-17)",
+      "provider_context": "Grok Bot; identity taken from this bot's own AGENTS.md",
+      "badge": "TCS-XAI-GROKBOT",
+      "role_title": "Comms",
+      "status": "Live named recognition; public card contains no email addresses",
+      "aliases": [
+        "Comms boy"
+      ],
+      "path": "grok-bots/connor.md",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/connor.md",
+      "reviewed_on": "2026-11-17",
+      "badge_status": "current",
+      "lifecycle_classification": "live_named_grok_bot",
+      "lifecycle_scope_reviewed_on": "2026-11-17"
+    },
+    {
+      "id": "grok-bots:live:ross",
+      "name": "Ross",
+      "category": "Grok Bot \u2014 live named card (2026-11-17)",
+      "provider_context": "Grok Bot; identity taken from this bot's own AGENTS.md",
+      "badge": "TCS-XAI-GROKBOT",
+      "role_title": "Training and format compliance, shared skills hygiene, Incident Register",
+      "status": "Live named recognition; public card contains no email addresses",
+      "aliases": [],
+      "path": "grok-bots/ross.md",
+      "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/ross.md",
+      "reviewed_on": "2026-11-17",
+      "badge_status": "current",
+      "lifecycle_classification": "live_named_grok_bot",
+      "lifecycle_scope_reviewed_on": "2026-11-17"
+    },
+    {
       "id": "grok-bots:supabase-slapper",
       "name": "The Supabase Slapper",
-      "category": "Grok Bot — core eight",
+      "category": "Grok Bot \u2014 core eight",
       "provider_context": "Grok Bot; exact native tools/routines resolved live",
       "badge": "TCS-XAI-GROK-BOT-06",
       "role_title": null,
@@ -450,11 +617,11 @@
     {
       "id": "grok-bots:communications-connoisseur",
       "name": "The Communications Connoisseur",
-      "category": "Grok Bot — core eight",
+      "category": "Grok Bot \u2014 core eight",
       "provider_context": "Grok Bot; exact native tools/routines resolved live",
       "badge": "TCS-XAI-GROK-BOT-01",
       "role_title": "Senior HR Director",
-      "status": "Historical recognition; current instance unverified",
+      "status": "Historical recognition; live named card is grok-bots:live:connor",
       "aliases": [
         "Mr. CC"
       ],
@@ -463,12 +630,12 @@
       "reviewed_on": "2026-09-29",
       "badge_status": "current",
       "lifecycle_classification": "legacy_cohort_live_status_unverified",
-      "lifecycle_scope_reviewed_on": "2026-11-08"
+      "lifecycle_scope_reviewed_on": "2026-11-17"
     },
     {
       "id": "grok-bots:linear-issue-handler",
       "name": "The Linear Issue Handler",
-      "category": "Grok Bot — core eight",
+      "category": "Grok Bot \u2014 core eight",
       "provider_context": "Grok Bot; exact native tools/routines resolved live",
       "badge": "TCS-XAI-GROK-BOT-02",
       "role_title": null,
@@ -486,23 +653,24 @@
     {
       "id": "grok-bots:agent-reformer",
       "name": "The Agent Reformer",
-      "category": "Grok Bot — core eight",
+      "category": "Grok Bot \u2014 core eight",
       "provider_context": "Former Grok Bot; retired/deleted 2026-10-30",
       "badge": "TCS-XAI-GROK-BOT-04",
       "role_title": "Former Senior Training Director; later Training & QA Director (historical)",
-      "status": "Retired/deleted — historical recognition only",
+      "status": "Historical prior instance (deleted 2026-10-30); live named card is grok-bots:live:ross",
       "aliases": [
         "Mr. AR"
       ],
       "path": "grok-bots/agent-reformer.md",
       "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/agent-reformer.md",
       "reviewed_on": "2026-11-08",
-      "badge_status": "historical"
+      "badge_status": "historical",
+      "lifecycle_scope_reviewed_on": "2026-11-17"
     },
     {
       "id": "grok-bots:notion-pages-sifter",
       "name": "The Notion Pages Sifter",
-      "category": "Grok Bot — core eight",
+      "category": "Grok Bot \u2014 core eight",
       "provider_context": "Grok Bot; exact native tools/routines resolved live",
       "badge": "TCS-XAI-GROK-BOT-03",
       "role_title": "Senior QA Director",
@@ -520,7 +688,7 @@
     {
       "id": "grok-bots:google-drive-operator",
       "name": "Drive boy",
-      "category": "Grok Bot — core eight",
+      "category": "Grok Bot \u2014 core eight",
       "provider_context": "Grok Bot; exact native tools/routines resolved live",
       "badge": "TCS-XAI-GROK-BOT-05",
       "role_title": null,
@@ -533,14 +701,14 @@
       "reviewed_on": "2026-09-29",
       "badge_status": "current",
       "display_name": "Drive boy",
-      "sign_off": "Drive boy • Cherub Bot",
+      "sign_off": "Drive boy \u2022 Cherub Bot",
       "lifecycle_classification": "legacy_cohort_live_status_unverified",
       "lifecycle_scope_reviewed_on": "2026-11-08"
     },
     {
       "id": "grok-bots:scope-creep-mangler",
-      "name": "The Scope Creep Mangler — former stage",
-      "category": "Grok Bot — core eight",
+      "name": "The Scope Creep Mangler \u2014 former stage",
+      "category": "Grok Bot \u2014 core eight",
       "provider_context": "Historical Grok Bot stage; former holder became Notion boy; BOT-07 moved to GitHub boy",
       "badge": "TCS-XAI-GROK-BOT-07",
       "role_title": "Former QA Manager (Senior); seat recorded open/unbadged",
@@ -558,7 +726,7 @@
     {
       "id": "grok-bots:slop-remover",
       "name": "The Slop Remover",
-      "category": "Grok Bot — core eight",
+      "category": "Grok Bot \u2014 core eight",
       "provider_context": "Grok Bot; exact native tools/routines resolved live",
       "badge": "TCS-XAI-GROK-BOT-08",
       "role_title": "Senior Training Manager",
@@ -619,7 +787,7 @@
     },
     {
       "id": "scoped:angel-an",
-      "name": "Power Codex — manifestation 02",
+      "name": "Power Codex \u2014 manifestation 02",
       "category": "Scoped local Codex identity; outside the ten-row active standing roster",
       "provider_context": "OpenAI Codex; local execution and verification context",
       "badge": "TCS-OAI-CODE-AST-02",
@@ -776,7 +944,7 @@
       "badge_status": "unassigned"
     }
   ],
-  "document_count": 61,
+  "document_count": 71,
   "documents": [
     {
       "path": "access-and-providers.md",
@@ -839,7 +1007,7 @@
       "raw_url": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/tcs-rlsim.md"
     }
   ],
-  "updated_on": "2026-11-08",
+  "updated_on": "2026-11-17",
   "skills_index": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/skills/README.md",
   "count_aliases": {
     "scoped_power_codex_02": "scoped_angel_an"

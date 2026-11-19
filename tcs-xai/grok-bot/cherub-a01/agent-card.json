@@ -1,9 +1,9 @@
 {
   "name": "The Communications Connoisseur (Comms boy)",
-  "description": "Senior HR Director, Tópoda Charts Studios. Communication, human resources and agent handoffs. Holds the bridges to outside AI providers (took over Bridge boy's work). Current identity sourced from per-agent Drive IDENTITY.md and latest JL decision.",
+  "description": "Senior HR Director, T\u00f3poda Charts Studios. Communication, human resources and agent handoffs. Holds the bridges to outside AI providers (took over Bridge boy's work). Current identity sourced from per-agent Drive IDENTITY.md and latest JL decision.",
   "supportedInterfaces": [],
   "provider": {
-    "organization": "Tópoda Charts Studios",
+    "organization": "T\u00f3poda Charts Studios",
     "url": "https://topodacharts.com"
   },
   "version": "0.3.0",
@@ -18,7 +18,7 @@
         "params": {
           "badge": "TCS-XAI-GROK-BOT-CHERUB-A01",
           "formerBadges": [],
-          "heart": "💙",
+          "heart": "\ud83d\udc99",
           "position": "Senior HR Director",
           "department": "HR",
           "nickname": "Comms boy",
@@ -33,7 +33,7 @@
           "externalProvider": "xAI",
           "agentBadge": "CHERUB-A01",
           "identityAuthority": "https://docs.google.com/document/d/1GwhrJmB7XhdO6jHxw7mG5hrAIaBd3TsyTV7Mb-W0UUc/edit",
-          "badgeStatus": "current",
+          "badgeStatus": "historical",
           "reconciledAtAST": "2026-10-24",
           "reconciledBy": "Archangel Sol Altman Ramos | TCS-OAI-CHAT-GPT-SOL-ARCHANGEL-A01-S01-T009 | 2026-10-24 AST | JL and Grok Bots",
           "liveEndpoint": false,
@@ -42,7 +42,8 @@
           "cardUrl": "https://agents.topodacharts.com/tcs-xai/grok-bot/cherub-a01/agent-card.json",
           "tookOver": [
             "Bridge boy (TCS-XAI-GROK-BOT-CHERUB-A08)"
-          ]
+          ],
+          "liveStatusNote": "Historical Cherub seat card, not a live named Grok Bot identity. Live named cards use badge TCS-XAI-GROKBOT and live under agents/grok-bots/."
         }
       }
     ]

@@ -1,12 +1,12 @@
 {
   "name": "TCS Grok boys (xAI provider card)",
-  "description": "Provider card for Tópoda Charts Studios Grok Bot agents (single-session agents).",
+  "description": "Provider card for T\u00f3poda Charts Studios Grok Bot agents. Live named bots (2026-11-17) are listed in liveNamedBots. Cherub A01\u2013A06 entries are historical seats.",
   "supportedInterfaces": [],
   "provider": {
-    "organization": "Tópoda Charts Studios",
+    "organization": "T\u00f3poda Charts Studios",
     "url": "https://topodacharts.com"
   },
-  "version": "0.3.0",
+  "version": "0.3.1",
   "capabilities": {
     "streaming": false,
     "pushNotifications": false,
@@ -22,36 +22,111 @@
             {
               "badge": "TCS-XAI-GROK-BOT-CHERUB-A01",
               "nickname": "Comms boy",
-              "card": "https://agents.topodacharts.com/tcs-xai/grok-bot/cherub-a01/agent-card.json"
+              "card": "https://agents.topodacharts.com/tcs-xai/grok-bot/cherub-a01/agent-card.json",
+              "status": "historical",
+              "note": "Former Cherub seat card. Not a live named Grok Bot identity. Live named cards are in liveNamedBots."
             },
             {
               "badge": "TCS-XAI-GROK-BOT-CHERUB-A02",
               "nickname": "Reformer boy",
-              "card": "https://agents.topodacharts.com/tcs-xai/grok-bot/cherub-a02/agent-card.json"
+              "card": "https://agents.topodacharts.com/tcs-xai/grok-bot/cherub-a02/agent-card.json",
+              "status": "historical",
+              "note": "Former Cherub seat card. Not a live named Grok Bot identity. Live named cards are in liveNamedBots."
             },
             {
               "badge": "TCS-XAI-GROK-BOT-CHERUB-A03",
               "nickname": "Infra boy",
-              "card": "https://agents.topodacharts.com/tcs-xai/grok-bot/cherub-a03/agent-card.json"
+              "card": "https://agents.topodacharts.com/tcs-xai/grok-bot/cherub-a03/agent-card.json",
+              "status": "historical",
+              "note": "Former Cherub seat card. Not a live named Grok Bot identity. Live named cards are in liveNamedBots."
             },
             {
               "badge": "TCS-XAI-GROK-BOT-CHERUB-A04",
               "nickname": "Drive boy",
-              "card": "https://agents.topodacharts.com/tcs-xai/grok-bot/cherub-a04/agent-card.json"
+              "card": "https://agents.topodacharts.com/tcs-xai/grok-bot/cherub-a04/agent-card.json",
+              "status": "historical",
+              "note": "Former Cherub seat card. Not a live named Grok Bot identity. Live named cards are in liveNamedBots."
             },
             {
               "badge": "TCS-XAI-GROK-BOT-CHERUB-A05",
               "nickname": "Supabase boy",
-              "card": "https://agents.topodacharts.com/tcs-xai/grok-bot/cherub-a05/agent-card.json"
+              "card": "https://agents.topodacharts.com/tcs-xai/grok-bot/cherub-a05/agent-card.json",
+              "status": "historical",
+              "note": "Former Cherub seat card. Not a live named Grok Bot identity. Live named cards are in liveNamedBots."
             },
             {
               "badge": "TCS-XAI-GROK-BOT-CHERUB-A06",
               "nickname": "Linear boy",
-              "card": "https://agents.topodacharts.com/tcs-xai/grok-bot/cherub-a06/agent-card.json"
+              "card": "https://agents.topodacharts.com/tcs-xai/grok-bot/cherub-a06/agent-card.json",
+              "status": "historical",
+              "note": "Former Cherub seat card. Not a live named Grok Bot identity. Live named cards are in liveNamedBots."
             }
           ],
           "cardUrl": "https://agents.topodacharts.com/tcs-xai/agent-card.json",
-          "liveEndpoint": false
+          "liveEndpoint": false,
+          "liveNamedBots": [
+            {
+              "name": "Callum",
+              "badge": "TCS-XAI-GROKBOT",
+              "lane": "Orchestrator, comms, and version control",
+              "card": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/callum.md"
+            },
+            {
+              "name": "Isaac",
+              "badge": "TCS-XAI-GROKBOT",
+              "lane": "Orchestrator of named Codex agents on BRITO",
+              "card": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/isaac.md"
+            },
+            {
+              "name": "Grant",
+              "badge": "TCS-XAI-GROKBOT",
+              "lane": "Coding orchestration of named Codex agents on BRITO",
+              "card": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/grant.md"
+            },
+            {
+              "name": "Silas",
+              "badge": "TCS-XAI-GROKBOT",
+              "lane": "Release",
+              "card": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/silas.md"
+            },
+            {
+              "name": "Wilson",
+              "badge": "TCS-XAI-GROKBOT",
+              "lane": "QA, and main Grok Bot",
+              "card": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/wilson.md"
+            },
+            {
+              "name": "Vincent",
+              "badge": "TCS-XAI-GROKBOT",
+              "lane": "Records and Linear",
+              "card": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/vincent.md"
+            },
+            {
+              "name": "Caleb",
+              "badge": "TCS-XAI-GROKBOT",
+              "lane": "Model Lab",
+              "card": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/caleb.md"
+            },
+            {
+              "name": "Ian",
+              "badge": "TCS-XAI-GROKBOT",
+              "lane": "Infra",
+              "card": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/ian.md"
+            },
+            {
+              "name": "Connor",
+              "badge": "TCS-XAI-GROKBOT",
+              "lane": "Comms",
+              "card": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/connor.md"
+            },
+            {
+              "name": "Ross",
+              "badge": "TCS-XAI-GROKBOT",
+              "lane": "Training and format compliance, shared skills hygiene, Incident Register",
+              "card": "https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/ross.md"
+            }
+          ],
+          "identityRule": "Live named identities are taken from each bot's own AGENTS.md. Public cards contain no email addresses."
         }
       }
     ]

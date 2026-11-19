@@ -1,9 +1,9 @@
 {
   "name": "The Google Drive Operator (Drive boy)",
-  "description": "Ops Director, Tópoda Charts Studios. Google Drive durable knowledge and working file sources. Current identity sourced from per-agent Drive IDENTITY.md and latest JL decision.",
+  "description": "Ops Director, T\u00f3poda Charts Studios. Google Drive durable knowledge and working file sources. Current identity sourced from per-agent Drive IDENTITY.md and latest JL decision.",
   "supportedInterfaces": [],
   "provider": {
-    "organization": "Tópoda Charts Studios",
+    "organization": "T\u00f3poda Charts Studios",
     "url": "https://topodacharts.com"
   },
   "version": "0.3.0",
@@ -18,7 +18,7 @@
         "params": {
           "badge": "TCS-XAI-GROK-BOT-CHERUB-A04",
           "formerBadges": [],
-          "heart": "💛",
+          "heart": "\ud83d\udc9b",
           "position": "Ops Director",
           "department": "Operations",
           "nickname": "Drive boy",
@@ -33,13 +33,14 @@
           "externalProvider": "xAI",
           "agentBadge": "CHERUB-A04",
           "identityAuthority": "https://docs.google.com/document/d/1PS2CcwWutcFasMq_fQnb7JRP7ykZ__kwGv_bqnKdSLQ/edit",
-          "badgeStatus": "current",
+          "badgeStatus": "historical",
           "reconciledAtAST": "2026-10-24",
           "reconciledBy": "Archangel Sol Altman Ramos | TCS-OAI-CHAT-GPT-SOL-ARCHANGEL-A01-S01-T009 | 2026-10-24 AST | JL and Grok Bots",
           "liveEndpoint": false,
           "app": "Grok Bot",
           "providerCard": "https://agents.topodacharts.com/tcs-xai/agent-card.json",
-          "cardUrl": "https://agents.topodacharts.com/tcs-xai/grok-bot/cherub-a04/agent-card.json"
+          "cardUrl": "https://agents.topodacharts.com/tcs-xai/grok-bot/cherub-a04/agent-card.json",
+          "liveStatusNote": "Historical Cherub seat card, not a live named Grok Bot identity. Live named cards use badge TCS-XAI-GROKBOT and live under agents/grok-bots/."
         }
       }
     ]

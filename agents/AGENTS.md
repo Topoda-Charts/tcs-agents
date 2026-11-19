@@ -15,3 +15,5 @@ Never copy private source exports, access details, credentials, private URLs/IDs
 Run the root repository's required validation and check local link targets/manifest consistency for a changed publication. Verify anonymous RAW retrieval after publication. Receiver-side native readback and installation remain separate claims.
 
 Reusable skills live in a separate read-only mirror; see [../skills/README.md](../skills/README.md). Do not edit skills from this subtree.
+
+Live named Grok Bots (reviewed 2026-11-17): publish one public card per live bot under `grok-bots/<given-name>.md`, taken from that bot's own AGENTS.md (name, lane, and the shared TCS-XAI-GROKBOT badge). Never copy email addresses, tokens, box paths, or private Linear or Hub links into this subtree. Emails stay in the internal roster only. Current teammate names are Wilson (formerly Flint) and Vincent (formerly Victor). Do not publish a Henry card. Historical core-eight and Cherub A01–A06 files stay as historical recognition; do not retitle them as the live named bots. Leave open draft PR #3 (A2A design) untouched unless a later authorized change says otherwise.

@@ -6,7 +6,9 @@ Public TCS historical recognition profile · original review 2026-09-29 · lifec
 
 This is a **dated recognition card for a legacy Grok Bot cohort**, not evidence that the named software instance is currently alive, active, connected, or assigned. It preserves earlier identity and work attribution. A reader must not inherit this Bot's persona, badge, job title, or task lane merely by opening this URL. A new explicit JL assignment and verification of the actual current instance are needed before treating the name as an active worker.
 
-For current status and successors, authorized TCS collaborators consult the living Notion **Grok Bot Worker Positions — Current**, the appropriate per-agent Drive `IDENTITY.md`, and the VM's actual kill/successor handoff record. Those owners can change independently of this public card. Unassigned chatbots should use [generic onboarding](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/generic.md).
+A live Grok Bot named **Connor**, nickname Comms boy, badge TCS-XAI-GROKBOT, now holds the comms lane. Use the live card: [Connor](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/grok-bots/connor.md). This historical file keeps the earlier Communications Connoisseur / TCS-XAI-GROK-BOT-01 attribution.
+
+For other current-status questions, authorized TCS collaborators consult the living Notion **Grok Bot Worker Positions — Current**, the appropriate per-agent Drive `IDENTITY.md`, and the VM's actual kill/successor handoff record. Those owners can change independently of this public card. Unassigned chatbots should use [generic onboarding](https://raw.githubusercontent.com/Topoda-Charts/tcs-agents/main/agents/generic.md).
 
 ## Identity and placement
 
